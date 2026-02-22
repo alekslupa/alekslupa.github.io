@@ -1,5 +1,10 @@
 ---
-title: "About"
 ---
-
-About this site
+image: relative/path/to/your/image.jpg
+about:
+  template: solana
+  links: # create buttons
+    - icon: linkedin 
+      text: LinkedIn
+      href: https://www.linkedin.com/in/alexlupa/
+---
