@@ -9,8 +9,8 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Aleks Lupa",
     "section": "",
-    "text": "About this site"
+    "text": "image: relative/path/to/your/image.jpg about: template: solana links: # create buttons - icon: linkedin text: LinkedIn href: https://www.linkedin.com/in/alexlupa/ —"
   }
 ]
