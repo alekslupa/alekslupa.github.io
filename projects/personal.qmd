@@ -64,7 +64,7 @@ toc: false
 
 <div class="pp-card pp-card--feature">
 <div class="pp-card__banner">
-<img src="../assets/fitness/progress.jpg" alt="Fitness progress" class="pp-banner-img">
+<img src="../assets/Gym.1.jpg" alt="Fitness progress" class="pp-banner-img">
 </div>
 <div class="pp-card__body">
 <div class="pp-card__tags">
