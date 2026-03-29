@@ -1,31 +1,130 @@
 ---
-pagetitle: "About Me"
-title: "Aleksander Lupa"
-subtitle: "Data Analytics Student"
-image: assets/about.me.pfp.png
+pagetitle: "About — Aleksander Lupa"
 page-layout: article
-about:
-    template: solana
-    id: hero-heading
-    links:
-        - icon: github
-          text: GitHub
-          href: https://www.linkedin.com/in/alexlupa/
-          target: _blank
-        - icon: linkedin
-          text: LinkedIn
-          href: https://www.linkedin.com/in/alexlupa/
-          target: _blank
-        - icon: file-earmark-pdf
-          text: CV
-          href: assets/alex.cv.pdf
-          target: _blank
-        - icon: envelope
-          text: Email
-          href: mailto:aleksander.lupa2@mail.dcu.ie
+toc: false
 ---
-::: {#hero-heading .fade-in}
-<div class="h1">Hi, nice to meet you!</div>
-<div class="lead">
-I'm a final-year Business Studies student specializing in Data Analytics.</div>
-:::
+
+<div class="about-hero">
+  <div class="about-photo-wrap">
+    <img src="assets/profile.jpg" alt="Aleksander Lupa" class="about-photo">
+  </div>
+  <div class="about-hero__info">
+    <h1 class="about-name">Aleksander Lupa</h1>
+    <p class="about-tagline">Business Studies student · DCU · Bodybuilder</p>
+    <div class="about-tags">
+      <span class="about-tag">Business Analytics</span>
+      <span class="about-tag">Data &amp; Dashboards</span>
+      <span class="about-tag">Bodybuilding</span>
+    </div>
+    <a href="assets/cv.pdf" download class="about-cv-btn">Download CV</a>
+  </div>
+</div>
+
+## About me
+
+<div class="about-bio">
+<p>I'm a final-year Business Studies student at Dublin City University, specialising in Business Analytics. I'm passionate about the point where business questions meet technical problem-solving — using data to clarify what's happening, why it's happening, and what to do next.</p>
+<p>My toolkit spans Python (Pandas/NumPy), SQL/MySQL, Power BI/Tableau, Excel, and web fundamentals including HTML/CSS. I enjoy the full analytical cycle: framing the business problem, building tidy data models, testing assumptions, and communicating insights that drive real decisions.</p>
+<p>Outside of work and college, I'm a dedicated bodybuilder. The discipline and consistency that the sport demands carries into everything else I do.</p>
+</div>
+
+## Skills
+
+<div class="skills-grid">
+  <div class="skill-card">
+    <span class="skill-name">Python · Pandas/NumPy</span>
+    <div class="skill-bar"><div class="skill-fill skill-fill--80"></div></div>
+    <span class="skill-pct">80%</span>
+  </div>
+  <div class="skill-card">
+    <span class="skill-name">SQL / MySQL</span>
+    <div class="skill-bar"><div class="skill-fill skill-fill--80"></div></div>
+    <span class="skill-pct">80%</span>
+  </div>
+  <div class="skill-card">
+    <span class="skill-name">Power BI / Tableau</span>
+    <div class="skill-bar"><div class="skill-fill skill-fill--75"></div></div>
+    <span class="skill-pct">75%</span>
+  </div>
+  <div class="skill-card">
+    <span class="skill-name">Excel</span>
+    <div class="skill-bar"><div class="skill-fill skill-fill--85"></div></div>
+    <span class="skill-pct">85%</span>
+  </div>
+  <div class="skill-card">
+    <span class="skill-name">HTML / CSS / JS</span>
+    <div class="skill-bar"><div class="skill-fill skill-fill--65"></div></div>
+    <span class="skill-pct">65%</span>
+  </div>
+  <div class="skill-card">
+    <span class="skill-name">Data reporting</span>
+    <div class="skill-bar"><div class="skill-fill skill-fill--80"></div></div>
+    <span class="skill-pct">80%</span>
+  </div>
+</div>
+
+## Experience
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-title">Underwriting Operations Assistant</div>
+      <div class="timeline-meta">Allied World, Dublin &nbsp;·&nbsp; May 2024 – Aug 2025</div>
+      <p class="timeline-desc">Updated accounts to underwriter instructions within SLAs and produced recurring management reports with validated figures. Maintained audit-ready databases, liaised with Finance on reconciliations, and onboarded and trained new hires.</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-title">Shift Runner</div>
+      <div class="timeline-meta">SSP UK &amp; Ireland, Dublin &nbsp;·&nbsp; Mar 2024 – May 2025</div>
+      <p class="timeline-desc">Led shift operations, managed till and cash handling, and delivered strong customer experience. Developed communication, organisation, and problem-solving skills in a fast-paced environment.</p>
+    </div>
+  </div>
+</div>
+
+## Education
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-title">Bachelor of Business Studies</div>
+      <div class="timeline-meta">Dublin City University &nbsp;·&nbsp; Sep 2022 – Apr 2026</div>
+      <p class="timeline-desc">Specialising in Business Analytics. Modules include data analysis, Python, SQL, statistics, and data visualisation.</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-title">Leaving Certificate</div>
+      <div class="timeline-meta">St Finians Community College &nbsp;·&nbsp; Sep 2017 – Jun 2022</div>
+    </div>
+  </div>
+</div>
+
+## Languages
+
+<div class="lang-cards">
+  <div class="lang-card">
+    <span class="lang-name">English</span>
+    <span class="lang-level">Native</span>
+  </div>
+  <div class="lang-card">
+    <span class="lang-name">Polish</span>
+    <span class="lang-level">Native</span>
+  </div>
+  <div class="lang-card">
+    <span class="lang-name">Spanish</span>
+    <span class="lang-level">Limited working</span>
+  </div>
+</div>
+
+## Beyond the screen
+
+<div class="hobbies-list">
+  <span class="hobby-item">Competitive bodybuilding</span>
+  <span class="hobby-item">Data analytics</span>
+  <span class="hobby-item">Interior design</span>
+</div>
