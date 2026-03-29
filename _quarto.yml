@@ -5,7 +5,7 @@ project:
     - .nojekyll
 
 website:
-  title: "Aleks Lupa"
+  title: "Aleksander Lupa"
   navbar:
     left:
       - href: index.qmd
