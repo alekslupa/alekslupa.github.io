@@ -138,7 +138,7 @@ toc: false
 ```{=html}
 <div class="hobbies-list">
 <span class="hobby-item">Competitive bodybuilding</span>
-<span class="hobby-item">Data analytics</span>
-<span class="hobby-item">Interior design</span>
+<span class="hobby-item">Hiking</span>
+<span class="hobby-item">Running</span>
 </div>
 ```
