@@ -16,6 +16,9 @@ website:
         text: About
       - href: future_goals.qmd
         text: Future Goals
+      - href: assets/alex.cv.pdf
+        text: CV
+        target: _blank
   page-footer:
     left: "© 2026 Aleksander Lupa"
     right: "Built by <a href='https://quarto.org' target='_blank'>Quarto</a>"
