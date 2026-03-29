@@ -15,8 +15,7 @@ website:
         text: About
   page-footer:
     left: "© 2026 Aleksander Lupa"
-    right:
-      - text: "Built by [Quarto](https://quarto.org)"
+    right: "Built by <a href='https://quarto.org' target='_blank'>Quarto</a>"
 
 format:
   html:
