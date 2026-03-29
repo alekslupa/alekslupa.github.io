@@ -2,8 +2,7 @@
 pagetitle: "About Me"
 title: "Aleksander Lupa"
 subtitle: "Data Analytics Student"
-image: 
-about: 
+about:
     template: solana
     id: hero-heading
     links:
@@ -23,3 +22,4 @@ about:
           text: Email
           href: mailto:aleksander.lupa2@mail.dcu.ie
 page-layout: article
+---
