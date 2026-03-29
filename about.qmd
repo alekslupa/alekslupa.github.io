@@ -14,7 +14,7 @@ toc: false
 <p class="about-tagline">Business Studies student · DCU · Bodybuilder</p>
 <div class="about-tags">
 <span class="about-tag">Business Analytics</span>
-<span class="about-tag">Data &amp; Dashboards</span>
+<span class="about-tag">Web Design</span>
 <span class="about-tag">Bodybuilding</span>
 </div>
 <a href="assets/alex.cv.pdf" download class="about-cv-btn">Download CV</a>
