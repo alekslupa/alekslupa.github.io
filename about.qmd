@@ -1,10 +1,25 @@
 ---
-title: "Aleks Lupa"
-image: relative/path/to/your/image.jpg
-about:
-  template: solana
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/alexlupa/
----
+pagetitle: "About Me"
+title: "Aleksander Lupa"
+subtitle: "Data Analytics Student"
+image: 
+about: 
+    template: solana
+    id: hero-heading
+    links:
+        - icon: github
+          text: GitHub
+          href: https://www.linkedin.com/in/alexlupa/
+          target: _blank
+        - icon: linkedin
+          text: LinkedIn
+          href: https://www.linkedin.com/in/alexlupa/
+          target: _blank
+        - icon: file-earmark-pdf
+          text: CV
+          href: assets/portfolio_cv.pdf
+          target: _blank
+        - icon: envelope
+          text: Email
+          href: mailto:aleksander.lupa2@mail.dcu.ie
+page-layout: article
