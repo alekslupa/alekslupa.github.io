@@ -1,7 +1,9 @@
 ---
 pagetitle: "About Me"
-title: "Aleksander Lupa"
+title: "Boon Chin Look"
 subtitle: "Data Analytics Student"
+image: assets/about.me.pfp.HEIC
+page-layout: article
 about:
     template: solana
     id: hero-heading
@@ -16,10 +18,14 @@ about:
           target: _blank
         - icon: file-earmark-pdf
           text: CV
-          href: assets/portfolio_cv.pdf
+          href: assets/alex.cv.pdf
           target: _blank
         - icon: envelope
           text: Email
           href: mailto:aleksander.lupa2@mail.dcu.ie
-page-layout: article
 ---
+::: {#hero-heading .fade-in}
+<div class="h1">Hi, nice to meet you!</div>
+<div class="lead">
+I'm a final-year Business Studies student specializing in Data Analytics.</div>
+:::
