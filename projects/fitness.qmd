@@ -1,0 +1,7 @@
+---
+pagetitle: "My Fitness Journey — Aleksander Lupa"
+page-layout: article
+toc: false
+---
+
+# My Fitness Journey

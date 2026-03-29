@@ -14,7 +14,7 @@ website:
         text: Home
       - text: Projects
         menu:
-          - href: personal_projects.qmd
+          - href: projects/personal.qmd
             text: Personal Projects
           - href: academic_projects.qmd
             text: Academic Projects
