@@ -12,8 +12,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: projects.qmd
-        text: Projects
+      - text: Projects
+        menu:
+          - href: personal_projects.qmd
+            text: Personal Projects
+          - href: academic_projects.qmd
+            text: Academic Projects
       - href: future_goals.qmd
         text: Future Goals
       - href: about.qmd
