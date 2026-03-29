@@ -1,8 +1,8 @@
 ---
 pagetitle: "About Me"
-title: "Boon Chin Look"
+title: "Aleksander Lupa"
 subtitle: "Data Analytics Student"
-image: assets/about.me.pfp.HEIC
+image: assets/about.me.pfp.png
 page-layout: article
 about:
     template: solana
