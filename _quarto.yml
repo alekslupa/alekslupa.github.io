@@ -6,6 +6,7 @@ project:
 
 website:
   title: "Aleksander Lupa"
+  favicon: assets/website.logo.png
   navbar:
     logo: assets/website.logo.png
     left:
