@@ -11,6 +11,48 @@
     "href": "about.html",
     "title": "Aleksander Lupa",
     "section": "",
-    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     CV\n  \n  \n    \n     Email\n  \n\n      \n\nHi, nice to meet you!\n\n\nI’m a final-year Business Studies student specializing in Data Analytics."
+    "text": "&lt;img src=\"assets/about.me.pfp.png\" alt=\"Aleksander Lupa\" class=\"about-photo\"&gt;\n\n\n&lt;h1 class=\"about-name\"&gt;Aleksander Lupa&lt;/h1&gt;\n&lt;p class=\"about-tagline\"&gt;Business Studies student · DCU · Bodybuilder&lt;/p&gt;\n&lt;div class=\"about-tags\"&gt;\n  &lt;span class=\"about-tag\"&gt;Business Analytics&lt;/span&gt;\n  &lt;span class=\"about-tag\"&gt;Data &amp; Dashboards&lt;/span&gt;\n  &lt;span class=\"about-tag\"&gt;Bodybuilding&lt;/span&gt;\n&lt;/div&gt;\n&lt;a href=\"assets/alex.cv.pdf\" download class=\"about-cv-btn\"&gt;Download CV&lt;/a&gt;"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Aleksander Lupa",
+    "section": "About me",
+    "text": "About me\n\n\nI’m a final-year Business Studies student at Dublin City University, specialising in Business Analytics. I’m passionate about the point where business questions meet technical problem-solving — using data to clarify what’s happening, why it’s happening, and what to do next.\n\n\nMy toolkit spans Python (Pandas/NumPy), SQL/MySQL, Power BI/Tableau, Excel, and web fundamentals including HTML/CSS. I enjoy the full analytical cycle: framing the business problem, building tidy data models, testing assumptions, and communicating insights that drive real decisions.\n\n\nOutside of work and college, I’m a dedicated bodybuilder. The discipline and consistency that the sport demands carries into everything else I do."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "Aleksander Lupa",
+    "section": "Skills",
+    "text": "Skills\n\n\n&lt;span class=\"skill-name\"&gt;Python · Pandas/NumPy&lt;/span&gt;\n&lt;div class=\"skill-bar\"&gt;&lt;div class=\"skill-fill skill-fill--80\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;span class=\"skill-pct\"&gt;80%&lt;/span&gt;\n\n\n&lt;span class=\"skill-name\"&gt;SQL / MySQL&lt;/span&gt;\n&lt;div class=\"skill-bar\"&gt;&lt;div class=\"skill-fill skill-fill--80\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;span class=\"skill-pct\"&gt;80%&lt;/span&gt;\n\n\n&lt;span class=\"skill-name\"&gt;Power BI / Tableau&lt;/span&gt;\n&lt;div class=\"skill-bar\"&gt;&lt;div class=\"skill-fill skill-fill--75\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;span class=\"skill-pct\"&gt;75%&lt;/span&gt;\n\n\n&lt;span class=\"skill-name\"&gt;Excel&lt;/span&gt;\n&lt;div class=\"skill-bar\"&gt;&lt;div class=\"skill-fill skill-fill--85\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;span class=\"skill-pct\"&gt;85%&lt;/span&gt;\n\n\n&lt;span class=\"skill-name\"&gt;HTML / CSS / JS&lt;/span&gt;\n&lt;div class=\"skill-bar\"&gt;&lt;div class=\"skill-fill skill-fill--65\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;span class=\"skill-pct\"&gt;65%&lt;/span&gt;\n\n\n&lt;span class=\"skill-name\"&gt;Data reporting&lt;/span&gt;\n&lt;div class=\"skill-bar\"&gt;&lt;div class=\"skill-fill skill-fill--80\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;span class=\"skill-pct\"&gt;80%&lt;/span&gt;"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Aleksander Lupa",
+    "section": "Experience",
+    "text": "Experience\n\n\n&lt;div class=\"timeline-dot\"&gt;&lt;/div&gt;\n&lt;div class=\"timeline-content\"&gt;\n  &lt;div class=\"timeline-title\"&gt;Underwriting Operations Assistant&lt;/div&gt;\n  &lt;div class=\"timeline-meta\"&gt;Allied World, Dublin &nbsp;·&nbsp; May 2024 – Aug 2025&lt;/div&gt;\n  &lt;p class=\"timeline-desc\"&gt;Updated accounts to underwriter instructions within SLAs and produced recurring management reports with validated figures. Maintained audit-ready databases, liaised with Finance on reconciliations, and onboarded and trained new hires.&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"timeline-dot\"&gt;&lt;/div&gt;\n&lt;div class=\"timeline-content\"&gt;\n  &lt;div class=\"timeline-title\"&gt;Shift Runner&lt;/div&gt;\n  &lt;div class=\"timeline-meta\"&gt;SSP UK &amp; Ireland, Dublin &nbsp;·&nbsp; Mar 2024 – May 2025&lt;/div&gt;\n  &lt;p class=\"timeline-desc\"&gt;Led shift operations, managed till and cash handling, and delivered strong customer experience. Developed communication, organisation, and problem-solving skills in a fast-paced environment.&lt;/p&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Aleksander Lupa",
+    "section": "Education",
+    "text": "Education\n\n\n&lt;div class=\"timeline-dot\"&gt;&lt;/div&gt;\n&lt;div class=\"timeline-content\"&gt;\n  &lt;div class=\"timeline-title\"&gt;Bachelor of Business Studies&lt;/div&gt;\n  &lt;div class=\"timeline-meta\"&gt;Dublin City University &nbsp;·&nbsp; Sep 2022 – Apr 2026&lt;/div&gt;\n  &lt;p class=\"timeline-desc\"&gt;Specialising in Business Analytics. Modules include data analysis, Python, SQL, statistics, and data visualisation.&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"timeline-dot\"&gt;&lt;/div&gt;\n&lt;div class=\"timeline-content\"&gt;\n  &lt;div class=\"timeline-title\"&gt;Leaving Certificate&lt;/div&gt;\n  &lt;div class=\"timeline-meta\"&gt;St Finians Community College &nbsp;·&nbsp; Sep 2017 – Jun 2022&lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "Aleksander Lupa",
+    "section": "Languages",
+    "text": "Languages\n\n\n&lt;span class=\"lang-name\"&gt;English&lt;/span&gt;\n&lt;span class=\"lang-level\"&gt;Native&lt;/span&gt;\n\n\n&lt;span class=\"lang-name\"&gt;Polish&lt;/span&gt;\n&lt;span class=\"lang-level\"&gt;Native&lt;/span&gt;\n\n\n&lt;span class=\"lang-name\"&gt;Spanish&lt;/span&gt;\n&lt;span class=\"lang-level\"&gt;Limited working&lt;/span&gt;"
+  },
+  {
+    "objectID": "about.html#beyond-the-screen",
+    "href": "about.html#beyond-the-screen",
+    "title": "Aleksander Lupa",
+    "section": "Beyond the screen",
+    "text": "Beyond the screen\n\nCompetitive bodybuilding Data analytics Interior design"
   }
 ]
