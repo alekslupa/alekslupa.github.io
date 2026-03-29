@@ -7,6 +7,7 @@ project:
 website:
   title: "Aleksander Lupa"
   navbar:
+    logo: assets/website.logo.png
     left:
       - href: index.qmd
         text: Home
