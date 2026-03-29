@@ -751,6 +751,13 @@ h1, h2, h3, h4, h5, h6 {
 .pp-card__url {
   font-size: 0.78rem;
   color: var(--about-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--body-color, #2b2b2b);
+    text-decoration: underline;
+  }
 }
 
 .pp-card__desc {
