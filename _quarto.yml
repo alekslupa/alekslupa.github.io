@@ -13,6 +13,10 @@ website:
         text: Home
       - href: about.qmd
         text: About
+  page-footer:
+    left: "© 2026 Aleksander Lupa"
+    right:
+      - text: "Built by [Quarto](https://quarto.org)"
 
 format:
   html:
