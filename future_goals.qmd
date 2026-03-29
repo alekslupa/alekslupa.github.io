@@ -4,6 +4,8 @@ page-layout: article
 toc: false
 ---
 
+# Future Goals
+
 ```{=html}
 <p class="fg-intro">I'm graduating in April 2026 with a clear sense of where I want to go, not just professionally, but personally. Here's what I'm working towards.</p>
 ```
