@@ -54,13 +54,13 @@ toc: false
 <p class="photo-grid-label">Places on the list</p>
 <div class="photo-grid">
 <div class="photo-slot">
-<img src="assets/travel1.jpg" alt="Travel destination 1" class="photo-grid-img">
+<img src="assets/travel.1.jpg" alt="Travel destination 1" class="photo-grid-img">
 </div>
 <div class="photo-slot">
-<img src="assets/travel2.jpg" alt="Travel destination 2" class="photo-grid-img">
+<img src="assets/travel.2.jpg" alt="Travel destination 2" class="photo-grid-img">
 </div>
 <div class="photo-slot">
-<img src="assets/travel3.jpg" alt="Travel destination 3" class="photo-grid-img">
+<img src="assets/travel.3.jpg" alt="Travel destination 3" class="photo-grid-img">
 </div>
 </div>
 ```
