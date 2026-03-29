@@ -1,0 +1,95 @@
+---
+pagetitle: "Future Goals — Aleksander Lupa"
+page-layout: article
+toc: false
+---
+
+```{=html}
+<p class="fg-intro">I'm graduating in April 2026 with a clear sense of where I want to go, not just professionally, but personally. Here's what I'm working towards.</p>
+```
+
+## Career
+
+```{=html}
+<div class="goal-cards">
+<div class="goal-card">
+<span class="goal-label">Short term</span>
+<div class="goal-title">Business analyst in the gaming industry</div>
+<p class="goal-body">My goal after graduating is to work as a business analyst, ideally within the gaming industry. It's a sector I find genuinely exciting: fast-moving, data-driven, and creatively ambitious. I want to be part of a team where analytical thinking shapes real product decisions.</p>
+</div>
+<div class="goal-card">
+<span class="goal-label">Location</span>
+<div class="goal-title">Working abroad in London</div>
+<p class="goal-body">London is one of Europe's biggest hubs for tech and gaming companies. Moving there after graduation is a goal I'm actively working towards. The exposure, the network, and the pace of the industry there is exactly the environment I want to grow in early in my career.</p>
+</div>
+</div>
+```
+
+## Travel
+
+```{=html}
+<div class="goal-cards">
+<div class="goal-card">
+<span class="goal-label">Summer 2026</span>
+<div class="goal-title">Explore beyond Europe</div>
+<p class="goal-body">Before stepping into the workforce full-time, I want to take the summer after graduation to travel, not just within Europe, but across different continents. Experiencing new cultures, places, and perspectives is something I believe makes you a better thinker and a better professional.</p>
+</div>
+</div>
+<div class="milestone-grid">
+<div class="milestone-card">
+<div class="milestone-title">Asia</div>
+<p class="milestone-body">Top of the list. Japan and Southeast Asia are places I've wanted to visit for years.</p>
+</div>
+<div class="milestone-card">
+<div class="milestone-title">Americas</div>
+<p class="milestone-body">Experiencing a completely different culture and pace of life across the Atlantic.</p>
+</div>
+<div class="milestone-card">
+<div class="milestone-title">New experiences</div>
+<p class="milestone-body">Meeting people, trying things outside my comfort zone, and coming back ready to work.</p>
+</div>
+</div>
+<p class="photo-grid-label">Places on the list</p>
+<div class="photo-grid">
+<div class="photo-slot">
+<img src="assets/travel1.jpg" alt="Travel destination 1" class="photo-grid-img">
+</div>
+<div class="photo-slot">
+<img src="assets/travel2.jpg" alt="Travel destination 2" class="photo-grid-img">
+</div>
+<div class="photo-slot">
+<img src="assets/travel3.jpg" alt="Travel destination 3" class="photo-grid-img">
+</div>
+</div>
+```
+
+## The plan
+
+```{=html}
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-title">Graduate</div>
+<div class="timeline-meta">April 2026</div>
+<p class="timeline-desc">Complete my BSc in Business Studies at Dublin City University.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-title">Travel</div>
+<div class="timeline-meta">Summer 2026</div>
+<p class="timeline-desc">Spend the summer travelling across continents, Asia, the Americas, and wherever else takes my interest.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-title">Move to London</div>
+<div class="timeline-meta">Late 2026</div>
+<p class="timeline-desc">Relocate to London and begin my career as a business analyst in the gaming or tech industry.</p>
+</div>
+</div>
+</div>
+```
