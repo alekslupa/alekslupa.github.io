@@ -1,0 +1,7 @@
+---
+pagetitle: "Projects — Aleksander Lupa"
+page-layout: article
+toc: false
+---
+
+# Projects
