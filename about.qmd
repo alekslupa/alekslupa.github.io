@@ -6,7 +6,7 @@ toc: false
 
 <div class="about-hero">
   <div class="about-photo-wrap">
-    <img src="assets/profile.jpg" alt="Aleksander Lupa" class="about-photo">
+    <img src="assets/about.me.pfp.png" alt="Aleksander Lupa" class="about-photo">
   </div>
   <div class="about-hero__info">
     <h1 class="about-name">Aleksander Lupa</h1>
@@ -16,7 +16,7 @@ toc: false
       <span class="about-tag">Data &amp; Dashboards</span>
       <span class="about-tag">Bodybuilding</span>
     </div>
-    <a href="assets/cv.pdf" download class="about-cv-btn">Download CV</a>
+    <a href="assets/alex.cv.pdf" download class="about-cv-btn">Download CV</a>
   </div>
 </div>
 
