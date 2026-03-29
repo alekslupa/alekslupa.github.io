@@ -17,7 +17,7 @@ toc: false
 
 <div class="pp-card pp-card--horizontal">
 <div class="pp-card__logo">
-<img src="../assets/logos/vip-ireland.png" alt="VIP Ireland logo" class="pp-logo-img">
+<a href="vip-ireland.html"><img src="../assets/logos/vip-ireland.png" alt="VIP Ireland logo" class="pp-logo-img"></a>
 </div>
 <div class="pp-card__body">
 <div class="pp-card__tags">
@@ -37,7 +37,7 @@ toc: false
 
 <div class="pp-card pp-card--horizontal">
 <div class="pp-card__logo">
-<img src="../assets/logos/bathstore.webp" alt="Bath Store and More logo" class="pp-logo-img">
+<a href="bathstore.html"><img src="../assets/logos/bathstore.webp" alt="Bath Store and More logo" class="pp-logo-img"></a>
 </div>
 <div class="pp-card__body">
 <div class="pp-card__tags">
