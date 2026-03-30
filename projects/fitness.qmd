@@ -43,7 +43,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo1.jpg</div>
-        <img src="../assets/fitness/photo1.jpg" alt="July 2023 - Starting out" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/Gym.1.jpg" alt="July 2023 - Starting out" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -58,7 +58,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo2.jpg</div>
-        <img src="../assets/fitness/photo2.jpg" alt="October 2023 - Photoshoot prep" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.2.JPEG" alt="October 2023 - Photoshoot prep" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo3.jpg</div>
-        <img src="../assets/fitness/photo3.jpg" alt="Late 2023 to October 2024 - Year long bulk" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.3.JPEG" alt="Late 2023 to October 2024 - Year long bulk" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -88,7 +88,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo4.jpg</div>
-        <img src="../assets/fitness/photo4.jpg" alt="October 2024 - First mini cut" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.4.JPEG" alt="October 2024 - First mini cut" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -103,7 +103,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo5.jpg</div>
-        <img src="../assets/fitness/photo5.jpg" alt="Late 2024 to October 2025 - Second push" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.5.jpg" alt="Late 2024 to October 2025 - Second push" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -118,7 +118,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo6.jpg</div>
-        <img src="../assets/fitness/photo6.jpg" alt="October 2025 - Second mini cut" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.6.jpg" alt="October 2025 - Second mini cut" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo7.jpg</div>
-        <img src="../assets/fitness/photo7.jpg" alt="January 2026 onwards - Current phase" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.7.jpg" alt="January 2026 onwards - Current phase" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
