@@ -43,7 +43,7 @@ toc: false
     <div class="fj-entry__photo">
       <div class="fj-photo">
         <div class="fj-photo-placeholder">photo1.jpg</div>
-        <img src="../assets/Gym.1.jpg" alt="July 2023 - Starting out" class="fj-photo-img" onerror="this.style.display='none'">
+        <img src="../assets/gym.1.JPEG" alt="July 2023 - Starting out" class="fj-photo-img" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
