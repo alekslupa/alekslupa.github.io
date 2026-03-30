@@ -927,6 +927,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
+h2.fj-section-label {
+  border: none;
+  padding: 0;
+}
+
+h3.fj-entry__title {
+  border: none;
+  padding: 0;
+}
+
 .fj-section-label {
   font-size: 0.69rem;
   font-weight: 600;
