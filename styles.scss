@@ -854,3 +854,280 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
   line-height: 1.3;
 }
+
+// ============================================================
+// Fitness Journey page
+// ============================================================
+
+:root {
+  --fj-bg-secondary: #ebebeb;
+  --fj-bg-card: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fj-bg-secondary: #262626;
+    --fj-bg-card: #1e1e1e;
+  }
+}
+
+.fj-header {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--about-border);
+  margin-bottom: 2rem;
+}
+
+.fj-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.fj-subtitle {
+  font-size: 0.95rem;
+  color: var(--about-muted);
+  margin: 0;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+.fj-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.fj-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0.75rem;
+  background: var(--fj-bg-secondary);
+  border-radius: 8px;
+}
+
+.fj-stat__value {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.fj-stat__label {
+  font-size: 0.74rem;
+  color: var(--about-muted);
+  margin-top: 0.3rem;
+  line-height: 1.3;
+}
+
+.fj-section-label {
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+  text-align: center;
+  margin-bottom: 2rem;
+
+  &--spaced {
+    margin-top: 3rem;
+  }
+}
+
+.fj-timeline {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0.5px;
+    background: var(--about-border);
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 768px) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.fj-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  padding: 2.5rem 0;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--about-timeline-dot);
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 1.25rem;
+    padding: 1.5rem 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.fj-entry--reverse {
+  .fj-entry__text {
+    order: 2;
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  .fj-entry__photo {
+    order: 1;
+
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+}
+
+.fj-entry__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.fj-entry__date {
+  font-size: 0.78rem;
+  color: var(--about-muted);
+}
+
+.fj-phase-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.6875rem;
+  border: 1px solid var(--about-border);
+  border-radius: 100px;
+  padding: 0.15rem 0.6rem;
+  color: var(--about-muted);
+  letter-spacing: 0.015em;
+}
+
+.fj-entry__title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.fj-entry__body {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.fj-photo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--fj-bg-secondary);
+}
+
+.fj-photo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fj-photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  color: var(--about-muted);
+  text-align: center;
+  padding: 1rem;
+}
+
+.fj-summary {
+  background: var(--fj-bg-secondary);
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-top: 1rem;
+}
+
+.fj-summary__title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.fj-summary__body {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--about-muted);
+  margin: 0 0 1.25rem;
+}
+
+.fj-goal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fj-goal-card {
+  background: var(--fj-bg-card);
+  border: 1px solid var(--about-border);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+}
+
+.fj-goal-card__label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+  margin-bottom: 0.3rem;
+}
+
+.fj-goal-card__value {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
