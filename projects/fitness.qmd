@@ -5,6 +5,8 @@ toc: false
 ---
 
 ```{=html}
+<a href="personal.html" class="proj-back">Personal projects</a>
+
 <aside class="fj-toc">
   <div class="fj-toc__title">On this page</div>
   <nav>
