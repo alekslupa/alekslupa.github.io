@@ -1277,6 +1277,13 @@ h3.fj-entry__title {
 .ach-table {
   width: 100%;
   border-collapse: collapse;
+  border: none;
+
+  // Reset Bootstrap .table cell borders
+  > :not(caption) > * > * {
+    border-bottom-width: 0;
+    box-shadow: none;
+  }
 
   thead th {
     font-size: 0.7rem;
