@@ -1145,6 +1145,188 @@ h3.fj-entry__title {
 }
 
 // ============================================================
+// Achievements page
+// ============================================================
+
+.ach-header {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--about-border);
+  margin-bottom: 2rem;
+}
+
+.ach-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.ach-subtitle {
+  font-size: 0.95rem;
+  color: var(--about-muted);
+  margin: 0;
+  line-height: 1.65;
+}
+
+.ach-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ach-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0.75rem;
+  background: var(--fj-bg-secondary);
+  border-radius: 8px;
+}
+
+.ach-stat__value {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.ach-stat__label {
+  font-size: 0.74rem;
+  color: var(--about-muted);
+  margin-top: 0.3rem;
+  line-height: 1.3;
+}
+
+.ach-tabs {
+  display: flex;
+  border-bottom: 0.5px solid var(--about-border);
+  margin-bottom: 1.5rem;
+}
+
+.ach-tab {
+  padding: 0.55rem 1.1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--about-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  margin-bottom: -1px;
+  outline: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--bs-body-color, #2b2b2b);
+  }
+
+  &--active {
+    font-weight: 600;
+    color: var(--bs-body-color, #2b2b2b);
+    border-bottom-color: var(--bs-body-color, #2b2b2b);
+  }
+}
+
+.ach-panel[hidden] {
+  display: none;
+}
+
+.ach-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.ach-filter {
+  padding: 0.22rem 0.7rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: transparent;
+  color: var(--about-muted);
+  border: 1px solid var(--about-border);
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: var(--bs-body-color, #2b2b2b);
+    border-color: var(--bs-body-color, #2b2b2b);
+  }
+
+  &--active {
+    background: var(--about-btn-bg);
+    color: var(--about-btn-color) !important;
+    border-color: var(--about-btn-bg);
+  }
+}
+
+.ach-table-wrap {
+  overflow-x: auto;
+}
+
+.ach-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead th {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--about-muted);
+    padding: 0 0.75rem 0.6rem;
+    text-align: left;
+    border-bottom: 0.5px solid var(--about-border);
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.875rem;
+    vertical-align: middle;
+    border-bottom: 0.5px solid var(--about-border);
+  }
+
+  tbody tr.ach-row--last td {
+    border-bottom: none;
+  }
+}
+
+.ach-course {
+  font-weight: 600;
+}
+
+.ach-pill {
+  display: inline-block;
+  font-size: 0.6875rem;
+  border: 1px solid var(--about-border);
+  border-radius: 100px;
+  padding: 0.1rem 0.55rem;
+  color: var(--about-muted);
+  white-space: nowrap;
+}
+
+.ach-credits {
+  font-size: 0.8rem;
+  color: var(--about-muted);
+  white-space: nowrap;
+}
+
+.ach-date {
+  white-space: nowrap;
+}
+
+// ============================================================
 // Project detail page
 // ============================================================
 

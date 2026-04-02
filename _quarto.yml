@@ -20,6 +20,8 @@ website:
             text: Academic Projects
       - href: future_goals.qmd
         text: Future Goals
+      - href: achievements.qmd
+        text: Achievements
       - href: about.qmd
         text: About
       - href: assets/alex.cv.pdf

@@ -1,0 +1,350 @@
+---
+pagetitle: "Achievements — Aleksander Lupa"
+page-layout: article
+toc: false
+---
+
+```{=html}
+<div class="ach-header">
+  <div class="ach-title">Achievements</div>
+  <p class="ach-subtitle">Certificates and courses completed through Kubicle and LinkedIn Learning, covering data analytics, SQL, Python, Excel, marketing, and more.</p>
+</div>
+
+<div class="ach-stats">
+  <div class="ach-stat">
+    <span class="ach-stat__value">30</span>
+    <span class="ach-stat__label">Kubicle certificates</span>
+  </div>
+  <div class="ach-stat">
+    <span class="ach-stat__value">9</span>
+    <span class="ach-stat__label">LinkedIn courses</span>
+  </div>
+  <div class="ach-stat">
+    <span class="ach-stat__value">44.5</span>
+    <span class="ach-stat__label">CPD credits</span>
+  </div>
+  <div class="ach-stat">
+    <span class="ach-stat__value">2022</span>
+    <span class="ach-stat__label">First certificate</span>
+  </div>
+</div>
+
+<div class="ach-tabs">
+  <button class="ach-tab ach-tab--active" data-tab="kubicle">Kubicle</button>
+  <button class="ach-tab" data-tab="linkedin">LinkedIn Learning</button>
+</div>
+
+<div class="ach-panel" id="tab-kubicle">
+  <div class="ach-filters">
+    <button class="ach-filter ach-filter--active" data-filter="all">All</button>
+    <button class="ach-filter" data-filter="SQL">SQL</button>
+    <button class="ach-filter" data-filter="Excel">Excel</button>
+    <button class="ach-filter" data-filter="Python">Python</button>
+    <button class="ach-filter" data-filter="Statistical Analysis">Statistical Analysis</button>
+    <button class="ach-filter" data-filter="Data Literacy">Data Literacy</button>
+    <button class="ach-filter" data-filter="Tableau">Tableau</button>
+    <button class="ach-filter" data-filter="AI Fundamentals">AI</button>
+  </div>
+  <div class="ach-table-wrap">
+    <table class="ach-table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Subject</th>
+          <th>Completed</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-subject="Data Presentation">
+          <td class="ach-course">Presenting Your Data</td>
+          <td><span class="ach-pill">Data Presentation</span></td>
+          <td class="ach-date">Jan 2026</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Data Security">
+          <td class="ach-course">Handling Data Securely and Responsibly</td>
+          <td><span class="ach-pill">Data Security</span></td>
+          <td class="ach-date">Jan 2026</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Data Security">
+          <td class="ach-course">Keeping Your Information Safe</td>
+          <td><span class="ach-pill">Data Security</span></td>
+          <td class="ach-date">Jan 2026</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Data Presentation">
+          <td class="ach-course">Telling Stories with Data</td>
+          <td><span class="ach-pill">Data Presentation</span></td>
+          <td class="ach-date">Jan 2026</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Excel">
+          <td class="ach-course">Finance Functions in Excel</td>
+          <td><span class="ach-pill">Excel</span></td>
+          <td class="ach-date">Apr 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Python">
+          <td class="ach-course">Python Fundamentals</td>
+          <td><span class="ach-pill">Python</span></td>
+          <td class="ach-date">Apr 2024</td>
+          <td class="ach-credits">2.0</td>
+        </tr>
+        <tr data-subject="Data Presentation">
+          <td class="ach-course">Communicating Data Effectively</td>
+          <td><span class="ach-pill">Data Presentation</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Strategic Analysis">
+          <td class="ach-course">Internal and External Analysis</td>
+          <td><span class="ach-pill">Strategic Analysis</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="SQL">
+          <td class="ach-course">Aggregating Data with SQL</td>
+          <td><span class="ach-pill">SQL</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Data Ethics">
+          <td class="ach-course">Introduction to Data Ethics</td>
+          <td><span class="ach-pill">Data Ethics</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="SQL">
+          <td class="ach-course">Joining Data with SQL</td>
+          <td><span class="ach-pill">SQL</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Statistical Analysis">
+          <td class="ach-course">Introduction to Predictive Modeling</td>
+          <td><span class="ach-pill">Statistical Analysis</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">2.0</td>
+        </tr>
+        <tr data-subject="Data Literacy">
+          <td class="ach-course">Introduction to Data Preparation</td>
+          <td><span class="ach-pill">Data Literacy</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Data Literacy">
+          <td class="ach-course">Thinking and Communicating with Data</td>
+          <td><span class="ach-pill">Data Literacy</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Data Literacy">
+          <td class="ach-course">Introduction to Data Literacy</td>
+          <td><span class="ach-pill">Data Literacy</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">0.5</td>
+        </tr>
+        <tr data-subject="Excel">
+          <td class="ach-course">Text, Time, and Dates in Excel</td>
+          <td><span class="ach-pill">Excel</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">2.0</td>
+        </tr>
+        <tr data-subject="Data Literacy">
+          <td class="ach-course">Introduction to Data and Databases</td>
+          <td><span class="ach-pill">Data Literacy</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Statistical Analysis">
+          <td class="ach-course">Hypothesis Testing</td>
+          <td><span class="ach-pill">Statistical Analysis</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Statistical Analysis">
+          <td class="ach-course">Principles of Statistics</td>
+          <td><span class="ach-pill">Statistical Analysis</span></td>
+          <td class="ach-date">Mar 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="SQL">
+          <td class="ach-course">Selecting and Filtering Data with SQL</td>
+          <td><span class="ach-pill">SQL</span></td>
+          <td class="ach-date">Feb 2024</td>
+          <td class="ach-credits">2.0</td>
+        </tr>
+        <tr data-subject="SQL">
+          <td class="ach-course">Understanding SQL Databases</td>
+          <td><span class="ach-pill">SQL</span></td>
+          <td class="ach-date">Feb 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Visualization">
+          <td class="ach-course">Visual Data Thinking</td>
+          <td><span class="ach-pill">Visualization</span></td>
+          <td class="ach-date">Feb 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Tableau">
+          <td class="ach-course">Introducing Tableau</td>
+          <td><span class="ach-pill">Tableau</span></td>
+          <td class="ach-date">Feb 2024</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="AI Fundamentals">
+          <td class="ach-course">Business Applications of AI</td>
+          <td><span class="ach-pill">AI Fundamentals</span></td>
+          <td class="ach-date">Feb 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="AI Fundamentals">
+          <td class="ach-course">Introduction to Artificial Intelligence</td>
+          <td><span class="ach-pill">AI Fundamentals</span></td>
+          <td class="ach-date">Feb 2024</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Statistical Analysis">
+          <td class="ach-course">Probability Distributions</td>
+          <td><span class="ach-pill">Statistical Analysis</span></td>
+          <td class="ach-date">Oct 2023</td>
+          <td class="ach-credits">2.0</td>
+        </tr>
+        <tr data-subject="Statistical Analysis">
+          <td class="ach-course">Probability Principles</td>
+          <td><span class="ach-pill">Statistical Analysis</span></td>
+          <td class="ach-date">Oct 2023</td>
+          <td class="ach-credits">1.5</td>
+        </tr>
+        <tr data-subject="Excel">
+          <td class="ach-course">Charts in Depth in Excel</td>
+          <td><span class="ach-pill">Excel</span></td>
+          <td class="ach-date">Jan 2023</td>
+          <td class="ach-credits">1.0</td>
+        </tr>
+        <tr data-subject="Excel">
+          <td class="ach-course">Formulas and Functions in Excel</td>
+          <td><span class="ach-pill">Excel</span></td>
+          <td class="ach-date">Jan 2023</td>
+          <td class="ach-credits">3.0</td>
+        </tr>
+        <tr data-subject="Excel">
+          <td class="ach-course">Data Manipulation and Formatting in Excel</td>
+          <td><span class="ach-pill">Excel</span></td>
+          <td class="ach-date">Oct 2022</td>
+          <td class="ach-credits">2.0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="ach-panel" id="tab-linkedin" hidden>
+  <div class="ach-table-wrap">
+    <table class="ach-table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Category</th>
+          <th>Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="ach-course">Introduction to Business Analytics (2022)</td>
+          <td><span class="ach-pill">Business Analytics</span></td>
+          <td class="ach-date">Mar 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Business Analytics: Sales Data (2022)</td>
+          <td><span class="ach-pill">Business Analytics</span></td>
+          <td class="ach-date">Apr 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Data Analytics for Business Professionals (2022)</td>
+          <td><span class="ach-pill">Business Analytics</span></td>
+          <td class="ach-date">Mar 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Business Analytics: Marketing Data (2022)</td>
+          <td><span class="ach-pill">Business Analytics</span></td>
+          <td class="ach-date">Mar 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Social Media Marketing Strategy: TikTok and Instagram Reels</td>
+          <td><span class="ach-pill">Marketing</span></td>
+          <td class="ach-date">Apr 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Shane Snow on Storytelling</td>
+          <td><span class="ach-pill">Communication</span></td>
+          <td class="ach-date">Mar 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Marketing on Instagram (2021)</td>
+          <td><span class="ach-pill">Marketing</span></td>
+          <td class="ach-date">Mar 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">Social Media Marketing with Facebook and Twitter</td>
+          <td><span class="ach-pill">Marketing</span></td>
+          <td class="ach-date">Feb 2024</td>
+        </tr>
+        <tr>
+          <td class="ach-course">SEO Foundations</td>
+          <td><span class="ach-pill">Marketing</span></td>
+          <td class="ach-date">Jan 2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Tab switching
+  document.querySelectorAll('.ach-tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.ach-tab').forEach(function (t) {
+        t.classList.remove('ach-tab--active');
+      });
+      document.querySelectorAll('.ach-panel').forEach(function (p) {
+        p.hidden = true;
+      });
+      this.classList.add('ach-tab--active');
+      document.getElementById('tab-' + this.dataset.tab).hidden = false;
+    });
+  });
+
+  // Filter pills
+  function markLastRow(tbody) {
+    var rows = tbody.querySelectorAll('tr');
+    rows.forEach(function (r) { r.classList.remove('ach-row--last'); });
+    var visible = Array.from(rows).filter(function (r) { return !r.hidden; });
+    if (visible.length > 0) {
+      visible[visible.length - 1].classList.add('ach-row--last');
+    }
+  }
+
+  var kubicleBody = document.querySelector('#tab-kubicle tbody');
+  markLastRow(kubicleBody);
+  markLastRow(document.querySelector('#tab-linkedin tbody'));
+
+  document.querySelectorAll('.ach-filter').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.ach-filter').forEach(function (b) {
+        b.classList.remove('ach-filter--active');
+      });
+      this.classList.add('ach-filter--active');
+      var filter = this.dataset.filter;
+      kubicleBody.querySelectorAll('tr').forEach(function (row) {
+        row.hidden = filter !== 'all' && row.dataset.subject !== filter;
+      });
+      markLastRow(kubicleBody);
+    });
+  });
+}());
+</script>
+```
