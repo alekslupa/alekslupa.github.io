@@ -16,7 +16,7 @@ website:
         menu:
           - href: projects/personal.qmd
             text: Personal Projects
-          - href: academic_projects.qmd
+          - href: projects/academic.qmd
             text: Academic Projects
       - href: future_goals.qmd
         text: Future Goals

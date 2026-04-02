@@ -7,6 +7,13 @@
     "text": "Projects"
   },
   {
+    "objectID": "projects/superdry.html",
+    "href": "projects/superdry.html",
+    "title": "Superdry Strategic Analysis",
+    "section": "",
+    "text": "Superdry Strategic Analysis"
+  },
+  {
     "objectID": "projects/personal.html",
     "href": "projects/personal.html",
     "title": "Personal Projects",
@@ -14,11 +21,18 @@
     "text": "Projects built outside of college, including client websites and personal pursuits. These reflect my interests and skills beyond the academic curriculum.\n\n\nWeb Design\n\n\n\n\n\n\n\n\n\n\nWordPress\nHTML\nCSS\n\nVIP Ireland\nvipireland.ie\nDesigned and built a professional website for VIP Ireland using WordPress. Handled layout, branding, content structure, and mobile responsiveness from brief to delivery.\n\n2025\nView project\n\n\n\n\n\n\n\n\n\n\nWordPress\nHTML\nCSS\n\nBath Store and More\nbathstoreandmore.ie\nBuilt a website for Bath Store and More using WordPress, focused on product presentation, clean visual design, and a strong user experience across devices.\n\n2025\nView project\n\n\n\n\n\n\nPersonal\n\n\n\n\n\n\n\n\n\n\nBodybuilding\nFitness\nLifestyle\n\nMy fitness journey\nA personal log of my journey into competitive bodybuilding. Covering training, nutrition, progress, and the mindset behind building a competition-ready physique.\n\n\n2023\nStarted training\n\n\n2027\nFirst competition\n\n\n5 days\nWeekly training\n\n\n\nOngoing\nView journey"
   },
   {
-    "objectID": "projects/bathstore.html",
-    "href": "projects/bathstore.html",
-    "title": "Bath Store and More",
+    "objectID": "projects/eportfolio.html",
+    "href": "projects/eportfolio.html",
+    "title": "ePortfolio",
     "section": "",
-    "text": "Personal projects\n\n\n  Web design · 2025\n  Bath Store and More\n  A full website built for Bath Store and More, a Dublin-based bathroom design and installation company offering luxury bathroom solutions.\n  \n    WordPress\n    Elementor Pro\n    HTML\n    CSS\n  \n  \n    \n      Year\n      2025\n    \n    \n      Type\n      Freelance\n    \n    \n      URL\n      bathstoreandmore.ie\n    \n  \n\n\n\n  \n\n\n\n\n\n  About the project\n  Bath Store and More is a Dublin-based bathroom design and installation company helping homeowners transform their bathrooms into luxury spaces. The business needed a professional website to showcase their portfolio, share brochures, highlight showrooms, and make it easy for customers to get a quote.\n  This was my second WordPress and Elementor Pro build. Having gone through the learning curve with VIP Ireland, the process was noticeably smoother. I was more confident in the platform, faster with the layout tools, and better at making design decisions from the start.\n\n\n\n\n\n  What I built\n  \n    \n      Pages\n      Home, Portfolio, About, Brochures, Showrooms, Contact, Blogs\n    \n    \n      Tools used\n      WordPress, Elementor Pro, custom CSS\n    \n    \n      Focus areas\n      Portfolio presentation, brochure downloads, quote request flow, mobile responsiveness\n    \n    \n      Outcome\n      Fully live professional website at bathstoreandmore.ie\n    \n  \n\n\n\n\n\n  Reflection\n  Compared to VIP Ireland, this project felt like a different experience entirely. The foundational knowledge I had built on the first site meant I could focus more on design quality and less on figuring out the tools. The result is a richer, more visual site with a stronger layout and better overall user experience.\n  Building two client sites back to back gave me a real sense of progression. I can see the improvement between the two projects and it has given me confidence to take on more complex web design work going forward.\n\n\n\n\nVisit bathstoreandmore.ie"
+    "text": "ePortfolio"
+  },
+  {
+    "objectID": "projects/academic.html",
+    "href": "projects/academic.html",
+    "title": "Aleksander Lupa",
+    "section": "",
+    "text": "Academic projects\n  Projects completed as part of my BSc in Business Studies at Dublin City University, covering data analytics, strategic analysis, and product development.\n\n\n\n  \n    \n  \n  \n    Featured project\n    ePortfolio (this website)\n    A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages. The site showcases my academic journey, personal projects, certifications, and career goals, with fully custom layouts and responsive design throughout.\n    \n      Quarto\n      HTML\n      SCSS\n      Git\n      GitHub Pages\n    \n    View project\n  \n\n\n\n\n\n  \n    \n      \n    \n    \n      Group project\n      Superdry strategic analysis\n      A strategic analysis of Superdry examining market position, supply chain efficiency, and brand value, with actionable recommendations for a competitive market.\n      \n        Strategic Analysis\n        SWOT\n        Group project\n      \n    \n    \n      2024\n      View project\n    \n  \n\n  \n    \n      \n    \n    \n      Dragons Den pitch\n      PriceBeo\n      A barcode-scanning price comparison app for Irish grocery retail. Pitched in a mock Dragons Den, backed by a full business report and investor deck.\n      \n        Product development\n        Python\n        PostgreSQL\n      \n    \n    \n      2025\n      View project\n    \n  \n\n\n\n\n\n  \n    \n    Project 4 coming soon\n  \n  \n    \n    Project 5 coming soon"
   },
   {
     "objectID": "index.html",
@@ -126,11 +140,25 @@
     "text": "Personal Projects"
   },
   {
+    "objectID": "projects/bathstore.html",
+    "href": "projects/bathstore.html",
+    "title": "Bath Store and More",
+    "section": "",
+    "text": "Personal projects\n\n\n  Web design · 2025\n  Bath Store and More\n  A full website built for Bath Store and More, a Dublin-based bathroom design and installation company offering luxury bathroom solutions.\n  \n    WordPress\n    Elementor Pro\n    HTML\n    CSS\n  \n  \n    \n      Year\n      2025\n    \n    \n      Type\n      Freelance\n    \n    \n      URL\n      bathstoreandmore.ie\n    \n  \n\n\n\n  \n\n\n\n\n\n  About the project\n  Bath Store and More is a Dublin-based bathroom design and installation company helping homeowners transform their bathrooms into luxury spaces. The business needed a professional website to showcase their portfolio, share brochures, highlight showrooms, and make it easy for customers to get a quote.\n  This was my second WordPress and Elementor Pro build. Having gone through the learning curve with VIP Ireland, the process was noticeably smoother. I was more confident in the platform, faster with the layout tools, and better at making design decisions from the start.\n\n\n\n\n\n  What I built\n  \n    \n      Pages\n      Home, Portfolio, About, Brochures, Showrooms, Contact, Blogs\n    \n    \n      Tools used\n      WordPress, Elementor Pro, custom CSS\n    \n    \n      Focus areas\n      Portfolio presentation, brochure downloads, quote request flow, mobile responsiveness\n    \n    \n      Outcome\n      Fully live professional website at bathstoreandmore.ie\n    \n  \n\n\n\n\n\n  Reflection\n  Compared to VIP Ireland, this project felt like a different experience entirely. The foundational knowledge I had built on the first site meant I could focus more on design quality and less on figuring out the tools. The result is a richer, more visual site with a stronger layout and better overall user experience.\n  Building two client sites back to back gave me a real sense of progression. I can see the improvement between the two projects and it has given me confidence to take on more complex web design work going forward.\n\n\n\n\nVisit bathstoreandmore.ie"
+  },
+  {
     "objectID": "projects/fitness.html",
     "href": "projects/fitness.html",
     "title": "Aleksander Lupa",
     "section": "",
     "text": "On this page\n  \n    The journey\n    Starting out\n    Photoshoot prep\n    Year long bulk\n    First mini cut\n    Second push\n    Second mini cut\n    Current phase\n    Looking ahead\n  \n\n\nPersonal projects\n\n\n  My fitness journey\n  What started as a decision in July 2023 has grown into one of the most disciplined and rewarding parts of my life. My goal is to compete in a men's physique bodybuilding show in 2027. Here is how it has unfolded so far.\n\n\n\n  \n    Jul 2023\n    Started training\n  \n  \n    2+ yrs\n    Consistent training\n  \n  \n    5 days\n    Per week\n  \n  \n    2027\n    First competition\n  \n\n\nThe journey\n\n\n\n  \n    \n      July 2023\n      The beginning\n      Starting out\n      Mid-July 2023 I walked into the gym and committed to something new. No experience, no plan beyond showing up. Within weeks training became a non-negotiable part of my routine.\n    \n    \n      \n        photo1.jpg\n        \n      \n    \n  \n\n  \n    \n      October 2023\n      Cut\n      Photoshoot prep\n      Just three months in, I committed to a photoshoot prep. I dialled in my nutrition, dropped body fat, and got into the best condition of my life to that point. It proved what was possible with focus and consistency.\n    \n    \n      \n        photo2.jpg\n        \n      \n    \n  \n\n  \n    \n      Late 2023 to October 2024\n      Bulk\n      Year long bulk\n      After the photoshoot I went straight into a full year of building. The goal was to add as much quality muscle as possible, eating in a surplus, training hard, and trusting the process over the long term.\n    \n    \n      \n        photo3.jpg\n        \n      \n    \n  \n\n  \n    \n      October 2024\n      Mini cut\n      First mini cut\n      After a year of bulking I ran a mini cut to strip back some body fat, tighten up the physique, and assess where the muscle had been added. A short, sharp phase before getting back to building.\n    \n    \n      \n        photo4.jpg\n        \n      \n    \n  \n\n  \n    \n      Late 2024 to October 2025\n      Bulk\n      Second push\n      Back into a building phase for another extended push through to October 2025. More structured programming, better understanding of nutrition, and noticeably more size coming into the cut.\n    \n    \n      \n        photo5.jpg\n        \n      \n    \n  \n\n  \n    \n      October 2025\n      Mini cut\n      Second mini cut\n      Another mini cut to sharpen up before the next bulk. Each cycle the process gets more refined. Tracking is tighter, the body responds faster, and the result is a cleaner starting point for the next phase.\n    \n    \n      \n        photo6.jpg\n        \n      \n    \n  \n\n  \n    \n      January 2026 onwards\n      Bulk\n      Current phase\n      Back in a bulk from January 2026 and building towards the biggest push yet. The 2027 men's physique show is the target and every session, meal, and recovery window is part of that plan.\n    \n    \n      \n        photo7.jpg\n        \n      \n    \n  \n\n\n\nLooking ahead\n\n\n  The goal: 2027 men's physique show\n  Everything I am doing right now is building towards stepping on stage at my first men's physique bodybuilding show in 2027. The cycles of bulking and cutting, the consistency, the discipline around food and training, it all has a single target at the end of it.\n  \n    \n      Current phase\n      Bulking\n    \n    \n      Target\n      Men's physique show 2027\n    \n    \n      Training\n      5 days per week\n    \n    \n      Focus\n      Hypertrophy and nutrition"
+  },
+  {
+    "objectID": "projects/pricebeo.html",
+    "href": "projects/pricebeo.html",
+    "title": "PriceBeo",
+    "section": "",
+    "text": "PriceBeo"
   },
   {
     "objectID": "projects/vip-ireland.html",
