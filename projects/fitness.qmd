@@ -5,8 +5,6 @@ toc: false
 ---
 
 ```{=html}
-<a href="personal.html" class="proj-back">Personal projects</a>
-
 <aside class="fj-toc">
   <div class="fj-toc__title">On this page</div>
   <nav>
@@ -21,6 +19,8 @@ toc: false
     <a class="fj-toc__link fj-toc__link--section" href="#looking-ahead">Looking ahead</a>
   </nav>
 </aside>
+
+<a href="personal.html" class="proj-back">Personal projects</a>
 
 <div class="fj-header">
   <h1 class="fj-title">My fitness journey</h1>
