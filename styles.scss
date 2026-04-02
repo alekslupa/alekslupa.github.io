@@ -1144,6 +1144,192 @@ h3.fj-entry__title {
   font-size: 0.9rem;
 }
 
+// ============================================================
+// Project detail page
+// ============================================================
+
+.proj-back {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--about-muted);
+  text-decoration: none;
+  margin-bottom: 1.75rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--bs-body-color, #2b2b2b);
+    text-decoration: none;
+  }
+}
+
+.proj-header {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--about-border);
+  margin-bottom: 1.75rem;
+}
+
+.proj-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+  margin-bottom: 0.5rem;
+}
+
+h1.proj-title {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1.85rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.5rem !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.proj-subtitle {
+  font-size: 0.95rem;
+  color: var(--about-muted);
+  margin: 0 0 1rem;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.proj-meta {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.proj-meta__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.proj-meta__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+}
+
+.proj-meta__value {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.proj-meta__link {
+  color: var(--bs-body-color, #2b2b2b);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
+
+.proj-screenshot {
+  margin-bottom: 0;
+
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    border: 0.5px solid var(--about-border);
+  }
+}
+
+.proj-divider {
+  height: 0.5px;
+  background: var(--about-border);
+  margin: 2rem 0;
+}
+
+h2.proj-section__title {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 1rem !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.proj-section {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    margin: 0;
+
+    & + p {
+      margin-top: 0.85rem;
+    }
+  }
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  background: var(--about-lang-bg);
+  border: 1px solid var(--about-border);
+  border-radius: 6px;
+
+  &__label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--about-muted);
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+.proj-btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--bs-body-color, #2b2b2b);
+  background: transparent;
+  border: 1px solid var(--about-border);
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    background: var(--about-lang-bg);
+    border-color: var(--bs-body-color, #2b2b2b);
+    text-decoration: none;
+    color: var(--bs-body-color, #2b2b2b);
+  }
+}
+
 // Fitness page — custom floating TOC
 .fj-toc {
   position: fixed;
