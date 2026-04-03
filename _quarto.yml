@@ -24,7 +24,7 @@ website:
         text: Achievements
       - href: about.qmd
         text: About
-      - href: assets/alex.cv.pdf
+      - href: assets/Aleksander_Lupa_CV.pdf
         text: CV
         target: _blank
   page-footer:

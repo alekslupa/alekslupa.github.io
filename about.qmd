@@ -17,7 +17,7 @@ toc: false
 <span class="about-tag">Web Design</span>
 <span class="about-tag">Bodybuilding</span>
 </div>
-<a href="assets/alex.cv.pdf" download class="about-cv-btn">Download CV</a>
+<a href="assets/Aleksander_Lupa_CV.pdf" download class="about-cv-btn">Download CV</a>
 </div>
 </div>
 ```

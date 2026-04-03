@@ -19,7 +19,7 @@ toc: false
     <div class="hp-hero__links">
       <a href="https://github.com/alekslupa" target="_blank" rel="noopener" class="hp-hero__link">GitHub</a>
       <a href="https://www.linkedin.com/in/alexlupa" target="_blank" rel="noopener" class="hp-hero__link">LinkedIn</a>
-      <a href="assets/alex.cv.pdf" download class="hp-hero__link">Download CV</a>
+      <a href="assets/Aleksander_Lupa_CV.pdf" download class="hp-hero__link">Download CV</a>
     </div>
   </div>
 </div>
