@@ -2240,7 +2240,8 @@ h2.proj-section__title {
   transform: scale(0.88);
 }
 
-.quarto-dark .hp-featured__img {
+.quarto-dark .hp-featured__img,
+.quarto-dark .ap-banner-img--invert {
   filter: invert(1);
 }
 
