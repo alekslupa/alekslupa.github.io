@@ -622,11 +622,14 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   display: block;
   cursor: pointer;
-  transition: transform 0.25s ease;
 }
 
-.photo-slot:hover .photo-grid-img {
-  transform: scale(0.88);
+.photo-slot {
+  transition: transform 0.25s ease;
+
+  &:hover {
+    transform: scale(0.88);
+  }
 }
 
 // ============================================================
