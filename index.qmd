@@ -58,7 +58,7 @@ toc: false
   </div>
   <div class="hp-grid">
     <div class="hp-card">
-      <div class="hp-card__label">Academic</div>
+      <div class="hp-card__label">Academic · Strategy</div>
       <div class="hp-card__title">Superdry strategic analysis</div>
       <p class="hp-card__desc">A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT, and the Strategy Diamond.</p>
       <a href="academic-projects/superdry.html" class="hp-card__link">View project</a>
