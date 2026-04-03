@@ -30,18 +30,20 @@ toc: false
   </div>
   <div class="hp-featured">
     <div class="hp-featured__banner">
-      <img src="assets/pricebeo.1.png" alt="PriceBeo" class="hp-featured__img">
+      <img src="assets/github.png" alt="ePortfolio" class="hp-featured__img">
     </div>
     <div class="hp-featured__body">
-      <div class="hp-card__label">Dragons Den pitch · BAA1003</div>
-      <div class="hp-featured__title">PriceBeo</div>
-      <p class="hp-card__desc">A real-time barcode-scanning grocery price comparison app for the Irish market. Pitched to a mock Dragons Den panel, asking €100,000 for 20% equity. Built across four assignments covering feasibility, marketing strategy, and a full investor business report.</p>
+      <div class="hp-card__label">Academic project · BAA1027</div>
+      <div class="hp-featured__title">ePortfolio (this website)</div>
+      <p class="hp-card__desc">A professional ePortfolio designed and built from scratch using Quarto, custom SCSS, and GitHub Pages. My first time working directly in code, managing a project through Git, and deploying to a live URL — a completely different experience from building with WordPress.</p>
       <div class="hp-tags">
-        <span class="pp-tag">New Enterprise Development</span>
-        <span class="pp-tag">Dragons Den pitch</span>
-        <span class="pp-tag">Product strategy</span>
+        <span class="pp-tag">Quarto</span>
+        <span class="pp-tag">HTML</span>
+        <span class="pp-tag">SCSS</span>
+        <span class="pp-tag">Git</span>
+        <span class="pp-tag">GitHub Pages</span>
       </div>
-      <a href="academic-projects/pricebeo.html" class="hp-card__link">View project</a>
+      <a href="academic-projects/eportfolio.html" class="hp-card__link">View project</a>
     </div>
   </div>
 </div>
