@@ -1316,6 +1316,18 @@ h3.fj-entry__title {
   background: var(--fj-bg-secondary);
   overflow: hidden;
   position: relative;
+  transition: transform 0.25s ease;
+
+  &:hover {
+    transform: scale(0.88);
+  }
+
+  a {
+    position: absolute;
+    inset: 0;
+    display: block;
+    cursor: pointer;
+  }
 }
 
 .ap-banner-img {
@@ -1362,6 +1374,18 @@ h3.fj-entry__title {
   background: var(--fj-bg-secondary);
   overflow: hidden;
   position: relative;
+  transition: transform 0.25s ease;
+
+  &:hover {
+    transform: scale(0.88);
+  }
+
+  a {
+    position: absolute;
+    inset: 0;
+    display: block;
+    cursor: pointer;
+  }
 }
 
 .ap-card__body {

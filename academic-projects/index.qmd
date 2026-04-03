@@ -12,7 +12,7 @@ toc: false
 
 <div class="ap-featured">
   <div class="ap-featured__banner">
-    <img src="../assets/github.png" alt="ePortfolio screenshot" class="ap-banner-img" onerror="this.style.display='none'">
+    <a href="eportfolio.html"><img src="../assets/github.png" alt="ePortfolio screenshot" class="ap-banner-img" onerror="this.style.display='none'"></a>
   </div>
   <div class="ap-featured__body">
     <div class="ap-label">Featured project</div>
@@ -34,7 +34,7 @@ toc: false
 <div class="ap-grid">
   <div class="ap-card">
     <div class="ap-card__banner">
-      <img src="../assets/Superdry.1.png" alt="Superdry strategic analysis" class="ap-banner-img" onerror="this.style.display='none'">
+      <a href="superdry.html"><img src="../assets/Superdry.1.png" alt="Superdry strategic analysis" class="ap-banner-img" onerror="this.style.display='none'"></a>
     </div>
     <div class="ap-card__body">
       <div class="ap-label">Group project</div>
@@ -54,7 +54,7 @@ toc: false
 
   <div class="ap-card">
     <div class="ap-card__banner">
-      <img src="../assets/pricebeo.1.png" alt="PriceBeo" class="ap-banner-img" onerror="this.style.display='none'">
+      <a href="pricebeo.html"><img src="../assets/pricebeo.1.png" alt="PriceBeo" class="ap-banner-img" onerror="this.style.display='none'"></a>
     </div>
     <div class="ap-card__body">
       <div class="ap-label">Dragons Den pitch</div>
