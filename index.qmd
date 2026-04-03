@@ -30,7 +30,7 @@ toc: false
   </div>
   <div class="hp-featured">
     <div class="hp-featured__banner">
-      <img src="assets/github.png" alt="ePortfolio" class="hp-featured__img">
+      <a href="academic-projects/eportfolio.html"><img src="assets/github.png" alt="ePortfolio" class="hp-featured__img"></a>
     </div>
     <div class="hp-featured__body">
       <div class="hp-card__label">Academic project · BAA1027</div>
