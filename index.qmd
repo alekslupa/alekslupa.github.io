@@ -70,10 +70,10 @@ toc: false
       <a href="personal-projects/vip-ireland.html" class="hp-card__link">View project</a>
     </div>
     <div class="hp-card">
-      <div class="hp-card__label">Personal · Fitness</div>
-      <div class="hp-card__title">My fitness journey</div>
-      <p class="hp-card__desc">A personal log of my journey into competitive bodybuilding, from starting out in 2023 to preparing for a men's physique show in 2027.</p>
-      <a href="personal-projects/fitness.html" class="hp-card__link">View journey</a>
+      <div class="hp-card__label">Academic · Dragons Den</div>
+      <div class="hp-card__title">PriceBeo</div>
+      <p class="hp-card__desc">A real-time barcode-scanning grocery price comparison app for the Irish market. Pitched to a mock Dragons Den panel asking €100,000 for 20% equity.</p>
+      <a href="academic-projects/pricebeo.html" class="hp-card__link">View project</a>
     </div>
   </div>
 </div>
