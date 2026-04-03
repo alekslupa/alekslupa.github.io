@@ -12,7 +12,7 @@ toc: false
 
 <div class="ap-featured">
   <div class="ap-featured__banner">
-    <img src="../assets/screenshots/eportfolio.png" alt="ePortfolio screenshot" class="ap-banner-img" onerror="this.style.display='none'">
+    <img src="../assets/website.logo.png" alt="ePortfolio screenshot" class="ap-banner-img" onerror="this.style.display='none'">
   </div>
   <div class="ap-featured__body">
     <div class="ap-label">Featured project</div>
