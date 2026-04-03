@@ -1,0 +1,14 @@
+---
+pagetitle: "Page Not Found — Aleksander Lupa"
+page-layout: article
+toc: false
+---
+
+```{=html}
+<div class="e404-wrap">
+  <div class="e404-code">404</div>
+  <div class="e404-title">Page not found</div>
+  <p class="e404-desc">The page you are looking for does not exist or may have been moved.</p>
+  <a href="/" class="e404-link">Go back home</a>
+</div>
+```
