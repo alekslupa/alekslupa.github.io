@@ -1813,6 +1813,81 @@ h2.proj-section__title {
   }
 }
 
+// Skills grid (ePortfolio project page)
+.proj-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.proj-skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  background: var(--fj-bg-secondary);
+  border-radius: 6px;
+}
+
+.proj-skill-card__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted);
+}
+
+.proj-skill-card__value {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+// Challenges list (ePortfolio project page)
+.proj-challenges {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-challenge {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5px solid var(--about-border);
+
+  &--last {
+    border-bottom: none;
+  }
+}
+
+.proj-challenge__num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--about-muted);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+  width: 1.5rem;
+}
+
+.proj-challenge__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.proj-challenge__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.proj-challenge__content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--about-muted);
+  margin: 0;
+}
+
 // Fitness page — custom floating TOC
 .fj-toc {
   position: fixed;
