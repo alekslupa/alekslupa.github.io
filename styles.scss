@@ -1829,12 +1829,10 @@ h2.proj-section__title {
 .proj-stat-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 0.3rem;
-  padding: 1rem;
+  padding: 1rem 1.1rem;
   background: var(--fj-bg-secondary);
   border-radius: 6px;
-  text-align: center;
 }
 
 .proj-stat-card__value {
