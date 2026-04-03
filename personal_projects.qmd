@@ -1,7 +1,0 @@
----
-pagetitle: "Personal Projects — Aleksander Lupa"
-page-layout: article
-toc: false
----
-
-# Personal Projects

@@ -1,7 +1,0 @@
----
-pagetitle: "Academic Projects — Aleksander Lupa"
-page-layout: article
-toc: false
----
-
-# Academic Projects
