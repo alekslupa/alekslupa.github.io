@@ -54,7 +54,7 @@ toc: false
 
   <div class="ap-card">
     <div class="ap-card__banner">
-      <a href="pricebeo.html"><img src="../assets/pricebeo.1.png" alt="PriceBeo" class="ap-banner-img" onerror="this.style.display='none'"></a>
+      <a href="pricebeo.html"><img src="../assets/pricebeo.1.png" alt="PriceBeo" class="ap-banner-img ap-banner-img--zoomin" onerror="this.style.display='none'"></a>
     </div>
     <div class="ap-card__body">
       <div class="ap-label">Dragons Den pitch</div>

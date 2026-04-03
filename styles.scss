@@ -1338,6 +1338,10 @@ h3.fj-entry__title {
   transform: scale(0.88);
 }
 
+.ap-card__banner:hover .ap-banner-img--zoomin {
+  transform: scale(1.08);
+}
+
 .ap-featured__body {
   padding: 1.25rem 1.5rem 1.5rem;
 }
