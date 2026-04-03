@@ -2215,7 +2215,8 @@ h2.proj-section__title {
 
 .hp-featured__banner {
   width: 100%;
-  height: 160px;
+  height: 180px;
+  background: var(--fj-bg-secondary);
   overflow: hidden;
   position: relative;
 
@@ -2232,12 +2233,11 @@ h2.proj-section__title {
   height: 100%;
   object-fit: cover;
   display: block;
-  transform: scale(0.9);
   transition: transform 0.25s ease;
 }
 
 .hp-featured__banner:hover .hp-featured__img {
-  transform: scale(0.8);
+  transform: scale(0.88);
 }
 
 .hp-featured__body {
