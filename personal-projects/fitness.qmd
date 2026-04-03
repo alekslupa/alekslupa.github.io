@@ -20,7 +20,7 @@ toc: false
   </nav>
 </div>
 
-<a href="personal.html" class="proj-back">Personal projects</a>
+<a href="index.html" class="proj-back">Personal projects</a>
 
 <div class="fj-header">
   <div class="fj-title">My fitness journey</div>
