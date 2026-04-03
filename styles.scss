@@ -1813,6 +1813,110 @@ h2.proj-section__title {
   }
 }
 
+// Stats row (PriceBeo project page)
+.proj-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.proj-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem;
+  background: var(--fj-bg-secondary);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.proj-stat-card__value {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.proj-stat-card__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted);
+}
+
+// Assignment cards (PriceBeo project page)
+.proj-assignments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.proj-assignment {
+  border: 1px solid var(--about-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.proj-assignment__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1.1rem;
+  background: var(--fj-bg-secondary);
+  border-bottom: 0.5px solid var(--about-border);
+}
+
+.proj-assignment__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted);
+  flex-shrink: 0;
+}
+
+.proj-assignment__title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: center;
+}
+
+.proj-assignment__sub {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted);
+  flex-shrink: 0;
+}
+
+.proj-assignment__body {
+  padding: 0.9rem 1.1rem;
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--about-muted);
+    margin: 0;
+  }
+}
+
+// Button row
+.proj-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 // Skills grid (ePortfolio project page)
 .proj-skills-grid {
   display: grid;
