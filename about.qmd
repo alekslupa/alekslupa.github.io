@@ -7,7 +7,7 @@ toc: false
 ```{=html}
 <div class="about-hero">
 <div class="about-photo-wrap">
-<img src="assets/about.me.pfp.png" alt="Aleksander Lupa" class="about-photo">
+<a href="assets/about.me.pfp.png" target="_blank" rel="noopener"><img src="assets/about.me.pfp.png" alt="Aleksander Lupa" class="about-photo"></a>
 </div>
 <div class="about-hero__info">
 <h1 class="about-name">Aleksander Lupa</h1>
