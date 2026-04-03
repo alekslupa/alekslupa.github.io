@@ -2264,12 +2264,10 @@ h2.proj-section__title {
   font-weight: 600;
   color: var(--bs-body-color, #2b2b2b);
   text-decoration: none;
-  border-bottom: 1px solid var(--about-border);
-  padding-bottom: 1px;
-  transition: border-color 0.2s ease;
+  transition: opacity 0.2s ease;
 
   &:hover {
-    border-color: var(--bs-body-color, #2b2b2b);
+    opacity: 0.6;
     text-decoration: none;
   }
 }
