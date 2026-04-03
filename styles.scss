@@ -2240,6 +2240,10 @@ h2.proj-section__title {
   transform: scale(0.88);
 }
 
+.quarto-dark .hp-featured__img {
+  filter: invert(1);
+}
+
 .hp-featured__body {
   padding: 1.25rem 1.5rem 1.5rem;
 }
