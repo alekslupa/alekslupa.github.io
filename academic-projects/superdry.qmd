@@ -4,4 +4,78 @@ page-layout: article
 toc: false
 ---
 
-# Superdry Strategic Analysis
+```{=html}
+<a href="index.html" class="proj-back">Academic projects</a>
+
+<div class="proj-header">
+  <div class="proj-label">Group project · 2025</div>
+  <h1 class="proj-title">Superdry strategic analysis</h1>
+  <p class="proj-subtitle">A strategic review of Superdry conducted as part of a consulting simulation for the BAA1019 Business Strategy module at DCU, prepared by A & A Consultancy, Group BS1.</p>
+  <div class="proj-tags">
+    <span class="pp-tag">Business Strategy</span>
+    <span class="pp-tag">PESTEL</span>
+    <span class="pp-tag">Porter's Five Forces</span>
+    <span class="pp-tag">SWOT</span>
+    <span class="pp-tag">Group project</span>
+  </div>
+  <div class="proj-meta">
+    <div class="proj-meta__item">
+      <span class="proj-meta__label">Year</span>
+      <span class="proj-meta__value">2025</span>
+    </div>
+    <div class="proj-meta__item">
+      <span class="proj-meta__label">Module</span>
+      <span class="proj-meta__value">BAA1019</span>
+    </div>
+    <div class="proj-meta__item">
+      <span class="proj-meta__label">Type</span>
+      <span class="proj-meta__value">Group · 6 members</span>
+    </div>
+    <div class="proj-meta__item">
+      <span class="proj-meta__label">Word count</span>
+      <span class="proj-meta__value">4,101</span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">About the project</h2>
+  <p>As part of the BAA1019 Business Strategy module, our group of six acted as a strategy consultancy, A & A Consultancy, tasked with producing a full strategic review of Superdry. The report examined how the brand captured value in its early years, why it declined through overexpansion and brand dilution, and what strategic interventions could restore its competitive position.</p>
+  <p>The analysis followed a structured consulting process: Orientation, Diagnostics, Intervention, and Evaluation, applying frameworks including PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, and the Strategy Diamond to build a comprehensive picture of Superdry's strategic trade-offs.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Key findings</h2>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <span class="proj-card__label">Core problem</span>
+      <span class="proj-card__value">Brand dilution and a shift to a discount-driven volume model eroded Superdry's premium differentiation</span>
+    </div>
+    <div class="proj-card">
+      <span class="proj-card__label">Frameworks used</span>
+      <span class="proj-card__value">PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, Strategy Diamond, ERRC Grid</span>
+    </div>
+    <div class="proj-card">
+      <span class="proj-card__label">Recommendations</span>
+      <span class="proj-card__value">Rebrand around durability and responsibility, shift to digital-first DTC model, restructure the organisation</span>
+    </div>
+    <div class="proj-card">
+      <span class="proj-card__label">My role</span>
+      <span class="proj-card__value">Associate Director. Led analysis and synthesis sections, contributed to diagnostics and recommendations</span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Reflection</h2>
+  <p>This was my first experience working in a structured consulting format. Applying real strategic frameworks to a live business case made the theory feel tangible and practical. The group dynamics were challenging at times, particularly around the presentation, but working through those difficulties strengthened both the final report and my ability to collaborate under pressure.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<a href="../assets/pdfs/superdry.pdf" target="_blank" rel="noopener" class="proj-btn">View report PDF</a>
+```
