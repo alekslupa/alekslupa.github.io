@@ -152,3 +152,45 @@ toc: false
   <a href="../assets/pdfs/pricebeo-slides.pdf" target="_blank" rel="noopener" class="proj-btn">View pitch slides PDF</a>
 </div>
 ```
+
+## Financial projections
+
+The chart below visualises PriceBeo's three-year financial model, comparing projected revenue against startup and operating costs across the growth period.
+
+```{python}
+#| label: fig-financials
+#| fig-cap: "PriceBeo — projected revenue vs costs over three years"
+import matplotlib.pyplot as plt
+import numpy as np
+
+years = ["Year 1", "Year 2", "Year 3"]
+revenue = [99_440, 312_500, 938_625]
+startup = [157_720, 0, 0]
+operating = [60_000, 98_000, 210_000]
+
+x = np.arange(len(years))
+width = 0.28
+
+fig, ax = plt.subplots(figsize=(9, 5))
+b1 = ax.bar(x - width, revenue, width, label="Revenue (€)", color="#4a90d9", alpha=0.9)
+b2 = ax.bar(x, startup, width, label="Startup Costs (€)", color="#e67e22", alpha=0.9)
+b3 = ax.bar(x + width, operating, width, label="Operating Costs (€)", color="#e74c3c", alpha=0.9)
+
+ax.set_xticks(x)
+ax.set_xticklabels(years)
+ax.set_ylabel("Amount (€)")
+ax.set_title("PriceBeo — 3-Year Financial Projections", fontweight="bold")
+ax.legend()
+ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"€{int(v):,}"))
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
+
+for bar in [*b1, *b2, *b3]:
+    h = bar.get_height()
+    if h > 0:
+        ax.text(bar.get_x() + bar.get_width() / 2, h + 4000,
+                f"€{int(h):,}", ha="center", va="bottom", fontsize=7.5)
+
+plt.tight_layout()
+plt.show()
+```

@@ -125,3 +125,32 @@ toc: false
 
 <a href="https://github.com/alekslupa/alekslupa.github.io" target="_blank" rel="noopener" class="proj-btn">GitHub Repository</a>
 ```
+
+## Technology breakdown
+
+The chart below shows an estimated breakdown of time invested across the technologies used to build this site throughout the module.
+
+```{python}
+#| label: fig-tech
+#| fig-cap: "Estimated hours invested by technology during the ePortfolio project"
+import matplotlib.pyplot as plt
+
+technologies = ["SCSS / CSS", "HTML", "Quarto & YAML", "Git & GitHub", "JavaScript", "Python"]
+hours = [40, 35, 30, 25, 15, 12]
+colors = ["#4a90d9", "#5ba0e0", "#6bb0e7", "#7bc0ee", "#a0d0f5", "#c0e0fb"]
+
+fig, ax = plt.subplots(figsize=(8, 4.5))
+bars = ax.barh(technologies, hours, color=colors, edgecolor="white", height=0.6)
+
+for bar, val in zip(bars, hours):
+    ax.text(val + 0.5, bar.get_y() + bar.get_height() / 2,
+            f"~{val}h", va="center", fontsize=10)
+
+ax.set_xlabel("Estimated hours invested")
+ax.set_title("Time invested by technology — ePortfolio project", fontweight="bold")
+ax.set_xlim(0, 50)
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
+plt.tight_layout()
+plt.show()
+```

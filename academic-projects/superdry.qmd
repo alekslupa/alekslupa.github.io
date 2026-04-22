@@ -79,3 +79,34 @@ toc: false
 
 <a href="../assets/pdfs/superdry.pdf" target="_blank" rel="noopener" class="proj-btn">View report PDF</a>
 ```
+
+## Strategic data visualisation
+
+The radar chart below maps the competitive intensity of each of Porter's Five Forces acting on Superdry, scored from 1 (low) to 5 (high) based on our group's strategic diagnostics.
+
+```{python}
+#| label: fig-porters
+#| fig-cap: "Porter's Five Forces — Superdry competitive intensity (1 = low, 5 = high)"
+import matplotlib.pyplot as plt
+import numpy as np
+
+labels = ["Competitive\nRivalry", "Supplier\nPower", "Buyer\nPower", "Threat of\nSubstitution", "Threat of\nNew Entry"]
+scores = [4, 3, 4, 4, 3]
+
+N = len(labels)
+angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
+scores_ext = scores + [scores[0]]
+angles_ext = np.append(angles, angles[0])
+
+fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+ax.plot(angles_ext, scores_ext, "o-", linewidth=2, color="#4a90d9")
+ax.fill(angles_ext, scores_ext, alpha=0.2, color="#4a90d9")
+ax.set_thetagrids(np.degrees(angles), labels, fontsize=9)
+ax.set_ylim(0, 5)
+ax.set_yticks([1, 2, 3, 4, 5])
+ax.set_yticklabels(["1", "2", "3", "4", "5"], fontsize=7, color="gray")
+ax.set_title("Porter's Five Forces — Superdry", size=12, pad=20, fontweight="bold")
+ax.grid(color="gray", linestyle="--", alpha=0.5)
+plt.tight_layout()
+plt.show()
+```
