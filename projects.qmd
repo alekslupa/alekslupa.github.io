@@ -1,7 +1,13 @@
 ---
+title: "Projects"
 pagetitle: "Projects — Aleksander Lupa"
+listing:
+  type: grid
+  contents: projects.yml
+  sort: "date desc"
+  fields: [image, title, description, categories, date]
 page-layout: article
 toc: false
 ---
 
-# Projects
+A selection of academic and personal projects spanning business strategy, product development, and web design.

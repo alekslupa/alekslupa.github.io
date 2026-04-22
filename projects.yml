@@ -1,0 +1,37 @@
+- title: "ePortfolio (this website)"
+  description: "A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages. My first time working directly in code, managing a project through Git, and deploying to a live URL."
+  author: "Aleksander Lupa"
+  date: "2025-04-01"
+  image: "assets/website.logo.png"
+  categories: [Academic, Quarto, SCSS, Git]
+  path: "academic-projects/eportfolio.qmd"
+
+- title: "Superdry Strategic Analysis"
+  description: "A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, and the Strategy Diamond, delivered as a consulting simulation for the BAA1019 Business Strategy module."
+  author: "Aleksander Lupa"
+  date: "2025-03-01"
+  categories: [Academic, "Business Strategy", "Group Project"]
+  path: "academic-projects/superdry.qmd"
+
+- title: "PriceBeo"
+  description: "A real-time barcode-scanning grocery price comparison app for the Irish market. Developed across four assignments and pitched in a mock Dragons Den asking €100,000 for 20% equity."
+  author: "Aleksander Lupa"
+  date: "2025-04-01"
+  categories: [Academic, "Product Strategy", "Dragons Den"]
+  path: "academic-projects/pricebeo.qmd"
+
+- title: "VIP Ireland"
+  description: "Professional website built for an Irish aesthetic machine distributor using WordPress and Elementor Pro, delivering a clean, conversion-focused design."
+  author: "Aleksander Lupa"
+  date: "2024-06-01"
+  image: "assets/screenshots/vip-ireland.png"
+  categories: [Personal, WordPress, Freelance]
+  path: "personal-projects/vip-ireland.qmd"
+
+- title: "Bathstore & More"
+  description: "A responsive, brand-aligned WordPress website for a Dublin bathroom design company, built to showcase products and drive customer enquiries."
+  author: "Aleksander Lupa"
+  date: "2024-09-01"
+  image: "assets/screenshots/bathstore.png"
+  categories: [Personal, WordPress, Freelance]
+  path: "personal-projects/bathstore.qmd"
