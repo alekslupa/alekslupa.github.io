@@ -2405,98 +2405,99 @@ h2.proj-section__title {
   }
 }
 
-// ---------- Marquee hero with photo background ----------
-// The image stays in normal flow (fixed height) so the dark overlay
-// only covers the photo area, not the body content below.
+// ---------- Marquee hero (dark card, no photo) ----------
+// Quarto marquee renders: header → main.content → about-footer/links
+// We use flexbox order to visually rearrange to: header → links → main.content
 .quarto-about-marquee {
   margin-bottom: 2rem;
 
-  // Photo in normal flow — dark gradient applied via ::after
+  // Photo hidden — solid dark card used instead
   .about-image-container {
-    position: relative;
-    height: 460px;
-    overflow: hidden;
-    border-radius: 6px 6px 0 0;
-
-    img.about-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 15%;
-      display: block;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom,
-        rgba(26,26,26,0.2) 0%,
-        rgba(26,26,26,0.55) 50%,
-        rgba(26,26,26,0.92) 82%);
-      pointer-events: none;
-    }
+    display: none;
   }
 
-  // Pull the title text up over the dark lower portion of the photo
   .about-contents {
-    position: relative;
-    z-index: 2;
-    margin-top: -220px;
-    text-align: center;
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
 
+    // 1 — title block (dark top)
+    header.quarto-title-block {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #1a1a1a;
+      border-radius: 8px 8px 0 0;
+      padding: 2.5rem 2rem 0;
+      text-align: center;
+      margin: 0;
+
+      // description pill renders as 2nd child — move it visually first
+      > div:nth-child(2) { order: 1; }
+      > .quarto-title   { order: 2; }
+      > .quarto-title-meta { display: none; }
+    }
+
+    // 2 — social links (dark bottom, connects seamlessly to header)
+    .about-footer {
+      order: 2;
+      background: #1a1a1a;
+      border-radius: 0 0 8px 8px;
+      padding: 1.25rem 2rem 2rem;
+      text-align: center;
+      margin: 0 0 1.75rem;
+    }
+
+    // 3 — all body content (buttons, callout, stats, projects …)
+    > main.content {
+      order: 3;
+      text-align: left;
+    }
+
+    // Hero typography — white on dark
     h1.title {
       font-family: "DM Sans", sans-serif;
       font-weight: 700;
       font-size: 2.6rem;
       color: #ffffff;
-      margin-bottom: 0.5rem;
       letter-spacing: -0.015em;
-      text-shadow: 0 2px 18px rgba(0,0,0,0.4);
+      margin-bottom: 0.4rem;
     }
 
     p.subtitle {
-      font-family: "Inter", sans-serif;
       font-size: 1rem;
-      color: #dcdcdc;
-      max-width: 620px;
+      color: #d8d8d8;
+      max-width: 560px;
       margin: 0 auto 1.5rem;
       line-height: 1.65;
-      text-shadow: 0 1px 10px rgba(0,0,0,0.5);
     }
 
     .description {
       display: inline-block;
-      padding: 0.2rem 0.7rem;
+      padding: 0.2rem 0.75rem;
       font-size: 0.72rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #d0d0d0;
-      border: 1px solid rgba(255,255,255,0.25);
+      color: #c8c8c8;
+      border: 1px solid rgba(255,255,255,0.3);
       border-radius: 3px;
-      margin-bottom: 1.1rem;
+      margin-bottom: 1.2rem;
     }
+  }
 
-    .about-links a {
-      color: #e0e0e0;
-      margin: 0 0.6rem;
-      transition: color 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      text-decoration: none;
+  // Social link row
+  .about-links a {
+    color: #e0e0e0;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color 0.2s ease;
 
-      &:hover {
-        color: #ffffff;
-      }
-    }
-
-    // Body content below the hero — normal flow, left-aligned
-    > main.content {
-      text-align: left;
-      margin-top: 2rem;
-    }
+    &:hover { color: #ffffff; }
   }
 }
 
