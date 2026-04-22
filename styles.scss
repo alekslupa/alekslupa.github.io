@@ -2406,20 +2406,17 @@ h2.proj-section__title {
 }
 
 // ---------- Marquee hero with photo background ----------
+// The image stays in normal flow (fixed height) so the dark overlay
+// only covers the photo area, not the body content below.
 .quarto-about-marquee {
-  position: relative;
-  padding: 4.5rem 2rem;
-  color: #ffffff;
-  text-align: center;
   margin-bottom: 2rem;
-  overflow: hidden;
-  border-radius: 6px;
 
-  // Quarto renders the image as an <img> tag — position it to fill the hero like a background
+  // Photo in normal flow — dark gradient applied via ::after
   .about-image-container {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
 
     img.about-image {
       width: 100%;
@@ -2428,21 +2425,26 @@ h2.proj-section__title {
       object-position: center 15%;
       display: block;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+        rgba(26,26,26,0.2) 0%,
+        rgba(26,26,26,0.55) 50%,
+        rgba(26,26,26,0.92) 82%);
+      pointer-events: none;
+    }
   }
 
-  // Dark radial overlay sits above the image
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at center, rgba(26,26,26,0.55) 0%, rgba(26,26,26,0.92) 70%);
-    z-index: 1;
-  }
-
-  // Text content sits above the overlay
+  // Pull the title text up over the dark lower portion of the photo
   .about-contents {
     position: relative;
     z-index: 2;
+    margin-top: -220px;
+    text-align: center;
+    padding: 0 2rem;
 
     h1.title {
       font-family: "DM Sans", sans-serif;
@@ -2488,6 +2490,12 @@ h2.proj-section__title {
       &:hover {
         color: #ffffff;
       }
+    }
+
+    // Body content below the hero — normal flow, left-aligned
+    > main.content {
+      text-align: left;
+      margin-top: 2rem;
     }
   }
 }
