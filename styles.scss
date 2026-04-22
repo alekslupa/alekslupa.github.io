@@ -2405,57 +2405,78 @@ h2.proj-section__title {
   }
 }
 
-// ---------- Marquee hero (dark card, no photo) ----------
-// Quarto marquee renders: header → main.content → about-footer/links
-// We use flexbox order to visually rearrange to: header → links → main.content
+// ---------- Marquee hero with photo background ----------
+// Quarto marquee renders: about-image-container → about-contents(header → main → about-footer/links)
+// Flexbox order pulls links above body content. Photo fixed-height with dark overlay; text pulled over it.
 .quarto-about-marquee {
   margin-bottom: 2rem;
 
-  // Photo hidden — solid dark card used instead
+  // Photo: fixed height in normal flow, heavy dark overlay via ::after
   .about-image-container {
-    display: none;
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 8px;
+
+    img.about-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(22, 22, 22, 0.85);
+    }
   }
 
+  // Pull text up over the dark photo
   .about-contents {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -300px;
 
-    // 1 — title block (dark top)
+    // 1 — title block
     header.quarto-title-block {
       order: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: #1a1a1a;
-      border-radius: 8px 8px 0 0;
       padding: 2.5rem 2rem 0;
       text-align: center;
       margin: 0;
 
-      // description pill renders as 2nd child — move it visually first
-      > div:nth-child(2) { order: 1; }
-      > .quarto-title   { order: 2; }
+      > div:nth-child(2) { order: 1; } // description pill first
+      > .quarto-title    { order: 2; } // name + subtitle second
       > .quarto-title-meta { display: none; }
     }
 
-    // 2 — social links (dark bottom, connects seamlessly to header)
+    // 2 — social links (pulled above body content)
     .about-footer {
       order: 2;
-      background: #1a1a1a;
-      border-radius: 0 0 8px 8px;
       padding: 1.25rem 2rem 2rem;
       text-align: center;
       margin: 0 0 1.75rem;
     }
 
-    // 3 — all body content (buttons, callout, stats, projects …)
+    // 3 — body content (buttons, callout, stats …)
     > main.content {
       order: 3;
       text-align: left;
+
+      // Centre the About me / View Achievements buttons
+      > p:first-child {
+        text-align: center;
+      }
     }
 
-    // Hero typography — white on dark
+    // Hero typography — white on dark photo
     h1.title {
       font-family: "DM Sans", sans-serif;
       font-weight: 700;
@@ -2486,7 +2507,7 @@ h2.proj-section__title {
     }
   }
 
-  // Social link row
+  // Social link styles
   .about-links a {
     color: #e0e0e0;
     margin: 0 0.5rem;
