@@ -1,25 +1,61 @@
 ---
+title: "Aleksander Lupa"
+subtitle: "Final-year Business Analytics student at DCU. I turn business questions into clear data-driven answers. Based in Dublin heading to London."
+description: "ePortfolio · BAA1027"
 pagetitle: "Aleksander Lupa"
-page-layout: article
+page-layout: full
 toc: false
+about:
+  template: marquee
+  image: assets/about.me.pfp.png
+  image-width: "100%"
+  image-shape: rectangle
+  image-alt: "Portrait of Aleksander Lupa"
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/alekslupa
+      target: _blank
+      rel: noopener
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/alexlupa
+      target: _blank
+      rel: noopener
+    - icon: envelope
+      text: Email
+      href: mailto:aleksander.lupa2@mail.dcu.ie
+    - icon: file-earmark-pdf
+      text: CV
+      href: assets/Aleksander_Lupa_CV.pdf
+      target: _blank
 ---
 
+[About me](about.html){.btn .btn-dark .me-2 role="button"}
+[View Achievements](achievements.html){.btn .btn-outline-secondary role="button"}
+
+::: {.callout-tip title="Available from late 2026"}
+Graduating April 2026. Actively exploring graduate Business Analyst roles in London, with a focus on the gaming and tech sectors.
+:::
+
 ```{=html}
-<div class="hp-hero">
-  <img src="assets/about.me.pfp.png" alt="" class="hp-hero__bg">
-  <div class="hp-hero__overlay"></div>
-  <div class="hp-hero__content">
-    <div class="hp-hero__label">ePortfolio</div>
-    <h1 class="hp-hero__name">Aleksander Lupa</h1>
-    <p class="hp-hero__bio">Final-year Business Analytics student at DCU. I turn business questions into clear, data-driven answers. Based in Dublin, heading to London.</p>
-    <div class="hp-hero__buttons">
-      <a href="about.html" class="hp-hero__btn hp-hero__btn--filled">About me</a>
-      <a href="achievements.html" class="hp-hero__btn hp-hero__btn--outline">View Achievements</a>
+<div class="hp-section hp-stats-section">
+  <div class="hp-stats">
+    <div class="hp-stat">
+      <div class="hp-stat__num" data-count="39">39</div>
+      <div class="hp-stat__label">Certificates</div>
     </div>
-    <div class="hp-hero__links">
-      <a href="https://github.com/alekslupa" target="_blank" rel="noopener" class="hp-hero__link">GitHub</a>
-      <a href="https://www.linkedin.com/in/alexlupa" target="_blank" rel="noopener" class="hp-hero__link">LinkedIn</a>
-      <a href="assets/Aleksander_Lupa_CV.pdf" download class="hp-hero__link">Download CV</a>
+    <div class="hp-stat">
+      <div class="hp-stat__num" data-count="8">8</div>
+      <div class="hp-stat__label">Projects</div>
+    </div>
+    <div class="hp-stat">
+      <div class="hp-stat__num" data-count="4">4</div>
+      <div class="hp-stat__label">Years DCU</div>
+    </div>
+    <div class="hp-stat">
+      <div class="hp-stat__num" data-count="3">3</div>
+      <div class="hp-stat__label">Languages</div>
     </div>
   </div>
 </div>
@@ -35,7 +71,7 @@ toc: false
     <div class="hp-featured__body">
       <div class="hp-card__label">Academic project · BAA1027</div>
       <div class="hp-featured__title">ePortfolio (this website)</div>
-      <p class="hp-card__desc">A professional ePortfolio designed and built from scratch using Quarto, custom SCSS, and GitHub Pages. My first time working directly in code, managing a project through Git, and deploying to a live URL — a completely different experience from building with WordPress.</p>
+      <p class="hp-card__desc">A professional ePortfolio designed and built from scratch using Quarto custom SCSS and GitHub Pages. My first time working directly in code, managing a project through Git and deploying to a live URL, a completely different experience from building with WordPress.</p>
       <div class="hp-tags">
         <span class="pp-tag">Quarto</span>
         <span class="pp-tag">HTML</span>
@@ -60,7 +96,7 @@ toc: false
     <div class="hp-card">
       <div class="hp-card__label">Academic · Strategy</div>
       <div class="hp-card__title">Superdry strategic analysis</div>
-      <p class="hp-card__desc">A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT, and the Strategy Diamond.</p>
+      <p class="hp-card__desc">A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT and the Strategy Diamond.</p>
       <a href="academic-projects/superdry.html" class="hp-card__link">View project</a>
     </div>
     <div class="hp-card">
@@ -77,7 +113,16 @@ toc: false
     </div>
   </div>
 </div>
+```
 
+## {{< fa solid list-check >}} Currently working on
+
+- [x] Finalising ePortfolio for BAA1027
+- [x] 30 Kubicle certificates completed
+- [ ] Securing graduate role in London
+- [ ] Summer 2026 travel planning
+
+```{=html}
 <div class="hp-section">
   <div class="hp-section__header">
     <span class="hp-section__title">Currently listening to</span>
@@ -106,22 +151,16 @@ toc: false
     </div>
   </div>
 </div>
+```
 
-<div class="hp-section">
-  <div class="hp-section__header">
-    <span class="hp-section__title">Quick snapshot</span>
-  </div>
-  <div class="hp-snapshot">
-    <div class="hp-card">
-      <div class="hp-card__label">Currently</div>
-      <div class="hp-card__title">Final year at DCU</div>
-      <p class="hp-card__desc">Specialising in Business Analytics. Looking for graduate roles in the gaming or tech industry in London from late 2026.</p>
-    </div>
-    <div class="hp-card">
-      <div class="hp-card__label">Next up</div>
-      <div class="hp-card__title">Travel then London</div>
-      <p class="hp-card__desc">Graduating April 2026, spending summer 2026 travelling across continents, then relocating to London.</p>
-    </div>
-  </div>
-</div>
+## {{< fa solid route >}} Career trajectory
+
+```{mermaid}
+timeline
+    title My path from DCU to London
+    2022 : Started BSc Business Studies at DCU
+    2024 : Allied World underwriting role
+    April 2026 : Graduate DCU
+    Summer 2026 : Travel across continents
+    Late 2026 : Business Analyst, London
 ```
