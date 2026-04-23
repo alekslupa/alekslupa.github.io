@@ -1975,6 +1975,102 @@ h2.proj-section__title {
   width: 1.5rem;
 }
 
+// PriceBeo page — project meta strip
+.ap-project-meta {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.ap-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ap-meta-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+}
+
+.ap-meta-value {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+// PriceBeo page — impact stats row
+.pb-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pb-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 1.1rem;
+  background: var(--fj-bg-secondary);
+  border-radius: 6px;
+}
+
+.pb-stat__num {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.pb-stat__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted);
+}
+
+// PriceBeo page — CTO role cards
+.pb-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pb-role-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem 1.1rem;
+  background: var(--about-lang-bg);
+  border: 1px solid var(--about-border);
+  border-radius: 6px;
+}
+
+.pb-role-card__title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.pb-role-card__body {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--about-muted);
+}
+
 .proj-challenge__content {
   display: flex;
   flex-direction: column;
