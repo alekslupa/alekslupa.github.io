@@ -175,10 +175,10 @@ Graduating April 2026. Actively exploring graduate Business Analyst roles in Lon
 
 ```{=html}
 <div class="hp-section">
-  <div class="hp-section__header">
+  <div class="hp-section__header hp-section__header--no-border">
     <span class="hp-section__title">Career trajectory</span>
   </div>
-  <div class="hp-timeline">
+  <div class="hp-timeline hp-timeline--tight">
     <div class="hp-timeline__track"></div>
     <div class="hp-timeline__item hp-timeline__item--past">
       <div class="hp-timeline__dot"></div>
