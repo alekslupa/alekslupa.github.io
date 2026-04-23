@@ -629,8 +629,12 @@ The Dragons Den pitch itself was a genuine test of composure under pressure. Rec
 
 ## Downloads
 
-[📄 View business report (45 pages, PDF)](/assets/pdfs/PriceBeo Business Report.pdf){.btn .btn-dark .me-2 target="_blank"}
-[📊 View pitch slides (PDF)](/assets/pdfs/pricebeo-slides.pdf){.btn .btn-outline-secondary target="_blank"}
+```{=html}
+<div class="pb-downloads">
+  <a href="/assets/pdfs/PriceBeo Business Report.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View business report</a>
+  <a href="/assets/pdfs/pricebeo-slides.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View pitch slides</a>
+</div>
+```
 
 ```{=html}
 <script>
