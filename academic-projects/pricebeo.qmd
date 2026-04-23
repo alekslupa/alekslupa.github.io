@@ -486,14 +486,20 @@ fig.update_layout(
 fig.show()
 ```
 
-| Pipeline slice | Gross value | Weighted value | Weighting |
-|---|---:|---:|---:|
-| Retailer affiliate partnerships | €66,000 | €34,100 | 52% |
-| In-app advertising | €28,500 | €14,300 | 50% |
-| Consumer Premium subscriptions | €322,524 | €245,470 | 76% |
-| **Total** | **€417,024** | **€293,870** | **70%** |
+```{python}
+#| label: pipeline-summary-table
+#| echo: false
 
-: Pipeline aggregated by category. The commercial message to investors is that even applying the probability haircut, the book of identified opportunities materially exceeds the Year 1 revenue target. {.striped}
+summary_tbl = pd.DataFrame({
+    "Pipeline slice":    ["Retailer affiliate partnerships", "In-app advertising", "Consumer Premium subscriptions", "Total"],
+    "Gross value":       ["€66,000",  "€28,500",  "€322,524", "€417,024"],
+    "Weighted value":    ["€34,100",  "€14,300",  "€245,470", "€293,870"],
+    "Weighting":         ["52%",      "50%",      "76%",      "70%"],
+})
+summary_tbl
+```
+
+Pipeline aggregated by category. Even after applying the probability haircut, the book of identified opportunities materially exceeds the Year 1 revenue target.
 
 ## 7. Funding strategy
 
