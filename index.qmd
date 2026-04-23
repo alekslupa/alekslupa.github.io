@@ -134,13 +134,6 @@ Graduating April 2026. Actively exploring graduate Business Analyst roles in Lon
 </div>
 ```
 
-## {{< fa solid list-check >}} Currently working on
-
-- [x] Finalising ePortfolio for BAA1027
-- [x] 30 Kubicle certificates completed
-- [ ] Securing graduate role in London
-- [ ] Summer 2026 travel planning
-
 ```{=html}
 <div class="hp-section">
   <div class="hp-section__header">
