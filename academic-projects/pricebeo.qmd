@@ -1,27 +1,19 @@
 ---
-title: "PriceBeo"
-subtitle: "Real-time grocery price comparison for the Irish market"
-description: "New Enterprise Development capstone project. As CTO I led technical strategy and contributed the analytical spine to a validated seed-stage business plan pitched to a mock Dragons Den panel."
-author: "Aleksander Lupa"
-date: "2025-12-15"
-image: /assets/pricebeo.1.png
-categories: [Business Analytics, Product Strategy, Financial Modelling, Python, Plotly]
-format:
-  html:
-    code-fold: true
-    code-tools: true
-    fig-cap-location: bottom
-    lightbox: true
-    toc: false
+pagetitle: "PriceBeo — Aleksander Lupa"
+page-layout: article
+toc: false
 execute:
   echo: true
   warning: false
   freeze: auto
+format:
+  html:
+    code-fold: true
+    fig-cap-location: bottom
+    lightbox: true
 ---
 
 ```{=html}
-<style>#title-block-header { display: none !important; }</style>
-
 <div class="fj-toc">
   <div class="fj-toc__title">On this page</div>
   <nav>
@@ -40,11 +32,12 @@ execute:
     <a class="fj-toc__link" href="#downloads">Downloads</a>
   </nav>
 </div>
+
+<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
 ```
 
-← [Academic projects](../academic-projects/index.html)
-
 [CAPSTONE PROJECT · 2025]{.ap-meta-label}
+
 
 # PriceBeo
 
