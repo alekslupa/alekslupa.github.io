@@ -2435,21 +2435,16 @@ h2.proj-section__title {
     }
   }
 
-  // About-contents pulled up over the photo, grid reorders children
+  // About-contents pulled up over the photo; JS moves .about-footer before main.content
   .about-contents {
-    display: grid !important;
-    grid-template-areas:
-      "header"
-      "footer"
-      "main";
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 2;
     margin-top: -300px;
 
     // Title block — sits in dark hero area
     header.quarto-title-block {
-      grid-area: header;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -2461,16 +2456,14 @@ h2.proj-section__title {
       > .quarto-title-meta { display: none; }
     }
 
-    // Social links — grid places these second (inside hero area)
+    // Social links — JS moves this here (before main.content)
     .about-footer {
-      grid-area: footer;
       padding: 1.25rem 2rem 2rem;
       text-align: center;
     }
 
-    // All body content — grid places this last (below hero)
+    // All body content — below hero
     > main.content {
-      grid-area: main;
       text-align: left;
       margin-top: 1.75rem;
 

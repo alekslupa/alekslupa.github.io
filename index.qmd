@@ -31,6 +31,17 @@ about:
       target: _blank
 ---
 
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var contents = document.querySelector('.quarto-about-marquee .about-contents');
+  var footer   = document.querySelector('.quarto-about-marquee .about-footer');
+  var main     = document.querySelector('.quarto-about-marquee main.content');
+  if (contents && footer && main) contents.insertBefore(footer, main);
+});
+</script>
+```
+
 [About me](about.html){.btn .btn-dark .me-2 role="button"}
 [View Achievements](achievements.html){.btn .btn-outline-secondary role="button"}
 
