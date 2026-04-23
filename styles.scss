@@ -2460,8 +2460,12 @@ h2.proj-section__title {
       padding: 0.2rem 0 0.75rem;
 
       .about-links {
-        justify-content: flex-start !important; // override Quarto's center
-        padding-top: 0 !important;              // override Quarto's 1.5em top gap
+        justify-content: flex-start !important;
+        flex-direction: row !important;   // prevent Quarto switching to column on mobile
+        flex-wrap: wrap !important;       // allow wrapping but never full-width blocks
+        width: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
       }
     }
 
