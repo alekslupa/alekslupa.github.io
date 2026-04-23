@@ -338,21 +338,21 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header> <main class="content" id="quarto-document-content">
 
+<p><a href="about.html" class="btn btn-dark me-2" role="button">About me</a> <a href="achievements.html" class="btn btn-outline-secondary" role="button">View Achievements</a></p>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var marquee  = document.querySelector('.quarto-about-marquee');
   var contents = marquee && marquee.querySelector('.about-contents');
   var footer   = contents && contents.querySelector('.about-footer');
   var mainEl   = contents && contents.querySelector('main.content');
-  var buttonsP = mainEl && mainEl.querySelector('p:first-child');
-  // Pull social links and buttons into the hero card (before main body)
-  if (footer  && mainEl) contents.insertBefore(footer,   mainEl);
+  // Find buttons paragraph via .btn — immune to sibling order changes
+  var btnLink  = mainEl && mainEl.querySelector('a.btn');
+  var buttonsP = btnLink && btnLink.closest('p');
+  if (footer   && mainEl) contents.insertBefore(footer,   mainEl);
   if (buttonsP && mainEl) contents.insertBefore(buttonsP, mainEl);
-  // Move all remaining body content out to full-width below the hero row
-  if (mainEl && marquee) marquee.appendChild(mainEl);
+  if (mainEl   && marquee) marquee.appendChild(mainEl);
 });
 </script>
-<p><a href="about.html" class="btn btn-dark me-2" role="button">About me</a> <a href="achievements.html" class="btn btn-outline-secondary" role="button">View Achievements</a></p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Available from late 2026">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
