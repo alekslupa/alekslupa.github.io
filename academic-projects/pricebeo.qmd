@@ -148,7 +148,7 @@ toc: false
 <div class="proj-divider"></div>
 
 <div class="proj-btn-row">
-  <a href="../assets/pdfs/pricebeo-report.pdf" target="_blank" rel="noopener" class="proj-btn">View business report PDF</a>
+  <a href="../assets/pdfs/PriceBeo Business Report.pdf" target="_blank" rel="noopener" class="proj-btn">View business report PDF</a>
   <a href="../assets/pdfs/pricebeo-slides.pdf" target="_blank" rel="noopener" class="proj-btn">View pitch slides PDF</a>
 </div>
 ```

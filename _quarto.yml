@@ -4,6 +4,7 @@ project:
   resources:
     - .nojekyll
     - assets/github.png
+    - "assets/pdfs/PriceBeo Business Report.pdf"
 
 website:
   title: "Aleksander Lupa"
