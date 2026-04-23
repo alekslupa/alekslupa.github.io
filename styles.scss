@@ -2991,8 +2991,9 @@ ul.task-list {
 
 // ============================================================
 // Dark mode — Plotly charts and pandas DataFrames (PriceBeo)
+// Quarto toggles body.quarto-dark (not data-bs-theme on html)
 // ============================================================
-[data-bs-theme="dark"] {
+body.quarto-dark {
   // Plotly: all chart text is hardcoded #1a1a1a — override to light
   .js-plotly-plot text {
     fill: #c8c8c8 !important;
