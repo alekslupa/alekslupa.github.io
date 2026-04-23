@@ -10,7 +10,9 @@ execute:
 format:
   html:
     code-fold: true
-    code-tools: true
+    code-tools:
+      toggle: true
+      source: false
     fig-cap-location: bottom
     lightbox: true
 ---
