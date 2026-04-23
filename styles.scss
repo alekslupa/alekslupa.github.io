@@ -2487,6 +2487,14 @@ h2.proj-section__title {
         background-color: var(--about-btn-bg) !important;
         color: var(--about-btn-color) !important;
         border-color: var(--about-btn-bg) !important;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          background-color: var(--about-btn-bg) !important;
+          color: var(--about-btn-color) !important;
+          border-color: var(--about-btn-bg) !important;
+          opacity: 0.75;
+        }
       }
 
       .btn-outline-secondary {
