@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 ```
 
 ```{=html}
+<hr class="hp-divider">
 <div class="hp-bio">
   <p class="hp-bio__greeting">Hi, I'm Aleksander Lupa — welcome to my ePortfolio.</p>
 

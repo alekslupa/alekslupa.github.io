@@ -2535,6 +2535,13 @@ h2.proj-section__title {
   }
 }
 
+// ---------- Section divider ----------
+hr.hp-divider {
+  border: none;
+  border-top: 0.5px solid var(--about-border);
+  margin: 1.5rem 0;
+}
+
 // ---------- Landing page bio ----------
 .hp-bio {
   margin: 2rem 0 2rem;
