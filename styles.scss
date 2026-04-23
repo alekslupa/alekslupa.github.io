@@ -2535,6 +2535,47 @@ h2.proj-section__title {
   }
 }
 
+// ---------- Landing page bio ----------
+.hp-bio {
+  margin: 2rem 0 2rem;
+  line-height: 1.75;
+
+  .hp-bio__greeting {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
+  }
+
+  p { margin-bottom: 1rem; }
+
+  .hp-bio__block {
+    margin-top: 1.5rem;
+    padding-left: 1.25rem;
+    border-left: 3px solid currentColor;
+    opacity: 0.9;
+
+    .hp-bio__block-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+      opacity: 0.6;
+    }
+  }
+
+  .hp-bio__list {
+    padding-left: 1.1rem;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
 // ---------- Card hover lifts ----------
 .hp-card,
 .hp-featured,
