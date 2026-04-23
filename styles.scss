@@ -2456,11 +2456,18 @@ h2.proj-section__title {
       > .quarto-title-meta { display: none; }
     }
 
-    .about-footer { padding: 0.6rem 0 0.75rem; }
+    .about-footer {
+      padding: 0.75rem 0;
+
+      .about-links {
+        justify-content: flex-start !important; // override Quarto's center
+        padding-top: 0 !important;              // override Quarto's 1.5em top gap
+      }
+    }
 
     // Buttons paragraph JS-moved here — centre them
     > p:has(.btn) {
-      margin: 0.5rem 0 0;
+      margin: 0.75rem 0 0;
     }
   }
 
