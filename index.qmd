@@ -3,7 +3,7 @@ title: "Aleksander Lupa"
 subtitle: "Final-year Business Analytics student at DCU. I turn business questions into clear data-driven answers. Based in Dublin heading to London."
 description: "ePortfolio · BAA1027"
 pagetitle: "Aleksander Lupa"
-page-layout: full
+page-layout: article
 toc: false
 about:
   template: marquee
