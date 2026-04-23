@@ -2480,6 +2480,8 @@ h2.proj-section__title {
     // Buttons paragraph JS-moved here — centre them
     > p:has(.btn) {
       margin: 0.75rem 0 0;
+
+      .btn { border-radius: 0.375rem; }
     }
   }
 
