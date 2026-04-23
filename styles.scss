@@ -2405,40 +2405,41 @@ h2.proj-section__title {
   }
 }
 
-// ---------- Marquee hero — sticky sidebar ----------
-// Photo sticks on the left; JS moves .about-footer before main.content in DOM.
+// ---------- Marquee hero — two-row flex ----------
+// Row 1: photo (left) + hero card (right: name/badge/subtitle/links/buttons)
+// Row 2: main.content full-width (JS moves it to be a direct child of .quarto-about-marquee)
 .quarto-about-marquee {
   display: flex !important;
-  flex-direction: row !important;
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 2.75rem;
+  gap: 2rem;
   margin-bottom: 2.5rem;
 
-  // Left column: sticky profile photo
+  // Row 1 left: profile photo
   .about-image-container {
-    width: 220px;
+    width: 210px;
     flex-shrink: 0;
-    position: sticky;
-    top: 4.5rem;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 
     img.about-image {
       width: 100%;
-      height: 290px;
+      height: auto;
+      aspect-ratio: 3 / 4;
       object-fit: cover;
       object-position: center 15%;
       display: block;
+      margin: 0;          // override Quarto's default margin-bottom: 1.5em
     }
 
     &::after { display: none; }
   }
 
-  // Right column: title → links (JS-moved) → page content
+  // Row 1 right: hero card — contains name, badge, subtitle, links, buttons
   .about-contents {
     flex: 1;
-    min-width: 0;
+    min-width: 260px;
     display: flex;
     flex-direction: column;
     margin-top: 0;
@@ -2447,41 +2448,44 @@ h2.proj-section__title {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 0.25rem 0 0;
+      padding: 0;
       text-align: left;
 
-      > div:nth-child(2)  { order: 1; }
-      > .quarto-title     { order: 2; }
+      > div:nth-child(2)   { order: 1; }
+      > .quarto-title      { order: 2; }
       > .quarto-title-meta { display: none; }
     }
 
-    .about-footer {
-      padding: 0.5rem 0 1.5rem;
-      text-align: left;
-    }
+    .about-footer { padding: 0.6rem 0 0.75rem; }
 
-    > main.content {
-      text-align: left;
-
-      > p:first-child { text-align: left; }
+    // Buttons paragraph JS-moved here — centre them
+    > p:has(.btn) {
+      margin: 0.5rem 0 0;
     }
+  }
+
+  // Row 2: remaining page content — full width
+  &.quarto-about-marquee > main.content,
+  > main.content {
+    flex: 0 0 100%;
+    margin-top: 0.5rem;
+    text-align: left;
   }
 
   // Typography
   h1.title {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     letter-spacing: -0.02em;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.3rem;
   }
 
   p.subtitle {
     font-size: 0.975rem;
     line-height: 1.65;
     opacity: 0.75;
-    max-width: 520px;
-    margin: 0 0 1rem;
+    margin: 0 0 0.75rem;
   }
 
   .description {
@@ -2493,17 +2497,16 @@ h2.proj-section__title {
     border: 1px solid currentColor;
     border-radius: 3px;
     opacity: 0.45;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.75rem;
   }
 
-  // Social links
   .about-links a {
     text-decoration: none;
     font-size: 0.875rem;
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    margin-right: 1.1rem;
+    margin-right: 1rem;
     opacity: 0.65;
     transition: opacity 0.18s ease;
 
@@ -2511,15 +2514,12 @@ h2.proj-section__title {
   }
 }
 
-@media (max-width: 700px) {
-  .quarto-about-marquee {
-    flex-direction: column !important;
+@media (max-width: 640px) {
+  .quarto-about-marquee .about-image-container {
+    width: 100%;
 
-    .about-image-container {
-      width: 100%;
-      position: static;
-
-      img.about-image { height: 260px; }
+    img.about-image {
+      aspect-ratio: 4 / 3;
     }
   }
 }

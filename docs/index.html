@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-93d0c31e44bd20173f1f629f8eeb8a4c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-42d32a7f16ddcd25a34381cb251a119f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-93d0c31e44bd20173f1f629f8eeb8a4c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9a6bee1d65d52158a3554c4012ca156f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-233e6e55b293d01921d481676e0f07ff.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9a6bee1d65d52158a3554c4012ca156f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -340,10 +340,16 @@ ul.task-list li input[type="checkbox"] {
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var contents = document.querySelector('.quarto-about-marquee .about-contents');
-  var footer   = document.querySelector('.quarto-about-marquee .about-footer');
-  var main     = document.querySelector('.quarto-about-marquee main.content');
-  if (contents && footer && main) contents.insertBefore(footer, main);
+  var marquee  = document.querySelector('.quarto-about-marquee');
+  var contents = marquee && marquee.querySelector('.about-contents');
+  var footer   = contents && contents.querySelector('.about-footer');
+  var mainEl   = contents && contents.querySelector('main.content');
+  var buttonsP = mainEl && mainEl.querySelector('p:first-child');
+  // Pull social links and buttons into the hero card (before main body)
+  if (footer  && mainEl) contents.insertBefore(footer,   mainEl);
+  if (buttonsP && mainEl) contents.insertBefore(buttonsP, mainEl);
+  // Move all remaining body content out to full-width below the hero row
+  if (mainEl && marquee) marquee.appendChild(mainEl);
 });
 </script>
 <p><a href="about.html" class="btn btn-dark me-2" role="button">About me</a> <a href="achievements.html" class="btn btn-outline-secondary" role="button">View Achievements</a></p>
