@@ -657,4 +657,21 @@ The Dragons Den pitch itself was a genuine test of composure under pressure. Rec
   targets.forEach(function (t) { observer.observe(t.el); });
 })();
 </script>
+
+<script>
+// Quarto's built-in toggle targets .cell > details > .sourceCode (direct child)
+// but the rendered HTML wraps it in .code-copy-outer-scaffold, so it never matches.
+// This replaces the toggle with a correct handler.
+document.addEventListener('DOMContentLoaded', function () {
+  function toggleAll(show) {
+    document.querySelectorAll('.cell > details').forEach(function (d) {
+      if (show) { d.open = true; } else { d.removeAttribute('open'); }
+    });
+  }
+  var showBtn = document.getElementById('quarto-show-all-code');
+  var hideBtn = document.getElementById('quarto-hide-all-code');
+  if (showBtn) showBtn.addEventListener('click', function () { toggleAll(true); });
+  if (hideBtn) hideBtn.addEventListener('click', function () { toggleAll(false); });
+});
+</script>
 ```
