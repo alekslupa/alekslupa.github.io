@@ -2430,6 +2430,10 @@ h2.proj-section__title {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease;
+    cursor: pointer;
+
+    &:hover { transform: scale(1.08); }
 
     img.about-image {
       width: 100%;

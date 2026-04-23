@@ -49,6 +49,18 @@ document.addEventListener('DOMContentLoaded', function () {
   if (footer   && mainEl) contents.insertBefore(footer,   mainEl);
   if (buttonsP && mainEl) contents.insertBefore(buttonsP, mainEl);
   if (mainEl   && marquee) marquee.appendChild(mainEl);
+
+  // Make profile photo clickable (opens full image in new tab)
+  var imgEl = marquee && marquee.querySelector('.about-image-container img.about-image');
+  if (imgEl) {
+    var link = document.createElement('a');
+    link.href = imgEl.src;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.style.cssText = 'display:block;width:100%;height:100%;';
+    imgEl.parentNode.insertBefore(link, imgEl);
+    link.appendChild(imgEl);
+  }
 });
 </script>
 ```
