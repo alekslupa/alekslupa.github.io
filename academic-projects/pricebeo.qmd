@@ -573,29 +573,26 @@ e. Horizontally scalable, tested to 75,000 concurrent MAU without re-architectur
 
 ## The four assignments
 
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-### Assignment 1 · Concept & validation
-Developed the initial PriceBeo concept, defined the problem statement around grocery price transparency in Ireland and established the team structure with defined roles.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### Assignment 2 · Feasibility & value proposition
-Conducted a full feasibility study covering industry attractiveness, technical feasibility, organisational feasibility and financial projections. Validated the concept through an 80-person survey, four in-depth interviews and consultation with Quidu. Produced a full financial model including startup costs of €157,720, a 5-year plan and breakeven analysis.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### Assignment 3 · Marketing strategy & video
-Developed a full marketing strategy for 2027 to 2028 covering five integrated initiatives from the *Scan It and Prove It* social challenge to a quarterly Grocery Transparency Report. Produced a marketing video as part of the submission.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### Assignment 4 · Business report & Dragons Den pitch
-Produced an investor-ready business report and pitched PriceBeo to a panel of lecturers acting as investors. The pitch covered problem, solution, market opportunity, competitive landscape, financials and a funding ask of €100,000 for 20% equity.
-:::
-
-:::
+```{=html}
+<div class="pb-role-grid">
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Assignment 1 · Concept &amp; validation</div>
+    <div class="pb-role-card__body">Problem statement around Irish grocery price transparency, team structure with defined roles.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Assignment 2 · Feasibility</div>
+    <div class="pb-role-card__body">Full feasibility, 80-person survey, 4 interviews, €157,720 startup costs, breakeven model.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Assignment 3 · Marketing</div>
+    <div class="pb-role-card__body">Five integrated initiatives including Scan It and Prove It challenge and quarterly reports.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Assignment 4 · Dragons Den</div>
+    <div class="pb-role-card__body">Investor-ready report and live pitch, €100,000 for 20% equity ask.</div>
+  </div>
+</div>
+```
 
 ## My role as CTO
 
