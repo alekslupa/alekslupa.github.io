@@ -2988,3 +2988,44 @@ ul.task-list {
     border-color: #1a1a1a;
   }
 }
+
+// ============================================================
+// Dark mode — Plotly charts and pandas DataFrames (PriceBeo)
+// ============================================================
+[data-bs-theme="dark"] {
+  // Plotly: all chart text is hardcoded #1a1a1a — override to light
+  .js-plotly-plot text {
+    fill: #c8c8c8 !important;
+  }
+
+  // Plotly: axis tick lines and zero lines
+  .js-plotly-plot .xtick line,
+  .js-plotly-plot .ytick line,
+  .js-plotly-plot .zerolinelayer path {
+    stroke: #c8c8c8 !important;
+  }
+
+  // Plotly: grid lines (slightly dimmer than tick/zero lines)
+  .js-plotly-plot .gridlayer path {
+    stroke: #444 !important;
+  }
+
+  // Pandas DataFrames rendered by Jupyter
+  table.dataframe {
+    color: var(--bs-body-color);
+    border-color: var(--about-border);
+
+    thead th {
+      background-color: var(--about-lang-bg);
+      color: var(--bs-body-color);
+      border-color: var(--about-border);
+    }
+
+    tbody td,
+    tbody th {
+      background-color: var(--bs-body-bg);
+      color: var(--bs-body-color);
+      border-color: var(--about-border);
+    }
+  }
+}
