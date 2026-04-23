@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <p>I'm a final-year Business Studies student at Dublin City University, specialising in Business Analytics and fluent in both English and Polish. Over the past few years I've been exploring how commercial thinking, data-driven analysis and real-world execution come together — from academic strategy projects to live freelance work and a mock Dragons' Den pitch.</p>
 
-  <p>What defines me outside the classroom is just as relevant: I've built and shipped live client websites, co-developed a real product pitched to a mock investment panel, and competed as a bodybuilder. I hold myself to high standards across everything I do.</p>
+  <p>What defines me outside the classroom is just as relevant: I've built and shipped live client websites, co-developed a real product pitched to a mock investment panel, and planning to compete as a bodybuilder. I hold myself to high standards across everything I do.</p>
 
   <p>This portfolio brings together work that reflects both my academic development and personal ambitions — from data analysis and strategic frameworks to reflective writing, cross-cultural research and web design. Each piece represents a step in how I've learned to connect analytical rigour with practical execution and clear communication.</p>
 
@@ -148,27 +148,27 @@ Graduating April 2026. Actively exploring graduate Business Analyst roles in Lon
     <span class="hp-section__title">Currently listening to</span>
   </div>
   <div class="hp-podcasts">
-    <div class="hp-podcast">
-      <a href="https://www.youtube.com/@ShawnRyanShow" target="_blank" rel="noopener"><img src="assets/seanryan.jfif" alt="Shawn Ryan" class="hp-podcast__icon"></a>
+    <a class="hp-podcast" href="https://www.youtube.com/@ShawnRyanShow" target="_blank" rel="noopener">
+      <img src="assets/seanryan.jfif" alt="Shawn Ryan" class="hp-podcast__icon">
       <div class="hp-podcast__info">
         <div class="hp-podcast__name">The Shawn Ryan Show</div>
         <div class="hp-podcast__host">Shawn Ryan</div>
       </div>
-    </div>
-    <div class="hp-podcast">
-      <a href="https://www.youtube.com/@joerogan" target="_blank" rel="noopener"><img src="assets/joerogan.png" alt="Joe Rogan" class="hp-podcast__icon"></a>
+    </a>
+    <a class="hp-podcast" href="https://www.youtube.com/@joerogan" target="_blank" rel="noopener">
+      <img src="assets/joerogan.png" alt="Joe Rogan" class="hp-podcast__icon">
       <div class="hp-podcast__info">
         <div class="hp-podcast__name">The Joe Rogan Experience</div>
         <div class="hp-podcast__host">Joe Rogan</div>
       </div>
-    </div>
-    <div class="hp-podcast">
-      <a href="https://www.youtube.com/@hubermanlab" target="_blank" rel="noopener"><img src="assets/andrewhuberman.jpg" alt="Andrew Huberman" class="hp-podcast__icon"></a>
+    </a>
+    <a class="hp-podcast" href="https://www.youtube.com/@hubermanlab" target="_blank" rel="noopener">
+      <img src="assets/andrewhuberman.jpg" alt="Andrew Huberman" class="hp-podcast__icon">
       <div class="hp-podcast__info">
         <div class="hp-podcast__name">Huberman Lab</div>
         <div class="hp-podcast__host">Andrew Huberman</div>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 ```

@@ -2346,6 +2346,14 @@ h2.proj-section__title {
   padding: 0.9rem 1rem;
   background: var(--fj-bg-secondary);
   border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    color: inherit;
+  }
 }
 
 .hp-podcast__icon {
@@ -2592,6 +2600,10 @@ hr.hp-divider {
 
 .hp-timeline--tight {
   padding-top: 0.75rem !important;
+
+  .hp-timeline__track {
+    top: calc(0.75rem + 9px) !important;
+  }
 }
 
 // ---------- Career trajectory timeline ----------
@@ -2623,12 +2635,12 @@ hr.hp-divider {
     z-index: 1;
   }
 
-  // Dot
+  // Dot — margin-bottom matches half-dot-height (9px) for even spacing either side of track
   .hp-timeline__dot {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    margin-bottom: 0.6rem;
+    margin-bottom: 9px;
     box-sizing: border-box;
   }
 
