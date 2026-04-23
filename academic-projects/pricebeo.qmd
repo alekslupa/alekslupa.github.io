@@ -1,5 +1,6 @@
 ---
 pagetitle: "PriceBeo — Aleksander Lupa"
+title: "PriceBeo"
 page-layout: article
 toc: false
 execute:
@@ -14,6 +15,8 @@ format:
 ---
 
 ```{=html}
+<style>#title-block-header { display: none !important; }</style>
+
 <div class="fj-toc">
   <div class="fj-toc__title">On this page</div>
   <nav>
