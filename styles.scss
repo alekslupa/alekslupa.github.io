@@ -2406,12 +2406,13 @@ h2.proj-section__title {
 }
 
 // ---------- Marquee hero with photo background ----------
-// Quarto marquee renders: about-image-container → about-contents(header → main → about-footer/links)
-// Flexbox order pulls links above body content. Photo fixed-height with dark overlay; text pulled over it.
+// Quarto DOM order: about-image-container → about-contents(header → main.content → about-footer)
+// CSS grid named areas reorder visually to: header → about-footer → main.content
+// (flexbox `order` was insufficient to override Quarto's own layout CSS)
 .quarto-about-marquee {
   margin-bottom: 2rem;
 
-  // Photo: fixed height in normal flow, heavy dark overlay via ::after
+  // Photo: fixed height in normal flow, heavy dark overlay
   .about-image-container {
     position: relative;
     height: 420px;
@@ -2434,46 +2435,46 @@ h2.proj-section__title {
     }
   }
 
-  // Pull text up over the dark photo
+  // About-contents pulled up over the photo, grid reorders children
   .about-contents {
-    display: flex;
-    flex-direction: column;
+    display: grid !important;
+    grid-template-areas:
+      "header"
+      "footer"
+      "main";
+    grid-template-rows: auto auto auto;
     position: relative;
     z-index: 2;
     margin-top: -300px;
 
-    // 1 — title block
+    // Title block — sits in dark hero area
     header.quarto-title-block {
-      order: 1;
+      grid-area: header;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 2.5rem 2rem 0;
       text-align: center;
-      margin: 0;
 
-      > div:nth-child(2) { order: 1; } // description pill first
-      > .quarto-title    { order: 2; } // name + subtitle second
+      > div:nth-child(2)  { order: 1; } // description pill first
+      > .quarto-title     { order: 2; } // name + subtitle second
       > .quarto-title-meta { display: none; }
     }
 
-    // 2 — social links (pulled above body content)
+    // Social links — grid places these second (inside hero area)
     .about-footer {
-      order: 2;
+      grid-area: footer;
       padding: 1.25rem 2rem 2rem;
       text-align: center;
-      margin: 0 0 1.75rem;
     }
 
-    // 3 — body content (buttons, callout, stats …)
+    // All body content — grid places this last (below hero)
     > main.content {
-      order: 3;
+      grid-area: main;
       text-align: left;
+      margin-top: 1.75rem;
 
-      // Centre the About me / View Achievements buttons
-      > p:first-child {
-        text-align: center;
-      }
+      > p:first-child { text-align: center; } // centre the two buttons
     }
 
     // Hero typography — white on dark photo
