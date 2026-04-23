@@ -2421,7 +2421,7 @@ h2.proj-section__title {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem;
-  padding-top: 14px;
+  margin-top: 2.125rem;   // offset: matches title-block h1 height on other pages
   margin-bottom: 2.5rem;
 
   // Row 1 left: profile photo
