@@ -16,7 +16,7 @@ format:
 ---
 
 ```{=html}
-<style>#title-block-header { display: none !important; }</style>
+<style>#title-block-header h1.title { display: none !important; }</style>
 
 <div class="fj-toc">
   <div class="fj-toc__title">On this page</div>
