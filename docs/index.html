@@ -357,6 +357,37 @@ document.addEventListener('DOMContentLoaded', function () {
     imgEl.parentNode.insertBefore(link, imgEl);
     link.appendChild(imgEl);
   }
+  // Email link: copy address to clipboard + show "Copied!" toast
+  var emailAnchor = marquee && marquee.querySelector('.about-links a[href^="mailto:"]');
+  if (emailAnchor) {
+    var toast = document.createElement('span');
+    toast.textContent = 'Copied!';
+    toast.style.cssText = [
+      'position:fixed',
+      'bottom:1.5rem',
+      'left:50%',
+      'transform:translateX(-50%)',
+      'background:rgba(30,30,30,0.9)',
+      'color:#fff',
+      'font-size:0.78rem',
+      'padding:5px 14px',
+      'border-radius:20px',
+      'pointer-events:none',
+      'opacity:0',
+      'transition:opacity 0.2s ease',
+      'z-index:9999'
+    ].join(';');
+    document.body.appendChild(toast);
+    emailAnchor.addEventListener('click', function () {
+      var email = this.getAttribute('href').replace('mailto:', '');
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(email).catch(function () {});
+      }
+      toast.style.opacity = '1';
+      clearTimeout(toast._t);
+      toast._t = setTimeout(function () { toast.style.opacity = '0'; }, 2000);
+    });
+  }
 });
 </script>
 <hr class="hp-divider">
