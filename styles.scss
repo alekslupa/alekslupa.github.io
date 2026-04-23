@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.3rem;
   padding: 0.42rem 1rem;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   background: var(--about-btn-bg);
   color: var(--about-btn-color) !important;
   border-radius: 4px;
@@ -2092,7 +2092,7 @@ h2.proj-section__title {
   display: inline-block;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 0.375rem;
   border: 1px solid var(--about-btn-bg);
   text-decoration: none !important;
@@ -2629,7 +2629,7 @@ h2.proj-section__title {
     > p:has(.btn) {
       margin: 0.75rem 0 0;
 
-      .btn { border-radius: 0.375rem; font-weight: 600; }
+      .btn { border-radius: 0.375rem; font-weight: 500; }
 
       .btn-dark {
         background-color: var(--about-btn-bg) !important;
