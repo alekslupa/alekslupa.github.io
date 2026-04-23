@@ -2584,6 +2584,105 @@ hr.hp-divider {
   }
 }
 
+// ---------- Career trajectory timeline ----------
+.hp-timeline {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 0 1rem;
+
+  // Horizontal connecting line
+  .hp-timeline__track {
+    position: absolute;
+    top: calc(2rem + 9px); // vertically centred on the dots
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--about-border);
+  }
+
+  // Each milestone
+  .hp-timeline__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    z-index: 1;
+  }
+
+  // Dot
+  .hp-timeline__dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-bottom: 0.6rem;
+    box-sizing: border-box;
+  }
+
+  // Past: filled with white inner ring
+  .hp-timeline__item--past .hp-timeline__dot {
+    background: currentColor;
+    border: 3px solid currentColor;
+    box-shadow: inset 0 0 0 3px var(--bs-body-bg, #fff);
+  }
+
+  // Current: green filled with white inner ring
+  .hp-timeline__item--current .hp-timeline__dot {
+    background: #22a86e;
+    border: 3px solid #22a86e;
+    box-shadow: inset 0 0 0 3px var(--bs-body-bg, #fff);
+  }
+
+  // Future: hollow circle
+  .hp-timeline__item--future .hp-timeline__dot {
+    background: transparent;
+    border: 1.5px solid var(--about-border);
+  }
+
+  .hp-timeline__date {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  .hp-timeline__label {
+    font-size: 0.75rem;
+    opacity: 0.65;
+    max-width: 90px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 600px) {
+  .hp-timeline {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-left: 1.5rem;
+
+    .hp-timeline__track {
+      top: 0;
+      bottom: 0;
+      left: calc(1.5rem - 1px);
+      right: auto;
+      width: 1px;
+      height: auto;
+    }
+
+    .hp-timeline__item {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+    }
+
+    .hp-timeline__dot { margin-bottom: 0; flex-shrink: 0; }
+    .hp-timeline__label { max-width: none; }
+  }
+}
+
 // ---------- Card hover lifts ----------
 .hp-card,
 .hp-featured,

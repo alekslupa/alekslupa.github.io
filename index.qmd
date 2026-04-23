@@ -173,14 +173,38 @@ Graduating April 2026. Actively exploring graduate Business Analyst roles in Lon
 </div>
 ```
 
-## {{< fa solid route >}} Career trajectory
-
-```{mermaid}
-timeline
-    title My path from DCU to London
-    2022 : Started BSc Business Studies at DCU
-    2024 : Allied World underwriting role
-    April 2026 : Graduate DCU
-    Summer 2026 : Travel across continents
-    Late 2026 : Business Analyst, London
+```{=html}
+<div class="hp-section">
+  <div class="hp-section__header">
+    <span class="hp-section__title">Career trajectory</span>
+  </div>
+  <div class="hp-timeline">
+    <div class="hp-timeline__track"></div>
+    <div class="hp-timeline__item hp-timeline__item--past">
+      <div class="hp-timeline__dot"></div>
+      <div class="hp-timeline__date">2022</div>
+      <div class="hp-timeline__label">Started BSc at DCU</div>
+    </div>
+    <div class="hp-timeline__item hp-timeline__item--past">
+      <div class="hp-timeline__dot"></div>
+      <div class="hp-timeline__date">2024</div>
+      <div class="hp-timeline__label">Allied World underwriting</div>
+    </div>
+    <div class="hp-timeline__item hp-timeline__item--current">
+      <div class="hp-timeline__dot"></div>
+      <div class="hp-timeline__date">Apr 2026</div>
+      <div class="hp-timeline__label">Graduate DCU</div>
+    </div>
+    <div class="hp-timeline__item hp-timeline__item--future">
+      <div class="hp-timeline__dot"></div>
+      <div class="hp-timeline__date">Summer 2026</div>
+      <div class="hp-timeline__label">Travel across continents</div>
+    </div>
+    <div class="hp-timeline__item hp-timeline__item--future">
+      <div class="hp-timeline__dot"></div>
+      <div class="hp-timeline__date">Late 2026</div>
+      <div class="hp-timeline__label">Business Analyst, London</div>
+    </div>
+  </div>
+</div>
 ```
