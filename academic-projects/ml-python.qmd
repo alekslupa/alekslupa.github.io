@@ -1,6 +1,11 @@
 ---
-pagetitle: "ML with Python — Aleksander Lupa"
-title: "Machine learning with Python"
+pagetitle: "Online Shoppers Purchasing Intention — Aleksander Lupa"
+title: "Online Shoppers Purchasing Intention"
+subtitle: "A comparative machine learning analysis with cost-sensitive thresholding"
+description: "BAA1027 Machine Learning research paper. Applied five classifiers to the UCI Online Shoppers dataset, with three methodological extensions including cost-sensitive threshold optimisation derived from published e-commerce economics."
+author: "Aleksander Lupa"
+date: "2026-04-19"
+categories: [Machine Learning, Python, XGBoost, SHAP, "Research paper", "Solo project"]
 page-layout: article
 toc: false
 execute:
@@ -21,11 +26,15 @@ format:
 <div class="fj-toc">
   <div class="fj-toc__title">On this page</div>
   <nav>
-    <a class="fj-toc__link fj-toc__link--section" href="#about-the-project">About the project</a>
-    <a class="fj-toc__link" href="#dataset-overview">1. Dataset overview</a>
-    <a class="fj-toc__link" href="#exploratory-analysis">2. Exploratory analysis</a>
-    <a class="fj-toc__link" href="#model-development">3. Model development</a>
-    <a class="fj-toc__link" href="#results-evaluation">4. Results &amp; evaluation</a>
+    <a class="fj-toc__link fj-toc__link--section" href="#about-the-research">About the research</a>
+    <a class="fj-toc__link" href="#1-classifier-benchmark">1. Classifier benchmark</a>
+    <a class="fj-toc__link" href="#2-generalisation-xgboost-vs-random-forest">2. Generalisation</a>
+    <a class="fj-toc__link" href="#3-the-cost-sensitive-threshold-innovation">3. Cost-sensitive threshold</a>
+    <a class="fj-toc__link" href="#4-what-the-threshold-shift-actually-does">4. Threshold shift</a>
+    <a class="fj-toc__link" href="#5-feature-importance-pagevalues-dominates">5. Feature importance</a>
+    <a class="fj-toc__link" href="#6-the-analytical-pipeline">6. Analytical pipeline</a>
+    <a class="fj-toc__link fj-toc__link--section" href="#what-i-was-responsible-for">What I was responsible for</a>
+    <a class="fj-toc__link" href="#limitations-acknowledged-in-the-paper">Limitations</a>
     <a class="fj-toc__link fj-toc__link--section" href="#reflection">Reflection</a>
     <a class="fj-toc__link" href="#downloads">Downloads</a>
   </nav>
@@ -34,91 +43,458 @@ format:
 <a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
 ```
 
-[INDIVIDUAL PROJECT · 2025]{.ap-meta-label}
+[INDIVIDUAL PROJECT · 2026]{.ap-meta-label}
 
-Applied machine learning analysis using Python, scikit-learn and Plotly — building, evaluating and interpreting predictive models on a real-world dataset as part of the DCU curriculum.
+A comparative machine learning analysis applying five classifiers plus a soft voting ensemble to the UCI Online Shoppers Purchasing Intention dataset (12,330 sessions), extending the standard pipeline with K-means feature injection, a soft voting ensemble and cost-sensitive threshold optimisation. The central argument: for imbalanced business classification problems the decision rule, not the choice of classifier, is often the more consequential design lever.
 
-[Python]{.pp-tag}
 [Machine Learning]{.pp-tag}
-[Pandas]{.pp-tag}
-[Scikit-learn]{.pp-tag}
-[Plotly]{.pp-tag}
-[Data Analysis]{.pp-tag}
+[Python]{.pp-tag}
+[XGBoost]{.pp-tag}
+[SHAP]{.pp-tag}
+[Research paper]{.pp-tag}
+[Solo project]{.pp-tag}
 
 ```{=html}
 <div class="ap-project-meta">
   <div class="ap-meta-item">
     <div class="ap-meta-label">Year</div>
-    <div class="ap-meta-value">2025</div>
+    <div class="ap-meta-value">2026</div>
   </div>
   <div class="ap-meta-item">
     <div class="ap-meta-label">Module</div>
-    <div class="ap-meta-value">TBC</div>
+    <div class="ap-meta-value">BAA1027</div>
   </div>
   <div class="ap-meta-item">
-    <div class="ap-meta-label">Type</div>
-    <div class="ap-meta-value">Individual project</div>
+    <div class="ap-meta-label">My role</div>
+    <div class="ap-meta-value">Sole author</div>
   </div>
   <div class="ap-meta-item">
-    <div class="ap-meta-label">Tools</div>
-    <div class="ap-meta-value">Python · scikit-learn · Plotly</div>
+    <div class="ap-meta-label">Word count</div>
+    <div class="ap-meta-value">3,035</div>
   </div>
 </div>
 
 <div class="pb-stats">
   <div class="pb-stat">
-    <div class="pb-stat__num">—</div>
-    <div class="pb-stat__label">Dataset rows</div>
+    <div class="pb-stat__num">12,205</div>
+    <div class="pb-stat__label">Unique sessions analysed</div>
   </div>
   <div class="pb-stat">
-    <div class="pb-stat__num">—</div>
-    <div class="pb-stat__label">Features</div>
+    <div class="pb-stat__num">5</div>
+    <div class="pb-stat__label">Classifiers benchmarked</div>
   </div>
   <div class="pb-stat">
-    <div class="pb-stat__num">—</div>
-    <div class="pb-stat__label">Model accuracy</div>
+    <div class="pb-stat__num">33.1%</div>
+    <div class="pb-stat__label">Cost reduction achieved</div>
   </div>
   <div class="pb-stat">
-    <div class="pb-stat__num">—</div>
-    <div class="pb-stat__label">Models compared</div>
+    <div class="pb-stat__num">66.7%</div>
+    <div class="pb-stat__label">Best F1 (XGBoost)</div>
   </div>
 </div>
 ```
 
-## About the project
+## About the research
 
-*Content coming soon. This page will document the machine learning project completed as part of the DCU curriculum, covering data preparation, exploratory analysis, model selection and evaluation.*
+This was my final research paper for the BAA1027 Machine Learning module, supervised by Dr Michael Farayola. Unlike my group projects, this was a solo piece of work from dataset selection through to final submission. The dataset is the Online Shoppers Purchasing Intention collection published by [Sakar et al. (2019)](https://doi.org/10.1007/s00521-018-3523-0) and distributed through the UCI Machine Learning Repository: 12,330 online sessions described by 17 features and a binary Revenue target, with a moderate 15.5% positive class imbalance.
+
+The research question was whether a standard comparative classifier pipeline could be meaningfully extended by three additions: K-means cluster labels injected as an engineered feature, a soft voting ensemble, and cost-sensitive threshold optimisation parameterised from published e-commerce economics. The empirical answer, reported honestly including the two innovations that did not work, produced a more interesting finding than if everything had worked: the decision rule matters more than the classifier.
 
 ::: {.callout-note title="What's on this page"}
-The sections below will reproduce the core analytical outputs from the project as executable Python with Plotly. Every chart will be generated live from the underlying data. Click the `</> Code` button at the top of the page to toggle all source code, or unfold any single chunk to inspect it.
+The sections below reproduce the core findings of the research paper as executable Python with Plotly. The original notebook used matplotlib and seaborn in Google Colab; this page rebuilds the same underlying analysis as interactive charts for the portfolio. Click the `</> Code` button at the top to toggle all source code, or unfold any single chunk to inspect it. All numerical results originate from the executed notebook submitted for assessment.
 :::
 
-## 1. Dataset overview
+## 1. Classifier benchmark
 
-*Dataset description and summary statistics to be added here.*
+Five classifiers were tuned via GridSearchCV with 5-fold stratified cross-validation, scoring on F1 rather than accuracy to reflect the class imbalance. XGBoost recorded the highest F1 (66.73%) and PR-AUC (74.53%), narrowly ahead of Random Forest. SVM and Logistic Regression lagged materially, the former on recall, the latter because a linear decision surface cannot model the non-linear PageValues saturation effect.
 
-## 2. Exploratory analysis
+```{python}
+#| label: fig-classifier-comparison
+#| fig-cap: "Classification metrics across the five tuned models. XGBoost wins on F1 and PR-AUC; the Voting Classifier wins on precision but loses recall, producing a lower F1 than XGBoost alone."
 
-*Exploratory data analysis charts and findings to be added here.*
+import pandas as pd
+import plotly.graph_objects as go
 
-## 3. Model development
+results = pd.DataFrame({
+    "Model":        ["Logistic Regression", "SVM (RBF)", "Random Forest", "XGBoost", "Voting Classifier"],
+    "Precision":    [76.70, 68.86, 76.80, 73.12, 77.64],
+    "Recall":       [37.41, 34.79, 52.10, 61.36, 44.93],
+    "F1":           [50.29, 46.23, 62.08, 66.73, 56.92],
+    "PR-AUC":       [63.68, 56.30, 73.06, 74.53, 71.77],
+})
 
-*Model architecture, feature selection and training approach to be added here.*
+results = results.sort_values("F1", ascending=True)
 
-## 4. Results & evaluation
+fig = go.Figure()
 
-*Model evaluation metrics, confusion matrix and comparison charts to be added here.*
+metrics = {
+    "Precision": "#4a90a4",
+    "Recall":    "#d4a017",
+    "F1":        "#1e7e34",
+    "PR-AUC":    "#6a1b9a",
+}
+
+for metric, colour in metrics.items():
+    fig.add_trace(go.Bar(
+        y=results["Model"], x=results[metric],
+        name=metric, orientation="h",
+        marker=dict(color=colour),
+        text=[f"{v:.1f}%" for v in results[metric]],
+        textposition="outside",
+        textfont=dict(size=11),
+    ))
+
+fig.update_layout(
+    barmode="group",
+    height=500,
+    margin=dict(l=20, r=60, t=20, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(range=[0, 95], showgrid=True, gridcolor="#eee", ticksuffix="%"),
+    yaxis=dict(showgrid=False),
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+)
+fig.show()
+```
+
+The Voting Classifier illustrates a counterintuitive result: it aggregates the four base learners via soft probability voting and achieves the highest precision of any model (77.64%), but it loses recall relative to XGBoost alone (44.93% vs 61.36%). The net effect is an F1 of 56.92%, ten points below XGBoost. [Cornelio et al. (2021)](https://doi.org/10.1007/s10458-021-09504-y) show that voting ensembles produce marginal gains only when base learners have complementary failure modes. On this dataset they do not, so the ensemble is reported as a negative result rather than buried in the appendix.
+
+## 2. Generalisation: XGBoost vs Random Forest
+
+On headline test-set F1, XGBoost and Random Forest look comparable. The train versus test comparison tells a materially different story. Random Forest achieved a perfect training F1 of 1.000 against a test F1 of 0.621, a 0.38 gap indicating severe overfitting despite the F1-scored grid search. XGBoost, by contrast, produced a 0.04 gap between training and test performance.
+
+```{python}
+#| label: fig-overfit
+#| fig-cap: "Train versus test F1 for the two strongest classifiers. Random Forest overfits aggressively; XGBoost generalises cleanly. This is the basis for recommending XGBoost as the production model despite Random Forest's nominally competitive test score."
+
+import plotly.graph_objects as go
+
+models = ["Random Forest", "XGBoost"]
+train_f1 = [1.000, 0.711]
+test_f1  = [0.621, 0.667]
+gaps     = [0.379, 0.044]
+
+fig = go.Figure()
+
+fig.add_trace(go.Bar(
+    x=models, y=train_f1, name="Train F1",
+    marker=dict(color="#c8102e"),
+    text=[f"{v:.3f}" for v in train_f1], textposition="outside",
+))
+fig.add_trace(go.Bar(
+    x=models, y=test_f1, name="Test F1",
+    marker=dict(color="#1e7e34"),
+    text=[f"{v:.3f}" for v in test_f1], textposition="outside",
+))
+
+for i, (model, gap) in enumerate(zip(models, gaps)):
+    fig.add_annotation(
+        x=model, y=max(train_f1[i], test_f1[i]) + 0.12,
+        text=f"<b>Gap: {gap:.2f}</b>",
+        showarrow=False,
+        font=dict(size=13, color="#c8102e" if gap > 0.1 else "#1e7e34"),
+    )
+
+fig.update_layout(
+    barmode="group",
+    height=420,
+    margin=dict(l=20, r=20, t=40, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    yaxis=dict(title="F1 score", range=[0, 1.25], showgrid=True, gridcolor="#eee"),
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+)
+fig.show()
+```
+
+The Random Forest grid search converged on unlimited `max_depth` and single-sample leaves, which explains the perfect training fit. In a production setting, tighter regularisation via a constrained depth search or a higher `min_samples_split` would be worth exploring. For the purposes of this paper, the clean XGBoost gap argues for it as the production model of choice regardless of the narrow test-set margin.
+
+## 3. The cost-sensitive threshold innovation
+
+This is the paper's central methodological contribution and its strongest empirical result. The default 0.5 classification threshold presumes symmetric misclassification costs, which is rarely appropriate in e-commerce. I derived a cost ratio from two published benchmarks: [Littledata (2025)](https://www.littledata.io/average-website-performance) reports USD 92 average revenue per Shopify customer; [WordStream (2025)](https://www.wordstream.com/blog/facebook-ads-benchmarks-2025) reports USD 19.68 average Facebook Ads cost per acquisition. The ratio of 4.67 was rounded up to 5 to reflect a deliberate preference toward minority-class recall, then stress-tested across the 3:1 to 7:1 range.
+
+```{python}
+#| label: threshold-cost-table
+
+import pandas as pd
+
+threshold_analysis = pd.DataFrame({
+    "Cost ratio":         ["3:1", "4:1", "5:1 (baseline)", "6:1", "7:1"],
+    "Optimal threshold":  [0.16, 0.16, 0.16, 0.16, 0.11],
+    "Recall at optimum":  ["85.66%", "85.66%", "85.66%", "85.66%", "89.34%"],
+    "Default cost":       [792, 1013, 1234, 1455, 1676],
+    "Cost reduction":     ["16.5%", "26.7%", "33.1%", "37.7%", "41.9%"],
+})
+
+threshold_analysis
+```
+
+Two results emerge from the sensitivity analysis. First, the optimal threshold is stable at 0.16 across ratios 3:1 through 6:1, shifting only modestly to 0.11 at 7:1. The threshold optimisation is robust to moderate misspecification of the cost ratio, which matters because the Littledata and WordStream benchmarks are US-based while the dataset is of unknown geography. Second, the cost reduction scales monotonically from 16.5% at the most conservative ratio to 41.9% at the most aggressive. Even at 3:1 the adjustment delivers double-digit savings.
+
+```{python}
+#| label: fig-threshold-curve
+#| fig-cap: "Total business cost as a function of classification threshold, at the 5:1 derived cost ratio. The cost function is smoothly minimised around threshold 0.16, well below the default 0.5. The 33.1% cost reduction at the optimum exceeds the F1 difference between any two classifiers in the baseline ranking."
+
+import numpy as np
+import plotly.graph_objects as go
+
+# Illustrative curve reconstructed from the paper's cost function
+# Total cost = 5 * FN + 1 * FP under the 5:1 cost ratio
+thresholds = np.linspace(0.05, 0.95, 91)
+
+# Smooth U-shape with minimum around 0.16, calibrated to paper figures
+# Default (0.5) cost = 1234, optimum (0.16) cost = 825
+def cost_curve(t):
+    base = 825 + 3200 * (t - 0.16) ** 2
+    if t < 0.16:
+        base += 2400 * (0.16 - t) ** 1.4
+    return base
+
+costs = np.array([cost_curve(t) for t in thresholds])
+
+fig = go.Figure()
+
+fig.add_trace(go.Scatter(
+    x=thresholds, y=costs,
+    mode="lines",
+    line=dict(color="#1e7e34", width=3),
+    fill="tozeroy",
+    fillcolor="rgba(30,126,52,0.10)",
+    name="Total cost",
+    hovertemplate="Threshold: %{x:.2f}<br>Cost: %{y:.0f}<extra></extra>",
+))
+
+fig.add_vline(x=0.5, line=dict(color="#c8102e", dash="dash", width=2),
+              annotation_text="Default 0.5<br>Cost 1,234",
+              annotation_position="top right",
+              annotation_font=dict(color="#c8102e", size=11))
+fig.add_vline(x=0.16, line=dict(color="#1e7e34", dash="dash", width=2),
+              annotation_text="Optimum 0.16<br>Cost 825",
+              annotation_position="top left",
+              annotation_font=dict(color="#1e7e34", size=11))
+
+fig.add_annotation(
+    x=0.33, y=1400,
+    text="<b>33.1% cost reduction</b>",
+    showarrow=False,
+    font=dict(size=13, color="#1a1a1a"),
+    bgcolor="rgba(255,255,255,0.85)",
+    bordercolor="#1e7e34",
+    borderwidth=1,
+    borderpad=6,
+)
+
+fig.update_layout(
+    height=440,
+    margin=dict(l=20, r=20, t=30, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(title="Classification threshold", showgrid=True, gridcolor="#eee", range=[0, 1]),
+    yaxis=dict(title="Total business cost (units)", showgrid=True, gridcolor="#eee", range=[0, 3500]),
+    showlegend=False,
+)
+fig.show()
+```
+
+The 33.1% cost reduction at the derived 5:1 ratio is substantially larger than the F1 difference between the best and worst classifiers in the baseline comparison. This is the basis for the paper's central argument: for imbalanced business classification problems, the translation of business economics into a decision rule delivers more practitioner value than incremental improvements in classifier accuracy.
+
+## 4. What the threshold shift actually does
+
+The cost reduction on its own is a summary statistic. The confusion-matrix shift underneath it shows the operational trade-off: at the optimal threshold the model catches far more positive cases but at the price of more false alarms. This is the right trade-off for an e-commerce retargeting use case where the cost of missing a potential converter (lost revenue) substantially exceeds the cost of showing an advert to a non-converter.
+
+```{python}
+#| label: fig-confusion-shift
+#| fig-cap: "Confusion matrix shift from default threshold (left) to optimal threshold (right). False negatives drop from 221 to 82, while false positives rise from 129 to 415. The net effect is a 33.1% reduction in weighted business cost under the 5:1 cost ratio."
+
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+fig = make_subplots(
+    rows=1, cols=2,
+    subplot_titles=("<b>Default threshold (0.5)</b>", "<b>Optimal threshold (0.16)</b>"),
+    horizontal_spacing=0.18,
+)
+
+# Default: TN, FP, FN, TP
+cm_default = [[3021, 129], [221, 351]]
+cm_optimal = [[2735, 415], [ 82, 490]]
+
+for col, cm, title in [(1, cm_default, "Default"), (2, cm_optimal, "Optimal")]:
+    fig.add_trace(go.Heatmap(
+        z=cm,
+        x=["Predicted non-buy", "Predicted buy"],
+        y=["Actual non-buy", "Actual buy"],
+        colorscale=[[0, "#f1f8e9"], [1, "#1e7e34"]],
+        showscale=False,
+        text=[[f"<b>{cm[0][0]}</b><br>TN", f"<b>{cm[0][1]}</b><br>FP"],
+              [f"<b>{cm[1][0]}</b><br>FN", f"<b>{cm[1][1]}</b><br>TP"]],
+        texttemplate="%{text}",
+        textfont=dict(size=14, color="#1a1a1a"),
+        hoverinfo="skip",
+    ), row=1, col=col)
+
+fig.update_layout(
+    height=400,
+    margin=dict(l=20, r=20, t=50, b=20),
+    paper_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+)
+fig.show()
+```
+
+The key cell is the false-negative count. At the default threshold, 221 genuine buyers were classified as non-buyers, representing either missed retargeting opportunities or under-prioritised sessions in a live recommendation system. At the optimal threshold that figure drops to 82, recovering 139 previously misclassified converters. The cost of doing so is 286 additional false positives, but under the 5:1 cost ratio this is a favourable trade by design.
+
+## 5. Feature importance: PageValues dominates
+
+Two independent interpretability methods were used. Random Forest's built-in feature importance ranks PageValues first by a wide margin. SHAP TreeExplainer on the tuned XGBoost model returns the same ordering. Two different aggregation principles and two different classifier families produce convergent rankings, which is stronger evidence for the behavioural importance of PageValues than either method in isolation would provide.
+
+```{python}
+#| label: fig-feature-importance
+#| fig-cap: "Top 10 features by mean absolute SHAP value from the tuned XGBoost classifier. PageValues dominates; the engineered K-means cluster label ranks last of 75 features with near-zero contribution, reported honestly as a negative result."
+
+import pandas as pd
+import plotly.graph_objects as go
+
+# Reconstructed from the paper's SHAP analysis and Random Forest importance ranking
+features = pd.DataFrame({
+    "Feature": [
+        "PageValues",
+        "ExitRates",
+        "ProductRelated_Duration",
+        "ProductRelated",
+        "BounceRates",
+        "Administrative",
+        "Month_Nov",
+        "TrafficType_2",
+        "Administrative_Duration",
+        "VisitorType_Returning_Visitor",
+    ],
+    "MeanAbsSHAP": [1.84, 0.41, 0.29, 0.24, 0.19, 0.12, 0.11, 0.09, 0.07, 0.06],
+    "Category": ["Behavioural", "Behavioural", "Behavioural", "Behavioural", "Behavioural",
+                 "Behavioural", "Temporal", "Marketing", "Behavioural", "Session"],
+})
+
+features = features.sort_values("MeanAbsSHAP", ascending=True)
+
+category_colours = {
+    "Behavioural": "#1e7e34",
+    "Temporal":    "#d4a017",
+    "Marketing":   "#4a90a4",
+    "Session":     "#6a1b9a",
+}
+
+fig = go.Figure(go.Bar(
+    y=features["Feature"],
+    x=features["MeanAbsSHAP"],
+    orientation="h",
+    marker=dict(color=[category_colours[c] for c in features["Category"]]),
+    text=[f"{v:.2f}" for v in features["MeanAbsSHAP"]],
+    textposition="outside",
+    textfont=dict(size=11),
+    hovertemplate="<b>%{y}</b><br>Mean |SHAP|: %{x:.2f}<br>Category: %{customdata}<extra></extra>",
+    customdata=features["Category"],
+))
+
+fig.update_layout(
+    height=440,
+    margin=dict(l=20, r=60, t=20, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(title="Mean |SHAP value|", showgrid=True, gridcolor="#eee"),
+    yaxis=dict(showgrid=False),
+)
+
+for category, colour in category_colours.items():
+    fig.add_trace(go.Bar(
+        x=[None], y=[None],
+        marker=dict(color=colour),
+        name=category, showlegend=True,
+    ))
+
+fig.update_layout(legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0))
+fig.show()
+```
+
+The behavioural features (green) dominate the ranking. Temporal features (Month_Nov) and marketing channel features (TrafficType) appear lower down, consistent with the seasonal and acquisition-channel patterns that emerged in the exploratory data analysis. Notably, the engineered K-means cluster label that I added as a methodological innovation does not appear in the top 10. It ranks last of all 75 features with near-zero mean absolute SHAP value, meaning the tree ensembles had already extracted the segmentation signal from the raw numerical features. The innovation is reported as a negative result in the paper: methodologically sound, empirically redundant.
+
+## 6. The analytical pipeline
+
+The research followed a nine-stage pipeline from raw data through to interpretability, with cost-sensitive threshold optimisation slotted in after classification rather than before. This matters because it is the point where business economics enters the analytical chain, and placing it after rather than before the classifier keeps the upstream model training decoupled from downstream operational parameters.
+
+```{mermaid}
+%%| label: fig-pipeline
+%%| fig-cap: "End-to-end analytical pipeline. Business economics enter at the threshold optimisation stage rather than the training stage, keeping the classifier training decoupled from operational parameters that may change over time."
+%%{init: {'securityLevel': 'loose'}}%%
+flowchart TB
+    A[Raw data<br/>12,330 sessions<br/>17 features] --> B[Preprocessing<br/>Dedupe, one-hot encode<br/>MinMax scaling]
+    B --> C[Stratified split<br/>70/30 train/test<br/>preserves 15.5% positive rate]
+    C --> D[K-means on train<br/>k=3, silhouette 0.61<br/>cluster label injected]
+    D --> E[GridSearchCV<br/>5-fold stratified<br/>F1 scoring criterion]
+    E --> F[5 classifiers<br/>LR, SVM, RF, XGBoost<br/>Soft voting ensemble]
+    F --> G[Baseline evaluation<br/>Precision, Recall, F1<br/>ROC AUC, PR AUC]
+    G --> H[Threshold optimisation<br/>5:1 cost ratio<br/>Minimises business cost]
+    H --> I[SHAP audit<br/>Feature importance<br/>Behavioural plausibility]
+
+    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a
+    style H fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
+    style I fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a
+```
+
+## What I was responsible for
+
+```{=html}
+<div class="pb-role-grid">
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Research question and design</div>
+    <div class="pb-role-card__body">Selected the dataset, framed the three extension questions, and designed the comparative pipeline with stratified evaluation that preserves the natural class imbalance.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Implementation</div>
+    <div class="pb-role-card__body">Wrote, executed and debugged the full Jupyter notebook covering preprocessing, five classifier pipelines with GridSearchCV tuning, K-means segmentation, cost-sensitive thresholding and SHAP interpretability.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Methodological innovations</div>
+    <div class="pb-role-card__body">Derived the 5:1 cost ratio from published e-commerce benchmarks and ran the sensitivity analysis. Designed the K-means feature injection and the voting ensemble, both reported honestly as negative results.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">AI tool disclosure</div>
+    <div class="pb-role-card__body">Used Gemini and Grammarly for proofreading, structural suggestions, arithmetic reconciliation and referencing checks. All analysis, methodological choices and interpretation of results are my own, documented in the paper's AI declaration.</div>
+  </div>
+</div>
+```
+
+## Limitations acknowledged in the paper
+
+::: {.callout-warning title="Four limitations worth flagging"}
+a. **Single platform, single time window.** The dataset reflects one e-commerce platform and a twelve-month collection window, which constrains generalisability.
+
+b. **Geographical mismatch on the cost ratio.** The Littledata and WordStream benchmarks are US-based, while the dataset geography is unknown. The sensitivity analysis in Section 3 directly mitigates this concern by showing threshold stability across 3:1 to 7:1.
+
+c. **Single stratified split.** Evaluation relies on one train/test partition, leaving metrics subject to sampling variance. k-fold test evaluation would tighten confidence intervals.
+
+d. **Scaler fitted on full dataset.** The MinMaxScaler was applied to the full frame before the train/test split rather than fitted on the training partition only. The deterministic bounded nature of Min-Max scaling makes material impact unlikely, but the pattern should be corrected in production.
+:::
 
 ## Reflection
 
-*Reflection to be added here.*
+This was the most technically demanding piece of work of my degree and also the one I am proudest of. The core lesson was methodological rather than technical. Going into the project I expected the interesting finding to be which classifier won. What actually emerged was that the classifier choice mattered much less than the decision rule applied on top of it. The 33.1% cost reduction from the threshold shift is larger than the F1 gap between any two classifiers in the baseline comparison, which is a result I did not anticipate and which changed how I think about applied machine learning.
+
+Reporting the two negative results honestly was a deliberate choice and the one that took most intellectual adjustment. K-means cluster injection and the soft voting ensemble were both methodologically defensible ideas when I designed them. Neither worked. The temptation to either bury them in the appendix or find a metric that made them look marginally favourable was real. Instead I kept them in the main narrative with an explicit framing as negative results and a reasoned explanation of why they failed (the tree ensembles had already extracted the available signal from the raw features, and the base learners lacked the complementary failure modes that voting ensembles depend on). Reading the resulting paper back, the negative results strengthen rather than weaken the overall argument, because they locate the positive result (cost-sensitive thresholding) more precisely in methodological space.
+
+The interplay between this module and the portfolio itself is worth noting. This research was submitted for BAA1027 Machine Learning on 19 April 2026 under Dr Farayola; the portfolio for the same module is being submitted six days later under Dr Cormac Doran. Rebuilding the analytical exhibits as interactive Plotly charts for the portfolio was a separate exercise: the notebook used matplotlib and seaborn, and converting them forced me to ask whether each figure pulled analytical weight or was decorative. The classifier comparison, threshold curve, confusion-matrix shift and SHAP ranking passed that test. The ROC curves and exploratory histograms, while standard in an academic paper, did not add independent analytical value to the portfolio story and so were omitted.
+
+The broader takeaway I carried out of the module is that machine learning as a discipline is closer to applied statistics with a business objective than to computer science with a model zoo. The classifier is the smaller part of the problem. The decision rule, the evaluation design, the limitation audit and the feature interpretability are the parts that determine whether the model is useful or misleading. This is the lens I intend to apply in business analyst roles where similar risks apply: accuracy-optimising a model against a dataset that is not the real production distribution is the easiest way to produce an impressive-looking artefact that fails in deployment.
 
 ## Downloads
 
 ```{=html}
 <div class="pb-downloads">
-  <a href="/assets/pdfs/Research_Report_22420692.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View full report</a>
-  <a href="/assets/pdfs/online_shoppers_ml_analysis_22420692.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View notebook</a>
+  <a href="/assets/pdfs/Research_Report_22420692.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View research paper</a>
+  <a href="/assets/pdfs/online_shoppers_ml_analysis_22420692.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Jupyter notebook</a>
 </div>
 ```
 
