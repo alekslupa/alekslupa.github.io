@@ -3361,6 +3361,8 @@ h2#about-me {
   display: flex;
   flex-direction: column;
   margin: 1.5rem 0 2rem;
+
+  .ab-exp:first-child { border-top: none; }
 }
 
 .ab-exp {
@@ -3413,6 +3415,8 @@ h2#about-me {
   display: flex;
   flex-direction: column;
   margin: 1.5rem 0 2rem;
+
+  .ab-edu:first-child { border-top: none; }
 }
 
 .ab-edu {
@@ -3512,7 +3516,6 @@ h2#about-me {
   gap: 1.25rem;
   padding: 1.5rem 0;
   margin: 2rem 0 3rem;
-  border-top: 0.5px solid var(--about-border);
 }
 
 .ab-contact__link {
