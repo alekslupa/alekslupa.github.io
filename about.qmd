@@ -1,144 +1,304 @@
 ---
-pagetitle: "About — Aleksander Lupa"
-page-layout: article
-toc: false
+title: "About"
+description: "Final year Business Studies student at DCU specialising in Business Analytics, on track for 2:1 Honours. Two years of analytics and operations experience in Dublin across insurance and hospitality."
+author: "Aleksander Lupa"
+date: "2026-04-24"
+format:
+  html:
+    code-fold: true
+    code-tools: false
+    toc: false
+    page-layout: full
+execute:
+  echo: true
+  warning: false
+  freeze: auto
 ---
 
 ```{=html}
-<div class="about-hero">
-<div class="about-photo-wrap">
-<a href="assets/about.me.pfp.png" target="_blank" rel="noopener"><img src="assets/about.me.pfp.png" alt="Aleksander Lupa" class="about-photo"></a>
-</div>
-<div class="about-hero__info">
-<h1 class="about-name">Aleksander Lupa</h1>
-<p class="about-tagline">Business Studies student · DCU · Bodybuilder</p>
-<div class="about-tags">
-<span class="about-tag">Business Analytics</span>
-<span class="about-tag">Web Design</span>
-<span class="about-tag">Bodybuilding</span>
-</div>
-<a href="assets/Aleksander_Lupa_CV.pdf" download class="about-cv-btn">Download CV</a>
-</div>
+<section class="ab-hero">
+  <div class="ab-hero__grid">
+    <div class="ab-hero__text">
+      <div class="ab-hero__eyebrow">Final year · Business Studies · DCU</div>
+      <h1 class="ab-hero__name">Aleksander Lupa</h1>
+      <p class="ab-hero__lede">I translate business questions into data problems and back again. Final year Business Analytics student at DCU on track for 2:1 Honours, with recent experience at Allied World in underwriting operations and a portfolio of projects spanning machine learning, financial modelling and strategic analysis.</p>
+      <div class="ab-hero__ctas">
+        <a href="/assets/Aleksander_Lupa_CV.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-file-earmark-pdf"></i>&nbsp;Download CV</a>
+        <a href="mailto:aleklupa@gmail.com" class="btn btn-outline-dark"><i class="bi bi-envelope"></i>&nbsp;Get in touch</a>
+      </div>
+      <div class="ab-hero__stats">
+        <div class="ab-hero__stat"><div class="ab-hero__stat-num">4</div><div class="ab-hero__stat-lbl">Years at DCU</div></div>
+        <div class="ab-hero__stat"><div class="ab-hero__stat-num">3</div><div class="ab-hero__stat-lbl">Languages</div></div>
+        <div class="ab-hero__stat"><div class="ab-hero__stat-num">39</div><div class="ab-hero__stat-lbl">Certifications</div></div>
+        <div class="ab-hero__stat"><div class="ab-hero__stat-num">2:1</div><div class="ab-hero__stat-lbl">Honours progression</div></div>
+      </div>
+    </div>
+    <div class="ab-hero__photo">
+      <img src="/assets/about.me.pfp.png" alt="Aleksander Lupa" />
+    </div>
+  </div>
+</section>
+```
+
+## In one paragraph
+
+I'm interested in the problems where a clean dataset, a clear business question and a messy real-world constraint collide. That combination is where my Allied World underwriting work, my BAA1027 Machine Learning research on shopper intent, the EcoEnergy profitability dashboard and my BAA1003 capstone on PriceBeo all sit. Business analytics as a discipline is less about running more models and more about asking the right question, building the evidence carefully, and communicating the result so that a decision can actually be made. That is the lens I want to take into a graduate role.
+
+## How I work
+
+```{=html}
+<div class="ab-principles">
+  <div class="ab-principle">
+    <div class="ab-principle__num">01</div>
+    <div class="ab-principle__title">Question before model</div>
+    <div class="ab-principle__body">Every analytical project starts with what decision the analysis is supposed to support. My ML research paper concluded that the classification threshold (a decision rule) mattered more than the classifier choice; that finding changed how I think about applied analytics.</div>
+  </div>
+  <div class="ab-principle">
+    <div class="ab-principle__num">02</div>
+    <div class="ab-principle__title">Report the negative results</div>
+    <div class="ab-principle__body">Two of the three methodological innovations in my research paper did not work. I reported both in the main narrative rather than burying them. Negative results strengthen an argument by locating the positive one more precisely.</div>
+  </div>
+  <div class="ab-principle">
+    <div class="ab-principle__num">03</div>
+    <div class="ab-principle__title">Translate, do not summarise</div>
+    <div class="ab-principle__body">My CTO role on PriceBeo taught me that translating between technical and commercial teams is not the same as summarising. It means restating trade-offs in the language the other side uses, so that a joint decision can be made.</div>
+  </div>
+  <div class="ab-principle">
+    <div class="ab-principle__num">04</div>
+    <div class="ab-principle__title">Discipline scales</div>
+    <div class="ab-principle__body">The habits that make competitive bodybuilding work (consistent inputs, honest measurement, long horizons, no shortcuts) are the same habits that make analytical work trustworthy. I try to operate the same way in both.</div>
+  </div>
 </div>
 ```
 
-## About me
+## Skills, with evidence
+
+Rather than self-rate in percentages, each competency below is anchored to a specific piece of work where it was applied. The logic is that "80% at SQL" is meaningless; "built the data model for X with these tables, deployed in Y project" is verifiable.
 
 ```{=html}
-<div class="about-bio">
-<p>I'm a final-year Business Studies student at Dublin City University, specialising in Business Analytics. I'm passionate about the point where business questions meet technical problem-solving, using data to clarify what's happening, why it's happening, and what to do next.</p>
-<p>My toolkit spans Python (Pandas/NumPy), SQL/MySQL, Power BI/Tableau, Excel, and web fundamentals including HTML/CSS. I also have hands-on experience designing and building multiple websites using WordPress, giving me a practical understanding of how design and content come together for real audiences. I enjoy the full analytical cycle: framing the business problem, building tidy data models, testing assumptions, and communicating insights that drive real decisions.</p>
-<p>Outside of work and college, I'm a dedicated bodybuilder. The discipline and consistency that the sport demands carries into everything else I do.</p>
-</div>
-```
+<div class="ab-skills">
 
-## Skills
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-filetype-py"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">Python (pandas, NumPy, Plotly, scikit-learn, XGBoost, SHAP)</div>
+      <div class="ab-skill__evidence">Applied in BAA1027 ML research paper: 12,205 sessions, five classifiers tuned via GridSearchCV, cost-sensitive threshold optimisation, SHAP interpretability audit. Every project page in this ePortfolio uses executable Python chunks.</div>
+    </div>
+  </div>
 
-```{=html}
-<div class="skills-grid">
-<div class="skill-card">
-<span class="skill-name">Python · Pandas/NumPy</span>
-<div class="skill-bar"><div class="skill-fill skill-fill--80"></div></div>
-<span class="skill-pct">80%</span>
-</div>
-<div class="skill-card">
-<span class="skill-name">SQL / MySQL</span>
-<div class="skill-bar"><div class="skill-fill skill-fill--80"></div></div>
-<span class="skill-pct">80%</span>
-</div>
-<div class="skill-card">
-<span class="skill-name">Power BI / Tableau</span>
-<div class="skill-bar"><div class="skill-fill skill-fill--75"></div></div>
-<span class="skill-pct">75%</span>
-</div>
-<div class="skill-card">
-<span class="skill-name">Excel</span>
-<div class="skill-bar"><div class="skill-fill skill-fill--85"></div></div>
-<span class="skill-pct">85%</span>
-</div>
-<div class="skill-card">
-<span class="skill-name">HTML / CSS / JS</span>
-<div class="skill-bar"><div class="skill-fill skill-fill--65"></div></div>
-<span class="skill-pct">65%</span>
-</div>
-<div class="skill-card">
-<span class="skill-name">Data reporting</span>
-<div class="skill-bar"><div class="skill-fill skill-fill--80"></div></div>
-<span class="skill-pct">80%</span>
-</div>
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-database"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">SQL · MySQL · PostgreSQL</div>
+      <div class="ab-skill__evidence">DCU Database Systems coursework. Designed the six-table PostgreSQL backend for PriceBeo. Queried and reconciled account data at Allied World.</div>
+    </div>
+  </div>
+
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-bar-chart-fill"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">Power BI · DAX · Power Query · Excel</div>
+      <div class="ab-skill__evidence">EcoEnergy Corp profitability dashboard: star schema, DAX KPIs (YoY, MoM, rolling 12-month, cost per unit), region-to-product drill-through, and a 3-year predictive model projecting a turnaround from a €8.46M net loss to €3.09M annual profit.</div>
+    </div>
+  </div>
+
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-code-slash"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">Web development (Quarto, HTML, CSS, SCSS, WordPress)</div>
+      <div class="ab-skill__evidence">This ePortfolio: Quarto with 2,400+ line custom SCSS, Plotly and Mermaid artefacts, dark mode via CSS custom properties. Multiple WordPress builds as part of the VIP Ireland project.</div>
+    </div>
+  </div>
+
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-clipboard-data"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">Data reporting and reconciliation</div>
+      <div class="ab-skill__evidence">15 months at Allied World producing recurring management reports with SLA discipline. Liaised with Finance on payment reconciliations; maintained audit-ready e-filing databases.</div>
+    </div>
+  </div>
+
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-diagram-3"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">Strategic frameworks</div>
+      <div class="ab-skill__evidence">BAA1019 Business Strategy: Superdry strategic review applying PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, Strategy Diamond and ERRC Grid across Diagnostics and Evaluation stages.</div>
+    </div>
+  </div>
+
+  <div class="ab-skill">
+    <div class="ab-skill__icon"><i class="bi bi-git"></i></div>
+    <div class="ab-skill__body">
+      <div class="ab-skill__name">Developer tooling (Git, Jira, Linux CLI)</div>
+      <div class="ab-skill__evidence">Git version control across every portfolio project. Jira for ticket and workflow management. Comfortable on Linux command line, Windows and macOS environments.</div>
+    </div>
+  </div>
+
 </div>
 ```
 
 ## Experience
 
 ```{=html}
-<div class="timeline">
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Underwriting Operations Assistant</div>
-<div class="timeline-meta">Allied World, Dublin &nbsp;·&nbsp; May 2024 – Aug 2025</div>
-<p class="timeline-desc">Updated accounts to underwriter instructions within SLAs and produced recurring management reports with validated figures. Maintained audit-ready databases, liaised with Finance on reconciliations, and onboarded and trained new hires.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Shift Runner</div>
-<div class="timeline-meta">SSP UK &amp; Ireland, Dublin &nbsp;·&nbsp; Mar 2024 – May 2025</div>
-<p class="timeline-desc">Led shift operations, managed till and cash handling, and delivered strong customer experience. Developed communication, organisation, and problem-solving skills in a fast-paced environment.</p>
-</div>
-</div>
+<div class="ab-experience">
+
+  <div class="ab-exp">
+    <div class="ab-exp__dates">May 2024 – Aug 2025</div>
+    <div class="ab-exp__body">
+      <div class="ab-exp__role">Underwriting Operations Assistant</div>
+      <div class="ab-exp__company">Allied World, Dublin</div>
+      <ul class="ab-exp__bullets">
+        <li>Produced recurring management reports with validated figures for underwriting pipeline stakeholders.</li>
+        <li>Maintained audit-ready e-filing database; liaised with Finance on payment reconciliations within SLAs.</li>
+        <li>Onboarded and trained new hires on filing structures, report templates, and daily workflows.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ab-exp">
+    <div class="ab-exp__dates">Mar 2024 – May 2025</div>
+    <div class="ab-exp__body">
+      <div class="ab-exp__role">Shift Runner</div>
+      <div class="ab-exp__company">SSP Group PLC, Dublin</div>
+      <ul class="ab-exp__bullets">
+        <li>Led busy shifts coordinating a team of six or more across tills, floor coverage and close-down.</li>
+        <li>Reconciled daily takings, resolved discrepancies, and coached new team members.</li>
+      </ul>
+    </div>
+  </div>
+
 </div>
 ```
 
 ## Education
 
 ```{=html}
-<div class="timeline">
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Bachelor of Business Studies</div>
-<div class="timeline-meta">Dublin City University &nbsp;·&nbsp; Sep 2022 – Apr 2026</div>
-<p class="timeline-desc">Specialising in Business Analytics. Modules include data analysis, Python, SQL, statistics, and data visualisation.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Leaving Certificate</div>
-<div class="timeline-meta">St Finians Community College &nbsp;·&nbsp; Sep 2017 – Jun 2022</div>
-</div>
-</div>
+<div class="ab-education">
+
+  <div class="ab-edu">
+    <div class="ab-edu__years">Sep 2022 – May 2026</div>
+    <div class="ab-edu__body">
+      <div class="ab-edu__qual">BSc Business Studies · Specialisation: Business Analytics</div>
+      <div class="ab-edu__institution">Dublin City University · 2:1 Honours progression</div>
+      <div class="ab-edu__detail">Relevant coursework: Data Analytics, Power BI and Visualisation, Database Systems, Statistics, Machine Learning and Advanced Python, Business Strategy, New Enterprise Development, Web Development for Analytics.</div>
+    </div>
+  </div>
+
+  <div class="ab-edu">
+    <div class="ab-edu__years">Sep 2017 – Jun 2022</div>
+    <div class="ab-edu__body">
+      <div class="ab-edu__qual">Leaving Certificate</div>
+      <div class="ab-edu__institution">St Finians Community College, Dublin</div>
+    </div>
+  </div>
+
 </div>
 ```
 
 ## Languages
 
-```{=html}
-<div class="lang-cards">
-<div class="lang-card">
-<span class="lang-name">English</span>
-<span class="lang-level">Native</span>
-</div>
-<div class="lang-card">
-<span class="lang-name">Polish</span>
-<span class="lang-level">Native</span>
-</div>
-<div class="lang-card">
-<span class="lang-name">Spanish</span>
-<span class="lang-level">Limited working</span>
-</div>
-</div>
+```{python}
+#| label: fig-languages
+#| fig-cap: "Language exposure expressed as active years rather than self-rated percentages. English and Polish are both fluent with different domains of use; Spanish is a steadily developing third language."
+
+import pandas as pd
+import plotly.graph_objects as go
+
+languages = pd.DataFrame({
+    "Language": ["English", "Polish", "Spanish"],
+    "Years":    [18, 22, 4],
+    "Level":    ["Fluent · professional", "Fluent · family", "Intermediate"],
+    "Context":  ["Education and work in Ireland",
+                 "Spoken at home, family in Poland",
+                 "Studied through DCU and self-study"],
+})
+
+languages = languages.sort_values("Years", ascending=True)
+
+colours = ["#d4a017", "#1e7e34", "#0a579c"]
+
+fig = go.Figure(go.Bar(
+    y=languages["Language"],
+    x=languages["Years"],
+    orientation="h",
+    marker=dict(color=colours[:len(languages)]),
+    text=[f"{y} years · {lvl}" for y, lvl in zip(languages["Years"], languages["Level"])],
+    textposition="outside",
+    textfont=dict(size=12, color="#1a1a1a"),
+    hovertemplate="<b>%{y}</b><br>Years: %{x}<br>%{customdata}<extra></extra>",
+    customdata=languages["Context"],
+))
+
+fig.update_layout(
+    height=260,
+    margin=dict(l=20, r=220, t=10, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(title="Years of active use", showgrid=True, gridcolor="#eee", range=[0, 28]),
+    yaxis=dict(showgrid=False),
+    showlegend=False,
+)
+fig.show()
 ```
 
 ## Beyond the screen
 
 ```{=html}
-<div class="hobbies-list">
-<span class="hobby-item">Competitive bodybuilding</span>
-<span class="hobby-item">Hiking</span>
-<span class="hobby-item">Running</span>
+<div class="ab-beyond">
+
+  <div class="ab-beyond__item">
+    <div class="ab-beyond__icon"><i class="bi bi-trophy-fill"></i></div>
+    <div class="ab-beyond__title">Competitive bodybuilding</div>
+    <div class="ab-beyond__body">Training seriously since 2021. The sport teaches you that consistent inputs beat bursts of effort, that honest measurement is non-negotiable, and that meaningful change happens on horizons longer than most people will tolerate. I apply the same principles to analytical work; patience with a dataset tends to produce better answers than aggression with it.</div>
+  </div>
+
+  <div class="ab-beyond__item">
+    <div class="ab-beyond__icon"><i class="bi bi-signpost-split-fill"></i></div>
+    <div class="ab-beyond__title">Hiking and running</div>
+    <div class="ab-beyond__body">Weekend trails around Wicklow and further afield when time allows. The combination of distance and elevation is a good antidote to screen time and produces the kind of quiet thinking space that problem-solving actually requires.</div>
+  </div>
+
+  <div class="ab-beyond__item">
+    <div class="ab-beyond__icon"><i class="bi bi-heart-fill"></i></div>
+    <div class="ab-beyond__title">Community volunteering</div>
+    <div class="ab-beyond__body">Volunteered in Czestochowa, Poland in 2021 and 2022 on community service initiatives. Worth it for the shift in perspective that comes from working alongside people in circumstances quite different from your own.</div>
+  </div>
+
 </div>
+```
+
+## Contact
+
+```{=html}
+<div class="ab-contact">
+  <a href="mailto:aleklupa@gmail.com" class="ab-contact__link"><i class="bi bi-envelope-fill"></i>&nbsp;aleklupa@gmail.com</a>
+  <a href="tel:+353871441101" class="ab-contact__link"><i class="bi bi-telephone-fill"></i>&nbsp;+353 87 144 1101</a>
+  <a href="https://www.linkedin.com/in/alexlupa" class="ab-contact__link" target="_blank"><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a>
+  <a href="https://github.com/alekslupa" class="ab-contact__link" target="_blank"><i class="bi bi-github"></i>&nbsp;GitHub</a>
+  <a href="/assets/Aleksander_Lupa_CV.pdf" class="ab-contact__link" target="_blank"><i class="bi bi-file-earmark-pdf-fill"></i>&nbsp;CV (PDF)</a>
+</div>
+
+<script>
+(function () {
+  const sequence = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
+                    "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight",
+                    "b", "a"];
+  let position = 0;
+
+  document.addEventListener("keydown", function (event) {
+    const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+    const expected = sequence[position];
+    if (key === expected) {
+      position += 1;
+      if (position === sequence.length) {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        position = 0;
+      }
+    } else {
+      position = key === sequence[0] ? 1 : 0;
+    }
+  });
+})();
+</script>
 ```
