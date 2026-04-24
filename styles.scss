@@ -3036,3 +3036,84 @@ body.quarto-dark {
     }
   }
 }
+
+// ============================================================
+// Projects page — filter bar
+// ============================================================
+
+.proj-filter-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.proj-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.proj-filter-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted);
+}
+
+.proj-filter-select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.35rem 2rem 0.35rem 0.65rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  border: 1px solid var(--about-border);
+  border-radius: 5px;
+  background-color: var(--about-tag-bg);
+  color: var(--bs-body-color, #2b2b2b);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%23888888' d='M5 7L0 2h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  cursor: pointer;
+  min-width: 200px;
+  transition: border-color 0.15s ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--about-btn-bg);
+  }
+}
+
+.proj-filter-reset {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid var(--about-border);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--about-muted);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: var(--about-tag-bg);
+    color: var(--bs-body-color, #2b2b2b);
+    border-color: var(--about-muted);
+  }
+}
+
+.proj-filter-empty {
+  color: var(--about-muted);
+  font-size: 0.9rem;
+  padding: 0.5rem 0 1rem;
+}
+
+// Disable Quarto's built-in category chip click filter on the projects listing
+// so the dropdowns above are the sole filtering mechanism.
+.quarto-listing .listing-category {
+  pointer-events: none;
+  cursor: default;
+}
