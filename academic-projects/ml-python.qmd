@@ -418,26 +418,30 @@ The behavioural features (green) dominate the ranking. Temporal features (Month_
 
 ## 6. The analytical pipeline
 
-The research followed a nine-stage pipeline from raw data through to interpretability, with cost-sensitive threshold optimisation slotted in after classification rather than before. This matters because it is the point where business economics enters the analytical chain, and placing it after rather than before the classifier keeps the upstream model training decoupled from downstream operational parameters.
+The research followed a pipeline from raw data through to interpretability, with cost-sensitive threshold optimisation slotted in after classification rather than before. This matters because it is the point where business economics enters the analytical chain, and placing it after rather than before the classifier keeps the upstream model training decoupled from downstream operational parameters.
 
+::: {style="max-width:480px;margin:0 auto;"}
 ```{mermaid}
 %%| label: fig-pipeline
-%%| fig-cap: "End-to-end analytical pipeline. Business economics enter at the threshold optimisation stage rather than the training stage, keeping the classifier training decoupled from operational parameters that may change over time."
+%%| fig-cap: "End-to-end analytical pipeline."
 %%{init: {'securityLevel': 'loose'}}%%
 flowchart TB
-    A[Raw data<br/>12,330 sessions<br/>17 features] --> B[Preprocessing<br/>Dedupe, one-hot encode<br/>MinMax scaling]
-    B --> C[Stratified split<br/>70/30 train/test<br/>preserves 15.5% positive rate]
-    C --> D[K-means on train<br/>k=3, silhouette 0.61<br/>cluster label injected]
-    D --> E[GridSearchCV<br/>5-fold stratified<br/>F1 scoring criterion]
-    E --> F[5 classifiers<br/>LR, SVM, RF, XGBoost<br/>Soft voting ensemble]
-    F --> G[Baseline evaluation<br/>Precision, Recall, F1<br/>ROC AUC, PR AUC]
-    G --> H[Threshold optimisation<br/>5:1 cost ratio<br/>Minimises business cost]
-    H --> I[SHAP audit<br/>Feature importance<br/>Behavioural plausibility]
+    A["Raw data · 12,330 sessions<br/>17 features · 15.5% positive class"] --> B["Preprocessing<br/>Dedupe · one-hot · MinMax scale"]
+    B --> C["Stratified 70/30 split<br/>random_state=42"]
+    C --> D["K-means on train (k=3)<br/>Silhouette 0.61 · label injected"]
+    D --> E["GridSearchCV · 5-fold · F1<br/>5 classifiers + voting ensemble"]
+    E --> H["★ Threshold optimisation<br/>5:1 cost ratio · business economics"]
+    H --> I["SHAP audit<br/>Feature importance · plausibility"]
 
     style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a
+    style B fill:#f1f8e9,stroke:#1e7e34,color:#1a1a1a
+    style C fill:#f1f8e9,stroke:#1e7e34,color:#1a1a1a
+    style D fill:#e3f2fd,stroke:#1565c0,color:#1a1a1a
+    style E fill:#e3f2fd,stroke:#1565c0,color:#1a1a1a
     style H fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
     style I fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a
 ```
+:::
 
 ## What I was responsible for
 
