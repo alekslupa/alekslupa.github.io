@@ -3185,6 +3185,33 @@ h2#about-me {
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-bottom: 1.75rem;
+
+  .btn { border-radius: 0.375rem; font-weight: 500; }
+
+  .btn-dark {
+    background-color: var(--about-btn-bg) !important;
+    color: var(--about-btn-color) !important;
+    border-color: var(--about-btn-bg) !important;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      background-color: var(--about-btn-bg) !important;
+      color: var(--about-btn-color) !important;
+      border-color: var(--about-btn-bg) !important;
+      opacity: 0.75;
+    }
+  }
+
+  .btn-outline-secondary {
+    color: var(--about-btn-bg) !important;
+    border-color: var(--about-btn-bg) !important;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: var(--about-btn-bg) !important;
+      color: var(--about-btn-color) !important;
+    }
+  }
 }
 
 .ab-hero__stats {
@@ -3248,6 +3275,7 @@ h2#about-me {
   padding: 1.5rem;
   border: 0.5px solid var(--about-border);
   border-radius: 6px;
+  background: var(--bs-body-bg);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
@@ -3292,13 +3320,13 @@ h2#about-me {
   gap: 1rem;
   align-items: start;
   padding: 1.1rem 1.25rem;
-  background: var(--fj-bg-secondary);
+  background: rgba(0, 0, 0, 0.02);
   border-radius: 6px;
   border-left: 3px solid #1e7e34;
   transition: background 0.2s ease;
 
   &:hover {
-    background: rgba(30, 126, 52, 0.08);
+    background: rgba(30, 126, 52, 0.06);
   }
 }
 
@@ -3440,7 +3468,8 @@ h2#about-me {
 
 .ab-beyond__item {
   padding: 1.5rem;
-  background: var(--fj-bg-secondary);
+  background: var(--bs-body-bg);
+  border: 0.5px solid var(--about-border);
   border-radius: 6px;
   transition: transform 0.2s ease;
 
@@ -3508,6 +3537,14 @@ h2#about-me {
 
 // -- Dark mode overrides -----------------------------------------------------
 .quarto-dark {
+  .ab-skill {
+    background: rgba(255, 255, 255, 0.03);
+
+    &:hover {
+      background: rgba(30, 126, 52, 0.1);
+    }
+  }
+
   .ab-hero__eyebrow,
   .ab-hero__stat-lbl,
   .ab-exp__dates,
