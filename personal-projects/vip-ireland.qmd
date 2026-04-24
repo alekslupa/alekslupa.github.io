@@ -1,10 +1,17 @@
 ---
 pagetitle: "VIP Ireland — Aleksander Lupa"
+title: "VIP Ireland"
+description: "Professional website built for an Irish aesthetic machine distributor using WordPress and Elementor Pro, delivering a clean, conversion-focused design."
+author: "Aleksander Lupa"
+date: "2024-06-01"
+image: "assets/screenshots/vip-ireland.png"
+categories: [Personal, WordPress, Freelance]
 page-layout: article
 toc: false
 ---
 
 ```{=html}
+<style>.quarto-title h1.title{display:none}</style>
 <a href="index.html" class="proj-back">Personal projects</a>
 
 <div class="proj-header">

@@ -1,6 +1,11 @@
 ---
 pagetitle: "Superdry Strategic Analysis — Aleksander Lupa"
 title: "Superdry strategic analysis"
+description: "A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, and the Strategy Diamond, delivered as a consulting simulation for the BAA1019 Business Strategy module."
+author: "Aleksander Lupa"
+date: "2025-03-01"
+image: "assets/Superdry.1.png"
+categories: [Academic, "Business Strategy", "Group Project"]
 page-layout: article
 toc: false
 execute:

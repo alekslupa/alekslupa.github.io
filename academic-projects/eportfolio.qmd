@@ -1,10 +1,17 @@
 ---
 pagetitle: "ePortfolio — Aleksander Lupa"
+title: "ePortfolio (this website)"
+description: "A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages, showcasing academic and personal projects as part of a BSc in Business Studies at DCU."
+author: "Aleksander Lupa"
+date: "2025-04-01"
+image: "assets/github.png"
+categories: [Academic, Quarto, SCSS, Git]
 page-layout: article
 toc: false
 ---
 
 ```{=html}
+<style>.quarto-title h1.title{display:none}</style>
 <a href="index.html" class="proj-back">Academic projects</a>
 
 <div class="proj-header">

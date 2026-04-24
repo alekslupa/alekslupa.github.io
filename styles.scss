@@ -1649,6 +1649,12 @@ h3.fj-entry__title {
   }
 }
 
+// Suppress Quarto-rendered title block fields (description, author, date)
+// on project pages. Data is kept in YAML for SEO meta tags and listing cards;
+// the custom hero layout handles visible presentation.
+.quarto-title-block .description,
+.quarto-title-block .quarto-title-meta { display: none; }
+
 .proj-header {
   padding-bottom: 1.75rem;
   border-bottom: 1px solid var(--about-border);

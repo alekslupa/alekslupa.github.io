@@ -1,10 +1,17 @@
 ---
 pagetitle: "Bath Store and More — Aleksander Lupa"
+title: "Bath Store and More"
+description: "A responsive, brand-aligned WordPress website for a Dublin bathroom design company, built to showcase products and drive customer enquiries."
+author: "Aleksander Lupa"
+date: "2024-09-01"
+image: "assets/screenshots/bathstore.png"
+categories: [Personal, WordPress, Freelance]
 page-layout: article
 toc: false
 ---
 
 ```{=html}
+<style>.quarto-title h1.title{display:none}</style>
 <a href="index.html" class="proj-back">Personal projects</a>
 
 <div class="proj-header">

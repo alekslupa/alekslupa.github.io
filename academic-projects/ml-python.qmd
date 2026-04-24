@@ -1,6 +1,11 @@
 ---
 pagetitle: "Online Shoppers Purchasing Intention — Aleksander Lupa"
 title: "Online Shoppers Purchasing Intention"
+description: "BAA1027 Machine Learning research paper applying five classifiers to the UCI Online Shoppers Purchasing Intention dataset, with cost-sensitive threshold optimisation derived from published e-commerce economics."
+author: "Aleksander Lupa"
+date: "2026-04-19"
+image: "assets/ml-python.png"
+categories: [Academic, Python, "Machine Learning", XGBoost]
 page-layout: article
 toc: false
 execute:
