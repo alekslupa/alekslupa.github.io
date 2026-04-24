@@ -68,9 +68,7 @@ I'm interested in the problems where a clean dataset, a clear business question 
 </div>
 ```
 
-## Skills, with evidence
-
-Rather than self-rate in percentages, each competency below is anchored to a specific piece of work where it was applied. The logic is that "80% at SQL" is meaningless; "built the data model for X with these tables, deployed in Y project" is verifiable.
+## Skills
 
 ```{=html}
 <div class="ab-skills">
@@ -270,8 +268,7 @@ fig.show()
 ```{=html}
 <div class="ab-contact">
   <a href="mailto:aleklupa@gmail.com" class="ab-contact__link"><i class="bi bi-envelope-fill"></i>&nbsp;aleklupa@gmail.com</a>
-  <a href="tel:+353871441101" class="ab-contact__link"><i class="bi bi-telephone-fill"></i>&nbsp;+353 87 144 1101</a>
-  <a href="https://www.linkedin.com/in/alexlupa" class="ab-contact__link" target="_blank"><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a>
+<a href="https://www.linkedin.com/in/alexlupa" class="ab-contact__link" target="_blank"><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a>
   <a href="https://github.com/alekslupa" class="ab-contact__link" target="_blank"><i class="bi bi-github"></i>&nbsp;GitHub</a>
   <a href="/assets/Aleksander_Lupa_CV.pdf" class="ab-contact__link" target="_blank"><i class="bi bi-file-earmark-pdf-fill"></i>&nbsp;CV (PDF)</a>
 </div>
