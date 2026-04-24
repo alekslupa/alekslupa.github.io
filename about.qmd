@@ -1,8 +1,5 @@
 ---
-title: "About"
-description: "Final year Business Studies student at DCU specialising in Business Analytics, on track for 2:1 Honours. Two years of analytics and operations experience in Dublin across insurance and hospitality."
-author: "Aleksander Lupa"
-date: "2026-04-24"
+pagetitle: "About — Aleksander Lupa"
 format:
   html:
     code-fold: true
