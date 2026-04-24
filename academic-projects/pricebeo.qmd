@@ -42,17 +42,16 @@ format:
   </nav>
 </div>
 
-<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
 ```
-
-[CAPSTONE PROJECT · 2025]{.ap-meta-label}
 
 A real-time barcode-scanning grocery price comparison app for the Irish market, developed across four assignments as part of the New Enterprise Development module (BAA1003) at DCU. Pitched in a mock Dragons Den to a panel of investors.
 
-[New Enterprise Development]{.pp-tag}
-[Dragons Den pitch]{.pp-tag}
-[Group project]{.pp-tag}
-[Product strategy]{.pp-tag}
+```{=html}
+<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
+```
+
+[BAA1003]{.pp-tag}
+[Academic]{.pp-tag}
 
 ```{=html}
 <div class="ap-project-meta">

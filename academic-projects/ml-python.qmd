@@ -40,19 +40,16 @@ format:
   </nav>
 </div>
 
-<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
 ```
-
-[INDIVIDUAL PROJECT · 2026]{.ap-meta-label}
 
 A comparative machine learning analysis applying five classifiers plus a soft voting ensemble to the UCI Online Shoppers Purchasing Intention dataset (12,330 sessions), extending the standard pipeline with K-means feature injection, a soft voting ensemble and cost-sensitive threshold optimisation. The central argument: for imbalanced business classification problems the decision rule, not the choice of classifier, is often the more consequential design lever.
 
-[Machine Learning]{.pp-tag}
-[Python]{.pp-tag}
-[XGBoost]{.pp-tag}
-[SHAP]{.pp-tag}
-[Research paper]{.pp-tag}
-[Solo project]{.pp-tag}
+```{=html}
+<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
+```
+
+[BAA1027]{.pp-tag}
+[Academic]{.pp-tag}
 
 ```{=html}
 <div class="ap-project-meta">

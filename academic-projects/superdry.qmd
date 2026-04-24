@@ -39,19 +39,16 @@ format:
   </nav>
 </div>
 
-<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
 ```
-
-[GROUP PROJECT · 2025]{.ap-meta-label}
 
 A consulting-style strategic review of a once-iconic British apparel brand. BAA1019 Business Strategy module project. As Associate Director at A & A Consultancy, Group BS1, I led analysis and synthesis across the Diagnostics and Evaluation stages of a full strategic review of Superdry.
 
-[Business Strategy]{.pp-tag}
-[PESTEL]{.pp-tag}
-[Porter's Five Forces]{.pp-tag}
-[SWOT]{.pp-tag}
-[Strategy Diamond]{.pp-tag}
-[Group project]{.pp-tag}
+```{=html}
+<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
+```
+
+[BAA1019]{.pp-tag}
+[Academic]{.pp-tag}
 
 ```{=html}
 <div class="ap-project-meta">

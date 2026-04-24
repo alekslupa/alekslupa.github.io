@@ -12,18 +12,14 @@ toc: false
 
 ```{=html}
 <style>.quarto-title h1.title{display:none}</style>
-<a href="index.html" class="proj-back">Academic projects</a>
 
 <div class="proj-header">
-  <div class="proj-label">Academic project · 2025</div>
   <h1 class="proj-title">ePortfolio (this website)</h1>
   <p class="proj-subtitle">A professional ePortfolio designed and built from scratch as part of my BSc in Business Studies at Dublin City University, using Quarto, custom SCSS, and GitHub Pages.</p>
+  <a href="index.html" class="proj-back">← Academic projects</a>
   <div class="proj-tags">
-    <span class="pp-tag">Quarto</span>
-    <span class="pp-tag">HTML</span>
-    <span class="pp-tag">SCSS</span>
-    <span class="pp-tag">Git</span>
-    <span class="pp-tag">GitHub Pages</span>
+    <span class="pp-tag">BAA1027</span>
+    <span class="pp-tag">Academic</span>
   </div>
   <div class="proj-meta">
     <div class="proj-meta__item">
