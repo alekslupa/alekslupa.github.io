@@ -5,7 +5,7 @@ description: "Professional website built for an Irish aesthetic machine distribu
 author: "Aleksander Lupa"
 date: "2024-06-01"
 image: "assets/screenshots/vip-ireland.png"
-categories: [Personal, WordPress, Freelance]
+categories: [Freelance, Personal]
 page-layout: article
 toc: false
 ---

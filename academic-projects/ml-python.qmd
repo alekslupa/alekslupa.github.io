@@ -5,7 +5,7 @@ description: "BAA1027 Machine Learning research paper applying five classifiers 
 author: "Aleksander Lupa"
 date: "2026-04-19"
 image: "assets/ml-python.png"
-categories: [Academic, Python, "Machine Learning", XGBoost]
+categories: [BAA1027, Academic]
 page-layout: article
 toc: false
 execute:

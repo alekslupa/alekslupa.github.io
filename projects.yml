@@ -3,28 +3,28 @@
   author: "Aleksander Lupa"
   date: "2025-04-01"
   image: "assets/website.logo.png"
-  categories: [Academic, Quarto, SCSS, Git]
+  categories: [BAA1027, Academic]
   path: "academic-projects/eportfolio.qmd"
 
 - title: "Superdry Strategic Analysis"
   description: "A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, and the Strategy Diamond, delivered as a consulting simulation for the BAA1019 Business Strategy module."
   author: "Aleksander Lupa"
   date: "2025-03-01"
-  categories: [Academic, "Business Strategy", "Group Project"]
+  categories: [BAA1019, Academic]
   path: "academic-projects/superdry.qmd"
 
 - title: "Machine Learning with Python"
   description: "Applied ML analysis using scikit-learn, pandas and Plotly — building, evaluating and interpreting predictive models on a real-world dataset as part of the DCU curriculum."
   author: "Aleksander Lupa"
   date: "2025-05-01"
-  categories: [Academic, Python, "Machine Learning"]
+  categories: [BAA1027, Academic]
   path: "academic-projects/ml-python.qmd"
 
 - title: "PriceBeo"
   description: "A real-time barcode-scanning grocery price comparison app for the Irish market. Developed across four assignments and pitched in a mock Dragons Den asking €100,000 for 20% equity."
   author: "Aleksander Lupa"
   date: "2025-04-01"
-  categories: [Academic, "Product Strategy", "Dragons Den"]
+  categories: [BAA1003, Academic]
   path: "academic-projects/pricebeo.qmd"
 
 - title: "VIP Ireland"
@@ -32,7 +32,7 @@
   author: "Aleksander Lupa"
   date: "2024-06-01"
   image: "assets/screenshots/vip-ireland.png"
-  categories: [Personal, WordPress, Freelance]
+  categories: [Freelance, Personal]
   path: "personal-projects/vip-ireland.qmd"
 
 - title: "Bathstore & More"
@@ -40,5 +40,5 @@
   author: "Aleksander Lupa"
   date: "2024-09-01"
   image: "assets/screenshots/bathstore.png"
-  categories: [Personal, WordPress, Freelance]
+  categories: [Freelance, Personal]
   path: "personal-projects/bathstore.qmd"

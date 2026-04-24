@@ -5,7 +5,7 @@ description: "A professional ePortfolio built from scratch using Quarto, custom 
 author: "Aleksander Lupa"
 date: "2025-04-01"
 image: "assets/github.png"
-categories: [Academic, Quarto, SCSS, Git]
+categories: [BAA1027, Academic]
 page-layout: article
 toc: false
 ---

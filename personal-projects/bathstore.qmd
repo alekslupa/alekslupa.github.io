@@ -5,7 +5,7 @@ description: "A responsive, brand-aligned WordPress website for a Dublin bathroo
 author: "Aleksander Lupa"
 date: "2024-09-01"
 image: "assets/screenshots/bathstore.png"
-categories: [Personal, WordPress, Freelance]
+categories: [Freelance, Personal]
 page-layout: article
 toc: false
 ---
