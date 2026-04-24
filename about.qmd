@@ -242,7 +242,7 @@ I'm interested in the problems where a clean dataset, a clear business question 
 </div>
 ```
 
-## About me
+## Outside the work
 
 ```{=html}
 <div class="ab-beyond">
@@ -272,14 +272,39 @@ I'm interested in the problems where a clean dataset, a clear business question 
 
 ```{=html}
 <div class="ab-contact">
-  <a href="mailto:aleklupa@gmail.com" class="ab-contact__link"><i class="bi bi-envelope-fill"></i>&nbsp;aleklupa@gmail.com</a>
-<a href="https://www.linkedin.com/in/alexlupa" class="ab-contact__link" target="_blank"><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a>
+  <a href="mailto:aleksander.lupa2@mail.dcu.ie" class="ab-contact__link" id="ab-email-link"><i class="bi bi-envelope-fill"></i>&nbsp;aleksander.lupa2@mail.dcu.ie</a>
+  <a href="https://www.linkedin.com/in/alexlupa" class="ab-contact__link" target="_blank"><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a>
   <a href="https://github.com/alekslupa" class="ab-contact__link" target="_blank"><i class="bi bi-github"></i>&nbsp;GitHub</a>
   <a href="/assets/Aleksander_Lupa_CV.pdf" class="ab-contact__link" target="_blank"><i class="bi bi-file-earmark-pdf-fill"></i>&nbsp;CV (PDF)</a>
 </div>
 
 <script>
 (function () {
+  // Email copy toast
+  var emailLink = document.getElementById('ab-email-link');
+  if (emailLink) {
+    var toast = document.createElement('span');
+    toast.textContent = 'Copied!';
+    toast.style.cssText = [
+      'position:fixed', 'bottom:1.5rem', 'left:50%',
+      'transform:translateX(-50%)',
+      'background:rgba(30,30,30,0.9)', 'color:#fff',
+      'font-size:0.78rem', 'padding:5px 14px',
+      'border-radius:20px', 'pointer-events:none',
+      'opacity:0', 'transition:opacity 0.2s ease', 'z-index:9999'
+    ].join(';');
+    document.body.appendChild(toast);
+    emailLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      var email = this.getAttribute('href').replace('mailto:', '');
+      if (navigator.clipboard) { navigator.clipboard.writeText(email).catch(function () {}); }
+      toast.style.opacity = '1';
+      clearTimeout(toast._t);
+      toast._t = setTimeout(function () { toast.style.opacity = '0'; }, 2000);
+    });
+  }
+
+  // Konami code
   const sequence = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
                     "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight",
                     "b", "a"];
