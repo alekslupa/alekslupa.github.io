@@ -31,7 +31,9 @@ execute:
       </div>
     </div>
     <div class="ab-hero__photo">
-      <img src="/assets/about.me.pfp.png" alt="Aleksander Lupa" />
+      <a href="/assets/about.me.pfp.png" target="_blank" rel="noopener">
+        <img src="/assets/about.me.pfp.png" alt="Aleksander Lupa" />
+      </a>
     </div>
   </div>
 </section>

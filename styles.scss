@@ -3243,19 +3243,30 @@ h2#about-me {
 }
 
 .ab-hero__photo {
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+
+  &:hover { transform: scale(1.08); }
+
+  a { display: block; }
+
   img {
     width: 100%;
-    max-width: 320px;
-    border-radius: 1rem;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    aspect-ratio: 1 / 1;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    object-position: center 15%;
     display: block;
-    margin-left: auto;
+    margin: 0;
+  }
 
-    @media (max-width: 768px) {
-      margin: 0 auto;
-    }
+  @media (max-width: 768px) {
+    margin: 0 auto;
   }
 }
 
