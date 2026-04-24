@@ -399,37 +399,63 @@ Viewed as a diagnostic rather than an inventory, the SWOT makes two points clear
 
 Hambrick and Fredrickson's Strategy Diamond frames a strategy as five interlocking elements that must reinforce each other: **Arenas, Vehicles, Differentiators, Staging, and Economic Logic**. The report's Diagnostics section used the Diamond to synthesise Superdry's historical mis-steps into a single integrated picture.
 
-```{mermaid}
-%%| label: fig-strategy-diamond
-%%| fig-cap: "Strategy Diamond applied to Superdry's historical strategy. Each element traded away its original strength, and the elements ceased to reinforce each other."
-%%{init: {'securityLevel': 'loose'}}%%
-flowchart TD
-    A["<b>Arenas</b><br/>Chose global mass-market<br/>over focused core"]
-    B["<b>Vehicles</b><br/>Wholesale + licensing<br/>over DTC control"]
-    C["<b>Differentiators</b><br/>Traded design identity<br/>for ubiquity"]
-    D["<b>Staging</b><br/>Blitz-scale before<br/>operations ready"]
-    E["<b>Economic logic</b><br/>Premium → low-margin<br/>volume-based model"]
-    F("<b>Economic logic</b><br/>is the hinge element")
+```{=html}
+<div id="fig-strategy-diamond" style="margin:1.5em 0;">
+<svg viewBox="0 0 600 510" xmlns="http://www.w3.org/2000/svg"
+     style="width:100%;max-width:620px;display:block;margin:0 auto;font-family:'Inter',sans-serif;">
 
-    A --- B
-    A --- C
-    A --- E
-    B --- D
-    B --- E
-    C --- D
-    C --- E
-    D --- E
-    D --- F
-    E --- F
+  <!-- connection lines drawn first so nodes paint over them -->
+  <g stroke="#b8b8b8" stroke-width="1.5" fill="none">
+    <line x1="300" y1="67" x2="115" y2="220"/>
+    <line x1="300" y1="67" x2="485" y2="220"/>
+    <line x1="300" y1="67" x2="485" y2="385"/>
+    <line x1="115" y1="220" x2="115" y2="385"/>
+    <line x1="115" y1="220" x2="485" y2="385"/>
+    <line x1="485" y1="220" x2="115" y2="385"/>
+    <line x1="485" y1="220" x2="485" y2="385"/>
+    <line x1="115" y1="385" x2="485" y2="385"/>
+  </g>
 
-    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
-    style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
-    style C fill:#f1f8e9,stroke:#558b2f,color:#1a1a1a,stroke-width:2px
-    style D fill:#fce4ec,stroke:#ad1457,color:#1a1a1a,stroke-width:2px
-    style E fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a,stroke-width:3px
-    style F fill:#ffffff,stroke:#6a1b9a,color:#6a1b9a,stroke-width:1.5px,stroke-dasharray:5 5
-    linkStyle 8 stroke:none
-    linkStyle 9 stroke:none
+  <!-- A: Arenas (orange) -->
+  <rect x="220" y="29" width="160" height="76" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="300" y="56"  text-anchor="middle" font-weight="700" font-size="14" fill="#1a1a1a">Arenas</text>
+  <text x="300" y="75"  text-anchor="middle" font-size="12"   fill="#1a1a1a">Chose global mass-market</text>
+  <text x="300" y="92"  text-anchor="middle" font-size="12"   fill="#1a1a1a">over focused core</text>
+
+  <!-- B: Vehicles (blue) -->
+  <rect x="35"  y="182" width="160" height="76" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="115" y="209" text-anchor="middle" font-weight="700" font-size="14" fill="#1a1a1a">Vehicles</text>
+  <text x="115" y="228" text-anchor="middle" font-size="12"   fill="#1a1a1a">Wholesale + licensing</text>
+  <text x="115" y="245" text-anchor="middle" font-size="12"   fill="#1a1a1a">over DTC control</text>
+
+  <!-- C: Differentiators (green) -->
+  <rect x="405" y="182" width="160" height="76" rx="8" fill="#f1f8e9" stroke="#558b2f" stroke-width="2"/>
+  <text x="485" y="209" text-anchor="middle" font-weight="700" font-size="14" fill="#1a1a1a">Differentiators</text>
+  <text x="485" y="228" text-anchor="middle" font-size="12"   fill="#1a1a1a">Traded design identity</text>
+  <text x="485" y="245" text-anchor="middle" font-size="12"   fill="#1a1a1a">for ubiquity</text>
+
+  <!-- D: Staging (pink) -->
+  <rect x="35"  y="347" width="160" height="76" rx="8" fill="#fce4ec" stroke="#ad1457" stroke-width="2"/>
+  <text x="115" y="374" text-anchor="middle" font-weight="700" font-size="14" fill="#1a1a1a">Staging</text>
+  <text x="115" y="393" text-anchor="middle" font-size="12"   fill="#1a1a1a">Blitz-scale before</text>
+  <text x="115" y="410" text-anchor="middle" font-size="12"   fill="#1a1a1a">operations ready</text>
+
+  <!-- E: Economic logic (purple, thicker border) -->
+  <rect x="405" y="347" width="160" height="76" rx="8" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="3"/>
+  <text x="485" y="374" text-anchor="middle" font-weight="700" font-size="14" fill="#1a1a1a">Economic logic</text>
+  <text x="485" y="393" text-anchor="middle" font-size="12"   fill="#1a1a1a">Premium &#x2192; low-margin</text>
+  <text x="485" y="410" text-anchor="middle" font-size="12"   fill="#1a1a1a">volume-based model</text>
+
+  <!-- F: hinge element (dashed purple, no connecting lines) -->
+  <rect x="210" y="432" width="180" height="56" rx="8"
+        fill="#ffffff" stroke="#6a1b9a" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="300" y="456" text-anchor="middle" font-weight="700" font-size="14" fill="#6a1b9a">Economic logic</text>
+  <text x="300" y="475" text-anchor="middle" font-size="12"   fill="#6a1b9a">is the hinge element</text>
+</svg>
+<p style="text-align:center;font-size:0.85em;color:#6c757d;font-style:italic;margin-top:0.3em;">
+  Figure 5: Strategy Diamond applied to Superdry's historical strategy. Each element traded away its original strength, and the elements ceased to reinforce each other.
+</p>
+</div>
 ```
 
 ::: {.callout-tip title="The Economic Logic element is the hinge"}
