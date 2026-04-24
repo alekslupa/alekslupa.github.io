@@ -237,7 +237,7 @@ fig.update_layout(
 fig.show()
 ```
 
-## Beyond the screen
+## About me
 
 ```{=html}
 <div class="ab-beyond">

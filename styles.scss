@@ -3124,10 +3124,16 @@ body.quarto-dark {
 
 // -- Hero --------------------------------------------------------------------
 .ab-hero {
-  margin: 2rem 0 3rem;
-  padding: 2.5rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 0 0 3rem;
+  padding: 0.5rem 0 1.5rem;
+}
+
+h2#about-me {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--bs-body-color);
 }
 
 .ab-hero__grid {
@@ -3503,7 +3509,6 @@ body.quarto-dark {
 
 // -- Dark mode overrides -----------------------------------------------------
 .quarto-dark {
-  .ab-hero,
   .ab-exp,
   .ab-edu,
   .ab-contact {
