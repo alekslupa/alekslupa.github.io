@@ -6,7 +6,7 @@ project:
     - assets/github.png
     - "assets/pdfs/PriceBeo Business Report.pdf"
     - "assets/pdfs/Research_Report_22420692.pdf"
-    - "assets/pdfs/online_shoppers_ml_analysis_22420692.ipynb"
+    - "assets/pdfs/online_shoppers_ml_analysis_22420692.pdf"
 
 website:
   title: "Aleksander Lupa"
