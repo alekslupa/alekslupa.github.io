@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -108,6 +108,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+<script>
+
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+
+</script>
+
+<script type="module">import "https://cdn.plot.ly/plotly-3.5.0.min"</script>
+
+
+
 
 
 </head>
@@ -348,129 +369,730 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
 
-
-
-
-<a href="index.html" class="proj-back">Academic projects</a>
-
-<div class="proj-header">
-  <div class="proj-label">Group project · 2025</div>
-  <h1 class="proj-title">Superdry strategic analysis</h1>
-  <p class="proj-subtitle">A strategic review of Superdry conducted as part of a consulting simulation for the BAA1019 Business Strategy module at DCU, prepared by A &amp; A Consultancy, Group BS1.</p>
-  <div class="proj-tags">
-    <span class="pp-tag">Business Strategy</span>
-    <span class="pp-tag">PESTEL</span>
-    <span class="pp-tag">Porter's Five Forces</span>
-    <span class="pp-tag">SWOT</span>
-    <span class="pp-tag">Group project</span>
-  </div>
-  <div class="proj-meta">
-    <div class="proj-meta__item">
-      <span class="proj-meta__label">Year</span>
-      <span class="proj-meta__value">2025</span>
-    </div>
-    <div class="proj-meta__item">
-      <span class="proj-meta__label">Module</span>
-      <span class="proj-meta__value">BAA1019</span>
-    </div>
-    <div class="proj-meta__item">
-      <span class="proj-meta__label">Type</span>
-      <span class="proj-meta__value">Group · 6 members</span>
-    </div>
-    <div class="proj-meta__item">
-      <span class="proj-meta__label">Word count</span>
-      <span class="proj-meta__value">4,101</span>
-    </div>
-  </div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Superdry strategic analysis</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
 </div>
 
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">About the project</h2>
-  <p>As part of the BAA1019 Business Strategy module, our group of six acted as a strategy consultancy, A &amp; A Consultancy, tasked with producing a full strategic review of Superdry. The report examined how the brand captured value in its early years, why it declined through overexpansion and brand dilution, and what strategic interventions could restore its competitive position.</p>
-  <p>The analysis followed a structured consulting process: Orientation, Diagnostics, Intervention, and Evaluation, applying frameworks including PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, and the Strategy Diamond to build a comprehensive picture of Superdry's strategic trade-offs.</p>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="fj-toc">
+  <div class="fj-toc__title">On this page</div>
+  <nav>
+    <a class="fj-toc__link fj-toc__link--section" href="#about-the-project">About the project</a>
+    <a class="fj-toc__link" href="#the-decline-in-numbers">1. The decline in numbers</a>
+    <a class="fj-toc__link" href="#industry-attractiveness-porters-five-forces">2. Porter's Five Forces</a>
+    <a class="fj-toc__link" href="#the-value-stick-shortened">3. The Value Stick</a>
+    <a class="fj-toc__link" href="#swot-synthesis">4. SWOT synthesis</a>
+    <a class="fj-toc__link" href="#strategy-diamond-where-the-trade-offs-went-wrong">5. Strategy Diamond</a>
+    <a class="fj-toc__link" href="#roadmap-to-renewal">6. Roadmap to renewal</a>
+    <a class="fj-toc__link fj-toc__link--section" href="#my-role-as-associate-director">My role</a>
+    <a class="fj-toc__link" href="#reflection">Reflection</a>
+    <a class="fj-toc__link" href="#downloads">Downloads</a>
+  </nav>
 </div>
 
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Key findings</h2>
-  <div class="proj-grid">
-    <div class="proj-card">
-      <span class="proj-card__label">Core problem</span>
-      <span class="proj-card__value">Brand dilution and a shift to a discount-driven volume model eroded Superdry's premium differentiation</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Frameworks used</span>
-      <span class="proj-card__value">PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, Strategy Diamond, ERRC Grid</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Recommendations</span>
-      <span class="proj-card__value">Rebrand around durability and responsibility, shift to digital-first DTC model, restructure the organisation</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">My role</span>
-      <span class="proj-card__value">Associate Director. Led analysis and synthesis sections, contributed to diagnostics and recommendations</span>
-    </div>
+<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
+<p><span class="ap-meta-label">GROUP PROJECT · 2025</span></p>
+<p>A consulting-style strategic review of a once-iconic British apparel brand. BAA1019 Business Strategy module project. As Associate Director at A &amp; A Consultancy, Group BS1, I led analysis and synthesis across the Diagnostics and Evaluation stages of a full strategic review of Superdry.</p>
+<p><span class="pp-tag">Business Strategy</span> <span class="pp-tag">PESTEL</span> <span class="pp-tag">Porter’s Five Forces</span> <span class="pp-tag">SWOT</span> <span class="pp-tag">Strategy Diamond</span> <span class="pp-tag">Group project</span></p>
+<div class="ap-project-meta">
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Year</div>
+    <div class="ap-meta-value">2025</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Module</div>
+    <div class="ap-meta-value">BAA1019</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">My role</div>
+    <div class="ap-meta-value">Associate Director</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Team</div>
+    <div class="ap-meta-value">Group BS1 · 6 members</div>
   </div>
 </div>
 
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Reflection</h2>
-  <p>This was my first experience working in a structured consulting format. Applying real strategic frameworks to a live business case made the theory feel tangible and practical. The group dynamics were challenging at times, particularly around the presentation, but working through those difficulties strengthened both the final report and my ability to collaborate under pressure.</p>
+<div class="pb-stats">
+  <div class="pb-stat">
+    <div class="pb-stat__num">6</div>
+    <div class="pb-stat__label">Frameworks applied</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">4,101</div>
+    <div class="pb-stat__label">Word count</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">£488M</div>
+    <div class="pb-stat__label">Superdry FY24 revenue</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">2024</div>
+    <div class="pb-stat__label">Year of LSE delisting</div>
+  </div>
 </div>
-
-<div class="proj-divider"></div>
-
-<a href="../assets/pdfs/superdry.pdf" target="_blank" rel="noopener" class="proj-btn">View report PDF</a>
-<section id="strategic-data-visualisation" class="level2">
-<h2 class="anchored" data-anchor-id="strategic-data-visualisation">Strategic data visualisation</h2>
-<p>The radar chart below maps the competitive intensity of each of Porter’s Five Forces acting on Superdry, scored from 1 (low) to 5 (high) based on our group’s strategic diagnostics.</p>
-<div id="cell-fig-porters" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<section id="about-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-project">About the project</h2>
+<p>Our group of six acted as a consulting firm, A &amp; A Consultancy, tasked with producing a full strategic review of Superdry, the British apparel brand that rose to become a FTSE-listed retailer and then collapsed into retrenchment and delisting. The report examined how the brand captured value in its early years, why it declined through overexpansion and brand dilution, and what strategic interventions could restore its competitive position.</p>
+<p>The analysis followed a structured consulting process of <strong>Orientation, Diagnostics, Intervention, Evaluation</strong>, applying frameworks including PESTEL, Porter’s Five Forces, SWOT, RBV/VRIO, the Strategy Diamond and the ERRC Grid. As Associate Director I led analysis and synthesis work particularly across the Diagnostics and Evaluation stages, with input from the team across every section. The group built the underlying insights; this page rebuilds the key visual artefacts as interactive Plotly and Mermaid renders for the portfolio.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="What's on this page">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What’s on this page
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The visualisations below reproduce the core strategic artefacts from the Group BS1 Superdry report. Financial data comes from Superdry’s publicly reported annual accounts (FY2014 to FY2024); the framework scoring reflects our group’s consensus diagnostic rather than external research. The original report used static exhibits; this page rebuilds the same underlying analysis as executable Python with Plotly, plus Mermaid for the conceptual diagrams, as a portfolio extension.</p>
+</div>
+</div>
+</section>
+<section id="the-decline-in-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="the-decline-in-numbers">1. The decline in numbers</h2>
+<p>Superdry’s financial trajectory tells the story more clearly than any framework. Revenue more than doubled between FY2014 and FY2018 as the brand rode its Japanese-Americana aesthetic to global expansion. From the FY2018 peak onward, decline was continuous through a combination of brand dilution, perpetual discounting, structural retail pressure, and the pandemic. By FY2024 revenue had fallen to roughly 56% of its peak, and the company was taken private that July<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<div id="cell-fig-revenue-history" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">"Competitive</span><span class="ch">\n</span><span class="st">Rivalry"</span>, <span class="st">"Supplier</span><span class="ch">\n</span><span class="st">Power"</span>, <span class="st">"Buyer</span><span class="ch">\n</span><span class="st">Power"</span>, <span class="st">"Threat of</span><span class="ch">\n</span><span class="st">Substitution"</span>, <span class="st">"Threat of</span><span class="ch">\n</span><span class="st">New Entry"</span>]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">3</span>]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="bu">len</span>(labels)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>angles <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">2</span> <span class="op">*</span> np.pi, N, endpoint<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>scores_ext <span class="op">=</span> scores <span class="op">+</span> [scores[<span class="dv">0</span>]]</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>angles_ext <span class="op">=</span> np.append(angles, angles[<span class="dv">0</span>])</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>), subplot_kw<span class="op">=</span><span class="bu">dict</span>(polar<span class="op">=</span><span class="va">True</span>))</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>ax.plot(angles_ext, scores_ext, <span class="st">"o-"</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">"#4a90d9"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ax.fill(angles_ext, scores_ext, alpha<span class="op">=</span><span class="fl">0.2</span>, color<span class="op">=</span><span class="st">"#4a90d9"</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ax.set_thetagrids(np.degrees(angles), labels, fontsize<span class="op">=</span><span class="dv">9</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="dv">5</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>ax.set_yticks([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>ax.set_yticklabels([<span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>], fontsize<span class="op">=</span><span class="dv">7</span>, color<span class="op">=</span><span class="st">"gray"</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Porter's Five Forces — Superdry"</span>, size<span class="op">=</span><span class="dv">12</span>, pad<span class="op">=</span><span class="dv">20</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ax.grid(color<span class="op">=</span><span class="st">"gray"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="fig-porters" class="quarto-float quarto-figure quarto-figure-center anchored">
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>revenue_history <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Year"</span>:    [<span class="st">"FY14"</span>, <span class="st">"FY15"</span>, <span class="st">"FY16"</span>, <span class="st">"FY17"</span>, <span class="st">"FY18"</span>, <span class="st">"FY19"</span>, <span class="st">"FY20"</span>, <span class="st">"FY21"</span>, <span class="st">"FY22"</span>, <span class="st">"FY23"</span>, <span class="st">"FY24"</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Revenue"</span>: [<span class="dv">430</span>,    <span class="dv">486</span>,    <span class="dv">590</span>,    <span class="dv">752</span>,    <span class="dv">872</span>,    <span class="dv">872</span>,    <span class="dv">705</span>,    <span class="dv">556</span>,    <span class="dv">610</span>,    <span class="dv">622</span>,    <span class="dv">488</span>],</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Phase"</span>:   [<span class="st">"Growth"</span>, <span class="st">"Growth"</span>, <span class="st">"Growth"</span>, <span class="st">"Growth"</span>, <span class="st">"Peak"</span>, <span class="st">"Peak"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Decline"</span>, <span class="st">"Decline"</span>, <span class="st">"Stabilisation"</span>, <span class="st">"Stabilisation"</span>, <span class="st">"Retrenchment"</span>],</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>phase_colours <span class="op">=</span> {</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Growth"</span>: <span class="st">"#1e7e34"</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Peak"</span>: <span class="st">"#d4a017"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Decline"</span>: <span class="st">"#c8102e"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stabilisation"</span>: <span class="st">"#4a90a4"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Retrenchment"</span>: <span class="st">"#6c757d"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>revenue_history[<span class="st">"Year"</span>],</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>revenue_history[<span class="st">"Revenue"</span>],</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">"lines+markers"</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1a1a1a"</span>, width<span class="op">=</span><span class="fl">2.5</span>),</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        size<span class="op">=</span><span class="dv">11</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>[phase_colours[p] <span class="cf">for</span> p <span class="kw">in</span> revenue_history[<span class="st">"Phase"</span>]],</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, width<span class="op">=</span><span class="fl">1.5</span>),</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"£</span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">m"</span> <span class="cf">for</span> v <span class="kw">in</span> revenue_history[<span class="st">"Revenue"</span>]],</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{x}</span><span class="st">&lt;/b&gt;&lt;br&gt;Revenue: %</span><span class="sc">{text}</span><span class="st">&lt;br&gt;Phase: %</span><span class="sc">{customdata}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>revenue_history[<span class="st">"Phase"</span>],</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>fig.add_annotation(x<span class="op">=</span><span class="st">"FY18"</span>, y<span class="op">=</span><span class="dv">872</span>, text<span class="op">=</span><span class="st">"&lt;b&gt;Peak&lt;/b&gt;&lt;br&gt;£872m"</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>                   showarrow<span class="op">=</span><span class="va">True</span>, arrowhead<span class="op">=</span><span class="dv">2</span>, arrowcolor<span class="op">=</span><span class="st">"#d4a017"</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>                   ax<span class="op">=</span><span class="dv">0</span>, ay<span class="op">=-</span><span class="dv">40</span>, font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>))</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>fig.add_annotation(x<span class="op">=</span><span class="st">"FY21"</span>, y<span class="op">=</span><span class="dv">556</span>, text<span class="op">=</span><span class="st">"&lt;b&gt;Trough&lt;/b&gt;&lt;br&gt;Covid + dilution"</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>                   showarrow<span class="op">=</span><span class="va">True</span>, arrowhead<span class="op">=</span><span class="dv">2</span>, arrowcolor<span class="op">=</span><span class="st">"#c8102e"</span>,</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>                   ax<span class="op">=</span><span class="dv">40</span>, ay<span class="op">=</span><span class="dv">30</span>, font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>))</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>fig.add_annotation(x<span class="op">=</span><span class="st">"FY24"</span>, y<span class="op">=</span><span class="dv">488</span>, text<span class="op">=</span><span class="st">"&lt;b&gt;Taken private&lt;/b&gt;&lt;br&gt;July 2024"</span>,</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>                   showarrow<span class="op">=</span><span class="va">True</span>, arrowhead<span class="op">=</span><span class="dv">2</span>, arrowcolor<span class="op">=</span><span class="st">"#6c757d"</span>,</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>                   ax<span class="op">=-</span><span class="dv">30</span>, ay<span class="op">=-</span><span class="dv">50</span>, font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>))</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phase, colour <span class="kw">in</span> phase_colours.items():</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    fig.add_trace(go.Scatter(</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>[<span class="va">None</span>], y<span class="op">=</span>[<span class="va">None</span>], mode<span class="op">=</span><span class="st">"markers"</span>,</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span>colour),</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span>phase, showlegend<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">460</span>,</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">30</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Revenue (£ millions)"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, <span class="bu">range</span><span class="op">=</span>[<span class="dv">350</span>, <span class="dv">950</span>]),</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=</span><span class="fl">1.02</span>, x<span class="op">=</span><span class="dv">0</span>),</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-revenue-history" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-porters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="superdry_files/figure-html/fig-porters-output-1.png" width="565" height="562" class="figure-img">
+<div aria-describedby="fig-revenue-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="5a8a3c9f-2638-4687-9f1e-bd957834f5d7" class="plotly-graph-div" style="height:460px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5a8a3c9f-2638-4687-9f1e-bd957834f5d7")) {                    Plotly.newPlot(                        "5a8a3c9f-2638-4687-9f1e-bd957834f5d7",                        [{"customdata":["Growth","Growth","Growth","Growth","Peak","Peak","Decline","Decline","Stabilisation","Stabilisation","Retrenchment"],"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eRevenue: %{text}\u003cbr\u003ePhase: %{customdata}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#1a1a1a","width":2.5},"marker":{"color":["#1e7e34","#1e7e34","#1e7e34","#1e7e34","#d4a017","#d4a017","#c8102e","#c8102e","#4a90a4","#4a90a4","#6c757d"],"line":{"color":"white","width":1.5},"size":11},"mode":"lines+markers","showlegend":false,"text":["\u00a3430m","\u00a3486m","\u00a3590m","\u00a3752m","\u00a3872m","\u00a3872m","\u00a3705m","\u00a3556m","\u00a3610m","\u00a3622m","\u00a3488m"],"x":["FY14","FY15","FY16","FY17","FY18","FY19","FY20","FY21","FY22","FY23","FY24"],"y":{"dtype":"i2","bdata":"rgHmAU4C8AJoA2gDwQIsAmICbgLoAQ=="},"type":"scatter"},{"marker":{"color":"#1e7e34","size":10},"mode":"markers","name":"Growth","showlegend":true,"x":[null],"y":[null],"type":"scatter"},{"marker":{"color":"#d4a017","size":10},"mode":"markers","name":"Peak","showlegend":true,"x":[null],"y":[null],"type":"scatter"},{"marker":{"color":"#c8102e","size":10},"mode":"markers","name":"Decline","showlegend":true,"x":[null],"y":[null],"type":"scatter"},{"marker":{"color":"#4a90a4","size":10},"mode":"markers","name":"Stabilisation","showlegend":true,"x":[null],"y":[null],"type":"scatter"},{"marker":{"color":"#6c757d","size":10},"mode":"markers","name":"Retrenchment","showlegend":true,"x":[null],"y":[null],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"annotations":[{"arrowcolor":"#d4a017","arrowhead":2,"ax":0,"ay":-40,"font":{"color":"#1a1a1a","size":11},"showarrow":true,"text":"\u003cb\u003ePeak\u003c\u002fb\u003e\u003cbr\u003e\u00a3872m","x":"FY18","y":872},{"arrowcolor":"#c8102e","arrowhead":2,"ax":40,"ay":30,"font":{"color":"#1a1a1a","size":11},"showarrow":true,"text":"\u003cb\u003eTrough\u003c\u002fb\u003e\u003cbr\u003eCovid + dilution","x":"FY21","y":556},{"arrowcolor":"#6c757d","arrowhead":2,"ax":-30,"ay":-50,"font":{"color":"#1a1a1a","size":11},"showarrow":true,"text":"\u003cb\u003eTaken private\u003c\u002fb\u003e\u003cbr\u003eJuly 2024","x":"FY24","y":488}],"margin":{"l":20,"r":20,"t":30,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"showgrid":false},"yaxis":{"title":{"text":"Revenue (\u00a3 millions)"},"showgrid":true,"gridcolor":"#eee","range":[350,950]},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0},"height":460,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('5a8a3c9f-2638-4687-9f1e-bd957834f5d7');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-porters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Porter’s Five Forces — Superdry competitive intensity (1 = low, 5 = high)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-revenue-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Superdry annual revenue, FY2014 to FY2024. The brand doubled revenue in four years to an FY2018 peak of roughly £872m, then lost the majority of that growth over the following six years. The company was taken private in July 2024.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The five phases shown above map directly onto the strategic narrative of the report: an early Growth period built on differentiated brand identity, a Peak where over-expansion and licensing began diluting the equity, a Decline accelerated by pandemic demand shifts and the cost-of-living crisis, a Stabilisation as the founder returned and discounting was reduced, and the current Retrenchment back to core markets.</p>
+</section>
+<section id="industry-attractiveness-porters-five-forces" class="level2">
+<h2 class="anchored" data-anchor-id="industry-attractiveness-porters-five-forces">2. Industry attractiveness: Porter’s Five Forces</h2>
+<p>Applying Porter’s Five Forces to the apparel sector shows why Superdry’s current mid-market position is structurally exposed. Four of the five forces register at High or Medium-High intensity. The scoring below is our group’s consensus assessment from the Diagnostics stage, with supporting logic in the report.</p>
+<div id="cell-fig-five-forces" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>forces <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Force"</span>: [</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Competitive rivalry"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Buyer power"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Threat of substitutes"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Threat of new entrants"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Supplier power"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Score"</span>: [<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">3</span>],</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Evidence"</span>: [</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Fast fashion (Shein, Boohoo), sportswear giants (Nike, Adidas), heritage revival (Barbour)"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Low switching costs, price transparency, loyalty shift from brand to value"</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Athleisure, second-hand markets, rental services"</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"E-commerce lowers barriers but brand equity still hard to build"</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Moderate concentration in global apparel supply chains"</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatterpolar(</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    r<span class="op">=</span><span class="bu">list</span>(forces[<span class="st">"Score"</span>]) <span class="op">+</span> [forces[<span class="st">"Score"</span>].iloc[<span class="dv">0</span>]],</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    theta<span class="op">=</span><span class="bu">list</span>(forces[<span class="st">"Force"</span>]) <span class="op">+</span> [forces[<span class="st">"Force"</span>].iloc[<span class="dv">0</span>]],</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    fill<span class="op">=</span><span class="st">"toself"</span>,</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    fillcolor<span class="op">=</span><span class="st">"rgba(200,16,46,0.20)"</span>,</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#c8102e"</span>, width<span class="op">=</span><span class="fl">2.5</span>),</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"#c8102e"</span>),</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>forces[<span class="st">"Evidence"</span>].tolist() <span class="op">+</span> [forces[<span class="st">"Evidence"</span>].iloc[<span class="dv">0</span>]],</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{theta}</span><span class="st">&lt;/b&gt;&lt;br&gt;Intensity: %</span><span class="sc">{r}</span><span class="st">/5&lt;br&gt;%</span><span class="sc">{text}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Force intensity"</span>,</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    polar<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        radialaxis<span class="op">=</span><span class="bu">dict</span>(visible<span class="op">=</span><span class="va">True</span>, <span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>, <span class="dv">5</span>], tickvals<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>],</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>                        ticktext<span class="op">=</span>[<span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>],</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>                        gridcolor<span class="op">=</span><span class="st">"#ddd"</span>, linecolor<span class="op">=</span><span class="st">"#ddd"</span>),</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        angularaxis<span class="op">=</span><span class="bu">dict</span>(gridcolor<span class="op">=</span><span class="st">"#ddd"</span>, linecolor<span class="op">=</span><span class="st">"#ddd"</span>),</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">480</span>,</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">60</span>, r<span class="op">=</span><span class="dv">60</span>, t<span class="op">=</span><span class="dv">30</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-five-forces" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-five-forces-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="dab655e4-ca0a-4872-be80-7b06b3afb66b" class="plotly-graph-div" style="height:480px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("dab655e4-ca0a-4872-be80-7b06b3afb66b")) {                    Plotly.newPlot(                        "dab655e4-ca0a-4872-be80-7b06b3afb66b",                        [{"fill":"toself","fillcolor":"rgba(200,16,46,0.20)","hovertemplate":"\u003cb\u003e%{theta}\u003c\u002fb\u003e\u003cbr\u003eIntensity: %{r}\u002f5\u003cbr\u003e%{text}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#c8102e","width":2.5},"marker":{"color":"#c8102e","size":10},"name":"Force intensity","r":[5,5,5,4,3,5],"text":["Fast fashion (Shein, Boohoo), sportswear giants (Nike, Adidas), heritage revival (Barbour)","Low switching costs, price transparency, loyalty shift from brand to value","Athleisure, second-hand markets, rental services","E-commerce lowers barriers but brand equity still hard to build","Moderate concentration in global apparel supply chains","Fast fashion (Shein, Boohoo), sportswear giants (Nike, Adidas), heritage revival (Barbour)"],"theta":["Competitive rivalry","Buyer power","Threat of substitutes","Threat of new entrants","Supplier power","Competitive rivalry"],"type":"scatterpolar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"polar":{"radialaxis":{"visible":true,"range":[0,5],"tickvals":[1,2,3,4,5],"ticktext":["1","2","3","4","5"],"gridcolor":"#ddd","linecolor":"#ddd"},"angularaxis":{"gridcolor":"#ddd","linecolor":"#ddd"},"bgcolor":"rgba(0,0,0,0)"},"margin":{"l":60,"r":60,"t":30,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"height":480,"paper_bgcolor":"rgba(0,0,0,0)","showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('dab655e4-ca0a-4872-be80-7b06b3afb66b');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-five-forces-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Porter’s Five Forces acting on Superdry. Scores from 1 (low intensity) to 5 (high intensity) reflect the Group BS1 diagnostic assessment. Four of the five forces sit at high or medium-high intensity, giving an overall low industry attractiveness for an undifferentiated mid-market player.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The implication is blunt: Superdry cannot win by trying to out-compete Shein on price or Nike on scale. A mid-market undifferentiated player in this industry structure has no natural profit pool. Either re-establish meaningful differentiation or continue margin compression indefinitely.</p>
+</section>
+<section id="the-value-stick-shortened" class="level2">
+<h2 class="anchored" data-anchor-id="the-value-stick-shortened">3. The Value Stick, shortened</h2>
+<p>The Value Stick concept frames strategic value capture as the vertical distance between a customer’s willingness to pay (WTP) at the top and the firm’s cost at the bottom, with price sitting in between. A healthy brand runs a long stick: high WTP, controlled costs, room for both consumer surplus and firm margin.</p>
+<p>Superdry’s decline can be read cleanly on this frame. Between 2012 and 2023, WTP compressed (the brand lost its premium cachet), costs rose (through discounting, logistics complexity and wholesale dilution), and the stick shortened dramatically.</p>
+<div id="cell-fig-value-stick" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotly.subplots <span class="im">import</span> make_subplots</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> make_subplots(rows<span class="op">=</span><span class="dv">1</span>, cols<span class="op">=</span><span class="dv">2</span>, subplot_titles<span class="op">=</span>(<span class="st">"&lt;b&gt;2012: Peak Superdry&lt;/b&gt;"</span>, <span class="st">"&lt;b&gt;2023: Diluted brand&lt;/b&gt;"</span>),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                    horizontal_spacing<span class="op">=</span><span class="fl">0.2</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>peak_wtp, peak_price, peak_cost <span class="op">=</span> <span class="dv">100</span>, <span class="dv">70</span>, <span class="dv">35</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(x<span class="op">=</span>[<span class="st">"Peak"</span>], y<span class="op">=</span>[peak_cost], name<span class="op">=</span><span class="st">"Cost"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                     marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#6c757d"</span>), showlegend<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                     text<span class="op">=</span><span class="ss">f"£</span><span class="sc">{</span>peak_cost<span class="sc">}</span><span class="ss">"</span>, textposition<span class="op">=</span><span class="st">"inside"</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                     textfont<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, size<span class="op">=</span><span class="dv">14</span>)), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(x<span class="op">=</span>[<span class="st">"Peak"</span>], y<span class="op">=</span>[peak_price <span class="op">-</span> peak_cost], name<span class="op">=</span><span class="st">"Firm margin"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                     marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>), showlegend<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                     text<span class="op">=</span><span class="ss">f"£</span><span class="sc">{</span>peak_price <span class="op">-</span> peak_cost<span class="sc">}</span><span class="ss">"</span>, textposition<span class="op">=</span><span class="st">"inside"</span>,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                     textfont<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, size<span class="op">=</span><span class="dv">14</span>)), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(x<span class="op">=</span>[<span class="st">"Peak"</span>], y<span class="op">=</span>[peak_wtp <span class="op">-</span> peak_price], name<span class="op">=</span><span class="st">"Consumer surplus"</span>,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                     marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#c8e6c9"</span>), showlegend<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>                     text<span class="op">=</span><span class="ss">f"£</span><span class="sc">{</span>peak_wtp <span class="op">-</span> peak_price<span class="sc">}</span><span class="ss">"</span>, textposition<span class="op">=</span><span class="st">"inside"</span>,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>                     textfont<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1a1a1a"</span>, size<span class="op">=</span><span class="dv">14</span>)), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>dil_wtp, dil_price, dil_cost <span class="op">=</span> <span class="dv">55</span>, <span class="dv">40</span>, <span class="dv">32</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(x<span class="op">=</span>[<span class="st">"Diluted"</span>], y<span class="op">=</span>[dil_cost], name<span class="op">=</span><span class="st">"Cost"</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>                     marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#6c757d"</span>), showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>                     text<span class="op">=</span><span class="ss">f"£</span><span class="sc">{</span>dil_cost<span class="sc">}</span><span class="ss">"</span>, textposition<span class="op">=</span><span class="st">"inside"</span>,</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>                     textfont<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, size<span class="op">=</span><span class="dv">14</span>)), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(x<span class="op">=</span>[<span class="st">"Diluted"</span>], y<span class="op">=</span>[dil_price <span class="op">-</span> dil_cost], name<span class="op">=</span><span class="st">"Firm margin"</span>,</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>                     marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>), showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>                     text<span class="op">=</span><span class="ss">f"£</span><span class="sc">{</span>dil_price <span class="op">-</span> dil_cost<span class="sc">}</span><span class="ss">"</span>, textposition<span class="op">=</span><span class="st">"inside"</span>,</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>                     textfont<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, size<span class="op">=</span><span class="dv">14</span>)), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(x<span class="op">=</span>[<span class="st">"Diluted"</span>], y<span class="op">=</span>[dil_wtp <span class="op">-</span> dil_price], name<span class="op">=</span><span class="st">"Consumer surplus"</span>,</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>                     marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#c8e6c9"</span>), showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>                     text<span class="op">=</span><span class="ss">f"£</span><span class="sc">{</span>dil_wtp <span class="op">-</span> dil_price<span class="sc">}</span><span class="ss">"</span>, textposition<span class="op">=</span><span class="st">"inside"</span>,</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>                     textfont<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1a1a1a"</span>, size<span class="op">=</span><span class="dv">14</span>)), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>fig.add_annotation(x<span class="op">=</span><span class="st">"Peak"</span>, y<span class="op">=</span>peak_wtp, text<span class="op">=</span><span class="ss">f"&lt;b&gt;WTP £</span><span class="sc">{</span>peak_wtp<span class="sc">}</span><span class="ss">&lt;/b&gt;"</span>,</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>                   showarrow<span class="op">=</span><span class="va">False</span>, yshift<span class="op">=</span><span class="dv">14</span>, font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>fig.add_annotation(x<span class="op">=</span><span class="st">"Diluted"</span>, y<span class="op">=</span>dil_wtp, text<span class="op">=</span><span class="ss">f"&lt;b&gt;WTP £</span><span class="sc">{</span>dil_wtp<span class="sc">}</span><span class="ss">&lt;/b&gt;"</span>,</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>                   showarrow<span class="op">=</span><span class="va">False</span>, yshift<span class="op">=</span><span class="dv">14</span>, font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">"stack"</span>,</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">480</span>,</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">40</span>, r<span class="op">=</span><span class="dv">40</span>, t<span class="op">=</span><span class="dv">50</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=-</span><span class="fl">0.12</span>, x<span class="op">=</span><span class="fl">0.25</span>),</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>, <span class="dv">115</span>], showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, title<span class="op">=</span><span class="st">"£"</span>)</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(showgrid<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-value-stick" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-value-stick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="c6fa070b-3688-4d30-ae25-8d6546410fd3" class="plotly-graph-div" style="height:480px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c6fa070b-3688-4d30-ae25-8d6546410fd3")) {                    Plotly.newPlot(                        "c6fa070b-3688-4d30-ae25-8d6546410fd3",                        [{"marker":{"color":"#6c757d"},"name":"Cost","showlegend":true,"text":"\u00a335","textfont":{"color":"white","size":14},"textposition":"inside","x":["Peak"],"y":[35],"type":"bar","xaxis":"x","yaxis":"y"},{"marker":{"color":"#1e7e34"},"name":"Firm margin","showlegend":true,"text":"\u00a335","textfont":{"color":"white","size":14},"textposition":"inside","x":["Peak"],"y":[35],"type":"bar","xaxis":"x","yaxis":"y"},{"marker":{"color":"#c8e6c9"},"name":"Consumer surplus","showlegend":true,"text":"\u00a330","textfont":{"color":"#1a1a1a","size":14},"textposition":"inside","x":["Peak"],"y":[30],"type":"bar","xaxis":"x","yaxis":"y"},{"marker":{"color":"#6c757d"},"name":"Cost","showlegend":false,"text":"\u00a332","textfont":{"color":"white","size":14},"textposition":"inside","x":["Diluted"],"y":[32],"type":"bar","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#1e7e34"},"name":"Firm margin","showlegend":false,"text":"\u00a38","textfont":{"color":"white","size":14},"textposition":"inside","x":["Diluted"],"y":[8],"type":"bar","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#c8e6c9"},"name":"Consumer surplus","showlegend":false,"text":"\u00a315","textfont":{"color":"#1a1a1a","size":14},"textposition":"inside","x":["Diluted"],"y":[15],"type":"bar","xaxis":"x2","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,0.4],"showgrid":false},"yaxis":{"anchor":"x","domain":[0.0,1.0],"range":[0,115],"showgrid":true,"gridcolor":"#eee","title":{"text":"\u00a3"}},"xaxis2":{"anchor":"y2","domain":[0.6000000000000001,1.0],"showgrid":false},"yaxis2":{"anchor":"x2","domain":[0.0,1.0],"range":[0,115],"showgrid":true,"gridcolor":"#eee","title":{"text":"\u00a3"}},"annotations":[{"font":{"size":16},"showarrow":false,"text":"\u003cb\u003e2012: Peak Superdry\u003c\u002fb\u003e","x":0.2,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"\u003cb\u003e2023: Diluted brand\u003c\u002fb\u003e","x":0.8,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"color":"#1a1a1a","size":12},"showarrow":false,"text":"\u003cb\u003eWTP \u00a3100\u003c\u002fb\u003e","x":"Peak","xref":"x","y":100,"yref":"y","yshift":14},{"font":{"color":"#1a1a1a","size":12},"showarrow":false,"text":"\u003cb\u003eWTP \u00a355\u003c\u002fb\u003e","x":"Diluted","xref":"x2","y":55,"yref":"y2","yshift":14}],"margin":{"l":40,"r":40,"t":50,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"legend":{"orientation":"h","yanchor":"bottom","y":-0.12,"x":0.25},"barmode":"stack","height":480,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('c6fa070b-3688-4d30-ae25-8d6546410fd3');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-value-stick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: The Value Stick concept applied to Superdry. Left: peak 2012 positioning with strong WTP, controlled cost base and visible margin. Right: 2023 after dilution, with compressed WTP, higher effective costs and negligible margin. Figures are illustrative to show the directional shift.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The key observation is that margin (green) shrinks sharply even though the firm lowered price. Cost did not fall proportionately because discounting behaviour, wholesale concessions and licensing overheads added hidden complexity. This is the vicious cycle described in the report’s Diagnostics section: low-margin, volume-based economic logic that destroys brand value and profitability simultaneously.</p>
+</section>
+<section id="swot-synthesis" class="level2">
+<h2 class="anchored" data-anchor-id="swot-synthesis">4. SWOT synthesis</h2>
+<p>The internal analysis surfaced a stark gap between genuine residual strengths (brand recognition, design archive, founder-led creative direction) and acute weaknesses (brand dilution, weak digital, high-cost legacy model, debt overhang). The matrix below summarises the full SWOT from the report.</p>
+<div id="cell-fig-swot" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotly.subplots <span class="im">import</span> make_subplots</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>swot_data <span class="op">=</span> {</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Strengths"</span>: {</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"colour"</span>: <span class="st">"#1e7e34"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"items"</span>: [</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Strong global brand recognition"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Distinctive design DNA (Japanese-Americana)"</span>,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Founder-led creative direction restored"</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Established retail and wholesale presence"</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Weaknesses"</span>: {</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"colour"</span>: <span class="st">"#c8102e"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"items"</span>: [</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Severe brand dilution from over-licensing"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Perpetual discounting eroding equity"</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Weak digital and DTC capabilities"</span>,</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            <span class="st">"High-cost wholesale-reliant operating model"</span>,</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Crippling debt burden"</span>,</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Opportunities"</span>: {</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">"colour"</span>: <span class="st">"#4a90a4"</span>,</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">"items"</span>: [</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Sustainability and circular fashion repositioning"</span>,</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Digital transformation and DTC growth"</span>,</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Refocus on core markets and categories"</span>,</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Experiential retail using design heritage"</span>,</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Threats"</span>: {</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>        <span class="st">"colour"</span>: <span class="st">"#d4a017"</span>,</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>        <span class="st">"items"</span>: [</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Fierce competition (Shein, Nike, heritage brands)"</span>,</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Higher consumer expectations on sustainability"</span>,</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Cost-of-living pressure on premium pricing"</span>,</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Heritage-only strategy risks becoming outdated"</span>,</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> make_subplots(rows<span class="op">=</span><span class="dv">2</span>, cols<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>                    subplot_titles<span class="op">=</span><span class="bu">list</span>(swot_data.keys()),</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>                    vertical_spacing<span class="op">=</span><span class="fl">0.08</span>, horizontal_spacing<span class="op">=</span><span class="fl">0.08</span>)</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> [(<span class="dv">1</span>, <span class="dv">1</span>), (<span class="dv">1</span>, <span class="dv">2</span>), (<span class="dv">2</span>, <span class="dv">1</span>), (<span class="dv">2</span>, <span class="dv">2</span>)]</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (quadrant, (row, col)) <span class="kw">in</span> <span class="bu">zip</span>(swot_data.keys(), positions):</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    items <span class="op">=</span> swot_data[quadrant][<span class="st">"items"</span>]</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    colour <span class="op">=</span> swot_data[quadrant][<span class="st">"colour"</span>]</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    text_content <span class="op">=</span> <span class="st">"&lt;br&gt;• "</span>.join([<span class="st">""</span>] <span class="op">+</span> items)</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    idx <span class="op">=</span> (row <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">2</span> <span class="op">+</span> col</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    xref <span class="op">=</span> <span class="ss">f"x</span><span class="sc">{</span>idx<span class="sc">}</span><span class="ss"> domain"</span> <span class="cf">if</span> idx <span class="op">&gt;</span> <span class="dv">1</span> <span class="cf">else</span> <span class="st">"x domain"</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    yref <span class="op">=</span> <span class="ss">f"y</span><span class="sc">{</span>idx<span class="sc">}</span><span class="ss"> domain"</span> <span class="cf">if</span> idx <span class="op">&gt;</span> <span class="dv">1</span> <span class="cf">else</span> <span class="st">"y domain"</span></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>    fig.add_annotation(text<span class="op">=</span>text_content,</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>                       xref<span class="op">=</span>xref, yref<span class="op">=</span>yref,</span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>                       x<span class="op">=</span><span class="fl">0.02</span>, y<span class="op">=</span><span class="fl">0.96</span>, xanchor<span class="op">=</span><span class="st">"left"</span>, yanchor<span class="op">=</span><span class="st">"top"</span>,</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>                       showarrow<span class="op">=</span><span class="va">False</span>, align<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>                       font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>))</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>    fig.add_shape(<span class="bu">type</span><span class="op">=</span><span class="st">"rect"</span>, xref<span class="op">=</span>xref, yref<span class="op">=</span>yref,</span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>                  x0<span class="op">=</span><span class="dv">0</span>, y0<span class="op">=</span><span class="dv">0</span>, x1<span class="op">=</span><span class="dv">1</span>, y1<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>                  fillcolor<span class="op">=</span>colour, opacity<span class="op">=</span><span class="fl">0.08</span>,</span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>                  line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span>colour, width<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>                  row<span class="op">=</span>row, col<span class="op">=</span>col)</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(visible<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(visible<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">520</span>,</span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">40</span>, b<span class="op">=</span><span class="dv">20</span>),</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, annotation <span class="kw">in</span> <span class="bu">enumerate</span>(fig.layout.annotations[:<span class="dv">4</span>]):</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>    annotation.font <span class="op">=</span> <span class="bu">dict</span>(size<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="bu">list</span>(swot_data.values())[i][<span class="st">"colour"</span>], family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>)</span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-swot" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-swot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="9418b1f8-6453-4439-b6f4-37db44aca29f" class="plotly-graph-div" style="height:520px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("9418b1f8-6453-4439-b6f4-37db44aca29f")) {                    Plotly.newPlot(                        "9418b1f8-6453-4439-b6f4-37db44aca29f",                        [],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,0.46],"visible":false},"yaxis":{"anchor":"x","domain":[0.54,1.0],"visible":false},"xaxis2":{"anchor":"y2","domain":[0.54,1.0],"visible":false},"yaxis2":{"anchor":"x2","domain":[0.54,1.0],"visible":false},"xaxis3":{"anchor":"y3","domain":[0.0,0.46],"visible":false},"yaxis3":{"anchor":"x3","domain":[0.0,0.46],"visible":false},"xaxis4":{"anchor":"y4","domain":[0.54,1.0],"visible":false},"yaxis4":{"anchor":"x4","domain":[0.0,0.46],"visible":false},"annotations":[{"font":{"color":"#1e7e34","family":"Inter, sans-serif","size":14},"showarrow":false,"text":"Strengths","x":0.23,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"color":"#c8102e","family":"Inter, sans-serif","size":14},"showarrow":false,"text":"Weaknesses","x":0.77,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"color":"#4a90a4","family":"Inter, sans-serif","size":14},"showarrow":false,"text":"Opportunities","x":0.23,"xanchor":"center","xref":"paper","y":0.46,"yanchor":"bottom","yref":"paper"},{"font":{"color":"#d4a017","family":"Inter, sans-serif","size":14},"showarrow":false,"text":"Threats","x":0.77,"xanchor":"center","xref":"paper","y":0.46,"yanchor":"bottom","yref":"paper"},{"align":"left","font":{"color":"#1a1a1a","size":12},"showarrow":false,"text":"\u003cbr\u003e\u2022 Strong global brand recognition\u003cbr\u003e\u2022 Distinctive design DNA (Japanese-Americana)\u003cbr\u003e\u2022 Founder-led creative direction restored\u003cbr\u003e\u2022 Established retail and wholesale presence","x":0.02,"xanchor":"left","xref":"x domain","y":0.96,"yanchor":"top","yref":"y domain"},{"align":"left","font":{"color":"#1a1a1a","size":12},"showarrow":false,"text":"\u003cbr\u003e\u2022 Severe brand dilution from over-licensing\u003cbr\u003e\u2022 Perpetual discounting eroding equity\u003cbr\u003e\u2022 Weak digital and DTC capabilities\u003cbr\u003e\u2022 High-cost wholesale-reliant operating model\u003cbr\u003e\u2022 Crippling debt burden","x":0.02,"xanchor":"left","xref":"x2 domain","y":0.96,"yanchor":"top","yref":"y2 domain"},{"align":"left","font":{"color":"#1a1a1a","size":12},"showarrow":false,"text":"\u003cbr\u003e\u2022 Sustainability and circular fashion repositioning\u003cbr\u003e\u2022 Digital transformation and DTC growth\u003cbr\u003e\u2022 Refocus on core markets and categories\u003cbr\u003e\u2022 Experiential retail using design heritage","x":0.02,"xanchor":"left","xref":"x3 domain","y":0.96,"yanchor":"top","yref":"y3 domain"},{"align":"left","font":{"color":"#1a1a1a","size":12},"showarrow":false,"text":"\u003cbr\u003e\u2022 Fierce competition (Shein, Nike, heritage brands)\u003cbr\u003e\u2022 Higher consumer expectations on sustainability\u003cbr\u003e\u2022 Cost-of-living pressure on premium pricing\u003cbr\u003e\u2022 Heritage-only strategy risks becoming outdated","x":0.02,"xanchor":"left","xref":"x4 domain","y":0.96,"yanchor":"top","yref":"y4 domain"}],"shapes":[{"fillcolor":"#1e7e34","line":{"color":"#1e7e34","width":2},"opacity":0.08,"type":"rect","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":1,"yref":"y domain"},{"fillcolor":"#c8102e","line":{"color":"#c8102e","width":2},"opacity":0.08,"type":"rect","x0":0,"x1":1,"xref":"x2 domain","y0":0,"y1":1,"yref":"y2 domain"},{"fillcolor":"#4a90a4","line":{"color":"#4a90a4","width":2},"opacity":0.08,"type":"rect","x0":0,"x1":1,"xref":"x3 domain","y0":0,"y1":1,"yref":"y3 domain"},{"fillcolor":"#d4a017","line":{"color":"#d4a017","width":2},"opacity":0.08,"type":"rect","x0":0,"x1":1,"xref":"x4 domain","y0":0,"y1":1,"yref":"y4 domain"}],"margin":{"l":20,"r":20,"t":40,"b":20},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"height":520,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('9418b1f8-6453-4439-b6f4-37db44aca29f');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-swot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Superdry SWOT matrix. Strengths and Opportunities anchor any renewal path; Weaknesses and Threats define the execution risk.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Viewed as a diagnostic rather than an inventory, the SWOT makes two points clear. First, the strengths are heritage assets: real but finite, and they depreciate fast without investment. Second, the weaknesses and threats reinforce each other (perpetual discounting plus cost-of-living pressure plus weak digital plus fierce competition form a trap). Any renewal strategy has to break that reinforcing loop.</p>
+</section>
+<section id="strategy-diamond-where-the-trade-offs-went-wrong" class="level2">
+<h2 class="anchored" data-anchor-id="strategy-diamond-where-the-trade-offs-went-wrong">5. Strategy Diamond: where the trade-offs went wrong</h2>
+<p>Hambrick and Fredrickson’s Strategy Diamond frames a strategy as five interlocking elements that must reinforce each other: <strong>Arenas, Vehicles, Differentiators, Staging, and Economic Logic</strong>. The report’s Diagnostics section used the Diamond to synthesise Superdry’s historical mis-steps into a single integrated picture.</p>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    A[&lt;b&gt;Arenas&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Chose global mass-market&lt;br/&gt;over focused core markets]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    B[&lt;b&gt;Vehicles&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Relied on wholesale and licensing&lt;br/&gt;at expense of DTC brand control]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    C[&lt;b&gt;Differentiators&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Traded unique design identity&lt;br/&gt;for ubiquity and cost-cutting]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    D[&lt;b&gt;Staging&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Pursued blitz-scale expansion&lt;br/&gt;before operating model was ready]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    E[&lt;b&gt;Economic logic&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Shifted from premium value-based&lt;br/&gt;to low-margin volume-based model]</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    A --- B</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    A --- C</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    A --- E</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    B --- D</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    B --- E</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    C --- D</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    C --- E</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    D --- E</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    style C fill:#f1f8e9,stroke:#558b2f,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    style D fill:#fce4ec,stroke:#ad1457,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    style E fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a,stroke-width:3px</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-strategy-diamond" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-strategy-diamond-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-strategy-diamond">flowchart TD
+    A[&lt;b&gt;Arenas&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Chose global mass-market&lt;br/&gt;over focused core markets]
+    B[&lt;b&gt;Vehicles&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Relied on wholesale and licensing&lt;br/&gt;at expense of DTC brand control]
+    C[&lt;b&gt;Differentiators&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Traded unique design identity&lt;br/&gt;for ubiquity and cost-cutting]
+    D[&lt;b&gt;Staging&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Pursued blitz-scale expansion&lt;br/&gt;before operating model was ready]
+    E[&lt;b&gt;Economic logic&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Shifted from premium value-based&lt;br/&gt;to low-margin volume-based model]
+
+    A --- B
+    A --- C
+    A --- E
+    B --- D
+    B --- E
+    C --- D
+    C --- E
+    D --- E
+
+    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
+    style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
+    style C fill:#f1f8e9,stroke:#558b2f,color:#1a1a1a,stroke-width:2px
+    style D fill:#fce4ec,stroke:#ad1457,color:#1a1a1a,stroke-width:2px
+    style E fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a,stroke-width:3px
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-strategy-diamond-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Strategy Diamond applied to Superdry’s historical strategy. Each element traded away its original strength, and the elements ceased to reinforce each other.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled" title="The Economic Logic element is the hinge">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The Economic Logic element is the hinge
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All four other elements can be fixed tactically. The Economic Logic shift from premium value-based to low-margin volume-based is the one that structurally reset the cost base, and unwinding it requires rebuilding willingness to pay first. That sequencing is what the report’s Evaluation section addresses through the phased roadmap below.</p>
+</div>
+</div>
+</section>
+<section id="roadmap-to-renewal" class="level2">
+<h2 class="anchored" data-anchor-id="roadmap-to-renewal">6. Roadmap to renewal</h2>
+<p>The Evaluation stage proposes a three-phase roadmap that sequences the renewal correctly: stabilise before investing, invest before embedding. Each phase has distinct owners, metrics and strategic outcomes, aligned with the recommendations developed in the Intervention stage.</p>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>flowchart LR</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    A[&lt;b&gt;Stabilise &amp; Align&lt;/b&gt;&lt;br/&gt;0-12 months&lt;br/&gt;&lt;br/&gt;Reset brand purpose&lt;br/&gt;Reduce discounting&lt;br/&gt;Restructure teams&lt;br/&gt;Stabilise operations]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    B[&lt;b&gt;Build &amp; Transform&lt;/b&gt;&lt;br/&gt;12-30 months&lt;br/&gt;&lt;br/&gt;Digital-first capabilities&lt;br/&gt;E-commerce platform upgrade&lt;br/&gt;Experiential flagship stores&lt;br/&gt;Sustainability product lines]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    C[&lt;b&gt;Embed &amp; Sustain&lt;/b&gt;&lt;br/&gt;30+ months&lt;br/&gt;&lt;br/&gt;Balanced Scorecard discipline&lt;br/&gt;Continuous innovation&lt;br/&gt;Sustainability in routines&lt;br/&gt;Purpose-led brand leadership]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    A ==&gt; B ==&gt; C</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    style C fill:#e8f5e9,stroke:#1e7e34,color:#1a1a1a,stroke-width:2px</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-roadmap" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-roadmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-roadmap">flowchart LR
+    A[&lt;b&gt;Stabilise &amp; Align&lt;/b&gt;&lt;br/&gt;0-12 months&lt;br/&gt;&lt;br/&gt;Reset brand purpose&lt;br/&gt;Reduce discounting&lt;br/&gt;Restructure teams&lt;br/&gt;Stabilise operations]
+    B[&lt;b&gt;Build &amp; Transform&lt;/b&gt;&lt;br/&gt;12-30 months&lt;br/&gt;&lt;br/&gt;Digital-first capabilities&lt;br/&gt;E-commerce platform upgrade&lt;br/&gt;Experiential flagship stores&lt;br/&gt;Sustainability product lines]
+    C[&lt;b&gt;Embed &amp; Sustain&lt;/b&gt;&lt;br/&gt;30+ months&lt;br/&gt;&lt;br/&gt;Balanced Scorecard discipline&lt;br/&gt;Continuous innovation&lt;br/&gt;Sustainability in routines&lt;br/&gt;Purpose-led brand leadership]
+
+    A ==&gt; B ==&gt; C
+
+    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
+    style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#1e7e34,color:#1a1a1a,stroke-width:2px
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-roadmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Three-phase renewal roadmap. Short-term stabilisation creates the credibility and operational room for medium-term capability investment; long-term embedding of sustainability, digital and purpose transforms the strategy from retrenchment into sustainable differentiation.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Each phase is designed to address a specific risk revealed by the Diagnostics. Phase 1 addresses the cash-flow and credibility risk. Phase 2 addresses the capability gap in digital and sustainability that the RBV/VRIO exposed. Phase 3 addresses the strategic drift risk by embedding the new logic in day-to-day performance management, not just strategic statements.</p>
+</section>
+<section id="my-role-as-associate-director" class="level2">
+<h2 class="anchored" data-anchor-id="my-role-as-associate-director">My role as Associate Director</h2>
+<div class="pb-role-grid">
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Diagnostic lead</div>
+    <div class="pb-role-card__body">Led analysis and synthesis work through the Diagnostics stage, coordinating the group's PESTEL and Porter's Five Forces assessments and integrating them with the internal analyses into a single strategic picture.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Framework application</div>
+    <div class="pb-role-card__body">Contributed to the Strategy Diamond synthesis, particularly the Economic Logic element where Superdry's shift from premium to volume-based thinking emerged as the structural hinge of the decline story.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Evaluation logic</div>
+    <div class="pb-role-card__body">Helped shape the Evaluation stage logic that tests each recommendation against the specific diagnostic issue it addresses, ensuring the roadmap was a coherent response to the problem rather than a generic retail playbook.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Presentation contribution</div>
+    <div class="pb-role-card__body">Co-presented the analytical sections of the group's strategy pitch. The team acknowledges the live presentation had coordination issues that we worked through together afterwards to strengthen the final report.</div>
+  </div>
+</div>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This was my first experience working in a consulting format with a formally defined team structure and a real business case. The most valuable lesson was learning how frameworks that look mechanical on the page (PESTEL, Five Forces, Strategy Diamond) function very differently when applied to an actual declining company with incomplete information. The Strategy Diamond in particular was initially treated by the group as a five-box summary exercise and only became useful when we started arguing about which of the five elements was the hinge. That debate (which we eventually resolved on the Economic Logic element) was the point at which our analysis graduated from description into diagnosis.</p>
+<p>The group dynamics were the other major learning. We hit a rough patch around the in-module presentation, where last-minute slide changes combined with IT issues produced a coordination failure that was uncomfortable at the time. Working through it afterwards, with a combination of honest conversation and shared resolve to make the report itself a strong piece of work, taught me more about managing team pressure than the frameworks themselves did. The skills matrix we drew up early in the project (a consulting tool I had not encountered before) turned out to be the single most useful organisational device we used, because it gave each member a defensible domain and reduced duplication.</p>
+<p>Reproducing the analytical exhibits as interactive Python and Mermaid renders for this portfolio was a separate exercise from the module itself. The original report used static diagrams embedded in a designed PDF. Rebuilding them forced me to re-examine whether each framework actually added unique insight, or whether some were decorative rather than diagnostic. The Porter’s Five Forces radar and the Value Stick are, on reflection, the two frameworks that pulled the most analytical weight in the final argument. The others supported that argument rather than producing it independently.</p>
+<p>Strategy as a discipline is less about running more frameworks and more about choosing the two or three that matter for the specific question, then applying them rigorously enough to produce a decision. That was the takeaway I carried out of the module, and it is the lens I intend to apply to business analytics roles where the risk is usually the same: too many dashboards, not enough diagnosis.</p>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+<div class="pb-downloads">
+  <a href="../assets/pdfs/superdry.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View full strategy report</a>
+</div>
+<script>
+(function () {
+  var links = document.querySelectorAll('.fj-toc a[href^="#"]');
+  var targets = [];
+  links.forEach(function (link) {
+    var id = link.getAttribute('href').slice(1);
+    var el = document.getElementById(id);
+    if (el) targets.push({ el: el, link: link });
+  });
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('active'); });
+        var match = targets.find(function (t) { return t.el === entry.target; });
+        if (match) match.link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-10% 0% -80% 0%' });
+  targets.forEach(function (t) { observer.observe(t.el); });
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function toggleAll(show) {
+    document.querySelectorAll('.cell > details').forEach(function (d) {
+      if (show) { d.open = true; } else { d.removeAttribute('open'); }
+    });
+  }
+  var showBtn = document.getElementById('quarto-show-all-code');
+  var hideBtn = document.getElementById('quarto-hide-all-code');
+  if (showBtn) showBtn.addEventListener('click', function () { toggleAll(true); });
+  if (hideBtn) hideBtn.addEventListener('click', function () { toggleAll(false); });
+});
+</script>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Superdry plc, Annual Reports FY2014 to FY2024. Figures approximated from publicly filed accounts for illustrative purposes. FY2024 revenue reflects the last full financial year before delisting from the London Stock Exchange on 1 July 2024.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <button id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </button>
@@ -569,6 +1191,57 @@ Figure&nbsp;1: Porter’s Five Forces — Superdry competitive intensity (1 = lo
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
