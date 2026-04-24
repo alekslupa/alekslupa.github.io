@@ -406,9 +406,9 @@ Hambrick and Fredrickson's Strategy Diamond frames a strategy as five interlocki
 
   <!-- connection lines drawn first so nodes paint over them -->
   <g stroke="#b8b8b8" stroke-width="1.5" fill="none">
-    <line x1="300" y1="67" x2="115" y2="220"/>
-    <line x1="300" y1="67" x2="485" y2="220"/>
-    <line x1="300" y1="67" x2="485" y2="385"/>
+    <line x1="300" y1="67"  x2="115" y2="220"/>
+    <line x1="300" y1="67"  x2="485" y2="220"/>
+    <line x1="115" y1="220" x2="485" y2="220"/>
     <line x1="115" y1="220" x2="115" y2="385"/>
     <line x1="115" y1="220" x2="485" y2="385"/>
     <line x1="485" y1="220" x2="115" y2="385"/>
