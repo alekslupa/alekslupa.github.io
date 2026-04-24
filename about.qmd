@@ -21,7 +21,7 @@ execute:
       <p class="ab-hero__lede">I translate business questions into data problems and back again. Final year Business Analytics student at DCU on track for 2:1 Honours, with recent experience at Allied World in underwriting operations and a portfolio of projects spanning machine learning, financial modelling and strategic analysis.</p>
       <div class="ab-hero__ctas">
         <a href="/assets/Aleksander_Lupa_CV.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-file-earmark-pdf"></i>&nbsp;Download CV</a>
-        <a href="mailto:aleklupa@gmail.com" class="btn btn-outline-dark"><i class="bi bi-envelope"></i>&nbsp;Get in touch</a>
+        <a href="mailto:aleklupa@gmail.com" class="btn btn-outline-secondary"><i class="bi bi-envelope"></i>&nbsp;Get in touch</a>
       </div>
       <div class="ab-hero__stats">
         <div class="ab-hero__stat"><div class="ab-hero__stat-num">4</div><div class="ab-hero__stat-lbl">Years at DCU</div></div>
