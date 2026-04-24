@@ -308,89 +308,54 @@ The key observation is that margin (green) shrinks sharply even though the firm 
 
 The internal analysis surfaced a stark gap between genuine residual strengths (brand recognition, design archive, founder-led creative direction) and acute weaknesses (brand dilution, weak digital, high-cost legacy model, debt overhang). The matrix below summarises the full SWOT from the report.
 
-```{python}
-#| label: fig-swot
-#| fig-cap: "Superdry SWOT matrix. Strengths and Opportunities anchor any renewal path; Weaknesses and Threats define the execution risk."
+```{=html}
+<div id="fig-swot" style="margin:1.5em 0;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
 
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+    <div style="border:2px solid #1e7e34;border-radius:8px;padding:18px 20px;background:#f6fff6;">
+      <p style="color:#1e7e34;font-weight:700;font-size:1.05em;margin:0 0 10px 0;">Strengths</p>
+      <ul style="margin:0;padding-left:20px;line-height:1.75;font-size:0.95em;">
+        <li>Global brand recognition</li>
+        <li>Distinctive design DNA</li>
+        <li>Founder-led creative direction restored</li>
+        <li>Established retail presence</li>
+      </ul>
+    </div>
 
-swot_data = {
-    "Strengths": {
-        "colour": "#1e7e34",
-        "items": [
-            "Strong global brand recognition",
-            "Distinctive design DNA (Japanese-Americana)",
-            "Founder-led creative direction restored",
-            "Established retail and wholesale presence",
-        ],
-    },
-    "Weaknesses": {
-        "colour": "#c8102e",
-        "items": [
-            "Severe brand dilution from over-licensing",
-            "Perpetual discounting eroding equity",
-            "Weak digital and DTC capabilities",
-            "High-cost wholesale-reliant operating model",
-            "Crippling debt burden",
-        ],
-    },
-    "Opportunities": {
-        "colour": "#4a90a4",
-        "items": [
-            "Sustainability and circular fashion repositioning",
-            "Digital transformation and DTC growth",
-            "Refocus on core markets and categories",
-            "Experiential retail using design heritage",
-        ],
-    },
-    "Threats": {
-        "colour": "#d4a017",
-        "items": [
-            "Fierce competition (Shein, Nike, heritage brands)",
-            "Higher consumer expectations on sustainability",
-            "Cost-of-living pressure on premium pricing",
-            "Heritage-only strategy risks becoming outdated",
-        ],
-    },
-}
+    <div style="border:2px solid #c8102e;border-radius:8px;padding:18px 20px;background:#fff6f6;">
+      <p style="color:#c8102e;font-weight:700;font-size:1.05em;margin:0 0 10px 0;">Weaknesses</p>
+      <ul style="margin:0;padding-left:20px;line-height:1.75;font-size:0.95em;">
+        <li>Severe brand dilution from over-licensing</li>
+        <li>Perpetual discounting eroding equity</li>
+        <li>Weak digital and DTC capabilities</li>
+        <li>Wholesale-reliant high-cost model</li>
+        <li>Crippling debt burden</li>
+      </ul>
+    </div>
 
-fig = make_subplots(rows=2, cols=2,
-                    subplot_titles=list(swot_data.keys()),
-                    vertical_spacing=0.08, horizontal_spacing=0.08)
+    <div style="border:2px solid #4a90a4;border-radius:8px;padding:18px 20px;background:#f5fafc;">
+      <p style="color:#4a90a4;font-weight:700;font-size:1.05em;margin:0 0 10px 0;">Opportunities</p>
+      <ul style="margin:0;padding-left:20px;line-height:1.75;font-size:0.95em;">
+        <li>Sustainability / circular fashion</li>
+        <li>Digital transformation &amp; DTC</li>
+        <li>Refocus core markets &amp; categories</li>
+        <li>Experiential retail using heritage</li>
+      </ul>
+    </div>
 
-positions = [(1, 1), (1, 2), (2, 1), (2, 2)]
-for (quadrant, (row, col)) in zip(swot_data.keys(), positions):
-    items = swot_data[quadrant]["items"]
-    colour = swot_data[quadrant]["colour"]
-    text_content = "<br>• ".join([""] + items)
-    idx = (row - 1) * 2 + col
-    xref = f"x{idx} domain" if idx > 1 else "x domain"
-    yref = f"y{idx} domain" if idx > 1 else "y domain"
-    fig.add_annotation(text=text_content,
-                       xref=xref, yref=yref,
-                       x=0.02, y=0.96, xanchor="left", yanchor="top",
-                       showarrow=False, align="left",
-                       font=dict(size=12, color="#1a1a1a"))
-    fig.add_shape(type="rect", xref=xref, yref=yref,
-                  x0=0, y0=0, x1=1, y1=1,
-                  fillcolor=colour, opacity=0.08,
-                  line=dict(color=colour, width=2),
-                  row=row, col=col)
+    <div style="border:2px solid #d4a017;border-radius:8px;padding:18px 20px;background:#fffdf0;">
+      <p style="color:#d4a017;font-weight:700;font-size:1.05em;margin:0 0 10px 0;">Threats</p>
+      <ul style="margin:0;padding-left:20px;line-height:1.75;font-size:0.95em;">
+        <li>Fierce competition (Shein, Nike)</li>
+        <li>Higher sustainability expectations</li>
+        <li>Cost-of-living pressure on premium</li>
+        <li>Heritage strategy risks becoming dated</li>
+      </ul>
+    </div>
 
-fig.update_xaxes(visible=False)
-fig.update_yaxes(visible=False)
-fig.update_layout(
-    height=520,
-    margin=dict(l=20, r=20, t=40, b=20),
-    paper_bgcolor="rgba(0,0,0,0)",
-    plot_bgcolor="rgba(0,0,0,0)",
-    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
-    showlegend=False,
-)
-for i, annotation in enumerate(fig.layout.annotations[:4]):
-    annotation.font = dict(size=14, color=list(swot_data.values())[i]["colour"], family="Inter, sans-serif")
-fig.show()
+  </div>
+  <p style="text-align:center;font-size:0.85em;color:#6c757d;font-style:italic;margin-top:0.75em;">Figure 4: Superdry SWOT matrix</p>
+</div>
 ```
 
 Viewed as a diagnostic rather than an inventory, the SWOT makes two points clear. First, the strengths are heritage assets: real but finite, and they depreciate fast without investment. Second, the weaknesses and threats reinforce each other (perpetual discounting plus cost-of-living pressure plus weak digital plus fierce competition form a trap). Any renewal strategy has to break that reinforcing loop.
