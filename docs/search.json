@@ -233,56 +233,63 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "",
     "text": "Final year · Business Studies · DCU\n      \n      I translate business questions into data problems and back again. Final year Business Analytics student at DCU on track for 2:1 Honours, with recent experience at Allied World in underwriting operations and a portfolio of projects spanning machine learning, financial modelling and strategic analysis.\n      \n         Download CV\n         Get in touch\n      \n      \n        4Years at DCU\n        3Languages\n        39Certifications\n        2:1Honours progression"
   },
   {
     "objectID": "about.html#in-one-paragraph",
     "href": "about.html#in-one-paragraph",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "In one paragraph",
     "text": "In one paragraph\nI’m interested in the problems where a clean dataset, a clear business question and a messy real-world constraint collide. That combination is where my Allied World underwriting work, my BAA1027 Machine Learning research on shopper intent, the EcoEnergy profitability dashboard and my BAA1003 capstone on PriceBeo all sit. Business analytics as a discipline is less about running more models and more about asking the right question, building the evidence carefully, and communicating the result so that a decision can actually be made. That is the lens I want to take into a graduate role."
   },
   {
     "objectID": "about.html#how-i-work",
     "href": "about.html#how-i-work",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "How I work",
     "text": "How I work\n\n  \n    01\n    Question before model\n    Every analytical project starts with what decision the analysis is supposed to support. My ML research paper concluded that the classification threshold (a decision rule) mattered more than the classifier choice; that finding changed how I think about applied analytics.\n  \n  \n    02\n    Report the negative results\n    Two of the three methodological innovations in my research paper did not work. I reported both in the main narrative rather than burying them. Negative results strengthen an argument by locating the positive one more precisely.\n  \n  \n    03\n    Translate, do not summarise\n    My CTO role on PriceBeo taught me that translating between technical and commercial teams is not the same as summarising. It means restating trade-offs in the language the other side uses, so that a joint decision can be made.\n  \n  \n    04\n    Discipline scales\n    The habits that make competitive bodybuilding work (consistent inputs, honest measurement, long horizons, no shortcuts) are the same habits that make analytical work trustworthy. I try to operate the same way in both."
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "Skills",
     "text": "Skills\n\n\n  \n    \n    \n      Python (pandas, NumPy, Plotly, scikit-learn, XGBoost, SHAP)\n      Applied in BAA1027 ML research paper: 12,205 sessions, five classifiers tuned via GridSearchCV, cost-sensitive threshold optimisation, SHAP interpretability audit. Every project page in this ePortfolio uses executable Python chunks.\n    \n  \n\n  \n    \n    \n      SQL · MySQL · PostgreSQL\n      DCU Database Systems coursework. Designed the six-table PostgreSQL backend for PriceBeo. Queried and reconciled account data at Allied World.\n    \n  \n\n  \n    \n    \n      Power BI · DAX · Power Query · Excel\n      EcoEnergy Corp profitability dashboard: star schema, DAX KPIs (YoY, MoM, rolling 12-month, cost per unit), region-to-product drill-through, and a 3-year predictive model projecting a turnaround from a €8.46M net loss to €3.09M annual profit.\n    \n  \n\n  \n    \n    \n      Web development (Quarto, HTML, CSS, SCSS, WordPress)\n      This ePortfolio: Quarto with 2,400+ line custom SCSS, Plotly and Mermaid artefacts, dark mode via CSS custom properties. Multiple WordPress builds as part of the VIP Ireland project.\n    \n  \n\n  \n    \n    \n      Data reporting and reconciliation\n      15 months at Allied World producing recurring management reports with SLA discipline. Liaised with Finance on payment reconciliations; maintained audit-ready e-filing databases.\n    \n  \n\n  \n    \n    \n      Strategic frameworks\n      BAA1019 Business Strategy: Superdry strategic review applying PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, Strategy Diamond and ERRC Grid across Diagnostics and Evaluation stages.\n    \n  \n\n  \n    \n    \n      Developer tooling (Git, Jira, Linux CLI)\n      Git version control across every portfolio project. Jira for ticket and workflow management. Comfortable on Linux command line, Windows and macOS environments."
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "Experience",
     "text": "Experience\n\n\n  \n    May 2024 – Aug 2025\n    \n      Underwriting Operations Assistant\n      Allied World, Dublin\n      \n        Produced recurring management reports with validated figures for underwriting pipeline stakeholders.\n        Maintained audit-ready e-filing database; liaised with Finance on payment reconciliations within SLAs.\n        Onboarded and trained new hires on filing structures, report templates, and daily workflows.\n      \n    \n  \n\n  \n    Mar 2024 – May 2025\n    \n      Shift Runner\n      SSP Group PLC, Dublin\n      \n        Led busy shifts coordinating a team of six or more across tills, floor coverage and close-down.\n        Reconciled daily takings, resolved discrepancies, and coached new team members."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "Education",
     "text": "Education\n\n\n  \n    Sep 2022 – May 2026\n    \n      BSc Business Studies · Specialisation: Business Analytics\n      Dublin City University · 2:1 Honours progression\n      Relevant coursework: Data Analytics, Power BI and Visualisation, Database Systems, Statistics, Machine Learning and Advanced Python, Business Strategy, New Enterprise Development, Web Development for Analytics.\n    \n  \n\n  \n    Sep 2017 – Jun 2022\n    \n      Leaving Certificate\n      St Finians Community College, Dublin"
   },
   {
     "objectID": "about.html#languages",
     "href": "about.html#languages",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "Languages",
-    "text": "Languages\n\n\nCode\nimport pandas as pd\nimport plotly.graph_objects as go\n\nlanguages = pd.DataFrame({\n    \"Language\": [\"English\", \"Polish\", \"Spanish\"],\n    \"Years\":    [18, 22, 4],\n    \"Level\":    [\"Fluent · professional\", \"Fluent · family\", \"Intermediate\"],\n    \"Context\":  [\"Education and work in Ireland\",\n                 \"Spoken at home, family in Poland\",\n                 \"Studied through DCU and self-study\"],\n})\n\nlanguages = languages.sort_values(\"Years\", ascending=True)\n\ncolours = [\"#d4a017\", \"#1e7e34\", \"#0a579c\"]\n\nfig = go.Figure(go.Bar(\n    y=languages[\"Language\"],\n    x=languages[\"Years\"],\n    orientation=\"h\",\n    marker=dict(color=colours[:len(languages)]),\n    text=[f\"{y} years · {lvl}\" for y, lvl in zip(languages[\"Years\"], languages[\"Level\"])],\n    textposition=\"outside\",\n    textfont=dict(size=12, color=\"#1a1a1a\"),\n    hovertemplate=\"&lt;b&gt;%{y}&lt;/b&gt;&lt;br&gt;Years: %{x}&lt;br&gt;%{customdata}&lt;extra&gt;&lt;/extra&gt;\",\n    customdata=languages[\"Context\"],\n))\n\nfig.update_layout(\n    height=260,\n    margin=dict(l=20, r=220, t=10, b=30),\n    paper_bgcolor=\"rgba(0,0,0,0)\",\n    plot_bgcolor=\"rgba(0,0,0,0)\",\n    font=dict(family=\"Inter, sans-serif\", color=\"#1a1a1a\"),\n    xaxis=dict(title=\"Years of active use\", showgrid=True, gridcolor=\"#eee\", range=[0, 28]),\n    yaxis=dict(showgrid=False),\n    showlegend=False,\n)\nfig.show()\n\n\n\n\n                            \n                                            \n\n\nFigure 1: Language exposure expressed as active years rather than self-rated percentages. English and Polish are both fluent with different domains of use; Spanish is a steadily developing third language.\n\n\n\n\n\n\n  \n    \n    Competitive bodybuilding\n    Training seriously since 2021. The sport teaches you that consistent inputs beat bursts of effort, that honest measurement is non-negotiable, and that meaningful change happens on horizons longer than most people will tolerate. I apply the same principles to analytical work; patience with a dataset tends to produce better answers than aggression with it.\n  \n\n  \n    \n    Hiking and running\n    Weekend trails around Wicklow and further afield when time allows. The combination of distance and elevation is a good antidote to screen time and produces the kind of quiet thinking space that problem-solving actually requires.\n  \n\n  \n    \n    Community volunteering\n    Volunteered in Czestochowa, Poland in 2021 and 2022 on community service initiatives. Worth it for the shift in perspective that comes from working alongside people in circumstances quite different from your own."
+    "text": "Languages\n\n\n  \n    \n      🇬🇧\n      Fluent\n    \n    English\n    Professional · daily use\n    \n      \n    \n    \n      18 years\n      Education · work · Ireland\n    \n  \n\n  \n    \n      🇵🇱\n      Fluent\n    \n    Polish\n    Family · native environment\n    \n      \n    \n    \n      22 years\n      Home · family in Poland\n    \n  \n\n  \n    \n      🇪🇸\n      Intermediate\n    \n    Spanish\n    Steadily developing\n    \n      \n    \n    \n      4 years\n      DCU · self-study"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Aleksander Lupa",
+    "section": "About me",
+    "text": "About me\n\n\n  \n    \n    Competitive bodybuilding\n    Training seriously since 2021. The sport teaches you that consistent inputs beat bursts of effort, that honest measurement is non-negotiable, and that meaningful change happens on horizons longer than most people will tolerate. I apply the same principles to analytical work; patience with a dataset tends to produce better answers than aggression with it.\n  \n\n  \n    \n    Hiking and running\n    Weekend trails around Wicklow and further afield when time allows. The combination of distance and elevation is a good antidote to screen time and produces the kind of quiet thinking space that problem-solving actually requires.\n  \n\n  \n    \n    Community volunteering\n    Volunteered in Czestochowa, Poland in 2021 and 2022 on community service initiatives. Worth it for the shift in perspective that comes from working alongside people in circumstances quite different from your own."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
-    "title": "About me",
+    "title": "Aleksander Lupa",
     "section": "Contact",
     "text": "Contact\n\n   aleklupa@gmail.com\n LinkedIn\n   GitHub\n   CV (PDF)"
   },

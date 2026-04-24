@@ -2,14 +2,8 @@
 pagetitle: "About — Aleksander Lupa"
 format:
   html:
-    code-fold: true
-    code-tools: false
     toc: false
     page-layout: full
-execute:
-  echo: true
-  warning: false
-  freeze: auto
 ---
 
 ```{=html}
@@ -194,49 +188,58 @@ I'm interested in the problems where a clean dataset, a clear business question 
 
 ## Languages
 
-```{python}
-#| label: fig-languages
-#| fig-cap: "Language exposure expressed as active years rather than self-rated percentages. English and Polish are both fluent with different domains of use; Spanish is a steadily developing third language."
+```{=html}
+<div class="ab-langs">
 
-import pandas as pd
-import plotly.graph_objects as go
+  <div class="ab-lang">
+    <div class="ab-lang__head">
+      <span class="ab-lang__flag">🇬🇧</span>
+      <span class="ab-lang__badge">Fluent</span>
+    </div>
+    <div class="ab-lang__name">English</div>
+    <div class="ab-lang__domain">Professional · daily use</div>
+    <div class="ab-lang__track">
+      <div class="ab-lang__fill" style="width:82%"></div>
+    </div>
+    <div class="ab-lang__foot">
+      <span class="ab-lang__yrs">18 years</span>
+      <span class="ab-lang__ctx">Education · work · Ireland</span>
+    </div>
+  </div>
 
-languages = pd.DataFrame({
-    "Language": ["English", "Polish", "Spanish"],
-    "Years":    [18, 22, 4],
-    "Level":    ["Fluent · professional", "Fluent · family", "Intermediate"],
-    "Context":  ["Education and work in Ireland",
-                 "Spoken at home, family in Poland",
-                 "Studied through DCU and self-study"],
-})
+  <div class="ab-lang">
+    <div class="ab-lang__head">
+      <span class="ab-lang__flag">🇵🇱</span>
+      <span class="ab-lang__badge">Fluent</span>
+    </div>
+    <div class="ab-lang__name">Polish</div>
+    <div class="ab-lang__domain">Family · native environment</div>
+    <div class="ab-lang__track">
+      <div class="ab-lang__fill" style="width:100%"></div>
+    </div>
+    <div class="ab-lang__foot">
+      <span class="ab-lang__yrs">22 years</span>
+      <span class="ab-lang__ctx">Home · family in Poland</span>
+    </div>
+  </div>
 
-languages = languages.sort_values("Years", ascending=True)
+  <div class="ab-lang">
+    <div class="ab-lang__head">
+      <span class="ab-lang__flag">🇪🇸</span>
+      <span class="ab-lang__badge ab-lang__badge--mid">Intermediate</span>
+    </div>
+    <div class="ab-lang__name">Spanish</div>
+    <div class="ab-lang__domain">Steadily developing</div>
+    <div class="ab-lang__track">
+      <div class="ab-lang__fill ab-lang__fill--mid" style="width:18%"></div>
+    </div>
+    <div class="ab-lang__foot">
+      <span class="ab-lang__yrs">4 years</span>
+      <span class="ab-lang__ctx">DCU · self-study</span>
+    </div>
+  </div>
 
-colours = ["#d4a017", "#1e7e34", "#0a579c"]
-
-fig = go.Figure(go.Bar(
-    y=languages["Language"],
-    x=languages["Years"],
-    orientation="h",
-    marker=dict(color=colours[:len(languages)]),
-    text=[f"{y} years · {lvl}" for y, lvl in zip(languages["Years"], languages["Level"])],
-    textposition="outside",
-    textfont=dict(size=12, color="#1a1a1a"),
-    hovertemplate="<b>%{y}</b><br>Years: %{x}<br>%{customdata}<extra></extra>",
-    customdata=languages["Context"],
-))
-
-fig.update_layout(
-    height=260,
-    margin=dict(l=20, r=220, t=10, b=30),
-    paper_bgcolor="rgba(0,0,0,0)",
-    plot_bgcolor="rgba(0,0,0,0)",
-    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
-    xaxis=dict(title="Years of active use", showgrid=True, gridcolor="#eee", range=[0, 28]),
-    yaxis=dict(showgrid=False),
-    showlegend=False,
-)
-fig.show()
+</div>
 ```
 
 ## About me
