@@ -1,0 +1,160 @@
+---
+pagetitle: "ML with Python — Aleksander Lupa"
+title: "Machine learning with Python"
+page-layout: article
+toc: false
+execute:
+  echo: true
+  warning: false
+  freeze: auto
+format:
+  html:
+    code-fold: true
+    code-tools:
+      toggle: true
+      source: false
+    fig-cap-location: bottom
+    lightbox: true
+---
+
+```{=html}
+<div class="fj-toc">
+  <div class="fj-toc__title">On this page</div>
+  <nav>
+    <a class="fj-toc__link fj-toc__link--section" href="#about-the-project">About the project</a>
+    <a class="fj-toc__link" href="#dataset-overview">1. Dataset overview</a>
+    <a class="fj-toc__link" href="#exploratory-analysis">2. Exploratory analysis</a>
+    <a class="fj-toc__link" href="#model-development">3. Model development</a>
+    <a class="fj-toc__link" href="#results-evaluation">4. Results &amp; evaluation</a>
+    <a class="fj-toc__link fj-toc__link--section" href="#reflection">Reflection</a>
+    <a class="fj-toc__link" href="#downloads">Downloads</a>
+  </nav>
+</div>
+
+<a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
+```
+
+[INDIVIDUAL PROJECT · 2025]{.ap-meta-label}
+
+Applied machine learning analysis using Python, scikit-learn and Plotly — building, evaluating and interpreting predictive models on a real-world dataset as part of the DCU curriculum.
+
+[Python]{.pp-tag}
+[Machine Learning]{.pp-tag}
+[Pandas]{.pp-tag}
+[Scikit-learn]{.pp-tag}
+[Plotly]{.pp-tag}
+[Data Analysis]{.pp-tag}
+
+```{=html}
+<div class="ap-project-meta">
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Year</div>
+    <div class="ap-meta-value">2025</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Module</div>
+    <div class="ap-meta-value">TBC</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Type</div>
+    <div class="ap-meta-value">Individual project</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Tools</div>
+    <div class="ap-meta-value">Python · scikit-learn · Plotly</div>
+  </div>
+</div>
+
+<div class="pb-stats">
+  <div class="pb-stat">
+    <div class="pb-stat__num">—</div>
+    <div class="pb-stat__label">Dataset rows</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">—</div>
+    <div class="pb-stat__label">Features</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">—</div>
+    <div class="pb-stat__label">Model accuracy</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">—</div>
+    <div class="pb-stat__label">Models compared</div>
+  </div>
+</div>
+```
+
+## About the project
+
+*Content coming soon. This page will document the machine learning project completed as part of the DCU curriculum, covering data preparation, exploratory analysis, model selection and evaluation.*
+
+::: {.callout-note title="What's on this page"}
+The sections below will reproduce the core analytical outputs from the project as executable Python with Plotly. Every chart will be generated live from the underlying data. Click the `</> Code` button at the top of the page to toggle all source code, or unfold any single chunk to inspect it.
+:::
+
+## 1. Dataset overview
+
+*Dataset description and summary statistics to be added here.*
+
+## 2. Exploratory analysis
+
+*Exploratory data analysis charts and findings to be added here.*
+
+## 3. Model development
+
+*Model architecture, feature selection and training approach to be added here.*
+
+## 4. Results & evaluation
+
+*Model evaluation metrics, confusion matrix and comparison charts to be added here.*
+
+## Reflection
+
+*Reflection to be added here.*
+
+## Downloads
+
+```{=html}
+<div class="pb-downloads">
+  <a href="/assets/pdfs/ml-python.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View full report</a>
+</div>
+```
+
+```{=html}
+<script>
+(function () {
+  var links = document.querySelectorAll('.fj-toc a[href^="#"]');
+  var targets = [];
+  links.forEach(function (link) {
+    var id = link.getAttribute('href').slice(1);
+    var el = document.getElementById(id);
+    if (el) targets.push({ el: el, link: link });
+  });
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('active'); });
+        var match = targets.find(function (t) { return t.el === entry.target; });
+        if (match) match.link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-10% 0% -80% 0%' });
+  targets.forEach(function (t) { observer.observe(t.el); });
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function toggleAll(show) {
+    document.querySelectorAll('.cell > details').forEach(function (d) {
+      if (show) { d.open = true; } else { d.removeAttribute('open'); }
+    });
+  }
+  var showBtn = document.getElementById('quarto-show-all-code');
+  var hideBtn = document.getElementById('quarto-hide-all-code');
+  if (showBtn) showBtn.addEventListener('click', function () { toggleAll(true); });
+  if (hideBtn) hideBtn.addEventListener('click', function () { toggleAll(false); });
+});
+</script>
+```

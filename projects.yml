@@ -13,6 +13,13 @@
   categories: [Academic, "Business Strategy", "Group Project"]
   path: "academic-projects/superdry.qmd"
 
+- title: "Machine Learning with Python"
+  description: "Applied ML analysis using scikit-learn, pandas and Plotly — building, evaluating and interpreting predictive models on a real-world dataset as part of the DCU curriculum."
+  author: "Aleksander Lupa"
+  date: "2025-05-01"
+  categories: [Academic, Python, "Machine Learning"]
+  path: "academic-projects/ml-python.qmd"
+
 - title: "PriceBeo"
   description: "A real-time barcode-scanning grocery price comparison app for the Irish market. Developed across four assignments and pitched in a mock Dragons Den asking €100,000 for 20% equity."
   author: "Aleksander Lupa"
