@@ -118,8 +118,9 @@ The sections below will reproduce the core analytical outputs from the project a
 ```{=html}
 <div class="pb-downloads">
   <a href="/assets/pdfs/Research_Report_22420692.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View full report</a>
-  <a href="/assets/pdfs/online_shoppers_ml_analysis_22420692.ipynb" class="pb-dl-btn pb-dl-btn--outline" download>Download notebook (.ipynb)</a>
+  <a href="#" id="ml-nb-dl" class="pb-dl-btn pb-dl-btn--outline" download="online_shoppers_ml_analysis_22420692.ipynb">Download notebook (.ipynb)</a>
 </div>
+<script>document.getElementById('ml-nb-dl').href='/assets/pdfs/online_shoppers_ml_analysis_22420692.ipynb';</script>
 ```
 
 ```{=html}
