@@ -426,12 +426,12 @@ The research followed a pipeline from raw data through to interpretability, with
 %%| fig-cap: "End-to-end analytical pipeline."
 %%{init: {'securityLevel': 'loose'}}%%
 flowchart TB
-    A["Raw data · 12,330 sessions<br/>17 features · 15.5% positive class"] --> B["Preprocessing<br/>Dedupe · one-hot · MinMax scale"]
-    B --> C["Stratified 70/30 split<br/>random_state=42"]
-    C --> D["K-means on train (k=3)<br/>Silhouette 0.61 · label injected"]
-    D --> E["GridSearchCV · 5-fold · F1<br/>5 classifiers + voting ensemble"]
-    E --> H["★ Threshold optimisation<br/>5:1 cost ratio · business economics"]
-    H --> I["SHAP audit<br/>Feature importance · plausibility"]
+    A["<b>Raw data · 12,330 sessions</b><br/>17 features · 15.5% positive class"] --> B["<b>Preprocessing</b><br/>Dedupe · one-hot · MinMax scale"]
+    B --> C["<b>Stratified 70/30 split</b><br/>random_state=42"]
+    C --> D["<b>K-means on train (k=3)</b><br/>Silhouette 0.61 · label injected"]
+    D --> E["<b>GridSearchCV · 5-fold · F1</b><br/>5 classifiers + voting ensemble"]
+    E --> H["<b>★ Threshold optimisation</b><br/>5:1 cost ratio · business economics"]
+    H --> I["<b>SHAP audit</b><br/>Feature importance · plausibility"]
 
     style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a
     style B fill:#f1f8e9,stroke:#1e7e34,color:#1a1a1a
