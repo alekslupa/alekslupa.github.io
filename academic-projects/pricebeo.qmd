@@ -50,29 +50,8 @@ A real-time barcode-scanning grocery price comparison app for the Irish market, 
 <a href="../academic-projects/index.html" class="proj-back">← Academic projects</a>
 ```
 
-[BAA1003]{.pp-tag}
-[Academic]{.pp-tag}
 
 ```{=html}
-<div class="ap-project-meta">
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Year</div>
-    <div class="ap-meta-value">2025</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Module</div>
-    <div class="ap-meta-value">BAA1003</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">My role</div>
-    <div class="ap-meta-value">CTO</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Team</div>
-    <div class="ap-meta-value">Group 38 · 5</div>
-  </div>
-</div>
-
 <div class="pb-stats">
   <div class="pb-stat">
     <div class="pb-stat__num">80</div>
