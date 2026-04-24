@@ -402,12 +402,14 @@ Hambrick and Fredrickson's Strategy Diamond frames a strategy as five interlocki
 ```{mermaid}
 %%| label: fig-strategy-diamond
 %%| fig-cap: "Strategy Diamond applied to Superdry's historical strategy. Each element traded away its original strength, and the elements ceased to reinforce each other."
+%%{init: {'securityLevel': 'loose'}}%%
 flowchart TD
-    A[<b>Arenas</b><br/><br/>Chose global mass-market<br/>over focused core markets]
-    B[<b>Vehicles</b><br/><br/>Relied on wholesale and licensing<br/>at expense of DTC brand control]
-    C[<b>Differentiators</b><br/><br/>Traded unique design identity<br/>for ubiquity and cost-cutting]
-    D[<b>Staging</b><br/><br/>Pursued blitz-scale expansion<br/>before operating model was ready]
-    E[<b>Economic logic</b><br/><br/>Shifted from premium value-based<br/>to low-margin volume-based model]
+    A["<b>Arenas</b><br/>Chose global mass-market<br/>over focused core"]
+    B["<b>Vehicles</b><br/>Wholesale + licensing<br/>over DTC control"]
+    C["<b>Differentiators</b><br/>Traded design identity<br/>for ubiquity"]
+    D["<b>Staging</b><br/>Blitz-scale before<br/>operations ready"]
+    E["<b>Economic logic</b><br/>Premium → low-margin<br/>volume-based model"]
+    F("<b>Economic logic</b><br/>is the hinge element")
 
     A --- B
     A --- C
@@ -417,12 +419,17 @@ flowchart TD
     C --- D
     C --- E
     D --- E
+    D --- F
+    E --- F
 
     style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
     style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
     style C fill:#f1f8e9,stroke:#558b2f,color:#1a1a1a,stroke-width:2px
     style D fill:#fce4ec,stroke:#ad1457,color:#1a1a1a,stroke-width:2px
     style E fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a,stroke-width:3px
+    style F fill:#ffffff,stroke:#6a1b9a,color:#6a1b9a,stroke-width:1.5px,stroke-dasharray:5 5
+    linkStyle 8 stroke:none
+    linkStyle 9 stroke:none
 ```
 
 ::: {.callout-tip title="The Economic Logic element is the hinge"}
@@ -436,12 +443,13 @@ The Evaluation stage proposes a three-phase roadmap that sequences the renewal c
 ```{mermaid}
 %%| label: fig-roadmap
 %%| fig-cap: "Three-phase renewal roadmap. Short-term stabilisation creates the credibility and operational room for medium-term capability investment; long-term embedding of sustainability, digital and purpose transforms the strategy from retrenchment into sustainable differentiation."
+%%{init: {'securityLevel': 'loose'}}%%
 flowchart LR
-    A[<b>Stabilise & Align</b><br/>0-12 months<br/><br/>Reset brand purpose<br/>Reduce discounting<br/>Restructure teams<br/>Stabilise operations]
-    B[<b>Build & Transform</b><br/>12-30 months<br/><br/>Digital-first capabilities<br/>E-commerce platform upgrade<br/>Experiential flagship stores<br/>Sustainability product lines]
-    C[<b>Embed & Sustain</b><br/>30+ months<br/><br/>Balanced Scorecard discipline<br/>Continuous innovation<br/>Sustainability in routines<br/>Purpose-led brand leadership]
+    A["<b><span style='color:#e65100'>0-12 MONTHS</span></b><br/><b>Stabilise &amp; Align</b><br/>• Reset brand purpose<br/>• Reduce discounting<br/>• Restructure teams<br/>• Stabilise operations"]
+    B["<b><span style='color:#1976d2'>12-30 MONTHS</span></b><br/><b>Build &amp; Transform</b><br/>• Digital-first capabilities<br/>• E-commerce upgrade<br/>• Experiential flagships<br/>• Sustainability lines"]
+    C["<b><span style='color:#1e7e34'>30+ MONTHS</span></b><br/><b>Embed &amp; Sustain</b><br/>• Balanced Scorecard<br/>• Continuous innovation<br/>• Sustainability routines<br/>• Purpose-led leadership"]
 
-    A ==> B ==> C
+    A --> B --> C
 
     style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
     style B fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
