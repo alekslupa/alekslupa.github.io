@@ -1,11 +1,6 @@
 ---
 pagetitle: "Online Shoppers Purchasing Intention — Aleksander Lupa"
 title: "Online Shoppers Purchasing Intention"
-subtitle: "A comparative machine learning analysis with cost-sensitive thresholding"
-description: "BAA1027 Machine Learning research paper. Applied five classifiers to the UCI Online Shoppers dataset, with three methodological extensions including cost-sensitive threshold optimisation derived from published e-commerce economics."
-author: "Aleksander Lupa"
-date: "2026-04-19"
-categories: [Machine Learning, Python, XGBoost, SHAP, "Research paper", "Solo project"]
 page-layout: article
 toc: false
 execute:
