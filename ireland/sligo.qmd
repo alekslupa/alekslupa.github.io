@@ -1,54 +1,74 @@
 ---
-title: "Sligo"
-subtitle: "Hiking notes from County Sligo"
-description: "A hike in County Sligo, Ireland. Part of the Ireland map collection."
+pagetitle: "Sligo — Aleksander Lupa"
 author: "Aleksander Lupa"
 date: "2026-04-25"
+page-layout: article
+toc: false
 format:
   html:
     code-fold: false
     code-tools: false
-    toc: false
 ---
 
-[← Back to Ireland map](/ireland.html)
-
-# Sligo
-
 ```{=html}
-<div class="hk-meta">
-  <div class="hk-meta__item"><span class="hk-meta__label">Route</span><span class="hk-meta__value">[name of route or mountain]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Distance</span><span class="hk-meta__value">[km]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Elevation gain</span><span class="hk-meta__value">[m]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Date</span><span class="hk-meta__value">[when you went]</span></div>
+<div class="hk-hero">
+  <div class="hk-label">Field Journal · No. 05 · Connacht</div>
+  <h1 class="hk-title">Sligo</h1>
+  <p class="hk-subtitle">Yeats country. Tabletop mountains, a moonrise behind a cliff and a castle on a hill at the bruise hour.</p>
+  <a href="../ireland.html" class="hk-back">← Back to Ireland map</a>
 </div>
+
+<div class="meta-row">
+  <div class="meta-item"><span class="m-label">Route</span><span class="m-val">Gleniff Horseshoe loop</span></div>
+  <div class="meta-item"><span class="m-label">Distance</span><span class="m-val">11.0 km</span></div>
+  <div class="meta-item"><span class="m-label">Elevation gain</span><span class="m-val">350 m</span></div>
+  <div class="meta-item"><span class="m-label">Date</span><span class="m-val">Spring 2024</span></div>
+</div>
+
+<h2 class="section">The hike</h2>
 ```
 
-## The hike
+Drove up the N4 with three hours of David Goggins on the speakers explaining that I was, on the whole, soft. I parked at the base of Gleniff Horseshoe with my self image somewhat dented and my motivation correspondingly elevated.
 
-[A short paragraph about the hike: where you started, what the conditions were, what was memorable. Two or three sentences is plenty.]
+Sligo is the county nobody talks about, which is criminal. Benbulbin is on every postcard, sure, but the rest of it goes underrated. Yeats is buried in Drumcliffe under it. He had taste.
 
-## Photos
+The Gleniff Horseshoe is a loop walk that takes you up and around the back of the Benbulbin range, past the cliffs of Annacoona, past the cave where Diarmuid and Grainne supposedly hid out, and back round to the start. Eleven kilometres. Not technical. Just long, and very, very Irish.
+
+The cliffs on the inside of the horseshoe go on for kilometres. They are stratified limestone laid down 320 million years ago when this was all a tropical sea. You stand on a bog at the base of them and it is genuinely, geologically humbling. Then you eat a banana.
+
+The full moon came up behind Benbulbin while I was still on the ridge. The cliffs went pink and the moon was the size of a saucer. I am aware that the moon being the size of a saucer is the kind of thing you read in a sixth year English essay. It was, however, the size of a saucer.
+
+Then I drove down to Mullaghmore as the light dropped. Classiebawn Castle was a black silhouette against a sky the colour of a fresh bruise, and I took a photo from the field across the road. It is one of the best photos I have ever taken. Sligo gave me that photo for free.
 
 ```{=html}
-<div class="hk-gallery">
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/sligo/photo1.jpg" alt="Sligo hike, photo 1" />
-    <figcaption>[Caption for photo 1]</figcaption>
-  </figure>
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/sligo/photo2.jpg" alt="Sligo hike, photo 2" />
-    <figcaption>[Caption for photo 2]</figcaption>
-  </figure>
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/sligo/photo3.jpg" alt="Sligo hike, photo 3" />
-    <figcaption>[Caption for photo 3]</figcaption>
-  </figure>
-</div>
+<div class="hk-divider"></div>
+<h2 class="section">Photos</h2>
+
+<img src="/assets/hikes/sligo/01-benbulbin-moon.jpg" class="hk-photo" alt="Benbulbin with a full moon rising behind it">
+<p class="hk-caption">Benbulbin and the moon. The county does this for fun.</p>
+
+<img src="/assets/hikes/sligo/02-gleniff-approach.jpg" class="hk-photo" alt="Long approach road into the Gleniff Horseshoe">
+<p class="hk-caption">The approach. Cliffs on three sides, ego on zero sides.</p>
+
+<img src="/assets/hikes/sligo/03-benbulbin-distance.jpg" class="hk-photo" alt="Benbulbin from across the valley at dawn">
+<p class="hk-caption">Benbulbin from the Drumcliffe side. Yeats was right.</p>
+
+<img src="/assets/hikes/sligo/04-glencar-lake.jpg" class="hk-photo" alt="Glencar Lough at sunrise with one cow">
+<p class="hk-caption">Glencar at first light. One cow. Zero people. Coffee in hand.</p>
+
+<img src="/assets/hikes/sligo/05-classiebawn.jpg" class="hk-photo" alt="Classiebawn Castle silhouette at dusk">
+<p class="hk-caption">Mullaghmore Head at last light. Classiebawn Castle as a cut-out.</p>
+
+<div class="hk-divider"></div>
+<h2 class="section">Reflections</h2>
 ```
 
-## Reflections
+Sligo is two and a half hours from Dublin, on a road that improves the further you get from Dublin. There is a metaphor in there.
 
-[A short paragraph about why this hike mattered, what you took from it, anything notable about the area. Two or three sentences.]
+Glencar Waterfall and Glencar Lough at sunrise: sit in the car park, drink a coffee, look at it. You will not regret it.
 
-[← Back to Ireland map](/ireland.html)
+If a Sligo local tells you Mullaghmore has the heaviest big-wave surf in Europe, they are not exaggerating. I went in February. I watched. I did not surf. I left intact.
+
+```{=html}
+<a href="../ireland.html" class="hk-back hk-back--bottom">← Back to Ireland map</a>
+```

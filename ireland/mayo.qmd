@@ -1,54 +1,62 @@
 ---
-title: "Mayo"
-subtitle: "Hiking notes from County Mayo"
-description: "A hike in County Mayo, Ireland. Part of the Ireland map collection."
+pagetitle: "Mayo — Aleksander Lupa"
 author: "Aleksander Lupa"
 date: "2026-04-25"
+page-layout: article
+toc: false
 format:
   html:
     code-fold: false
     code-tools: false
-    toc: false
 ---
 
-[← Back to Ireland map](/ireland.html)
-
-# Mayo
-
 ```{=html}
-<div class="hk-meta">
-  <div class="hk-meta__item"><span class="hk-meta__label">Route</span><span class="hk-meta__value">[name of route or mountain]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Distance</span><span class="hk-meta__value">[km]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Elevation gain</span><span class="hk-meta__value">[m]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Date</span><span class="hk-meta__value">[when you went]</span></div>
+<div class="hk-hero">
+  <div class="hk-label">Field Journal · No. 04 · Connacht</div>
+  <h1 class="hk-title">Mayo</h1>
+  <p class="hk-subtitle">Achill Island. Sea cliffs that drop 600 metres straight into the Atlantic and sheep that simply do not care.</p>
+  <a href="../ireland.html" class="hk-back">← Back to Ireland map</a>
 </div>
+
+<div class="meta-row">
+  <div class="meta-item"><span class="m-label">Route</span><span class="m-val">Croaghaun, Achill Island</span></div>
+  <div class="meta-item"><span class="m-label">Distance</span><span class="m-val">11.6 km</span></div>
+  <div class="meta-item"><span class="m-label">Elevation gain</span><span class="m-val">680 m</span></div>
+  <div class="meta-item"><span class="m-label">Date</span><span class="m-val">Winter 2024</span></div>
+</div>
+
+<h2 class="section">The hike</h2>
 ```
 
-## The hike
+Drove out to Achill on a clear winter morning. The road across the Sound is the kind of road that makes you nervous on the way over and quietly proud of yourself on the way back. The island is a different country. The Atlantic is doing geological violence at the western end of it, and you can hear it from the car park at Keem Bay.
 
-[A short paragraph about the hike: where you started, what the conditions were, what was memorable. Two or three sentences is plenty.]
+Croaghaun is one of the highest sea cliffs in Europe, depending on which Wikipedia page you trust. You do not really climb it. You walk along the top of the world, with the Atlantic trying to remove you sideways at fifty kilometres an hour. The grass is spongy. The bog holes are eager. There is no path. There is a direction.
 
-## Photos
+About halfway round, a line of sheep walked across my route as if I was a postbox. Not one of them looked up. I have rarely felt so administratively unimportant.
+
+At the cliff edge, I went down on my heels and crawled the last metre to look over. Six hundred metres of nothing, and then dark water doing something violent against the base. The kind of view that will recalibrate your sense of importance for a week. The light came across the sea in a long silver bar like it had been ordered specially. I sat there for a while. I ate cold pasta out of a plastic container, which is the kind of meal you can only get away with in a place this beautiful. Anywhere else it would be a cry for help.
 
 ```{=html}
-<div class="hk-gallery">
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/mayo/photo1.jpg" alt="Mayo hike, photo 1" />
-    <figcaption>[Caption for photo 1]</figcaption>
-  </figure>
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/mayo/photo2.jpg" alt="Mayo hike, photo 2" />
-    <figcaption>[Caption for photo 2]</figcaption>
-  </figure>
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/mayo/photo3.jpg" alt="Mayo hike, photo 3" />
-    <figcaption>[Caption for photo 3]</figcaption>
-  </figure>
-</div>
+<div class="hk-divider"></div>
+<h2 class="section">Photos</h2>
+
+<img src="/assets/hikes/mayo/01-cliffs-sheep.jpg" class="hk-photo" alt="Sheep on the Croaghaun cliff edge">
+<p class="hk-caption">The local committee. Tenured. Not afraid of heights or me.</p>
+
+<img src="/assets/hikes/mayo/02-ridge-shadow.jpg" class="hk-photo" alt="Coastal ridge in shadow with silver sea below">
+<p class="hk-caption">Ridge walk back. The sea did the lighting.</p>
+
+<img src="/assets/hikes/mayo/03-sheep-blackface.jpg" class="hk-photo" alt="Black-faced sheep on rocks">
+<p class="hk-caption">This one looked at me. None of the others did. I felt seen.</p>
+
+<div class="hk-divider"></div>
+<h2 class="section">Reflections</h2>
 ```
 
-## Reflections
+Wind on Achill is not optional. Check the forecast and then assume the forecast is a polite suggestion. Keem Bay is the start and the finish. The water is the colour of a Greek postcard and the temperature of a fridge. I did not swim. I am not a hero.
 
-[A short paragraph about why this hike mattered, what you took from it, anything notable about the area. Two or three sentences.]
+If you only have one Mayo day in your life and you are asked to choose between Croagh Patrick and Achill, choose Achill. The Reek is great. Achill is unforgettable.
 
-[← Back to Ireland map](/ireland.html)
+```{=html}
+<a href="../ireland.html" class="hk-back hk-back--bottom">← Back to Ireland map</a>
+```

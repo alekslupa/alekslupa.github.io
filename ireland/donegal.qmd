@@ -1,54 +1,73 @@
 ---
-title: "Donegal"
-subtitle: "Hiking notes from County Donegal"
-description: "A hike in County Donegal, Ireland. Part of the Ireland map collection."
+pagetitle: "Donegal — Aleksander Lupa"
 author: "Aleksander Lupa"
 date: "2026-04-25"
+page-layout: article
+toc: false
 format:
   html:
     code-fold: false
     code-tools: false
-    toc: false
 ---
 
-[← Back to Ireland map](/ireland.html)
-
-# Donegal
-
 ```{=html}
-<div class="hk-meta">
-  <div class="hk-meta__item"><span class="hk-meta__label">Route</span><span class="hk-meta__value">[name of route or mountain]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Distance</span><span class="hk-meta__value">[km]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Elevation gain</span><span class="hk-meta__value">[m]</span></div>
-  <div class="hk-meta__item"><span class="hk-meta__label">Date</span><span class="hk-meta__value">[when you went]</span></div>
+<div class="hk-hero">
+  <div class="hk-label">Field Journal · No. 03 · Ulster</div>
+  <h1 class="hk-title">Donegal</h1>
+  <p class="hk-subtitle">A quartzite cone, scree that hates you personally and the northern lights doing the heavy lifting on the way back.</p>
+  <a href="../ireland.html" class="hk-back">← Back to Ireland map</a>
 </div>
+
+<div class="meta-row">
+  <div class="meta-item"><span class="m-label">Route</span><span class="m-val">Errigal, standard SE ridge</span></div>
+  <div class="meta-item"><span class="m-label">Distance</span><span class="m-val">5.4 km</span></div>
+  <div class="meta-item"><span class="m-label">Elevation gain</span><span class="m-val">490 m</span></div>
+  <div class="meta-item"><span class="m-label">Date</span><span class="m-val">May 2024</span></div>
+</div>
+
+<h2 class="section">The hike</h2>
 ```
 
-## The hike
+Drove the seven hours from Dublin in two days, with a sleep in the car somewhere in Sligo and a sunrise over Glencar Lough for moral support. Errigal is the white quartzite cone that haunts every photo of Donegal. From a distance it looks fictional. Up close it is extremely real and extremely loose underfoot.
 
-[A short paragraph about the hike: where you started, what the conditions were, what was memorable. Two or three sentences is plenty.]
+The first half is bog. The second half is scree. The scree is composed entirely of stones that hate you and your ancestors. Two steps up, one step back, repeat for ninety minutes. It is the leg-day-at-the-gym of Irish mountains, and it bills you for it.
 
-## Photos
+The summit is a knife edge about a metre wide with two small cairns and a piece of rusted wire that has been there since at least the Famine and is doing nothing structural. You stand on it. You look at the world. You take exactly one photo because the wind is trying very hard to remove you from the mountain.
+
+The mountain was actually only the second-best moment of the trip. The first was that night. I drove down to a rough pull-in near the coast, parked up, made dinner on the stove and looked up. The sky was green. Then it was pink. Then it was green again with vertical curtains in it.
+
+The northern lights, in Ireland, in real life, not on Instagram. I stood in a field for the better part of an hour and did not check my phone, did not film a TikTok, did not even take a particularly good photo. I just stood there. It was, in the genuine and not annoying sense of the word, religious.
 
 ```{=html}
-<div class="hk-gallery">
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/donegal/photo1.jpg" alt="Donegal hike, photo 1" />
-    <figcaption>[Caption for photo 1]</figcaption>
-  </figure>
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/donegal/photo2.jpg" alt="Donegal hike, photo 2" />
-    <figcaption>[Caption for photo 2]</figcaption>
-  </figure>
-  <figure class="hk-gallery__item">
-    <img src="/assets/hikes/donegal/photo3.jpg" alt="Donegal hike, photo 3" />
-    <figcaption>[Caption for photo 3]</figcaption>
-  </figure>
-</div>
+<div class="hk-divider"></div>
+<h2 class="section">Photos</h2>
+
+<img src="/assets/hikes/donegal/01-errigal-road.jpg" class="hk-photo" alt="Errigal seen from the R251 road">
+<p class="hk-caption">Errigal from the road that ruins your life in the best way.</p>
+
+<img src="/assets/hikes/donegal/02-corrie-scree.jpg" class="hk-photo" alt="Rocky scree corrie on the approach to Errigal">
+<p class="hk-caption">The approach. Two steps up, one step back, ninety minutes of that.</p>
+
+<img src="/assets/hikes/donegal/03-summit-cables.jpg" class="hk-photo" alt="Summit ridge with old marker cables">
+<p class="hk-caption">The summit. A metre wide, two cairns, one wire older than my parents.</p>
+
+<img src="/assets/hikes/donegal/04-summit-view.jpg" class="hk-photo" alt="Sun rays from the summit over Dunlewey">
+<p class="hk-caption">God light, free of charge. Looking down at Dunlewey.</p>
+
+<img src="/assets/hikes/donegal/05-aurora.jpg" class="hk-photo" alt="Aurora borealis over the Donegal hills">
+<p class="hk-caption">Solar storm overspill. Free entry. No queue.</p>
+
+<img src="/assets/hikes/donegal/06-slieve-league.jpg" class="hk-photo" alt="Slieve League cliff path">
+<p class="hk-caption">Slieve League the next morning. Some of the highest sea cliffs in Europe.</p>
+
+<div class="hk-divider"></div>
+<h2 class="section">Reflections</h2>
 ```
 
-## Reflections
+Errigal in the wet would be a bad idea bordering on a death sentence. Go on a dry day. If you are unsure, do not go. Bring poles. I did not, again. I ate it twice on the way down on dry rock. Twenty-two years old and already this slow to learn.
 
-[A short paragraph about why this hike mattered, what you took from it, anything notable about the area. Two or three sentences.]
+Slieve League cliffs are forty-five minutes south by car and worth the detour. Highest accessible sea cliffs in the country. Bring a hat that fits properly.
 
-[← Back to Ireland map](/ireland.html)
+```{=html}
+<a href="../ireland.html" class="hk-back hk-back--bottom">← Back to Ireland map</a>
+```
