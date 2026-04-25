@@ -152,11 +152,11 @@ Check out the latest projects.
 ::: {#hp-recent}
 :::
 
-[All projects →](/projects/index.html){.hp-recent__all}
-
 ```{=html}
 <hr class="hp-divider">
 ```
+
+[All projects →](/projects/index.html){.hp-recent__all}
 
 ```{=html}
 <div class="hp-section">
