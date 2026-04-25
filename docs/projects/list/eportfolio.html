@@ -8,9 +8,9 @@
 
 <meta name="author" content="Aleksander Lupa">
 <meta name="dcterms.date" content="2026-04-25">
-<meta name="description" content="A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages, showcasing academic and personal projects as part of a BSc in Business Studies at DCU.">
+<meta name="description" content="BAA1028 Workflow &amp; Data Management module deliverable under Damien Dupré. A professional ePortfolio built from scratch using Quarto, custom SCSS and GitHub Pages, with the page itself functioning as a meta-analysis of the repository that produced it.">
 
-<title>ePortfolio — Aleksander Lupa – Aleksander Lupa</title>
+<title>ePortfolio (this website) – Aleksander Lupa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,7 +61,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -111,11 +111,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+<script>
+
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+
+</script>
+
+<script type="module">import "https://cdn.plot.ly/plotly-3.5.0.min"</script>
+
+
+
 
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -335,24 +356,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#eportfolio-this-website" id="toc-eportfolio-this-website" class="nav-link active" data-scroll-target="#eportfolio-this-website">ePortfolio (this website)</a>
+  <ul class="collapse">
+  <li><a href="#about-the-project" id="toc-about-the-project" class="nav-link" data-scroll-target="#about-the-project">About the project</a></li>
+  <li><a href="#the-build-pipeline" id="toc-the-build-pipeline" class="nav-link" data-scroll-target="#the-build-pipeline">1. The build pipeline</a></li>
+  <li><a href="#information-architecture" id="toc-information-architecture" class="nav-link" data-scroll-target="#information-architecture">2. Information architecture</a></li>
+  <li><a href="#the-repository-in-numbers" id="toc-the-repository-in-numbers" class="nav-link" data-scroll-target="#the-repository-in-numbers">3. The repository, in numbers</a></li>
+  <li><a href="#scss-growth-a-workflow-signal" id="toc-scss-growth-a-workflow-signal" class="nav-link" data-scroll-target="#scss-growth-a-workflow-signal">4. SCSS growth: a workflow signal</a></li>
+  <li><a href="#where-the-work-concentrated" id="toc-where-the-work-concentrated" class="nav-link" data-scroll-target="#where-the-work-concentrated">5. Where the work concentrated</a></li>
+  <li><a href="#what-i-was-responsible-for" id="toc-what-i-was-responsible-for" class="nav-link" data-scroll-target="#what-i-was-responsible-for">What I was responsible for</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ePortfolio (this website)</h1>
-<p class="subtitle lead">BAA1027 · ePortfolio Web Development</p>
+<div class="quarto-title-block"><div><h1 class="title">ePortfolio (this website)</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<p class="subtitle lead">BAA1028 Workflow &amp; Data Management · A web project that demonstrates its own workflow</p>
   <div class="quarto-categories">
-    <div class="quarto-category">BAA1027</div>
-    <div class="quarto-category">Academic</div>
+    <div class="quarto-category">Workflow &amp; Data Management</div>
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">Git</div>
+    <div class="quarto-category">GitHub Pages</div>
+    <div class="quarto-category">SCSS</div>
+    <div class="quarto-category">Solo project</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages, showcasing academic and personal projects as part of a BSc in Business Studies at DCU.
+    BAA1028 Workflow &amp; Data Management module deliverable under Damien Dupré. A professional ePortfolio built from scratch using Quarto, custom SCSS and GitHub Pages, with the page itself functioning as a meta-analysis of the repository that produced it.
   </div>
 </div>
 
@@ -381,139 +425,524 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<style>.quarto-title h1.title{display:none}</style>
-
-<div class="proj-header">
-  <h1 class="proj-title">ePortfolio (this website)</h1>
-  <p class="proj-subtitle">A professional ePortfolio designed and built from scratch as part of my BSc in Business Studies at Dublin City University, using Quarto, custom SCSS, and GitHub Pages.</p>
-  <a href="../index.html" class="proj-back">← Projects</a>
-</div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Project goal</h2>
-  <p>Although I had prior experience building websites using WordPress and Elementor Pro for freelance clients, this project was a completely different challenge. WordPress abstracts most of the underlying code, whereas building with Quarto required working directly with markup, SCSS, YAML configuration, and Git from the ground up. It was my first time working in this kind of development environment.</p>
-  <p>The goal was to build a fully functional, publicly hosted professional ePortfolio that demonstrates technical ability across web development, version control, and design, while also serving as a genuine platform to showcase my academic and personal journey.</p>
-</div>
-
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">What I built</h2>
-  <p>The site covers every area of my profile: a custom landing page with hero section and project previews, a detailed about page pulling in my real work experience and education, an achievements page listing all 30 Kubicle and 9 LinkedIn Learning certificates, individual project pages for each piece of work, a future goals page, and a fitness journey timeline with alternating photo and text entries.</p>
-  <p>Every page uses custom SCSS with no reliance on default Quarto theming. All styles are managed centrally in a single stylesheet, with consistent typography, spacing, card components, timelines, and responsive layouts throughout.</p>
-</div>
-
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Skills developed</h2>
-  <div class="proj-skills-grid">
-    <div class="proj-skill-card">
-      <span class="proj-skill-card__label">Framework</span>
-      <span class="proj-skill-card__value">Quarto and YAML configuration</span>
-    </div>
-    <div class="proj-skill-card">
-      <span class="proj-skill-card__label">Styling</span>
-      <span class="proj-skill-card__value">Custom SCSS and responsive CSS layouts</span>
-    </div>
-    <div class="proj-skill-card">
-      <span class="proj-skill-card__label">Version control</span>
-      <span class="proj-skill-card__value">Git branching, commits, and pull requests</span>
-    </div>
-    <div class="proj-skill-card">
-      <span class="proj-skill-card__label">Deployment</span>
-      <span class="proj-skill-card__value">GitHub Pages with docs folder setup</span>
-    </div>
-    <div class="proj-skill-card">
-      <span class="proj-skill-card__label">Design</span>
-      <span class="proj-skill-card__value">UI layout, typography, and component design</span>
-    </div>
-    <div class="proj-skill-card">
-      <span class="proj-skill-card__label">Content</span>
-      <span class="proj-skill-card__value">Writing professionally for a public audience</span>
-    </div>
+<p><a href="../index.html">Projects</a></p>
+<p>Solo project · 2026</p>
+<section id="eportfolio-this-website" class="level1">
+<h1>ePortfolio (this website)</h1>
+<p>A professional ePortfolio designed and built from scratch as part of BAA1028 Workflow &amp; Data Management at Dublin City University, supervised by Damien Dupré. Built with Quarto, custom SCSS and GitHub Pages.</p>
+<p><span class="pp-tag">Workflow &amp; Data Management</span> <span class="pp-tag">Quarto</span> <span class="pp-tag">Git</span> <span class="pp-tag">SCSS</span> <span class="pp-tag">GitHub Pages</span> <span class="pp-tag">Solo project</span></p>
+<div class="ap-project-meta">
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Year</div>
+    <div class="ap-meta-value">2026</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Module</div>
+    <div class="ap-meta-value">BAA1028</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Supervisor</div>
+    <div class="ap-meta-value">Damien Dupré</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">My role</div>
+    <div class="ap-meta-value">Sole author</div>
   </div>
 </div>
-
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Challenges</h2>
-  <div class="proj-challenges">
-    <div class="proj-challenge">
-      <span class="proj-challenge__num">01</span>
-      <div class="proj-challenge__content">
-        <div class="proj-challenge__title">Learning Quarto from scratch</div>
-        <p>Unlike WordPress where the platform handles most of the structure, Quarto required me to understand how .qmd files, YAML configuration, and the rendering pipeline all connect. Coming from a visual page builder background, this was a significant shift in how I thought about building a website.</p>
-      </div>
-    </div>
-    <div class="proj-challenge">
-      <span class="proj-challenge__num">02</span>
-      <div class="proj-challenge__content">
-        <div class="proj-challenge__title">Custom SCSS without a design system</div>
-        <p>Building a consistent design language from scratch, with no existing framework to lean on, required a lot of planning. Getting components like the timeline, card grid, and skill bars to look right across both light and dark mode took several iterations.</p>
-      </div>
-    </div>
-    <div class="proj-challenge proj-challenge--last">
-      <span class="proj-challenge__num">03</span>
-      <div class="proj-challenge__content">
-        <div class="proj-challenge__title">Git and GitHub Pages deployment</div>
-        <p>This was my first project using Git for version control. Managing commits, configuring the output directory, and getting GitHub Pages to serve the rendered docs folder correctly required careful debugging before the site went live successfully.</p>
-      </div>
-    </div>
-  </div>
+<section id="about-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-project">About the project</h2>
+<p>BAA1028 Workflow &amp; Data Management is the module that asks students to demonstrate, in a single deliverable, how reproducible workflows, version control discipline and structured data management are actually applied in practice. The deliverable is this ePortfolio: a publicly hosted website built from raw markup and styling rather than a CMS, version-controlled in Git, deployed automatically to GitHub Pages, and structured around data files that the page builds itself reads at render time.</p>
+<p>I came into this module with prior experience building websites in WordPress and Elementor Pro for freelance clients. WordPress hides almost everything that this module is about: there is no Git history, no build pipeline, no concept of structured frontmatter, no separation between content and presentation. Switching to Quarto for this project meant doing all of those things explicitly, in code, for the first time. That gap between “I can build a website” and “I can build a reproducible web project” is precisely what BAA1028 is about, and it is what this page sets out to demonstrate.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Why this page is different from the other project pages">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Reflection</h2>
-  <p>This project pushed me further technically than any other module assignment. I already knew how to build websites through WordPress, but this was a completely different experience. Working directly in code, managing a project through Git, and deploying to a live URL through GitHub Pages gave me a much deeper understanding of how the web actually works under the hood.</p>
-  <p>More than the technical skills, it taught me how to think about design, structure, and user experience when building something entirely from scratch. Having prior web design experience helped with layout instincts, but everything else had to be learned from the ground up.</p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why this page is different from the other project pages
 </div>
-
-<div class="proj-divider"></div>
-
-<a href="https://github.com/alekslupa/alekslupa.github.io" target="_blank" rel="noopener" class="proj-btn">GitHub Repository</a>
-<section id="technology-breakdown" class="level2">
-<h2 class="anchored" data-anchor-id="technology-breakdown">Technology breakdown</h2>
-<p>The chart below shows an estimated breakdown of time invested across the technologies used to build this site throughout the module.</p>
-<div id="cell-fig-tech" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>technologies <span class="op">=</span> [<span class="st">"SCSS / CSS"</span>, <span class="st">"HTML"</span>, <span class="st">"Quarto &amp; YAML"</span>, <span class="st">"Git &amp; GitHub"</span>, <span class="st">"JavaScript"</span>, <span class="st">"Python"</span>]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>hours <span class="op">=</span> [<span class="dv">40</span>, <span class="dv">35</span>, <span class="dv">30</span>, <span class="dv">25</span>, <span class="dv">15</span>, <span class="dv">12</span>]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"#4a90d9"</span>, <span class="st">"#5ba0e0"</span>, <span class="st">"#6bb0e7"</span>, <span class="st">"#7bc0ee"</span>, <span class="st">"#a0d0f5"</span>, <span class="st">"#c0e0fb"</span>]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="fl">4.5</span>))</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> ax.barh(technologies, hours, color<span class="op">=</span>colors, edgecolor<span class="op">=</span><span class="st">"white"</span>, height<span class="op">=</span><span class="fl">0.6</span>)</span>
+</div>
+<div class="callout-body-container callout-body">
+<p>Every other page in this portfolio describes work that happened elsewhere and reproduces selected exhibits as Plotly charts. This page is meta: the project being described is the website you are reading, and the charts below analyse the actual repository at <code>github.com/alekslupa/alekslupa.github.io</code>. The data is generated by a small Python script (<code>scripts/generate_repo_stats.py</code>) that walks the Git history and the file tree, writes results to four CSV files in <code>data/</code>, and the page reads those CSVs at render time. That separation between data generation and presentation is itself a workflow choice the module is graded on.</p>
+</div>
+</div>
+</section>
+<section id="the-build-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="the-build-pipeline">1. The build pipeline</h2>
+<p>The pipeline is the most important artefact of a Workflow &amp; Data Management project. Every change to this site flows through the same six stages, in the same order, every time. There is no manual upload step, no FTP, no copy-paste of HTML into a CMS. A commit triggers a render and a deployment, and the live URL is whatever the render produced.</p>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>flowchart LR</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    A[Author&lt;br/&gt;edits .qmd file&lt;br/&gt;locally in VS Code]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    B[&lt;b&gt;quarto render&lt;/b&gt;&lt;br/&gt;Executes Python chunks&lt;br/&gt;Compiles SCSS&lt;br/&gt;Resolves listings&lt;br/&gt;Writes to docs/]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    C[&lt;b&gt;Local preview&lt;/b&gt;&lt;br/&gt;quarto preview&lt;br/&gt;Hot reload&lt;br/&gt;Visual check]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    D[&lt;b&gt;git commit&lt;/b&gt;&lt;br/&gt;Descriptive message&lt;br/&gt;Pre-commit checks]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    E[&lt;b&gt;git push&lt;/b&gt;&lt;br/&gt;main branch&lt;br/&gt;GitHub remote]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    F[&lt;b&gt;GitHub Pages&lt;/b&gt;&lt;br/&gt;Serves docs/&lt;br/&gt;Cache invalidation]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    G[&lt;b&gt;Live URL&lt;/b&gt;&lt;br/&gt;alekslupa.github.io&lt;br/&gt;Updated 30-60s]</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, hours):</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    ax.text(val <span class="op">+</span> <span class="fl">0.5</span>, bar.get_y() <span class="op">+</span> bar.get_height() <span class="op">/</span> <span class="dv">2</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f"~</span><span class="sc">{</span>val<span class="sc">}</span><span class="ss">h"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Estimated hours invested"</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Time invested by technology — ePortfolio project"</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">50</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>ax.spines[<span class="st">"top"</span>].set_visible(<span class="va">False</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>ax.spines[<span class="st">"right"</span>].set_visible(<span class="va">False</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="fig-tech" class="quarto-float quarto-figure quarto-figure-center anchored">
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    A --&gt; B --&gt; C</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    C --&gt;|approved| D</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    C --&gt;|broken| A</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    D --&gt; E --&gt; F --&gt; G</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    style B fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    style D fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    style G fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-pipeline" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-tech-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="eportfolio_files/figure-html/fig-tech-output-1.png" width="758" height="422" class="figure-img">
+<div aria-describedby="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-pipeline">flowchart LR
+    A[Author&lt;br/&gt;edits .qmd file&lt;br/&gt;locally in VS Code]
+    B[&lt;b&gt;quarto render&lt;/b&gt;&lt;br/&gt;Executes Python chunks&lt;br/&gt;Compiles SCSS&lt;br/&gt;Resolves listings&lt;br/&gt;Writes to docs/]
+    C[&lt;b&gt;Local preview&lt;/b&gt;&lt;br/&gt;quarto preview&lt;br/&gt;Hot reload&lt;br/&gt;Visual check]
+    D[&lt;b&gt;git commit&lt;/b&gt;&lt;br/&gt;Descriptive message&lt;br/&gt;Pre-commit checks]
+    E[&lt;b&gt;git push&lt;/b&gt;&lt;br/&gt;main branch&lt;br/&gt;GitHub remote]
+    F[&lt;b&gt;GitHub Pages&lt;/b&gt;&lt;br/&gt;Serves docs/&lt;br/&gt;Cache invalidation]
+    G[&lt;b&gt;Live URL&lt;/b&gt;&lt;br/&gt;alekslupa.github.io&lt;br/&gt;Updated 30-60s]
+
+    A --&gt; B --&gt; C
+    C --&gt;|approved| D
+    C --&gt;|broken| A
+    D --&gt; E --&gt; F --&gt; G
+
+    style B fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
+    style D fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
+    style G fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
+</pre>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tech-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Estimated hours invested by technology during the ePortfolio project
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Build and deployment pipeline. Each commit on the main branch triggers a Quarto render, the rendered docs/ directory is what GitHub Pages serves, and the live URL updates within 30 to 60 seconds. The whole loop is reproducible from a fresh clone with two commands: quarto render, then git push.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>The decision worth flagging is the <code>output-dir: docs</code> configuration in <code>_quarto.yml</code>. GitHub Pages can serve from either the repo root or a <code>/docs</code> folder; choosing <code>/docs</code> keeps the source <code>.qmd</code> files separated from the rendered HTML. The repo therefore has a clean split between authored content (the <code>.qmd</code> files, the <code>data/</code> CSVs, the <code>assets/</code> images, the <code>styles.scss</code> file) and rendered output (the <code>docs/</code> directory). When something breaks on the live site, that split is what makes it possible to reason about cause and effect: either the source is wrong, or the render produced something different from the source.</p>
+</section>
+<section id="information-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="information-architecture">2. Information architecture</h2>
+<p>The site is organised around a single principle: every project is a <code>.qmd</code> file in <code>projects/list/</code> with structured frontmatter. The frontmatter is what the listing pages, the landing page Recent Posts and the individual project pages all read from. There is no duplication of titles or dates anywhere in the codebase. If a project’s title changes, it changes in one file and propagates to every page that references it.</p>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flowchart TB</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    subgraph SRC[Source repository]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        A[&lt;b&gt;projects/list/&lt;/b&gt;&lt;br/&gt;One .qmd per project&lt;br/&gt;YAML frontmatter as data]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        B[&lt;b&gt;data/&lt;/b&gt;&lt;br/&gt;CSV files&lt;br/&gt;generate_repo_stats.py output]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        C[&lt;b&gt;assets/&lt;/b&gt;&lt;br/&gt;Images · PDFs · CV]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        D[&lt;b&gt;styles.scss&lt;/b&gt;&lt;br/&gt;Single source of truth&lt;br/&gt;for visual language]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    subgraph PAGES[Top-level pages]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        E[&lt;b&gt;index.qmd&lt;/b&gt;&lt;br/&gt;Landing&lt;br/&gt;Reads projects via listing]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        F[&lt;b&gt;projects/index.qmd&lt;/b&gt;&lt;br/&gt;All projects hub&lt;br/&gt;Filterable]</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        G[&lt;b&gt;about.qmd&lt;/b&gt;]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        H[&lt;b&gt;future_goals.qmd&lt;/b&gt;]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        I[&lt;b&gt;achievements.qmd&lt;/b&gt;]</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    A --&gt;|listing| E</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    A --&gt;|listing| F</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    B --&gt;|read at render| A</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    C --&gt;|referenced by| A</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    C --&gt;|referenced by| PAGES</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    D --&gt;|theme for| PAGES</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    D --&gt;|theme for| A</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    style A fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:2px</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    style B fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-architecture" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-architecture">flowchart TB
+    subgraph SRC[Source repository]
+        A[&lt;b&gt;projects/list/&lt;/b&gt;&lt;br/&gt;One .qmd per project&lt;br/&gt;YAML frontmatter as data]
+        B[&lt;b&gt;data/&lt;/b&gt;&lt;br/&gt;CSV files&lt;br/&gt;generate_repo_stats.py output]
+        C[&lt;b&gt;assets/&lt;/b&gt;&lt;br/&gt;Images · PDFs · CV]
+        D[&lt;b&gt;styles.scss&lt;/b&gt;&lt;br/&gt;Single source of truth&lt;br/&gt;for visual language]
+    end
+
+    subgraph PAGES[Top-level pages]
+        E[&lt;b&gt;index.qmd&lt;/b&gt;&lt;br/&gt;Landing&lt;br/&gt;Reads projects via listing]
+        F[&lt;b&gt;projects/index.qmd&lt;/b&gt;&lt;br/&gt;All projects hub&lt;br/&gt;Filterable]
+        G[&lt;b&gt;about.qmd&lt;/b&gt;]
+        H[&lt;b&gt;future_goals.qmd&lt;/b&gt;]
+        I[&lt;b&gt;achievements.qmd&lt;/b&gt;]
+    end
+
+    A --&gt;|listing| E
+    A --&gt;|listing| F
+    B --&gt;|read at render| A
+    C --&gt;|referenced by| A
+    C --&gt;|referenced by| PAGES
+    D --&gt;|theme for| PAGES
+    D --&gt;|theme for| A
+
+    style A fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:2px
+    style B fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
+    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Site information architecture. Project pages are the single source of truth for project metadata; listing pages query the projects/list/ directory and pull frontmatter to render. The data/ directory feeds analytical pages like this one. Static assets (images, PDFs, CV) sit in assets/.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The choice that matters most for Workflow &amp; Data Management is treating YAML frontmatter as structured data rather than as decoration. Every project page declares its <code>title</code>, <code>subtitle</code>, <code>date</code>, <code>image</code>, <code>categories</code> and <code>description</code> in the frontmatter. Quarto’s listing engine then treats <code>projects/list/*.qmd</code> as a database table. Adding a new project becomes a single-file operation: ship the <code>.qmd</code>, the listing pages update on next render. This is the inverse of the WordPress workflow I started with, where adding a new project meant clicking through five admin screens and copy-pasting the title into three places.</p>
+</section>
+<section id="the-repository-in-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="the-repository-in-numbers">3. The repository, in numbers</h2>
+<p>Below this point, every chart is generated from real data. The four input CSVs are produced by <code>scripts/generate_repo_stats.py</code>, which walks the Git history and the file tree and writes to <code>data/</code>. The page reads those CSVs at render time. None of the figures below are estimates.</p>
+<div id="cell-fig-commits" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>commits <span class="op">=</span> pd.read_csv(<span class="st">"../../data/commits_over_time.csv"</span>, parse_dates<span class="op">=</span>[<span class="st">"date"</span>])</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>commits <span class="op">=</span> commits.sort_values(<span class="st">"date"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>commits[<span class="st">"cumulative"</span>] <span class="op">=</span> commits[<span class="st">"commits"</span>].cumsum()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>commits[<span class="st">"date"</span>],</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>commits[<span class="st">"commits"</span>],</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Daily commits"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%{x|%b </span><span class="sc">%d</span><span class="st">, %Y}&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{y}</span><span class="st"> commits&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>commits[<span class="st">"date"</span>],</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>commits[<span class="st">"cumulative"</span>],</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Cumulative"</span>,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">"lines"</span>,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1a1a1a"</span>, width<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="st">"y2"</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%{x|%b </span><span class="sc">%d</span><span class="st">, %Y}&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{y}</span><span class="st"> total commits&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">420</span>,</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>, title<span class="op">=</span><span class="st">"Date"</span>),</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Daily commits"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    yaxis2<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Cumulative commits"</span>, overlaying<span class="op">=</span><span class="st">"y"</span>, side<span class="op">=</span><span class="st">"right"</span>, showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=</span><span class="fl">1.02</span>, x<span class="op">=</span><span class="dv">0</span>),</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    hovermode<span class="op">=</span><span class="st">"x unified"</span>,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-commits" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-commits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="b32465a5-0092-4776-b03f-576e7d35c641" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b32465a5-0092-4776-b03f-576e7d35c641")) {                    Plotly.newPlot(                        "b32465a5-0092-4776-b03f-576e7d35c641",                        [{"hovertemplate":"\u003cb\u003e%{x|%b %d, %Y}\u003c\u002fb\u003e\u003cbr\u003e%{y} commits\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1e7e34"},"name":"Daily commits","x":["2026-02-22T00:00:00.000000","2026-03-10T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-31T00:00:00.000000","2026-04-02T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-04T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-25T00:00:00.000000"],"y":{"dtype":"i1","bdata":"BAEoEAMNMQQLKiM1"},"type":"bar"},{"hovertemplate":"\u003cb\u003e%{x|%b %d, %Y}\u003c\u002fb\u003e\u003cbr\u003e%{y} total commits\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#1a1a1a","width":2},"mode":"lines","name":"Cumulative","x":["2026-02-22T00:00:00.000000","2026-03-10T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-31T00:00:00.000000","2026-04-02T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-04T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-25T00:00:00.000000"],"y":{"dtype":"i2","bdata":"BAAFAC0APQBAAE0AfgCCAI0AtwDaAA8B"},"yaxis":"y2","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"margin":{"l":20,"r":20,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"showgrid":false,"title":{"text":"Date"}},"yaxis":{"title":{"text":"Daily commits"},"showgrid":true,"gridcolor":"#eee"},"yaxis2":{"title":{"text":"Cumulative commits"},"overlaying":"y","side":"right","showgrid":false},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0},"height":420,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","hovermode":"x unified"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('b32465a5-0092-4776-b03f-576e7d35c641');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-commits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Daily commits to the main branch over the lifetime of the repository. The clusters reflect concentrated work sessions during module deadlines; the gaps reflect everything else.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Commit volume is a useful workflow signal. Long flat periods between work sessions are normal for a part-time student project; what matters is that within each work session the commits are reasonably granular rather than monolithic dumps. Squashing the entire ePortfolio into one giant commit at the end would render the Git history useless for any examiner who wanted to see how the project actually evolved.</p>
+<div id="cell-fig-inventory" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>inventory <span class="op">=</span> pd.read_csv(<span class="st">"../../data/file_inventory.csv"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Show top 10 by count</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>top <span class="op">=</span> inventory.nlargest(<span class="dv">10</span>, <span class="st">"count"</span>).sort_values(<span class="st">"count"</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(go.Bar(</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>top[<span class="st">"extension"</span>],</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>top[<span class="st">"count"</span>],</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#4a90a4"</span>),</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss"> files · </span><span class="sc">{</span>sz<span class="op">/</span><span class="dv">1024</span><span class="sc">:.0f}</span><span class="ss"> KB"</span> <span class="cf">for</span> n, sz <span class="kw">in</span> <span class="bu">zip</span>(top[<span class="st">"count"</span>], top[<span class="st">"total_bytes"</span>])],</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{y}</span><span class="st">&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{x}</span><span class="st"> files&lt;br&gt;%</span><span class="sc">{customdata:.1f}</span><span class="st"> KB total&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>top[<span class="st">"total_bytes"</span>] <span class="op">/</span> <span class="dv">1024</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">400</span>,</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">120</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"File count"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-inventory" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inventory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="60aa5e64-7c71-4351-bbbc-cbdf2f94f1a3" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("60aa5e64-7c71-4351-bbbc-cbdf2f94f1a3")) {                    Plotly.newPlot(                        "60aa5e64-7c71-4351-bbbc-cbdf2f94f1a3",                        [{"customdata":{"dtype":"f8","bdata":"AAAAAAAAnj8AAAAAADAVQAAAAADYDGZAAAAAAJC\u002fckAAAADARfXYQAAAAAA42IVAAAAAgB+71kAAAABwJNrqQAAAAADnAc1AAAAAAKifaUA="},"hovertemplate":"\u003cb\u003e%{y}\u003c\u002fb\u003e\u003cbr\u003e%{x} files\u003cbr\u003e%{customdata:.1f} KB total\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#4a90a4"},"orientation":"h","text":["2 files \u00b7 0 KB","3 files \u00b7 5 KB","3 files \u00b7 176 KB","4 files \u00b7 300 KB","4 files \u00b7 25557 KB","4 files \u00b7 699 KB","11 files \u00b7 23276 KB","12 files \u00b7 54993 KB","14 files \u00b7 14852 KB","16 files \u00b7 205 KB"],"textfont":{"size":11},"textposition":"outside","x":{"dtype":"i1","bdata":"AgMDBAQECwwOEA=="},"y":["(no extension)",".yml",".css",".woff2",".jpeg",".ttf",".jpg",".pdf",".png",".qmd"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"margin":{"l":20,"r":120,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"title":{"text":"File count"},"showgrid":true,"gridcolor":"#eee"},"yaxis":{"showgrid":false},"height":400,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('60aa5e64-7c71-4351-bbbc-cbdf2f94f1a3');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inventory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: File inventory by extension across the source repository. The build directories (docs/, _freeze/, .quarto/, node_modules/) are excluded because they are derived rather than authored. SCSS leads the count by line volume; PNG and PDF lead by total bytes (large assets).
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The file inventory is the simplest data management artefact in the repo. It tells you, at a glance, what the project is made of: how many <code>.qmd</code> files (one per page or project), how many images, how much SCSS. If a recruiter or examiner clones the repo, the file inventory is the first picture of the project’s shape they will form before reading any specific file.</p>
+</section>
+<section id="scss-growth-a-workflow-signal" class="level2">
+<h2 class="anchored" data-anchor-id="scss-growth-a-workflow-signal">4. SCSS growth: a workflow signal</h2>
+<p>A single styling file (<code>styles.scss</code>) handles the visual language of every page. Tracking how it has grown over the project’s lifetime is a useful proxy for one specific kind of progress: the steady accumulation of design decisions. Each touching commit either added a new component (<code>.ab-skill</code>, <code>.fg-career__card</code>, <code>.hp-recent</code> etc), refined an existing one, or fixed a bug.</p>
+<div id="cell-fig-scss-growth" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>scss <span class="op">=</span> pd.read_csv(<span class="st">"../../data/scss_growth.csv"</span>, parse_dates<span class="op">=</span>[<span class="st">"date"</span>])</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>scss <span class="op">=</span> scss.sort_values(<span class="st">"date"</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>scss[<span class="st">"commit_n"</span>] <span class="op">=</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(scss) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>scss[<span class="st">"date"</span>],</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>scss[<span class="st">"lines"</span>],</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">"lines+markers"</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>, width<span class="op">=</span><span class="fl">2.5</span>),</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">7</span>, color<span class="op">=</span><span class="st">"#1e7e34"</span>, line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, width<span class="op">=</span><span class="dv">1</span>)),</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    fill<span class="op">=</span><span class="st">"tozeroy"</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    fillcolor<span class="op">=</span><span class="st">"rgba(30,126,52,0.10)"</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%{x|%b </span><span class="sc">%d</span><span class="st">, %Y}&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{y}</span><span class="st"> lines&lt;br&gt;commit %</span><span class="sc">{customdata}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>scss[<span class="st">"commit"</span>],</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">400</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Commit date"</span>, showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"styles.scss line count"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-scss-growth" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scss-growth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="bfbe33aa-1fbc-4311-80f5-b1477ddc77e3" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("bfbe33aa-1fbc-4311-80f5-b1477ddc77e3")) {                    Plotly.newPlot(                        "bfbe33aa-1fbc-4311-80f5-b1477ddc77e3",                        [{"customdata":["e416e710","cb425f20","7d628572","c285badc","f969bd8e","8bfe966a","5c2110ca","a09cd425","478e59f6","637988be","88dd067d","9a349e27","28b8d228","94425435","f601814a","30d094c5","d52fc5be","25ec9a38","4a4944a4","f124e0b6","c57d2d23","49d2b8e7","2c08c37c","dbe41b9d","50fd51e7","5da9b03e","4f6be768","b84ace1d","a88d0cbb","7a196241","0d5660e0","40ad5cbe","ab9f3d92","b2cc5e7d","5b88c118","54ce5276","d3dc1706","82d9df19","fc8179e5","4b84a515","a3704889","8d64c154","4330fb43","28fa5fc9","99266220","e6fffca7","74100aa6","cb24e86e","b202ffcb","58b055e1","87ab0e21","90a5366b","c20462b8","bcf42563","d1b32ae1","7d12c736","a8d55a8a","ba42d34c","04299c89","70fb42e9","fc497969","9ac5a780","af7725a8","fedf15bb","75686548","80ab48af","a9aa870c","654346c1","b68c0611","02483fad","4d9e2b04","d0b7f457","eac5229b","6d7f8074","4d91db10","1499f306","f52c2d58","a4ebea0c","24a789ed","9c9dda59","8b42a30d","ca6b0bdc","ffb5486b","9958c1a2","d0d622c8","164687a6","76d4e5fa","5877571b","b150ee9e","058014a1","5303b01b","1c098fc3","ed95b293","ed58c8b4","2bc78fe6","7d61a72a","8ef230bf","7cc1964e","71188b14","bafe06bc","9718eabf","da8480bb","578b0e05","797037d0","4e216795","e360dee5","3fc67e53","9709e273","cba5c5ab","f7363283","83c64668","0cac70f4","92677c73","d207248d","599833d9","46f0eaa8","cba99d68","619de573"],"fill":"tozeroy","fillcolor":"rgba(30,126,52,0.10)","hovertemplate":"\u003cb\u003e%{x|%b %d, %Y}\u003c\u002fb\u003e\u003cbr\u003e%{y} lines\u003cbr\u003ecommit %{customdata}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#1e7e34","width":2.5},"marker":{"color":"#1e7e34","line":{"color":"white","width":1},"size":7},"mode":"lines+markers","x":["2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-29T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-30T00:00:00.000000","2026-03-31T00:00:00.000000","2026-03-31T00:00:00.000000","2026-03-31T00:00:00.000000","2026-04-02T00:00:00.000000","2026-04-02T00:00:00.000000","2026-04-02T00:00:00.000000","2026-04-02T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-03T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-22T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-23T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-24T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000","2026-04-25T00:00:00.000000"],"y":{"dtype":"i2","bdata":"CgATAuoB1AHPAfUBXAFQAEwARgBzAQkE0QLXAtsCyAPQA9kDAgQCBAUEoQQ8BUIFQQXUBtQG1wbaB9gH2AfkB9YG5AfkB+cH6AfjB9cGGAY9BuIFEgYTBhkGfQYdBhkGKQY9BjUGOgY6Bh8GugjMCLoIswinCAgICAigCCAK\u002fQn9Cf0J2wnTCYEJgQmACX0JdgloCYEJXQlVCf8I\u002fgj4CNYI0gjSCMwIywjGCM0IZwnRC20KJgokCiEKIQohCtEMMw0zDTMNMg0vDSwNJg1ADawMNA2kDEQMPww\u002fDOsL4wviC8QL1gvVC6wMNA0="},"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"margin":{"l":20,"r":20,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"title":{"text":"Commit date"},"showgrid":false},"yaxis":{"title":{"text":"styles.scss line count"},"showgrid":true,"gridcolor":"#eee"},"height":400,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('bfbe33aa-1fbc-4311-80f5-b1477ddc77e3');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scss-growth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Cumulative line count of styles.scss at each commit that touched the file. Each step represents a styling change, either additive (new component) or refining (changing existing rules). The relatively smooth growth is the signal that styling decisions accumulated incrementally rather than via late-stage rewrites.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>A note about what this chart does and does not show. It shows the size of the file over time, not the quality of the code in it. SCSS that is large and well-organised is fine; SCSS that is large and chaotic is not. The qualitative judgement requires reading the file. The quantitative trend gives an accurate impression of effort distribution: the styling work accumulated over many short sessions rather than landing in one or two giant commits at the end.</p>
+</section>
+<section id="where-the-work-concentrated" class="level2">
+<h2 class="anchored" data-anchor-id="where-the-work-concentrated">5. Where the work concentrated</h2>
+<div id="cell-fig-top-files" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>top_files <span class="op">=</span> pd.read_csv(<span class="st">"../../data/top_edited_files.csv"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>top_files <span class="op">=</span> top_files.sort_values(<span class="st">"edits"</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(go.Bar(</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>top_files[<span class="st">"file"</span>],</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>top_files[<span class="st">"edits"</span>],</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#d4a017"</span>),</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>top_files[<span class="st">"edits"</span>],</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{y}</span><span class="st">&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{x}</span><span class="st"> edits&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">460</span>,</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">60</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Number of commits touching the file"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>, automargin<span class="op">=</span><span class="va">True</span>),</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-top-files" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-top-files-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="3e1fbfa5-1a5a-4406-aeb5-2b363dcef7fb" class="plotly-graph-div" style="height:460px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3e1fbfa5-1a5a-4406-aeb5-2b363dcef7fb")) {                    Plotly.newPlot(                        "3e1fbfa5-1a5a-4406-aeb5-2b363dcef7fb",                        [{"hovertemplate":"\u003cb\u003e%{y}\u003c\u002fb\u003e\u003cbr\u003e%{x} edits\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#d4a017"},"orientation":"h","text":{"dtype":"f8","bdata":"AAAAAAAAFEAAAAAAAAAUQAAAAAAAABxAAAAAAAAAIEAAAAAAAAAgQAAAAAAAACJAAAAAAAAAJEAAAAAAAAAmQAAAAAAAAChAAAAAAAAALEAAAAAAAAA3QAAAAAAAADtAAAAAAAAAP0AAAAAAAIBDQAAAAAAAgF1A"},"textfont":{"size":11},"textposition":"outside","x":{"dtype":"i1","bdata":"BQUHCAgJCgsMDhcbHyd2"},"y":["personal-projects\u002fbathstore.qmd","personal-projects\u002fvip-ireland.qmd","projects\u002fprojects.yml","academic-projects\u002feportfolio.qmd","projects\u002flist\u002fdata-analytics.qmd","future_goals.qmd","academic-projects\u002findex.qmd","projects\u002ffitness.qmd","academic-projects\u002fsuperdry.qmd","academic-projects\u002fml-python.qmd","academic-projects\u002fpricebeo.qmd","about.qmd","index.qmd","_quarto.yml","styles.scss"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"margin":{"l":20,"r":60,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"title":{"text":"Number of commits touching the file"},"showgrid":true,"gridcolor":"#eee"},"yaxis":{"showgrid":false,"automargin":true},"height":460,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('3e1fbfa5-1a5a-4406-aeb5-2b363dcef7fb');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-top-files-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Top files by number of commits that touched them. The single most-edited file is styles.scss, which is expected for a project where the visual language is centralised. The next tier is the page-level .qmd files, edited as content was added and refined. Build artefacts, cached files and images are excluded.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The shape of this chart matters more than the absolute numbers. A healthy repo for a single-author web project should show one or two structural files (a stylesheet, a config) at the top, followed by content files that received roughly proportional attention. A pathological shape would be one file at 80 edits and everything else at 1, which would suggest the project was actually one page being rebuilt repeatedly. The actual shape here matches the healthy pattern.</p>
+</section>
+<section id="what-i-was-responsible-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-was-responsible-for">What I was responsible for</h2>
+<div class="pb-role-grid">
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Information architecture</div>
+    <div class="pb-role-card__body">Designed the site structure as a single-source-of-truth model: project pages declare their metadata in YAML frontmatter; listing pages query that frontmatter. No duplication, no manual sync.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Build pipeline and deployment</div>
+    <div class="pb-role-card__body">Configured Quarto with output-dir: docs, set up GitHub Pages to serve from the docs folder, established the local render-preview-commit-push workflow that every change flows through.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Visual language</div>
+    <div class="pb-role-card__body">Custom SCSS with no reliance on Quarto theming defaults. Single stylesheet of approximately 2,400 lines covering typography, components, dark mode, responsive breakpoints.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Reproducible analytics</div>
+    <div class="pb-role-card__body">Wrote scripts/generate_repo_stats.py to extract real metrics from the Git history and file tree. The script writes CSVs into data/, and this page reads from those CSVs. Data generation and presentation are separated.</div>
+  </div>
+</div>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This was the project that most directly demonstrated the gap between “I can build a website” and “I can build a reproducible web project”. Coming from a WordPress freelance background, I underestimated how much of the cognitive load of web development WordPress hides. Quarto, Git and GitHub Pages each force decisions that WordPress makes invisibly. None of those decisions are individually difficult, but they all have to be made explicitly, in code, and they all have downstream consequences. Choosing <code>output-dir: docs</code> is a one-line decision that determines what the deploy URL serves. Choosing to centralise styling in a single SCSS file means the visual language is consistent but also means the file becomes a bottleneck. Choosing YAML frontmatter as the project metadata format means listing pages are automatic but also means every project must conform to the schema.</p>
+<p>The decision I am proudest of is the one that produced this page. Every other project page in the portfolio describes work that happened elsewhere and reproduces selected exhibits as Plotly charts. For the ePortfolio page itself, that approach would have been circular: the project being described is the website hosting the description. Instead, the page reads real data from the actual repository and analyses itself. The CSV-generation script (<code>scripts/generate_repo_stats.py</code>) walks the Git history and the file tree once, writes its outputs to <code>data/</code>, and the page reads from those CSVs at render time. The separation between data generation and presentation is itself the workflow pattern the module is teaching, and applying it to the page that describes the module’s deliverable felt like the right way to demonstrate understanding rather than just describing it.</p>
+<p>The honest limitation is that the workflow shown on this page is overkill for a single-author static site. A team-of-one editor running one repo with one deployment target does not strictly need a separate data generation script, an explicit pipeline diagram, or a documented information architecture. The reason to do all of those things anyway is that they are the same patterns that scale to projects where the overkill becomes underkill quickly. Treating a small project with the workflow discipline of a large one is cheap; the inverse is expensive. That generalisation is what I want to take out of this module into whatever team-based analytics work I end up doing after graduation.</p>
+<p>A second honest note: this is the first project I have built without any visual builder in the loop. The quality of the result is genuinely the result of code I wrote myself, with the help of AI tools (Claude, Gemini, Grammarly) for structural suggestions, debugging and proofreading. Every architectural decision is mine; every line of SCSS is either written or directly reviewed by me; every Plotly chart on this page is generated from a real CSV produced by my own script.</p>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+<p><a href="https://github.com/alekslupa/alekslupa.github.io" class="btn btn-dark me-2" target="_blank">💻 View repository on GitHub</a> <a href="https://github.com/alekslupa/alekslupa.github.io/blob/main/scripts/generate_repo_stats.py" class="btn btn-outline-secondary" target="_blank">📊 View the stats generation script</a></p>
 
 
+<!-- -->
+
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -615,6 +1044,57 @@ Figure&nbsp;1: Estimated hours invested by technology during the ePortfolio proj
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -944,7 +1424,351 @@ Figure&nbsp;1: Estimated hours invested by technology during the ePortfolio proj
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "ePortfolio (this website)"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "BAA1028 Workflow &amp; Data Management · A web project that demonstrates its own workflow"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "BAA1028 Workflow &amp; Data Management module deliverable under Damien Dupré. A professional ePortfolio built from scratch using Quarto, custom SCSS and GitHub Pages, with the page itself functioning as a meta-analysis of the repository that produced it."</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Aleksander Lupa"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-04-25"</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> /assets/eportfolio-cover.png</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Workflow &amp; Data Management, Quarto, Git, GitHub Pages, SCSS, Solo project]</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">    fig-cap-location: bottom</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co">    lightbox: true</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Projects</span><span class="co">](../index.html)</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>Solo project · 2026</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># ePortfolio (this website)</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>A professional ePortfolio designed and built from scratch as part of BAA1028 Workflow &amp; Data Management at Dublin City University, supervised by Damien Dupré. Built with Quarto, custom SCSS and GitHub Pages.</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Workflow &amp; Data Management</span><span class="co">]</span>{.pp-tag}</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Quarto</span><span class="co">]</span>{.pp-tag}</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Git</span><span class="co">]</span>{.pp-tag}</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">SCSS</span><span class="co">]</span>{.pp-tag}</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">GitHub Pages</span><span class="co">]</span>{.pp-tag}</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Solo project</span><span class="co">]</span>{.pp-tag}</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="ap-project-meta"&gt;</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-meta-item"&gt;</span></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-label"&gt;Year&lt;/div&gt;</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-value"&gt;2026&lt;/div&gt;</span></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-meta-item"&gt;</span></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-label"&gt;Module&lt;/div&gt;</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-value"&gt;BAA1028&lt;/div&gt;</span></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-meta-item"&gt;</span></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-label"&gt;Supervisor&lt;/div&gt;</span></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-value"&gt;Damien Dupré&lt;/div&gt;</span></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-meta-item"&gt;</span></span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-label"&gt;My role&lt;/div&gt;</span></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-meta-value"&gt;Sole author&lt;/div&gt;</span></span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## About the project</span></span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>BAA1028 Workflow &amp; Data Management is the module that asks students to demonstrate, in a single deliverable, how reproducible workflows, version control discipline and structured data management are actually applied in practice. The deliverable is this ePortfolio: a publicly hosted website built from raw markup and styling rather than a CMS, version-controlled in Git, deployed automatically to GitHub Pages, and structured around data files that the page builds itself reads at render time.</span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>I came into this module with prior experience building websites in WordPress and Elementor Pro for freelance clients. WordPress hides almost everything that this module is about: there is no Git history, no build pipeline, no concept of structured frontmatter, no separation between content and presentation. Switching to Quarto for this project meant doing all of those things explicitly, in code, for the first time. That gap between "I can build a website" and "I can build a reproducible web project" is precisely what BAA1028 is about, and it is what this page sets out to demonstrate.</span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Why this page is different from the other project pages"}</span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>Every other page in this portfolio describes work that happened elsewhere and reproduces selected exhibits as Plotly charts. This page is meta: the project being described is the website you are reading, and the charts below analyse the actual repository at <span class="in">`github.com/alekslupa/alekslupa.github.io`</span>. The data is generated by a small Python script (<span class="in">`scripts/generate_repo_stats.py`</span>) that walks the Git history and the file tree, writes results to four CSV files in <span class="in">`data/`</span>, and the page reads those CSVs at render time. That separation between data generation and presentation is itself a workflow choice the module is graded on.</span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. The build pipeline</span></span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>The pipeline is the most important artefact of a Workflow &amp; Data Management project. Every change to this site flows through the same six stages, in the same order, every time. There is no manual upload step, no FTP, no copy-paste of HTML into a CMS. A commit triggers a render and a deployment, and the live URL is whatever the render produced.</span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>%%| label: fig-pipeline</span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>%%| fig-cap: <span class="ot">"</span><span class="st">Build and deployment pipeline. Each commit on the main branch triggers a Quarto render, the rendered docs/ directory is what GitHub Pages serves, and the live URL updates within 30 to 60 seconds. The whole loop is reproducible from a fresh clone with two commands: quarto render, then git push.</span><span class="ot">"</span></span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>flowchart LR</span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>    A[Author&lt;br/&gt;edits .qmd file&lt;br/&gt;locally in VS Code]</span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>    B[&lt;b&gt;quarto render&lt;/b&gt;&lt;br/&gt;Executes Python chunks&lt;br/&gt;Compiles SCSS&lt;br/&gt;Resolves listings&lt;br/&gt;Writes to docs/]</span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>    C[&lt;b&gt;Local preview&lt;/b&gt;&lt;br/&gt;quarto preview&lt;br/&gt;Hot reload&lt;br/&gt;Visual check]</span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>    D[&lt;b&gt;git commit&lt;/b&gt;&lt;br/&gt;Descriptive message&lt;br/&gt;Pre-commit checks]</span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a>    E[&lt;b&gt;git <span class="fu">push</span>&lt;/b&gt;&lt;br/&gt;main branch&lt;br/&gt;GitHub remote]</span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>    F[&lt;b&gt;GitHub Pages&lt;/b&gt;&lt;br/&gt;Serves docs/&lt;br/&gt;Cache invalidation]</span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>    G[&lt;b&gt;Live URL&lt;/b&gt;&lt;br/&gt;alekslupa.github.io&lt;br/&gt;Updated <span class="dv">30-60</span>s]</span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>    A --&gt; B --&gt; C</span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>    C --&gt;|approved| D</span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>    C --&gt;|broken| A</span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a>    D --&gt; E --&gt; F --&gt; G</span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>    style B fill:<span class="co">#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px</span></span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>    style D fill:<span class="co">#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px</span></span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>    style G fill:<span class="co">#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px</span></span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a>The decision worth flagging is the <span class="in">`output-dir: docs`</span> configuration in <span class="in">`_quarto.yml`</span>. GitHub Pages can serve from either the repo root or a <span class="in">`/docs`</span> folder; choosing <span class="in">`/docs`</span> keeps the source <span class="in">`.qmd`</span> files separated from the rendered HTML. The repo therefore has a clean split between authored content (the <span class="in">`.qmd`</span> files, the <span class="in">`data/`</span> CSVs, the <span class="in">`assets/`</span> images, the <span class="in">`styles.scss`</span> file) and rendered output (the <span class="in">`docs/`</span> directory). When something breaks on the live site, that split is what makes it possible to reason about cause and effect: either the source is wrong, or the render produced something different from the source.</span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Information architecture</span></span>
+<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a>The site is organised around a single principle: every project is a <span class="in">`.qmd`</span> file in <span class="in">`projects/list/`</span> with structured frontmatter. The frontmatter is what the listing pages, the landing page Recent Posts and the individual project pages all read from. There is no duplication of titles or dates anywhere in the codebase. If a project's title changes, it changes in one file and propagates to every page that references it.</span>
+<span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a>%%| label: fig-architecture</span>
+<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a>%%| fig-cap: <span class="ot">"</span><span class="st">Site information architecture. Project pages are the single source of truth for project metadata; listing pages query the projects/list/ directory and pull frontmatter to render. The data/ directory feeds analytical pages like this one. Static assets (images, PDFs, CV) sit in assets/.</span><span class="ot">"</span></span>
+<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a>flowchart TB</span>
+<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a>    subgraph SRC[Source repository]</span>
+<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a>        A[&lt;b&gt;projects/list/&lt;/b&gt;&lt;br/&gt;One .qmd per project&lt;br/&gt;YAML frontmatter as data]</span>
+<span id="cb7-111"><a href="#cb7-111" aria-hidden="true" tabindex="-1"></a>        B[&lt;b&gt;data/&lt;/b&gt;&lt;br/&gt;CSV files&lt;br/&gt;generate_repo_stats.py output]</span>
+<span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a>        C[&lt;b&gt;assets/&lt;/b&gt;&lt;br/&gt;Images · PDFs · CV]</span>
+<span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a>        D[&lt;b&gt;styles.scss&lt;/b&gt;&lt;br/&gt;Single source of truth&lt;br/&gt;<span class="kw">for</span> visual language]</span>
+<span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a>    subgraph PAGES[Top-level pages]</span>
+<span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a>        E[&lt;b&gt;<span class="fu">index</span>.qmd&lt;/b&gt;&lt;br/&gt;Landing&lt;br/&gt;Reads projects via listing]</span>
+<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a>        F[&lt;b&gt;projects/<span class="fu">index</span>.qmd&lt;/b&gt;&lt;br/&gt;All projects hub&lt;br/&gt;Filterable]</span>
+<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a>        G[&lt;b&gt;about.qmd&lt;/b&gt;]</span>
+<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>        H[&lt;b&gt;future_goals.qmd&lt;/b&gt;]</span>
+<span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a>        I[&lt;b&gt;achievements.qmd&lt;/b&gt;]</span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a>    A --&gt;|listing| E</span>
+<span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a>    A --&gt;|listing| F</span>
+<span id="cb7-126"><a href="#cb7-126" aria-hidden="true" tabindex="-1"></a>    B --&gt;|<span class="fu">read</span> at render| A</span>
+<span id="cb7-127"><a href="#cb7-127" aria-hidden="true" tabindex="-1"></a>    C --&gt;|referenced by| A</span>
+<span id="cb7-128"><a href="#cb7-128" aria-hidden="true" tabindex="-1"></a>    C --&gt;|referenced by| PAGES</span>
+<span id="cb7-129"><a href="#cb7-129" aria-hidden="true" tabindex="-1"></a>    D --&gt;|theme <span class="kw">for</span>| PAGES</span>
+<span id="cb7-130"><a href="#cb7-130" aria-hidden="true" tabindex="-1"></a>    D --&gt;|theme <span class="kw">for</span>| A</span>
+<span id="cb7-131"><a href="#cb7-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-132"><a href="#cb7-132" aria-hidden="true" tabindex="-1"></a>    style A fill:<span class="co">#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:2px</span></span>
+<span id="cb7-133"><a href="#cb7-133" aria-hidden="true" tabindex="-1"></a>    style B fill:<span class="co">#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px</span></span>
+<span id="cb7-134"><a href="#cb7-134" aria-hidden="true" tabindex="-1"></a>    style D fill:<span class="co">#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px</span></span>
+<span id="cb7-135"><a href="#cb7-135" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-136"><a href="#cb7-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-137"><a href="#cb7-137" aria-hidden="true" tabindex="-1"></a>The choice that matters most for Workflow &amp; Data Management is treating YAML frontmatter as structured data rather than as decoration. Every project page declares its <span class="in">`title`</span>, <span class="in">`subtitle`</span>, <span class="in">`date`</span>, <span class="in">`image`</span>, <span class="in">`categories`</span> and <span class="in">`description`</span> in the frontmatter. Quarto's listing engine then treats <span class="in">`projects/list/*.qmd`</span> as a database table. Adding a new project becomes a single-file operation: ship the <span class="in">`.qmd`</span>, the listing pages update on next render. This is the inverse of the WordPress workflow I started with, where adding a new project meant clicking through five admin screens and copy-pasting the title into three places.</span>
+<span id="cb7-138"><a href="#cb7-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-139"><a href="#cb7-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. The repository, in numbers</span></span>
+<span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a>Below this point, every chart is generated from real data. The four input CSVs are produced by <span class="in">`scripts/generate_repo_stats.py`</span>, which walks the Git history and the file tree and writes to <span class="in">`data/`</span>. The page reads those CSVs at render time. None of the figures below are estimates.</span>
+<span id="cb7-142"><a href="#cb7-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-146"><a href="#cb7-146" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-commits</span></span>
+<span id="cb7-147"><a href="#cb7-147" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Daily commits to the main branch over the lifetime of the repository. The clusters reflect concentrated work sessions during module deadlines; the gaps reflect everything else."</span></span>
+<span id="cb7-148"><a href="#cb7-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-149"><a href="#cb7-149" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-150"><a href="#cb7-150" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb7-151"><a href="#cb7-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-152"><a href="#cb7-152" aria-hidden="true" tabindex="-1"></a>commits <span class="op">=</span> pd.read_csv(<span class="st">"../../data/commits_over_time.csv"</span>, parse_dates<span class="op">=</span>[<span class="st">"date"</span>])</span>
+<span id="cb7-153"><a href="#cb7-153" aria-hidden="true" tabindex="-1"></a>commits <span class="op">=</span> commits.sort_values(<span class="st">"date"</span>)</span>
+<span id="cb7-154"><a href="#cb7-154" aria-hidden="true" tabindex="-1"></a>commits[<span class="st">"cumulative"</span>] <span class="op">=</span> commits[<span class="st">"commits"</span>].cumsum()</span>
+<span id="cb7-155"><a href="#cb7-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-156"><a href="#cb7-156" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb7-157"><a href="#cb7-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-158"><a href="#cb7-158" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb7-159"><a href="#cb7-159" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>commits[<span class="st">"date"</span>],</span>
+<span id="cb7-160"><a href="#cb7-160" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>commits[<span class="st">"commits"</span>],</span>
+<span id="cb7-161"><a href="#cb7-161" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Daily commits"</span>,</span>
+<span id="cb7-162"><a href="#cb7-162" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>),</span>
+<span id="cb7-163"><a href="#cb7-163" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%{x|%b </span><span class="sc">%d</span><span class="st">, %Y}&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{y}</span><span class="st"> commits&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb7-164"><a href="#cb7-164" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb7-165"><a href="#cb7-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-166"><a href="#cb7-166" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
+<span id="cb7-167"><a href="#cb7-167" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>commits[<span class="st">"date"</span>],</span>
+<span id="cb7-168"><a href="#cb7-168" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>commits[<span class="st">"cumulative"</span>],</span>
+<span id="cb7-169"><a href="#cb7-169" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Cumulative"</span>,</span>
+<span id="cb7-170"><a href="#cb7-170" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">"lines"</span>,</span>
+<span id="cb7-171"><a href="#cb7-171" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1a1a1a"</span>, width<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="st">"y2"</span>,</span>
+<span id="cb7-173"><a href="#cb7-173" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%{x|%b </span><span class="sc">%d</span><span class="st">, %Y}&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{y}</span><span class="st"> total commits&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb7-174"><a href="#cb7-174" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb7-175"><a href="#cb7-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb7-177"><a href="#cb7-177" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">420</span>,</span>
+<span id="cb7-178"><a href="#cb7-178" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb7-179"><a href="#cb7-179" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-180"><a href="#cb7-180" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-181"><a href="#cb7-181" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb7-182"><a href="#cb7-182" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>, title<span class="op">=</span><span class="st">"Date"</span>),</span>
+<span id="cb7-183"><a href="#cb7-183" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Daily commits"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb7-184"><a href="#cb7-184" aria-hidden="true" tabindex="-1"></a>    yaxis2<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Cumulative commits"</span>, overlaying<span class="op">=</span><span class="st">"y"</span>, side<span class="op">=</span><span class="st">"right"</span>, showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb7-185"><a href="#cb7-185" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=</span><span class="fl">1.02</span>, x<span class="op">=</span><span class="dv">0</span>),</span>
+<span id="cb7-186"><a href="#cb7-186" aria-hidden="true" tabindex="-1"></a>    hovermode<span class="op">=</span><span class="st">"x unified"</span>,</span>
+<span id="cb7-187"><a href="#cb7-187" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-188"><a href="#cb7-188" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb7-189"><a href="#cb7-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-190"><a href="#cb7-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-191"><a href="#cb7-191" aria-hidden="true" tabindex="-1"></a>Commit volume is a useful workflow signal. Long flat periods between work sessions are normal for a part-time student project; what matters is that within each work session the commits are reasonably granular rather than monolithic dumps. Squashing the entire ePortfolio into one giant commit at the end would render the Git history useless for any examiner who wanted to see how the project actually evolved.</span>
+<span id="cb7-192"><a href="#cb7-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-195"><a href="#cb7-195" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-196"><a href="#cb7-196" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-inventory</span></span>
+<span id="cb7-197"><a href="#cb7-197" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "File inventory by extension across the source repository. The build directories (docs/, _freeze/, .quarto/, node_modules/) are excluded because they are derived rather than authored. SCSS leads the count by line volume; PNG and PDF lead by total bytes (large assets)."</span></span>
+<span id="cb7-198"><a href="#cb7-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-199"><a href="#cb7-199" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-200"><a href="#cb7-200" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb7-201"><a href="#cb7-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-202"><a href="#cb7-202" aria-hidden="true" tabindex="-1"></a>inventory <span class="op">=</span> pd.read_csv(<span class="st">"../../data/file_inventory.csv"</span>)</span>
+<span id="cb7-203"><a href="#cb7-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-204"><a href="#cb7-204" aria-hidden="true" tabindex="-1"></a><span class="co"># Show top 10 by count</span></span>
+<span id="cb7-205"><a href="#cb7-205" aria-hidden="true" tabindex="-1"></a>top <span class="op">=</span> inventory.nlargest(<span class="dv">10</span>, <span class="st">"count"</span>).sort_values(<span class="st">"count"</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-206"><a href="#cb7-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-207"><a href="#cb7-207" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(go.Bar(</span>
+<span id="cb7-208"><a href="#cb7-208" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>top[<span class="st">"extension"</span>],</span>
+<span id="cb7-209"><a href="#cb7-209" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>top[<span class="st">"count"</span>],</span>
+<span id="cb7-210"><a href="#cb7-210" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb7-211"><a href="#cb7-211" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#4a90a4"</span>),</span>
+<span id="cb7-212"><a href="#cb7-212" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss"> files · </span><span class="sc">{</span>sz<span class="op">/</span><span class="dv">1024</span><span class="sc">:.0f}</span><span class="ss"> KB"</span> <span class="cf">for</span> n, sz <span class="kw">in</span> <span class="bu">zip</span>(top[<span class="st">"count"</span>], top[<span class="st">"total_bytes"</span>])],</span>
+<span id="cb7-213"><a href="#cb7-213" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb7-214"><a href="#cb7-214" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb7-215"><a href="#cb7-215" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{y}</span><span class="st">&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{x}</span><span class="st"> files&lt;br&gt;%</span><span class="sc">{customdata:.1f}</span><span class="st"> KB total&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb7-216"><a href="#cb7-216" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>top[<span class="st">"total_bytes"</span>] <span class="op">/</span> <span class="dv">1024</span>,</span>
+<span id="cb7-217"><a href="#cb7-217" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb7-218"><a href="#cb7-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-219"><a href="#cb7-219" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb7-220"><a href="#cb7-220" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">400</span>,</span>
+<span id="cb7-221"><a href="#cb7-221" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">120</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb7-222"><a href="#cb7-222" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-223"><a href="#cb7-223" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-224"><a href="#cb7-224" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb7-225"><a href="#cb7-225" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"File count"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb7-226"><a href="#cb7-226" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb7-227"><a href="#cb7-227" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-228"><a href="#cb7-228" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb7-229"><a href="#cb7-229" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-230"><a href="#cb7-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-231"><a href="#cb7-231" aria-hidden="true" tabindex="-1"></a>The file inventory is the simplest data management artefact in the repo. It tells you, at a glance, what the project is made of: how many <span class="in">`.qmd`</span> files (one per page or project), how many images, how much SCSS. If a recruiter or examiner clones the repo, the file inventory is the first picture of the project's shape they will form before reading any specific file.</span>
+<span id="cb7-232"><a href="#cb7-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. SCSS growth: a workflow signal</span></span>
+<span id="cb7-234"><a href="#cb7-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-235"><a href="#cb7-235" aria-hidden="true" tabindex="-1"></a>A single styling file (<span class="in">`styles.scss`</span>) handles the visual language of every page. Tracking how it has grown over the project's lifetime is a useful proxy for one specific kind of progress: the steady accumulation of design decisions. Each touching commit either added a new component (<span class="in">`.ab-skill`</span>, <span class="in">`.fg-career__card`</span>, <span class="in">`.hp-recent`</span> etc), refined an existing one, or fixed a bug.</span>
+<span id="cb7-236"><a href="#cb7-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-239"><a href="#cb7-239" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-240"><a href="#cb7-240" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-scss-growth</span></span>
+<span id="cb7-241"><a href="#cb7-241" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Cumulative line count of styles.scss at each commit that touched the file. Each step represents a styling change, either additive (new component) or refining (changing existing rules). The relatively smooth growth is the signal that styling decisions accumulated incrementally rather than via late-stage rewrites."</span></span>
+<span id="cb7-242"><a href="#cb7-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-243"><a href="#cb7-243" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-244"><a href="#cb7-244" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb7-245"><a href="#cb7-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-246"><a href="#cb7-246" aria-hidden="true" tabindex="-1"></a>scss <span class="op">=</span> pd.read_csv(<span class="st">"../../data/scss_growth.csv"</span>, parse_dates<span class="op">=</span>[<span class="st">"date"</span>])</span>
+<span id="cb7-247"><a href="#cb7-247" aria-hidden="true" tabindex="-1"></a>scss <span class="op">=</span> scss.sort_values(<span class="st">"date"</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-248"><a href="#cb7-248" aria-hidden="true" tabindex="-1"></a>scss[<span class="st">"commit_n"</span>] <span class="op">=</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(scss) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb7-249"><a href="#cb7-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-250"><a href="#cb7-250" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb7-251"><a href="#cb7-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-252"><a href="#cb7-252" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
+<span id="cb7-253"><a href="#cb7-253" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>scss[<span class="st">"date"</span>],</span>
+<span id="cb7-254"><a href="#cb7-254" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>scss[<span class="st">"lines"</span>],</span>
+<span id="cb7-255"><a href="#cb7-255" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">"lines+markers"</span>,</span>
+<span id="cb7-256"><a href="#cb7-256" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>, width<span class="op">=</span><span class="fl">2.5</span>),</span>
+<span id="cb7-257"><a href="#cb7-257" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">7</span>, color<span class="op">=</span><span class="st">"#1e7e34"</span>, line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, width<span class="op">=</span><span class="dv">1</span>)),</span>
+<span id="cb7-258"><a href="#cb7-258" aria-hidden="true" tabindex="-1"></a>    fill<span class="op">=</span><span class="st">"tozeroy"</span>,</span>
+<span id="cb7-259"><a href="#cb7-259" aria-hidden="true" tabindex="-1"></a>    fillcolor<span class="op">=</span><span class="st">"rgba(30,126,52,0.10)"</span>,</span>
+<span id="cb7-260"><a href="#cb7-260" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%{x|%b </span><span class="sc">%d</span><span class="st">, %Y}&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{y}</span><span class="st"> lines&lt;br&gt;commit %</span><span class="sc">{customdata}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb7-261"><a href="#cb7-261" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>scss[<span class="st">"commit"</span>],</span>
+<span id="cb7-262"><a href="#cb7-262" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb7-263"><a href="#cb7-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-264"><a href="#cb7-264" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb7-265"><a href="#cb7-265" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">400</span>,</span>
+<span id="cb7-266"><a href="#cb7-266" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb7-267"><a href="#cb7-267" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-268"><a href="#cb7-268" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-269"><a href="#cb7-269" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb7-270"><a href="#cb7-270" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Commit date"</span>, showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb7-271"><a href="#cb7-271" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"styles.scss line count"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb7-272"><a href="#cb7-272" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb7-273"><a href="#cb7-273" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-274"><a href="#cb7-274" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb7-275"><a href="#cb7-275" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-276"><a href="#cb7-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-277"><a href="#cb7-277" aria-hidden="true" tabindex="-1"></a>A note about what this chart does and does not show. It shows the size of the file over time, not the quality of the code in it. SCSS that is large and well-organised is fine; SCSS that is large and chaotic is not. The qualitative judgement requires reading the file. The quantitative trend gives an accurate impression of effort distribution: the styling work accumulated over many short sessions rather than landing in one or two giant commits at the end.</span>
+<span id="cb7-278"><a href="#cb7-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-279"><a href="#cb7-279" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. Where the work concentrated</span></span>
+<span id="cb7-280"><a href="#cb7-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-283"><a href="#cb7-283" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-284"><a href="#cb7-284" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-top-files</span></span>
+<span id="cb7-285"><a href="#cb7-285" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Top files by number of commits that touched them. The single most-edited file is styles.scss, which is expected for a project where the visual language is centralised. The next tier is the page-level .qmd files, edited as content was added and refined. Build artefacts, cached files and images are excluded."</span></span>
+<span id="cb7-286"><a href="#cb7-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-287"><a href="#cb7-287" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-288"><a href="#cb7-288" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb7-289"><a href="#cb7-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-290"><a href="#cb7-290" aria-hidden="true" tabindex="-1"></a>top_files <span class="op">=</span> pd.read_csv(<span class="st">"../../data/top_edited_files.csv"</span>)</span>
+<span id="cb7-291"><a href="#cb7-291" aria-hidden="true" tabindex="-1"></a>top_files <span class="op">=</span> top_files.sort_values(<span class="st">"edits"</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-292"><a href="#cb7-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-293"><a href="#cb7-293" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(go.Bar(</span>
+<span id="cb7-294"><a href="#cb7-294" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>top_files[<span class="st">"file"</span>],</span>
+<span id="cb7-295"><a href="#cb7-295" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>top_files[<span class="st">"edits"</span>],</span>
+<span id="cb7-296"><a href="#cb7-296" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb7-297"><a href="#cb7-297" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#d4a017"</span>),</span>
+<span id="cb7-298"><a href="#cb7-298" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>top_files[<span class="st">"edits"</span>],</span>
+<span id="cb7-299"><a href="#cb7-299" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb7-300"><a href="#cb7-300" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb7-301"><a href="#cb7-301" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{y}</span><span class="st">&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{x}</span><span class="st"> edits&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb7-302"><a href="#cb7-302" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb7-303"><a href="#cb7-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-304"><a href="#cb7-304" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb7-305"><a href="#cb7-305" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">460</span>,</span>
+<span id="cb7-306"><a href="#cb7-306" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">60</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb7-307"><a href="#cb7-307" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-308"><a href="#cb7-308" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb7-309"><a href="#cb7-309" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb7-310"><a href="#cb7-310" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Number of commits touching the file"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>),</span>
+<span id="cb7-311"><a href="#cb7-311" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>, automargin<span class="op">=</span><span class="va">True</span>),</span>
+<span id="cb7-312"><a href="#cb7-312" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-313"><a href="#cb7-313" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb7-314"><a href="#cb7-314" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-315"><a href="#cb7-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-316"><a href="#cb7-316" aria-hidden="true" tabindex="-1"></a>The shape of this chart matters more than the absolute numbers. A healthy repo for a single-author web project should show one or two structural files (a stylesheet, a config) at the top, followed by content files that received roughly proportional attention. A pathological shape would be one file at 80 edits and everything else at 1, which would suggest the project was actually one page being rebuilt repeatedly. The actual shape here matches the healthy pattern.</span>
+<span id="cb7-317"><a href="#cb7-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-318"><a href="#cb7-318" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I was responsible for</span></span>
+<span id="cb7-319"><a href="#cb7-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-320"><a href="#cb7-320" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb7-321"><a href="#cb7-321" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="pb-role-grid"&gt;</span></span>
+<span id="cb7-322"><a href="#cb7-322" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="pb-role-card"&gt;</span></span>
+<span id="cb7-323"><a href="#cb7-323" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__title"&gt;Information architecture&lt;/div&gt;</span></span>
+<span id="cb7-324"><a href="#cb7-324" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__body"&gt;Designed the site structure as a single-source-of-truth model: project pages declare their metadata in YAML frontmatter; listing pages query that frontmatter. No duplication, no manual sync.&lt;/div&gt;</span></span>
+<span id="cb7-325"><a href="#cb7-325" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-326"><a href="#cb7-326" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="pb-role-card"&gt;</span></span>
+<span id="cb7-327"><a href="#cb7-327" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__title"&gt;Build pipeline and deployment&lt;/div&gt;</span></span>
+<span id="cb7-328"><a href="#cb7-328" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__body"&gt;Configured Quarto with output-dir: docs, set up GitHub Pages to serve from the docs folder, established the local render-preview-commit-push workflow that every change flows through.&lt;/div&gt;</span></span>
+<span id="cb7-329"><a href="#cb7-329" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-330"><a href="#cb7-330" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="pb-role-card"&gt;</span></span>
+<span id="cb7-331"><a href="#cb7-331" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__title"&gt;Visual language&lt;/div&gt;</span></span>
+<span id="cb7-332"><a href="#cb7-332" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__body"&gt;Custom SCSS with no reliance on Quarto theming defaults. Single stylesheet of approximately 2,400 lines covering typography, components, dark mode, responsive breakpoints.&lt;/div&gt;</span></span>
+<span id="cb7-333"><a href="#cb7-333" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-334"><a href="#cb7-334" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="pb-role-card"&gt;</span></span>
+<span id="cb7-335"><a href="#cb7-335" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__title"&gt;Reproducible analytics&lt;/div&gt;</span></span>
+<span id="cb7-336"><a href="#cb7-336" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="pb-role-card__body"&gt;Wrote scripts/generate_repo_stats.py to extract real metrics from the Git history and file tree. The script writes CSVs into data/, and this page reads from those CSVs. Data generation and presentation are separated.&lt;/div&gt;</span></span>
+<span id="cb7-337"><a href="#cb7-337" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb7-338"><a href="#cb7-338" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
+<span id="cb7-339"><a href="#cb7-339" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-340"><a href="#cb7-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-341"><a href="#cb7-341" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection</span></span>
+<span id="cb7-342"><a href="#cb7-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-343"><a href="#cb7-343" aria-hidden="true" tabindex="-1"></a>This was the project that most directly demonstrated the gap between "I can build a website" and "I can build a reproducible web project". Coming from a WordPress freelance background, I underestimated how much of the cognitive load of web development WordPress hides. Quarto, Git and GitHub Pages each force decisions that WordPress makes invisibly. None of those decisions are individually difficult, but they all have to be made explicitly, in code, and they all have downstream consequences. Choosing <span class="in">`output-dir: docs`</span> is a one-line decision that determines what the deploy URL serves. Choosing to centralise styling in a single SCSS file means the visual language is consistent but also means the file becomes a bottleneck. Choosing YAML frontmatter as the project metadata format means listing pages are automatic but also means every project must conform to the schema.</span>
+<span id="cb7-344"><a href="#cb7-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-345"><a href="#cb7-345" aria-hidden="true" tabindex="-1"></a>The decision I am proudest of is the one that produced this page. Every other project page in the portfolio describes work that happened elsewhere and reproduces selected exhibits as Plotly charts. For the ePortfolio page itself, that approach would have been circular: the project being described is the website hosting the description. Instead, the page reads real data from the actual repository and analyses itself. The CSV-generation script (<span class="in">`scripts/generate_repo_stats.py`</span>) walks the Git history and the file tree once, writes its outputs to <span class="in">`data/`</span>, and the page reads from those CSVs at render time. The separation between data generation and presentation is itself the workflow pattern the module is teaching, and applying it to the page that describes the module's deliverable felt like the right way to demonstrate understanding rather than just describing it.</span>
+<span id="cb7-346"><a href="#cb7-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-347"><a href="#cb7-347" aria-hidden="true" tabindex="-1"></a>The honest limitation is that the workflow shown on this page is overkill for a single-author static site. A team-of-one editor running one repo with one deployment target does not strictly need a separate data generation script, an explicit pipeline diagram, or a documented information architecture. The reason to do all of those things anyway is that they are the same patterns that scale to projects where the overkill becomes underkill quickly. Treating a small project with the workflow discipline of a large one is cheap; the inverse is expensive. That generalisation is what I want to take out of this module into whatever team-based analytics work I end up doing after graduation.</span>
+<span id="cb7-348"><a href="#cb7-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-349"><a href="#cb7-349" aria-hidden="true" tabindex="-1"></a>A second honest note: this is the first project I have built without any visual builder in the loop. The quality of the result is genuinely the result of code I wrote myself, with the help of AI tools (Claude, Gemini, Grammarly) for structural suggestions, debugging and proofreading. Every architectural decision is mine; every line of SCSS is either written or directly reviewed by me; every Plotly chart on this page is generated from a real CSV produced by my own script.</span>
+<span id="cb7-350"><a href="#cb7-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-351"><a href="#cb7-351" aria-hidden="true" tabindex="-1"></a><span class="fu">## Downloads</span></span>
+<span id="cb7-352"><a href="#cb7-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-353"><a href="#cb7-353" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">💻 View repository on GitHub</span><span class="co">](https://github.com/alekslupa/alekslupa.github.io)</span>{.btn .btn-dark .me-2 target="_blank"}</span>
+<span id="cb7-354"><a href="#cb7-354" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">📊 View the stats generation script</span><span class="co">](https://github.com/alekslupa/alekslupa.github.io/blob/main/scripts/generate_repo_stats.py)</span>{.btn .btn-outline-secondary target="_blank"}</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
