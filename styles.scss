@@ -4446,3 +4446,24 @@ h2.section {
     border-top-color: rgba(255, 255, 255, 0.08);
   }
 }
+
+// =============================================================================
+// ePortfolio card — GitHub logo image treatment
+// =============================================================================
+
+#listing-hp-recent .card-img[src*="github"],
+#listing-listing .thumbnail-image[src*="github"],
+#listing-listing .card-img[src*="github"] {
+  object-fit: contain;
+  padding: 2.5rem;
+  background: #f6f8fa;
+}
+
+.quarto-dark {
+  #listing-hp-recent .card-img[src*="github"],
+  #listing-listing .thumbnail-image[src*="github"],
+  #listing-listing .card-img[src*="github"] {
+    background: #0d1117;
+    filter: invert(1);
+  }
+}

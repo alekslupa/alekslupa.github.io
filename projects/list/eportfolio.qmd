@@ -5,7 +5,7 @@ subtitle: "BAA1028 · Workflow & Data Management"
 description: "BAA1028 Workflow & Data Management module deliverable under Damien Dupré. A professional ePortfolio built from scratch using Quarto, custom SCSS and GitHub Pages, with the page itself functioning as a meta-analysis of the repository that produced it."
 author: "Aleksander Lupa"
 date: "2026-04-25"
-image: "/images/flavicon.png"
+image: "/images/github.png"
 categories: [BAA1028, Academic]
 page-layout: article
 toc: true
