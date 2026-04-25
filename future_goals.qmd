@@ -1,97 +1,181 @@
 ---
-pagetitle: "Future Goals — Aleksander Lupa"
-page-layout: article
-toc: false
+title: "Future Goals"
+description: "Where I'm headed after graduation: a business analyst role in gaming, a summer travelling across Asia and the Americas, and a move to London."
+author: "Aleksander Lupa"
+date: "2026-04-24"
+format:
+  html:
+    code-fold: true
+    code-tools: false
+    toc: false
+    page-layout: full
+execute:
+  echo: true
+  warning: false
+  freeze: auto
 ---
 
 # Future Goals
 
-```{=html}
-<p class="fg-intro">I'm graduating in April 2026 with a clear sense of where I want to go, not just professionally, but personally. Here's what I'm working towards.</p>
-```
+Graduating in April 2026 with a clear sense of where I want to go, professionally and personally. The next twelve months break into three deliberate phases: graduate, travel, then move to London and start working. Here is what I am working towards in each.
 
 ## Career
 
 ```{=html}
-<div class="goal-cards">
-<div class="goal-card">
-<span class="goal-label">Short term</span>
-<div class="goal-title">Business analyst in the gaming industry</div>
-<p class="goal-body">My goal after graduating is to work as a business analyst, ideally within the gaming industry. It's a sector I find genuinely exciting: fast-moving, data-driven, and creatively ambitious. I want to be part of a team where analytical thinking shapes real product decisions.</p>
-</div>
-<div class="goal-card">
-<span class="goal-label">Location</span>
-<div class="goal-title">Working abroad in London</div>
-<p class="goal-body">London is one of Europe's biggest hubs for tech and gaming companies. Moving there after graduation is a goal I'm actively working towards. The exposure, the network, and the pace of the industry there is exactly the environment I want to grow in early in my career.</p>
-</div>
+<div class="fg-career">
+
+  <div class="fg-career__card">
+    <div class="fg-career__eyebrow">Short term · 6 to 12 months out</div>
+    <div class="fg-career__title">Business analyst in the gaming industry</div>
+    <div class="fg-career__body">My goal after graduation is a business analyst role in gaming. It is a sector where analytical thinking shapes real product decisions: live-service economies, player retention modelling, monetisation experiments, content release pipelines. The combination of fast-moving product cycles and rich behavioural datasets is exactly the environment I want to operate in early in my career, and the analytical patterns I worked through in my Online Shoppers research paper (cost-sensitive thresholding, threshold-versus-classifier trade-offs) translate directly to the kind of retention and conversion problems gaming analysts work on every day.</div>
+  </div>
+
+  <div class="fg-career__card">
+    <div class="fg-career__eyebrow">Location · Late 2026 onward</div>
+    <div class="fg-career__title">Working abroad in London</div>
+    <div class="fg-career__body">London is one of Europe's largest hubs for both gaming and broader analytics work. Relocating after graduation means access to the network, the pace and the role density that early career growth depends on. The intention is to land in London by late 2026 and treat the first twelve months there as deliberately steep: the kind of role where the person sitting next to you knows things you do not, and the gap is the point.</div>
+  </div>
+
 </div>
 ```
 
 ## Travel
 
+The summer between graduation and starting full-time work is the rare window where a long, multi-region trip is genuinely possible. I am using it. The itinerary covers East Asia (Hong Kong, mainland China, South Korea), Southeast Asia (Vietnam) and the United States East Coast (Miami, New York), spread across roughly three months. The map below is the actual route.
+
+```{python}
+#| label: fig-travel-map
+#| fig-cap: "Summer 2026 itinerary across six destinations and three regions. East Asia leg covers Hong Kong, southern mainland China and Seoul; Southeast Asia leg covers Vietnam (Hanoi, Ho Chi Minh City); Americas leg covers Miami and New York. Hover any marker to see what I am most looking forward to in each."
+
+import pandas as pd
+import plotly.graph_objects as go
+
+destinations = pd.DataFrame({
+    "City":      ["Hong Kong",  "Shanghai",   "Seoul",       "Hanoi",       "Miami",      "New York"],
+    "Country":   ["China",      "China",      "South Korea", "Vietnam",     "USA",        "USA"],
+    "Region":    ["East Asia",  "East Asia",  "East Asia",   "SE Asia",     "Americas",   "Americas"],
+    "Lat":       [22.3193,      31.2304,      37.5665,       21.0285,       25.7617,      40.7128],
+    "Lon":       [114.1694,     121.4737,     126.9780,      105.8542,     -80.1918,     -74.0060],
+    "Order":     [1,            2,            3,             4,             5,            6],
+    "Highlight": [
+        "Dim sum, Victoria Peak views, the density of street life in Mong Kok",
+        "Pudong skyline by night, the contrast between the Bund and the back streets",
+        "Hanok villages in Bukchon, Korean barbecue at source, the design culture",
+        "Pho 24/7, the motorbike chaos of Hanoi, the limestone karsts of Halong Bay",
+        "Cuban food in Little Havana, art deco in South Beach, sunsets over the Atlantic",
+        "Walking Manhattan end-to-end, jazz in Greenwich Village, the New York pace itself",
+    ],
+})
+
+region_colours = {
+    "East Asia": "#c8102e",
+    "SE Asia":   "#1e7e34",
+    "Americas":  "#0a579c",
+}
+
+fig = go.Figure()
+
+# Connection lines between consecutive destinations
+fig.add_trace(go.Scattergeo(
+    lon=destinations["Lon"],
+    lat=destinations["Lat"],
+    mode="lines",
+    line=dict(width=1.5, color="#888", dash="dot"),
+    hoverinfo="skip",
+    showlegend=False,
+))
+
+# Markers per region
+for region, colour in region_colours.items():
+    subset = destinations[destinations["Region"] == region]
+    fig.add_trace(go.Scattergeo(
+        lon=subset["Lon"],
+        lat=subset["Lat"],
+        mode="markers+text",
+        marker=dict(size=14, color=colour, line=dict(width=2, color="white")),
+        text=subset["City"],
+        textposition="top center",
+        textfont=dict(size=12, color="#1a1a1a", family="Inter, sans-serif"),
+        name=region,
+        hovertemplate=(
+            "<b>%{text}</b><br>" +
+            "<i>" + subset["Country"] + "</i><br>" +
+            "Stop %{customdata[0]} of 6<br><br>" +
+            "%{customdata[1]}<extra></extra>"
+        ),
+        customdata=subset[["Order", "Highlight"]].values,
+    ))
+
+fig.update_geos(
+    showcountries=True, countrycolor="#bbb",
+    showcoastlines=True, coastlinecolor="#999",
+    showland=True, landcolor="#f7f7f7",
+    showocean=True, oceancolor="#e8eef2",
+    projection_type="natural earth",
+    lataxis_range=[-10, 60],
+    lonaxis_range=[-100, 145],
+)
+
+fig.update_layout(
+    height=520,
+    margin=dict(l=0, r=0, t=10, b=10),
+    paper_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    legend=dict(orientation="h", yanchor="bottom", y=-0.05, x=0, bgcolor="rgba(0,0,0,0)"),
+)
+fig.show()
+```
+
+## What I want to bring back
+
 ```{=html}
-<div class="goal-cards">
-<div class="goal-card">
-<span class="goal-label">Summer 2026</span>
-<div class="goal-title">Explore beyond Europe</div>
-<p class="goal-body">Before stepping into the workforce full-time, I want to take the summer after graduation to travel, not just within Europe, but across different continents. Experiencing new cultures, places, and perspectives is something I believe makes you a better thinker and a better professional.</p>
-</div>
-</div>
-<div class="milestone-grid">
-<div class="milestone-card">
-<div class="milestone-title">Asia</div>
-<p class="milestone-body">Top of the list. Japan and Southeast Asia are places I've wanted to visit for years.</p>
-</div>
-<div class="milestone-card">
-<div class="milestone-title">Americas</div>
-<p class="milestone-body">Experiencing a completely different culture and pace of life across the Atlantic.</p>
-</div>
-<div class="milestone-card">
-<div class="milestone-title">New experiences</div>
-<p class="milestone-body">Meeting people, trying things outside my comfort zone, and coming back ready to work.</p>
-</div>
-</div>
-<p class="photo-grid-label">Places on the list</p>
-<div class="photo-grid">
-<div class="photo-slot">
-<a href="images/travel.1.jpg" target="_blank" rel="noopener"><img src="images/travel.1.jpg" alt="Travel destination 1" class="photo-grid-img"></a>
-</div>
-<div class="photo-slot">
-<a href="images/travel.2.jpg" target="_blank" rel="noopener"><img src="images/travel.2.jpg" alt="Travel destination 2" class="photo-grid-img"></a>
-</div>
-<div class="photo-slot">
-<a href="images/travel.3.jpg" target="_blank" rel="noopener"><img src="images/travel.3.jpg" alt="Travel destination 3" class="photo-grid-img"></a>
-</div>
+<div class="fg-bring-back">
+
+  <div class="fg-bring-back__item">
+    <div class="fg-bring-back__icon"><i class="bi bi-globe2"></i></div>
+    <div class="fg-bring-back__title">Direct experience of Asian markets</div>
+    <div class="fg-bring-back__body">Reading about Asian consumer behaviour and seeing it on the ground are two different things. Density, payment behaviour (mobile-first to a degree Western markets are not), retail formats, the way digital and physical interact. Useful for any analytics role where the dataset is global.</div>
+  </div>
+
+  <div class="fg-bring-back__item">
+    <div class="fg-bring-back__icon"><i class="bi bi-translate"></i></div>
+    <div class="fg-bring-back__title">Spanish practice in Miami</div>
+    <div class="fg-bring-back__body">Miami is one of the few US cities where Spanish is more useful than English in many neighbourhoods. A few weeks of forced immersion is a more efficient way to push my Spanish from intermediate toward upper-intermediate than another six months of textbook study.</div>
+  </div>
+
+  <div class="fg-bring-back__item">
+    <div class="fg-bring-back__icon"><i class="bi bi-people-fill"></i></div>
+    <div class="fg-bring-back__title">A network across three continents</div>
+    <div class="fg-bring-back__body">Travel is the most efficient mechanism for building relationships outside your existing network. Even a small set of contacts in each region is a structural advantage in a career where remote and cross-region work is increasingly the norm.</div>
+  </div>
+
+  <div class="fg-bring-back__item">
+    <div class="fg-bring-back__icon"><i class="bi bi-arrow-clockwise"></i></div>
+    <div class="fg-bring-back__title">Reset before the next chapter</div>
+    <div class="fg-bring-back__body">Three months between finishing one demanding thing (a final-year degree) and starting another (a graduate analyst role) is unusually rare. Using it deliberately, rather than letting it drift, is the specific point.</div>
+  </div>
+
 </div>
 ```
 
-## The plan
+## The next twelve months
 
-```{=html}
-<div class="timeline">
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Graduate</div>
-<div class="timeline-meta">April 2026</div>
-<p class="timeline-desc">Complete my BSc in Business Studies at Dublin City University.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Travel</div>
-<div class="timeline-meta">Summer 2026</div>
-<p class="timeline-desc">Spend the summer travelling across continents, Asia, the Americas, and wherever else takes my interest.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-title">Move to London</div>
-<div class="timeline-meta">Late 2026</div>
-<p class="timeline-desc">Relocate to London and begin my career as a business analyst in the gaming or tech industry.</p>
-</div>
-</div>
-</div>
+```{mermaid}
+%%| fig-cap: "Twelve-month plan from graduation through the move to London. The travel block is sequenced East Asia → Southeast Asia → Americas to use the time zones in my favour for the eventual return."
+flowchart LR
+    A[<b>April 2026</b><br/>Graduate<br/>BSc Business Studies<br/>DCU]
+    B[<b>May to Jul 2026</b><br/>East Asia leg<br/>Hong Kong · Shanghai · Seoul]
+    C[<b>Jul to Aug 2026</b><br/>Southeast Asia leg<br/>Vietnam]
+    D[<b>Aug 2026</b><br/>Americas leg<br/>Miami · New York]
+    E[<b>Sep 2026</b><br/>Return to Dublin<br/>Reset · job hunt focused on London]
+    F[<b>Late 2026</b><br/>Move to London<br/>Start as business analyst]
+
+    A ==> B ==> C ==> D ==> E ==> F
+
+    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
+    style B fill:#ffebee,stroke:#c8102e,color:#1a1a1a,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#1e7e34,color:#1a1a1a,stroke-width:2px
+    style D fill:#e3f2fd,stroke:#0a579c,color:#1a1a1a,stroke-width:2px
+    style E fill:#f5f5f5,stroke:#666,color:#1a1a1a,stroke-width:2px
+    style F fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
 ```
