@@ -1,9 +1,9 @@
 - title: "ePortfolio (this website)"
-  description: "A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages. My first time working directly in code, managing a project through Git, and deploying to a live URL."
+  description: "BAA1028 Workflow & Data Management module deliverable under Damien Dupré. A professional ePortfolio built from scratch using Quarto, custom SCSS and GitHub Pages, with the page itself functioning as a meta-analysis of the repository that produced it."
   author: "Aleksander Lupa"
-  date: "2025-04-01"
+  date: "2026-04-25"
   image: "../images/website.logo.png"
-  categories: [BAA1027, Academic]
+  categories: [BAA1028, Academic]
   path: "list/eportfolio.qmd"
 
 - title: "Superdry Strategic Analysis"
