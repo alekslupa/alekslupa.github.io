@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Aleksander Lupa">
-<meta name="dcterms.date" content="2025-01-01">
-<meta name="description" content="Data analytics project.">
+<meta name="dcterms.date" content="2025-11-15">
+<meta name="description" content="BAA1026 Data Analytics: Programming &amp; Visualisation group project. Lead Analyst for Asia in a five-person team that built a Power BI consulting deliverable diagnosing EcoEnergy Corp’s global profitability crisis and forecasting a turnaround to €3.09M annual profit.">
 
-<title>Data Analytics — Aleksander Lupa – Aleksander Lupa</title>
+<title>EcoEnergy Corp — Aleksander Lupa – Aleksander Lupa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,10 +23,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -76,6 +111,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script>
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+</script>
+<script type="module">import "https://cdn.plot.ly/plotly-3.5.0.min"</script>
+
 
 
 </head>
@@ -306,15 +353,16 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Analytics</h1>
+<div class="quarto-title-block"><div><h1 class="title">EcoEnergy Corp profitability turnaround</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
   <div class="quarto-categories">
+    <div class="quarto-category">BAA1026</div>
     <div class="quarto-category">Academic</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Data analytics project.
+    BAA1026 Data Analytics: Programming &amp; Visualisation group project. Lead Analyst for Asia in a five-person team that built a Power BI consulting deliverable diagnosing EcoEnergy Corp’s global profitability crisis and forecasting a turnaround to €3.09M annual profit.
   </div>
 </div>
 
@@ -331,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">November 15, 2025</p>
     </div>
   </div>
   
@@ -343,61 +391,639 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>.quarto-title h1.title{display:none}</style>
-
-<div class="proj-header">
-  <h1 class="proj-title">Data Analytics</h1>
-  <p class="proj-subtitle">Project subtitle goes here.</p>
-  <a href="../index.html" class="proj-back">← Projects</a>
+<div class="fj-toc">
+  <div class="fj-toc__title">On this page</div>
+  <nav>
+    <a class="fj-toc__link fj-toc__link--section" href="#about-the-project">About the project</a>
+    <a class="fj-toc__link" href="#1-the-portfolio-is-failing">1. The portfolio is failing</a>
+    <a class="fj-toc__link" href="#2-regional-performance-scorecard">2. Regional performance scorecard</a>
+    <a class="fj-toc__link" href="#3-asia-deep-dive-revenue-is-not-profit">3. Asia deep-dive</a>
+    <a class="fj-toc__link" href="#4-where-production-should-actually-happen">4. Where production should happen</a>
+    <a class="fj-toc__link" href="#5-predictive-forecast-from-846m-loss-to-309m-profit">5. Predictive forecast</a>
+    <a class="fj-toc__link" href="#6-the-analytical-pipeline">6. Analytical pipeline</a>
+    <a class="fj-toc__link fj-toc__link--section" href="#what-i-was-responsible-for">What I was responsible for</a>
+    <a class="fj-toc__link" href="#reflection">Reflection</a>
+    <a class="fj-toc__link" href="#downloads">Downloads</a>
+  </nav>
 </div>
+<p>A 10-year diagnostic and predictive analytics engagement on EcoEnergy Corp, a global sustainable infrastructure and technology company operating across five continents. The team’s brief was to identify the drivers of the company’s €8.46M net loss and recommend a restructuring path back to profitability. The deliverable was a Power BI consulting suite covering descriptive, diagnostic and predictive layers, supported by a 1,904-word written report.</p>
+<a href="../index.html" class="proj-back">← Projects</a>
 
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">About the project</h2>
-  <p>Project description goes here.</p>
-</div>
-
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">What I built</h2>
-  <div class="proj-grid">
-    <div class="proj-card">
-      <span class="proj-card__label">Tools used</span>
-      <span class="proj-card__value">—</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Dataset</span>
-      <span class="proj-card__value">—</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Focus areas</span>
-      <span class="proj-card__value">—</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Outcome</span>
-      <span class="proj-card__value">—</span>
-    </div>
+<div class="pb-stats">
+  <div class="pb-stat">
+    <div class="pb-stat__num">€8.46M</div>
+    <div class="pb-stat__label">Net loss diagnosed</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">€3.09M</div>
+    <div class="pb-stat__label">Forecast annual profit</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">49.7%</div>
+    <div class="pb-stat__label">Projected profit margin</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">10</div>
+    <div class="pb-stat__label">Years of data analysed</div>
   </div>
 </div>
-
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title anchored">Reflection</h2>
-  <p>Reflection goes here.</p>
+<section id="about-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-project">About the project</h2>
+<p>EcoEnergy Corp is a global sustainable infrastructure and technology company selling across three categories (Technology, Construction, Transport &amp; Insurance) in five regions. The dataset covered 10 years of sales, costs, channels and discount rates with sufficient granularity to support both regional diagnostics and product-level recommendations.</p>
+<p>Group 4 was structured as a regional consulting team. Each member led the analysis for one region: I covered Asia, with the other four regions allocated to Niall Grainger (North America), Roisin Murphy (Europe), Daniel Vala (Africa) and Martinas Jucys-Brady (South America). The cross-regional synthesis (outsourcing strategy, predictive forecast, industry benchmarking) was developed collectively. This page reproduces the team’s collective findings, with the Asia section reflecting analysis I led directly.</p>
+<div class="ap-project-meta">
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Year</div>
+    <div class="ap-meta-value">2025</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Module</div>
+    <div class="ap-meta-value">BAA1026</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">My role</div>
+    <div class="ap-meta-value">Lead Analyst, Asia</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Team</div>
+    <div class="ap-meta-value">Group 4 · 5 members</div>
+  </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled" title="What's on this page">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What’s on this page
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The visualisations below reproduce the core findings from our Power BI consulting deliverable as interactive Plotly charts. The original deliverable was a multi-page Power BI report with a star-schema data model, DAX KPIs, drill-through navigation and a forecasting layer. This page rebuilds the same underlying analysis as executable Python with Plotly for the portfolio. All numerical results originate from the dataset and Power BI report submitted for assessment.</p>
+</div>
+</div>
+</section>
+<section id="the-portfolio-is-failing" class="level2">
+<h2 class="anchored" data-anchor-id="the-portfolio-is-failing">1. The portfolio is failing</h2>
+<p>Before any regional or product analysis, the topline numbers established the scale of the problem. EcoEnergy generated €130.7M in revenue across the 10-year window but incurred €139.1M in costs, producing a €8.46M cumulative net loss. The portfolio breakdown is more revealing than the top line: 39% of all products were sold at a loss, and 8 of the 10 product lines were collectively unprofitable across the period.</p>
+<div id="cell-fig-portfolio-loss" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>portfolio <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Status"</span>:   [<span class="st">"Sold at a profit"</span>, <span class="st">"Sold at a loss"</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Share"</span>:    [<span class="fl">60.6</span>, <span class="fl">39.4</span>],</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Detail"</span>:   [<span class="st">"Insurance plans, solar panels and Construction lines in Europe drove the bulk of profitable activity"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Smartphones, tablets, printers, cars and persistent loss-makers across regions"</span>],</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(go.Pie(</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>portfolio[<span class="st">"Status"</span>],</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    values<span class="op">=</span>portfolio[<span class="st">"Share"</span>],</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    hole<span class="op">=</span><span class="fl">0.55</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(colors<span class="op">=</span>[<span class="st">"#1e7e34"</span>, <span class="st">"#c8102e"</span>], line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"white"</span>, width<span class="op">=</span><span class="dv">2</span>)),</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    textinfo<span class="op">=</span><span class="st">"label+percent"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    sort<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{label}</span><span class="st">&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{percent}</span><span class="st">&lt;br&gt;%</span><span class="sc">{customdata}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>portfolio[<span class="st">"Detail"</span>],</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>fig.add_annotation(</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span><span class="st">"&lt;b&gt;€8.46M&lt;/b&gt;&lt;br&gt;net loss&lt;br&gt;10-year cumulative"</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="fl">0.5</span>, y<span class="op">=</span><span class="fl">0.5</span>, showarrow<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">440</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">20</span>),</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-portfolio-loss" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-portfolio-loss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="66f1879d-c53e-49a4-8983-0daced5b5753" class="plotly-graph-div" style="height:440px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("66f1879d-c53e-49a4-8983-0daced5b5753")) {                    Plotly.newPlot(                        "66f1879d-c53e-49a4-8983-0daced5b5753",                        [{"customdata":["Insurance plans, solar panels and Construction lines in Europe drove the bulk of profitable activity","Smartphones, tablets, printers, cars and persistent loss-makers across regions"],"hole":0.55,"hovertemplate":"\u003cb\u003e%{label}\u003c\u002fb\u003e\u003cbr\u003e%{percent}\u003cbr\u003e%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["Sold at a profit","Sold at a loss"],"marker":{"colors":["#1e7e34","#c8102e"],"line":{"color":"white","width":2}},"sort":false,"textinfo":"label+percent","textposition":"outside","values":{"dtype":"f8","bdata":"zczMzMxMTkAzMzMzM7NDQA=="},"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"annotations":[{"font":{"color":"#1a1a1a","size":14},"showarrow":false,"text":"\u003cb\u003e\u20ac8.46M\u003c\u002fb\u003e\u003cbr\u003enet loss\u003cbr\u003e10-year cumulative","x":0.5,"y":0.5}],"margin":{"l":20,"r":20,"t":20,"b":20},"height":440,"showlegend":false,"paper_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('66f1879d-c53e-49a4-8983-0daced5b5753');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
 
-<div class="proj-divider"></div>
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
 
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-portfolio-loss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Portfolio profitability split: 39% of all units sold made a loss, 61% made a profit. The €8.46M net loss is the integrated effect of a small profitable cohort being insufficient to offset a much larger loss-making cohort.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The interpretation that matters analytically is that the loss is not a market problem (revenue exists) but a portfolio composition and cost discipline problem. That framing shaped every subsequent diagnostic decision: the question was not “how do we sell more”, it was “which products and regions should we keep, drop, or restructure”.</p>
+</section>
+<section id="regional-performance-scorecard" class="level2">
+<h2 class="anchored" data-anchor-id="regional-performance-scorecard">2. Regional performance scorecard</h2>
+<p>Aggregating to the regional level surfaces five distinct patterns. North America’s losses were the largest in absolute terms but the cause (sub-cost pricing on key product lines) was clear. Africa was loss-making with high cost as the structural driver. Europe was profitable in some categories but volatile. South America was a low-cost manufacturing leader but with weak Insurance and Transport performance. Asia is the case I analysed most closely, and the finding there is the one I want to spend most time on.</p>
+<div id="cell-fig-regional-scorecard" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotly.subplots <span class="im">import</span> make_subplots</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>regions <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Region"</span>:    [<span class="st">"North America"</span>, <span class="st">"Africa"</span>, <span class="st">"South America"</span>, <span class="st">"Europe"</span>, <span class="st">"Asia"</span>],</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Revenue"</span>:   [<span class="fl">29.5</span>, <span class="fl">25.17</span>, <span class="fl">25.35</span>, <span class="fl">26.6</span>, <span class="fl">24.05</span>],</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NetProfit"</span>: [<span class="op">-</span><span class="fl">4.15</span>, <span class="op">-</span><span class="fl">3.7</span>, <span class="op">-</span><span class="fl">0.61</span>, <span class="op">-</span><span class="fl">0.14</span>, <span class="fl">0.14</span>],</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Driver"</span>:    [<span class="st">"Sub-cost pricing on key tech and transport lines"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Structural cost disadvantage in Technology"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Low manufacturing costs but weak Transport / Insurance"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Profitable in Construction; volatile elsewhere"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"High revenue masked by aggressive discounting"</span>],</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>regions <span class="op">=</span> regions.sort_values(<span class="st">"NetProfit"</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> make_subplots(rows<span class="op">=</span><span class="dv">1</span>, cols<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>                    subplot_titles<span class="op">=</span>(<span class="st">"Revenue (€ millions)"</span>, <span class="st">"Net profit / loss (€ millions)"</span>),</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>                    horizontal_spacing<span class="op">=</span><span class="fl">0.18</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>regions[<span class="st">"Region"</span>], x<span class="op">=</span>regions[<span class="st">"Revenue"</span>],</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#4a90a4"</span>),</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"€</span><span class="sc">{</span>v<span class="sc">:.1f}</span><span class="ss">M"</span> <span class="cf">for</span> v <span class="kw">in</span> regions[<span class="st">"Revenue"</span>]],</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>regions[<span class="st">"Region"</span>], x<span class="op">=</span>regions[<span class="st">"NetProfit"</span>],</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span>[<span class="st">"#c8102e"</span> <span class="cf">if</span> v <span class="op">&lt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"#1e7e34"</span> <span class="cf">for</span> v <span class="kw">in</span> regions[<span class="st">"NetProfit"</span>]]),</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"€</span><span class="sc">{</span>v<span class="sc">:+.2f}</span><span class="ss">M"</span> <span class="cf">for</span> v <span class="kw">in</span> regions[<span class="st">"NetProfit"</span>]],</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{y}</span><span class="st">&lt;/b&gt;&lt;br&gt;%</span><span class="sc">{x:.2f}</span><span class="st">M&lt;br&gt;%</span><span class="sc">{customdata}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>regions[<span class="st">"Driver"</span>],</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>), row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, zeroline<span class="op">=</span><span class="va">True</span>, zerolinecolor<span class="op">=</span><span class="st">"#1a1a1a"</span>,</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>                 zerolinewidth<span class="op">=</span><span class="fl">1.5</span>, <span class="bu">range</span><span class="op">=</span>[<span class="op">-</span><span class="fl">5.5</span>, <span class="fl">1.5</span>], row<span class="op">=</span><span class="dv">1</span>, col<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(showgrid<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">380</span>,</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">40</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-regional-scorecard" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-regional-scorecard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="4ac35930-550f-4849-bc69-a8407341af3d" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("4ac35930-550f-4849-bc69-a8407341af3d")) {                    Plotly.newPlot(                        "4ac35930-550f-4849-bc69-a8407341af3d",                        [{"marker":{"color":"#4a90a4"},"orientation":"h","showlegend":false,"text":["\u20ac29.5M","\u20ac25.2M","\u20ac25.4M","\u20ac26.6M","\u20ac24.1M"],"textfont":{"size":11},"textposition":"outside","x":{"dtype":"f8","bdata":"AAAAAACAPUDsUbgehSs5QJqZmZmZWTlAmpmZmZmZOkDNzMzMzAw4QA=="},"y":["North America","Africa","South America","Europe","Asia"],"type":"bar","xaxis":"x","yaxis":"y"},{"customdata":["Sub-cost pricing on key tech and transport lines","Structural cost disadvantage in Technology","Low manufacturing costs but weak Transport \u002f Insurance","Profitable in Construction; volatile elsewhere","High revenue masked by aggressive discounting"],"hovertemplate":"\u003cb\u003e%{y}\u003c\u002fb\u003e\u003cbr\u003e%{x:.2f}M\u003cbr\u003e%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#c8102e","#c8102e","#c8102e","#c8102e","#1e7e34"]},"orientation":"h","showlegend":false,"text":["\u20ac-4.15M","\u20ac-3.70M","\u20ac-0.61M","\u20ac-0.14M","\u20ac+0.14M"],"textfont":{"size":11},"textposition":"outside","x":{"dtype":"f8","bdata":"mpmZmZmZEMCamZmZmZkNwIXrUbgeheO\u002f7FG4HoXrwb\u002fsUbgehevBPw=="},"y":["North America","Africa","South America","Europe","Asia"],"type":"bar","xaxis":"x2","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,0.41000000000000003],"showgrid":true,"gridcolor":"#eee"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"showgrid":false},"xaxis2":{"anchor":"y2","domain":[0.5900000000000001,1.0],"showgrid":true,"gridcolor":"#eee","zeroline":true,"zerolinecolor":"#1a1a1a","zerolinewidth":1.5,"range":[-5.5,1.5]},"yaxis2":{"anchor":"x2","domain":[0.0,1.0],"showgrid":false},"annotations":[{"font":{"size":16},"showarrow":false,"text":"Revenue (\u20ac millions)","x":0.20500000000000002,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Net profit \u002f loss (\u20ac millions)","x":0.795,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"margin":{"l":20,"r":20,"t":40,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"height":380,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('4ac35930-550f-4849-bc69-a8407341af3d');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-regional-scorecard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Regional revenue and net profit/loss across the 10-year window. Asia generated the highest revenue but near-zero net profit; North America was the largest absolute loss-maker; Africa’s losses were structural rather than cyclical.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Worth stating plainly: only Asia ended the 10-year window in marginal profit, and it did so on the back of a single recovery year (2024) after six years of losses. The other four regions were all negative. This is what “8 of 10 products unprofitable” looks like when you decompose it geographically.</p>
+</section>
+<section id="asia-deep-dive-revenue-is-not-profit" class="level2">
+<h2 class="anchored" data-anchor-id="asia-deep-dive-revenue-is-not-profit">3. Asia deep-dive: revenue is not profit</h2>
+<p>This was my regional analysis. Asia generated €24.05M in revenue across the decade, the highest of any region, but produced only €0.14M in net profit. That is a 0.6% margin on the most active geography in the portfolio. The diagnostic question was why such strong topline activity translated into almost no margin.</p>
+<div id="cell-fig-asia-pattern" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>asia_years <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Year"</span>:   <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">2015</span>, <span class="dv">2025</span>)),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Profit"</span>: [<span class="fl">0.42</span>, <span class="fl">0.51</span>, <span class="fl">0.38</span>, <span class="op">-</span><span class="fl">0.18</span>, <span class="op">-</span><span class="fl">0.31</span>, <span class="op">-</span><span class="fl">0.42</span>, <span class="op">-</span><span class="fl">0.55</span>, <span class="op">-</span><span class="fl">0.48</span>, <span class="op">-</span><span class="fl">0.36</span>, <span class="fl">1.13</span>],</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Phase"</span>:  [<span class="st">"Profitable"</span>, <span class="st">"Profitable"</span>, <span class="st">"Profitable"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>               <span class="st">"Loss-making"</span>, <span class="st">"Loss-making"</span>, <span class="st">"Loss-making"</span>, <span class="st">"Loss-making"</span>, <span class="st">"Loss-making"</span>, <span class="st">"Loss-making"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">"Recovery"</span>],</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>phase_colours <span class="op">=</span> {<span class="st">"Profitable"</span>: <span class="st">"#1e7e34"</span>, <span class="st">"Loss-making"</span>: <span class="st">"#c8102e"</span>, <span class="st">"Recovery"</span>: <span class="st">"#d4a017"</span>}</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>asia_years[<span class="st">"Year"</span>], y<span class="op">=</span>asia_years[<span class="st">"Profit"</span>],</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span>[phase_colours[p] <span class="cf">for</span> p <span class="kw">in</span> asia_years[<span class="st">"Phase"</span>]]),</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"€</span><span class="sc">{</span>v<span class="sc">:+.2f}</span><span class="ss">M"</span> <span class="cf">for</span> v <span class="kw">in</span> asia_years[<span class="st">"Profit"</span>]],</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">10</span>),</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{x}</span><span class="st">&lt;/b&gt;&lt;br&gt;Profit: €%</span><span class="sc">{y:.2f}</span><span class="st">M&lt;br&gt;Phase: %</span><span class="sc">{customdata}</span><span class="st">&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    customdata<span class="op">=</span>asia_years[<span class="st">"Phase"</span>],</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>fig.add_hline(y<span class="op">=</span><span class="dv">0</span>, line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1a1a1a"</span>, width<span class="op">=</span><span class="fl">1.5</span>))</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phase, colour <span class="kw">in</span> phase_colours.items():</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    fig.add_trace(go.Bar(</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>[<span class="va">None</span>], y<span class="op">=</span>[<span class="va">None</span>],</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span>colour),</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span>phase, showlegend<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">420</span>,</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>, dtick<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Net profit / loss (€ millions)"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, <span class="bu">range</span><span class="op">=</span>[<span class="op">-</span><span class="fl">0.8</span>, <span class="fl">1.5</span>]),</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=</span><span class="fl">1.02</span>, x<span class="op">=</span><span class="dv">0</span>),</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-asia-pattern" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-asia-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="70e74c65-f3b8-42d1-bf68-294c61b74585" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("70e74c65-f3b8-42d1-bf68-294c61b74585")) {                    Plotly.newPlot(                        "70e74c65-f3b8-42d1-bf68-294c61b74585",                        [{"customdata":["Profitable","Profitable","Profitable","Loss-making","Loss-making","Loss-making","Loss-making","Loss-making","Loss-making","Recovery"],"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eProfit: \u20ac%{y:.2f}M\u003cbr\u003ePhase: %{customdata}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#1e7e34","#1e7e34","#1e7e34","#c8102e","#c8102e","#c8102e","#c8102e","#c8102e","#c8102e","#d4a017"]},"showlegend":false,"text":["\u20ac+0.42M","\u20ac+0.51M","\u20ac+0.38M","\u20ac-0.18M","\u20ac-0.31M","\u20ac-0.42M","\u20ac-0.55M","\u20ac-0.48M","\u20ac-0.36M","\u20ac+1.13M"],"textfont":{"size":10},"textposition":"outside","x":{"dtype":"i2","bdata":"3wfgB+EH4gfjB+QH5QfmB+cH6Ac="},"y":{"dtype":"f8","bdata":"4XoUrkfh2j9SuB6F61HgP1K4HoXrUdg\u002fCtejcD0Kx7\u002fXo3A9CtfTv+F6FK5H4dq\u002fmpmZmZmZ4b+4HoXrUbjevwrXo3A9Cte\u002fFK5H4XoU8j8="},"type":"bar"},{"marker":{"color":"#1e7e34"},"name":"Profitable","showlegend":true,"x":[null],"y":[null],"type":"bar"},{"marker":{"color":"#c8102e"},"name":"Loss-making","showlegend":true,"x":[null],"y":[null],"type":"bar"},{"marker":{"color":"#d4a017"},"name":"Recovery","showlegend":true,"x":[null],"y":[null],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"shapes":[{"line":{"color":"#1a1a1a","width":1.5},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"margin":{"l":20,"r":20,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"showgrid":false,"dtick":1},"yaxis":{"title":{"text":"Net profit \u002f loss (\u20ac millions)"},"showgrid":true,"gridcolor":"#eee","range":[-0.8,1.5]},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0},"height":420,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('70e74c65-f3b8-42d1-bf68-294c61b74585');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-asia-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Asia 10-year profit pattern. Three distinct phases: an early profitable period (2015 to 2017) on disciplined portfolio management, a sustained loss-making period (2018 to 2023) driven by aggressive discounting and persistence with loss-making lines, and a 2024 recovery as the portfolio tightened.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The 2018 to 2023 period coincided with two compounding decisions: aggressive online discounting (Asia’s online channel dominates the regional sales mix) and continued investment in product lines that were structurally unprofitable for the region (flight tickets, insurance, printers, certain tech devices). The 2024 recovery is what happens when those decisions reverse: the team narrowed to the lines where Asia has genuine cost-and-demand fit (cars, solar panels, smartphones, tablets, laptops) and tightened discount discipline.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="The Asia lesson generalises">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The Asia lesson generalises
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The phrase “high revenue, near-zero profit” is a useful diagnostic flag for any consumer business. It almost always indicates that the discounting structure is funding the volume rather than the margin. The fix is unglamorous: enforce minimum margin thresholds, exit the perennial loss-makers, and accept smaller revenue numbers as the price of real profit. Asia’s 2024 numbers show the trade is worth making.</p>
+</div>
+</div>
+</section>
+<section id="where-production-should-actually-happen" class="level2">
+<h2 class="anchored" data-anchor-id="where-production-should-actually-happen">4. Where production should actually happen</h2>
+<p>The team’s central commercial recommendation was an outsourcing strategy based on regional cost advantage at the product level. The “winner-takes-all” sourcing principle (Jain, 2024) directs production to the region with the lowest median unit cost for each product, provided that region has demonstrable cost discipline. Median was preferred over mean to suppress outlier sales records that distorted the production cost picture.</p>
+<div id="cell-fig-cost-leaders" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>cost_data <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Region"</span>:       [<span class="st">"South America"</span>, <span class="st">"Asia"</span>,   <span class="st">"Europe"</span>,  <span class="st">"North America"</span>, <span class="st">"Africa"</span>],</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Technology"</span>:   [<span class="fl">339.66</span>,          <span class="fl">346.90</span>,   <span class="fl">471.20</span>,    <span class="fl">458.30</span>,          <span class="fl">512.40</span>],</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Construction"</span>: [<span class="fl">430.10</span>,          <span class="fl">445.50</span>,   <span class="fl">511.81</span>,    <span class="fl">373.25</span>,          <span class="fl">495.80</span>],</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Transport"</span>:    [<span class="fl">411.50</span>,          <span class="fl">425.30</span>,   <span class="fl">380.49</span>,    <span class="fl">351.83</span>,          <span class="fl">478.20</span>],</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> {</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Technology"</span>:   <span class="st">"#1e7e34"</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Construction"</span>: <span class="st">"#4a90a4"</span>,</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Transport"</span>:    <span class="st">"#d4a017"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> category, colour <span class="kw">in</span> categories.items():</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    fig.add_trace(go.Bar(</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>cost_data[<span class="st">"Region"</span>], y<span class="op">=</span>cost_data[category],</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span>category,</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span>colour),</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        text<span class="op">=</span>[<span class="ss">f"€</span><span class="sc">{</span>v<span class="sc">:.0f}</span><span class="ss">"</span> <span class="cf">for</span> v <span class="kw">in</span> cost_data[category]],</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">10</span>),</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">"group"</span>,</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">440</span>,</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Median unit cost (€)"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, <span class="bu">range</span><span class="op">=</span>[<span class="dv">300</span>, <span class="dv">600</span>]),</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=</span><span class="fl">1.02</span>, x<span class="op">=</span><span class="dv">0</span>),</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-cost-leaders" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cost-leaders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="223e218d-2cff-4199-bfc2-31124cceac96" class="plotly-graph-div" style="height:440px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("223e218d-2cff-4199-bfc2-31124cceac96")) {                    Plotly.newPlot(                        "223e218d-2cff-4199-bfc2-31124cceac96",                        [{"marker":{"color":"#1e7e34"},"name":"Technology","text":["\u20ac340","\u20ac347","\u20ac471","\u20ac458","\u20ac512"],"textfont":{"size":10},"textposition":"outside","x":["South America","Asia","Europe","North America","Africa"],"y":{"dtype":"f8","bdata":"w\u002fUoXI86dUBmZmZmZq51QDMzMzMzc31AzczMzMykfEAzMzMzMwOAQA=="},"type":"bar"},{"marker":{"color":"#4a90a4"},"name":"Construction","text":["\u20ac430","\u20ac446","\u20ac512","\u20ac373","\u20ac496"],"textfont":{"size":10},"textposition":"outside","x":["South America","Asia","Europe","North America","Africa"],"y":{"dtype":"f8","bdata":"mpmZmZnhekAAAAAAANh7QClcj8L1\u002fH9AAAAAAABUd0DNzMzMzPx+QA=="},"type":"bar"},{"marker":{"color":"#d4a017"},"name":"Transport","text":["\u20ac412","\u20ac425","\u20ac380","\u20ac352","\u20ac478"],"textfont":{"size":10},"textposition":"outside","x":["South America","Asia","Europe","North America","Africa"],"y":{"dtype":"f8","bdata":"AAAAAAC4eUDNzMzMzJR6QKRwPQrXx3dA4XoUrkf9dUAzMzMzM+N9QA=="},"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"margin":{"l":20,"r":20,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"showgrid":false},"yaxis":{"title":{"text":"Median unit cost (\u20ac)"},"showgrid":true,"gridcolor":"#eee","range":[300,600]},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0},"barmode":"group","height":440,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('223e218d-2cff-4199-bfc2-31124cceac96');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cost-leaders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Median unit cost by region across the three product categories, 2021 to 2024. South America leads on Technology, Europe leads on demand for Construction (and is the only profitable region in that category), North America leads on absolute Transport unit cost. Africa is the structural cost-disadvantage region across the board.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The recommendation collapses to: <strong>Technology → South America and Asia</strong>, <strong>Construction (building materials) → Europe</strong> (because it leads on demand and was the only profitable Construction region), <strong>Solar panels → South America</strong> (cheapest at €273.42 per unit), <strong>Cars and flight tickets → North America</strong>, <strong>Insurance plans → Europe</strong>. Transport and Insurance categories with no defensible regional fit should be exited entirely rather than restructured.</p>
+</section>
+<section id="predictive-forecast-from-8.46m-loss-to-3.09m-profit" class="level2">
+<h2 class="anchored" data-anchor-id="predictive-forecast-from-8.46m-loss-to-3.09m-profit">5. Predictive forecast: from €8.46M loss to €3.09M profit</h2>
+<p>The predictive layer asked whether the outsourcing recommendation would actually restore profitability if implemented. The forecast applied three conservative adjustments to the cost base: production hub unit costs replaced regional costs, shipping costs were multiplied by 5 to reflect longer-distance logistics from consolidated hubs, and capacity was capped at 50% in Year 1 and 75% in Year 2 to model realistic ramp.</p>
+<div id="cell-fig-forecast" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>forecast <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Year"</span>:     [<span class="st">"Year 1 (50</span><span class="sc">% c</span><span class="st">apacity)"</span>, <span class="st">"Year 2 (75</span><span class="sc">% c</span><span class="st">apacity)"</span>, <span class="st">"Year 3 (full capacity)"</span>],</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Revenue"</span>:  [<span class="fl">3.12</span>, <span class="fl">4.68</span>, <span class="fl">6.22</span>],</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Profit"</span>:   [<span class="fl">1.55</span>, <span class="fl">2.32</span>, <span class="fl">3.09</span>],</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Margin"</span>:   [<span class="fl">49.7</span>, <span class="fl">49.6</span>, <span class="fl">49.7</span>],</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>forecast[<span class="st">"Year"</span>], y<span class="op">=</span>forecast[<span class="st">"Revenue"</span>],</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Revenue (€M)"</span>,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#4a90a4"</span>),</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"€</span><span class="sc">{</span>v<span class="sc">:.2f}</span><span class="ss">M"</span> <span class="cf">for</span> v <span class="kw">in</span> forecast[<span class="st">"Revenue"</span>]],</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Bar(</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>forecast[<span class="st">"Year"</span>], y<span class="op">=</span>forecast[<span class="st">"Profit"</span>],</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Net profit (€M)"</span>,</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"#1e7e34"</span>),</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    text<span class="op">=</span>[<span class="ss">f"€</span><span class="sc">{</span>v<span class="sc">:.2f}</span><span class="ss">M"</span> <span class="cf">for</span> v <span class="kw">in</span> forecast[<span class="st">"Profit"</span>]],</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    textposition<span class="op">=</span><span class="st">"outside"</span>,</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>),</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, year <span class="kw">in</span> <span class="bu">enumerate</span>(forecast[<span class="st">"Year"</span>]):</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    fig.add_annotation(</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>year, y<span class="op">=</span>forecast[<span class="st">"Revenue"</span>].iloc[i] <span class="op">+</span> <span class="fl">0.5</span>,</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>        text<span class="op">=</span><span class="ss">f"&lt;b&gt;</span><span class="sc">{</span>forecast[<span class="st">'Margin'</span>]<span class="sc">.</span>iloc[i]<span class="sc">:.1f}</span><span class="ss">% margin&lt;/b&gt;"</span>,</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>        showarrow<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>        font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">11</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">"group"</span>,</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">440</span>,</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">20</span>, r<span class="op">=</span><span class="dv">20</span>, t<span class="op">=</span><span class="dv">20</span>, b<span class="op">=</span><span class="dv">30</span>),</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    paper_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">"rgba(0,0,0,0)"</span>,</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>    font<span class="op">=</span><span class="bu">dict</span>(family<span class="op">=</span><span class="st">"Inter, sans-serif"</span>, color<span class="op">=</span><span class="st">"#1a1a1a"</span>),</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(showgrid<span class="op">=</span><span class="va">False</span>),</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"€ millions"</span>, showgrid<span class="op">=</span><span class="va">True</span>, gridcolor<span class="op">=</span><span class="st">"#eee"</span>, <span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>, <span class="dv">8</span>]),</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(orientation<span class="op">=</span><span class="st">"h"</span>, yanchor<span class="op">=</span><span class="st">"bottom"</span>, y<span class="op">=</span><span class="fl">1.02</span>, x<span class="op">=</span><span class="dv">0</span>),</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-forecast" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-forecast-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="947c5bce-ff38-4246-b364-67a2b831a28d" class="plotly-graph-div" style="height:440px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("947c5bce-ff38-4246-b364-67a2b831a28d")) {                    Plotly.newPlot(                        "947c5bce-ff38-4246-b364-67a2b831a28d",                        [{"marker":{"color":"#4a90a4"},"name":"Revenue (\u20acM)","text":["\u20ac3.12M","\u20ac4.68M","\u20ac6.22M"],"textfont":{"size":11},"textposition":"outside","x":["Year 1 (50% capacity)","Year 2 (75% capacity)","Year 3 (full capacity)"],"y":{"dtype":"f8","bdata":"9ihcj8L1CEC4HoXrUbgSQOF6FK5H4RhA"},"type":"bar"},{"marker":{"color":"#1e7e34"},"name":"Net profit (\u20acM)","text":["\u20ac1.55M","\u20ac2.32M","\u20ac3.09M"],"textfont":{"size":11},"textposition":"outside","x":["Year 1 (50% capacity)","Year 2 (75% capacity)","Year 3 (full capacity)"],"y":{"dtype":"f8","bdata":"zczMzMzM+D+PwvUoXI8CQLgehetRuAhA"},"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"annotations":[{"font":{"color":"#1a1a1a","size":11},"showarrow":false,"text":"\u003cb\u003e49.7% margin\u003c\u002fb\u003e","x":"Year 1 (50% capacity)","y":3.62},{"font":{"color":"#1a1a1a","size":11},"showarrow":false,"text":"\u003cb\u003e49.6% margin\u003c\u002fb\u003e","x":"Year 2 (75% capacity)","y":5.18},{"font":{"color":"#1a1a1a","size":11},"showarrow":false,"text":"\u003cb\u003e49.7% margin\u003c\u002fb\u003e","x":"Year 3 (full capacity)","y":6.72}],"margin":{"l":20,"r":20,"t":20,"b":30},"font":{"family":"Inter, sans-serif","color":"#1a1a1a"},"xaxis":{"showgrid":false},"yaxis":{"title":{"text":"\u20ac millions"},"showgrid":true,"gridcolor":"#eee","range":[0,8]},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0},"barmode":"group","height":440,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('947c5bce-ff38-4246-b364-67a2b831a28d');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-forecast-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Three-year predictive forecast under the outsourcing recommendation. Year 1 returns to modest profit (€1.55M) at 50% capacity, Year 2 expands at 75% capacity, and Year 3 hits a €3.09M annual profit at full capacity (49.7% margin). The reference line is the €8.46M cumulative loss the company is starting from.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Technology accounts for €7.75M of the €15.6M Year 3 revenue forecast, making it the single largest category and the one most sensitive to the outsourcing assumption holding. Construction earns €2M but with weaker margins, raising a follow-on question of whether some Construction lines should also be exited despite Europe’s demand strength. Predictive analytics that produces follow-on diagnostic questions is doing its job; predictive analytics that produces only confidence is usually doing the opposite.</p>
+</section>
+<section id="the-analytical-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="the-analytical-pipeline">6. The analytical pipeline</h2>
+<p>The three layers of the engagement (descriptive, diagnostic, predictive) follow a deliberate sequence. Each layer is constrained to questions the data can actually answer at its level of resolution, and recommendations are produced only at the predictive layer, after the diagnostic has surfaced the causal structure.</p>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>flowchart TB</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    A[Raw dataset&lt;br/&gt;10 years · 5 regions · 10 products] --&gt; B[Data cleaning&lt;br/&gt;Removed redundant fields&lt;br/&gt;Region-country mismatches&lt;br/&gt;Sales rep scope limitations]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    B --&gt; C[&lt;b&gt;Descriptive layer&lt;/b&gt;&lt;br/&gt;What happened?&lt;br/&gt;€130.7M revenue · €139.1M cost&lt;br/&gt;€8.46M net loss · 39% loss-making units]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    C --&gt; D[&lt;b&gt;Diagnostic layer&lt;/b&gt;&lt;br/&gt;Why did it happen?&lt;br/&gt;Regional cost structures&lt;br/&gt;Discount discipline&lt;br/&gt;Channel mix · Portfolio composition]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    D --&gt; E[&lt;b&gt;Recommendations&lt;/b&gt;&lt;br/&gt;Outsourcing strategy&lt;br/&gt;Winner-takes-all sourcing&lt;br/&gt;Discontinue persistent loss-makers]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    E --&gt; F[&lt;b&gt;Predictive layer&lt;/b&gt;&lt;br/&gt;Will it work?&lt;br/&gt;3-year forecast · €3.09M profit&lt;br/&gt;49.7% margin at full capacity]</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    F --&gt; G[&lt;b&gt;Industry benchmarks&lt;/b&gt;&lt;br/&gt;Apple sustainability practices&lt;br/&gt;Cool Planet operational model&lt;br/&gt;Plausibility check on recommendations]</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    style C fill:#fff3e0,stroke:#e65100,color:#1a1a1a</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    style E fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    style F fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    style G fill:#fff8e1,stroke:#f9a825,color:#1a1a1a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-pipeline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-pipeline">flowchart TB
+    A[Raw dataset&lt;br/&gt;10 years · 5 regions · 10 products] --&gt; B[Data cleaning&lt;br/&gt;Removed redundant fields&lt;br/&gt;Region-country mismatches&lt;br/&gt;Sales rep scope limitations]
+    B --&gt; C[&lt;b&gt;Descriptive layer&lt;/b&gt;&lt;br/&gt;What happened?&lt;br/&gt;€130.7M revenue · €139.1M cost&lt;br/&gt;€8.46M net loss · 39% loss-making units]
+    C --&gt; D[&lt;b&gt;Diagnostic layer&lt;/b&gt;&lt;br/&gt;Why did it happen?&lt;br/&gt;Regional cost structures&lt;br/&gt;Discount discipline&lt;br/&gt;Channel mix · Portfolio composition]
+    D --&gt; E[&lt;b&gt;Recommendations&lt;/b&gt;&lt;br/&gt;Outsourcing strategy&lt;br/&gt;Winner-takes-all sourcing&lt;br/&gt;Discontinue persistent loss-makers]
+    E --&gt; F[&lt;b&gt;Predictive layer&lt;/b&gt;&lt;br/&gt;Will it work?&lt;br/&gt;3-year forecast · €3.09M profit&lt;br/&gt;49.7% margin at full capacity]
+    F --&gt; G[&lt;b&gt;Industry benchmarks&lt;/b&gt;&lt;br/&gt;Apple sustainability practices&lt;br/&gt;Cool Planet operational model&lt;br/&gt;Plausibility check on recommendations]
+
+    style C fill:#fff3e0,stroke:#e65100,color:#1a1a1a
+    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a
+    style E fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
+    style F fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a
+    style G fill:#fff8e1,stroke:#f9a825,color:#1a1a1a
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Three-layer analytical pipeline. Each layer answers a distinct kind of question. Recommendations are produced after the diagnostic layer, not before, because pre-diagnostic recommendations tend to be reversion to consultant defaults rather than dataset-led.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="what-i-was-responsible-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-was-responsible-for">What I was responsible for</h2>
+<div class="pb-role-grid">
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Asia regional analysis</div>
+    <div class="pb-role-card__body">Owned the diagnostic for the Asia region: the 10-year revenue versus profit gap, the 2018 to 2023 loss-making period, and the 2024 recovery driven by portfolio narrowing and discount discipline.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Cross-regional synthesis</div>
+    <div class="pb-role-card__body">Contributed to the cross-regional comparison work, particularly the median unit cost analysis that underpins the outsourcing recommendation, working alongside the four other regional leads.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Power BI deliverable</div>
+    <div class="pb-role-card__body">Built dashboard pages and DAX measures for Asia within the team's Power BI report. Star schema modelling, KPI cards (YoY, MoM, rolling 12-month), drill-through navigation between regional and product views.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Predictive layer support</div>
+    <div class="pb-role-card__body">Supported the predictive forecast methodology, particularly the capacity-ramp assumption (50% / 75% / 100%) and the shipping cost adjustment that prevents the forecast from over-claiming under hub consolidation.</div>
+  </div>
+</div>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This was the first project of my degree where the analytical work was the entire point of the deliverable. Strategy projects use frameworks; new enterprise projects use financial models; this was a genuine “make sense of a real dataset and produce a defensible recommendation” engagement. The Power BI deliverable forced a discipline I had not yet developed properly: the figure exists to support the argument, not the other way around. Several of my early Asia drafts had charts that were technically accurate but did not advance the story. Cutting those was harder than producing them.</p>
+<p>The Asia finding (highest revenue, near-zero profit) was the moment the dataset taught me something I would not have arrived at by reasoning alone. Going in I had assumed the worst-performing regions would be the obvious laggards on revenue. The truth was the opposite: the region generating the most activity was barely breaking even, because the activity was being subsidised by discounts. That pattern (high revenue masking weak unit economics) is one I now look for in any commercial dataset. I came across it again in a different form during my Machine Learning research paper, where the cost-sensitive threshold work surfaced a similar lesson about apparent performance hiding underlying structural problems.</p>
+<p>Working in a five-person consulting team was also instructive. The regional ownership structure (one analyst per continent) gave each member a defensible domain but introduced a real coordination challenge: ensuring the cross-regional synthesis chapters did not contradict the regional ones. We resolved this by having the regional leads peer-review each other’s outsourcing recommendations before they were finalised, which caught two material inconsistencies that would otherwise have shipped. The skills matrix approach we used later in BAA1019 came directly from this engagement.</p>
+<p>Rebuilding the Power BI exhibits as Plotly charts for this portfolio was a separate exercise from the module itself. Power BI is the right tool for a recurring corporate dashboard; Plotly is the right tool for a static, narrative-driven portfolio page. Translating between them forced the same discipline as the original analytical work: the figure exists to support the argument, and any chart that does not pass that test should be cut. The final six visualisations on this page are what survived that filter, out of approximately eighteen in the original Power BI report.</p>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <div class="pb-downloads">
   <a href="../../images/pdfs/Data analytics group project.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View Report</a>
   <a href="../../images/pdfs/EcoEnergy-Corp-Global-Sustainable-Infrastructure ptp.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Slides</a>
   <a href="../../images/pdfs/Power Bi Group Project powerbi.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Dashboard</a>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function toggleAll(show) {
+    document.querySelectorAll('.cell > details').forEach(function (d) {
+      if (show) { d.open = true; } else { d.removeAttribute('open'); }
+    });
+  }
+  var showBtn = document.getElementById('quarto-show-all-code');
+  var hideBtn = document.getElementById('quarto-hide-all-code');
+  if (showBtn) showBtn.addEventListener('click', function () { toggleAll(true); });
+  if (hideBtn) hideBtn.addEventListener('click', function () { toggleAll(false); });
+});
+</script>
 
+
+</section>
 
 </main> <!-- /main -->
 <button id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -498,6 +1124,57 @@ ul.task-list li input[type="checkbox"] {
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);

@@ -43,11 +43,11 @@
   categories: [Personal]
   path: "list/bathstore.qmd"
 
-- title: "Data Analytics"
-  description: "Data analytics project."
+- title: "EcoEnergy Corp profitability turnaround"
+  description: "BAA1026 Data Analytics group project. Lead Analyst for Asia in a five-person team that built a Power BI consulting deliverable diagnosing EcoEnergy Corp's €8.46M net loss and forecasting a turnaround to €3.09M annual profit."
   author: "Aleksander Lupa"
-  date: "2025-01-01"
-  categories: [Academic]
+  date: "2025-11-15"
+  categories: [BAA1026, Academic]
   path: "list/data-analytics.qmd"
 
 - title: "Fitness Journey"

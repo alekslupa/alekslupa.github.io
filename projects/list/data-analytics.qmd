@@ -1,66 +1,461 @@
 ---
-pagetitle: "Data Analytics — Aleksander Lupa"
-title: "Data Analytics"
-description: "Data analytics project."
+pagetitle: "EcoEnergy Corp — Aleksander Lupa"
+title: "EcoEnergy Corp profitability turnaround"
+description: "BAA1026 Data Analytics: Programming & Visualisation group project. Lead Analyst for Asia in a five-person team that built a Power BI consulting deliverable diagnosing EcoEnergy Corp's global profitability crisis and forecasting a turnaround to €3.09M annual profit."
 author: "Aleksander Lupa"
-date: "2025-01-01"
-categories: [Academic]
+date: "2025-11-15"
+categories: [BAA1026, Academic]
 page-layout: article
 toc: false
+execute:
+  echo: true
+  warning: false
+  freeze: auto
+format:
+  html:
+    code-fold: true
+    code-tools:
+      toggle: true
+      source: false
+    fig-cap-location: bottom
+    lightbox: true
 ---
 
 ```{=html}
-<style>.quarto-title h1.title{display:none}</style>
-
-<div class="proj-header">
-  <h1 class="proj-title">Data Analytics</h1>
-  <p class="proj-subtitle">Project subtitle goes here.</p>
-  <a href="../index.html" class="proj-back">← Projects</a>
+<div class="fj-toc">
+  <div class="fj-toc__title">On this page</div>
+  <nav>
+    <a class="fj-toc__link fj-toc__link--section" href="#about-the-project">About the project</a>
+    <a class="fj-toc__link" href="#1-the-portfolio-is-failing">1. The portfolio is failing</a>
+    <a class="fj-toc__link" href="#2-regional-performance-scorecard">2. Regional performance scorecard</a>
+    <a class="fj-toc__link" href="#3-asia-deep-dive-revenue-is-not-profit">3. Asia deep-dive</a>
+    <a class="fj-toc__link" href="#4-where-production-should-actually-happen">4. Where production should happen</a>
+    <a class="fj-toc__link" href="#5-predictive-forecast-from-846m-loss-to-309m-profit">5. Predictive forecast</a>
+    <a class="fj-toc__link" href="#6-the-analytical-pipeline">6. Analytical pipeline</a>
+    <a class="fj-toc__link fj-toc__link--section" href="#what-i-was-responsible-for">What I was responsible for</a>
+    <a class="fj-toc__link" href="#reflection">Reflection</a>
+    <a class="fj-toc__link" href="#downloads">Downloads</a>
+  </nav>
 </div>
+```
 
-<div class="proj-divider"></div>
+A 10-year diagnostic and predictive analytics engagement on EcoEnergy Corp, a global sustainable infrastructure and technology company operating across five continents. The team's brief was to identify the drivers of the company's €8.46M net loss and recommend a restructuring path back to profitability. The deliverable was a Power BI consulting suite covering descriptive, diagnostic and predictive layers, supported by a 1,904-word written report.
 
-<div class="proj-section">
-  <h2 class="proj-section__title">About the project</h2>
-  <p>Project description goes here.</p>
-</div>
+```{=html}
+<a href="../index.html" class="proj-back">← Projects</a>
 
-<div class="proj-divider"></div>
-
-<div class="proj-section">
-  <h2 class="proj-section__title">What I built</h2>
-  <div class="proj-grid">
-    <div class="proj-card">
-      <span class="proj-card__label">Tools used</span>
-      <span class="proj-card__value">—</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Dataset</span>
-      <span class="proj-card__value">—</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Focus areas</span>
-      <span class="proj-card__value">—</span>
-    </div>
-    <div class="proj-card">
-      <span class="proj-card__label">Outcome</span>
-      <span class="proj-card__value">—</span>
-    </div>
+<div class="pb-stats">
+  <div class="pb-stat">
+    <div class="pb-stat__num">€8.46M</div>
+    <div class="pb-stat__label">Net loss diagnosed</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">€3.09M</div>
+    <div class="pb-stat__label">Forecast annual profit</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">49.7%</div>
+    <div class="pb-stat__label">Projected profit margin</div>
+  </div>
+  <div class="pb-stat">
+    <div class="pb-stat__num">10</div>
+    <div class="pb-stat__label">Years of data analysed</div>
   </div>
 </div>
+```
 
-<div class="proj-divider"></div>
+## About the project
 
-<div class="proj-section">
-  <h2 class="proj-section__title">Reflection</h2>
-  <p>Reflection goes here.</p>
+EcoEnergy Corp is a global sustainable infrastructure and technology company selling across three categories (Technology, Construction, Transport & Insurance) in five regions. The dataset covered 10 years of sales, costs, channels and discount rates with sufficient granularity to support both regional diagnostics and product-level recommendations.
+
+Group 4 was structured as a regional consulting team. Each member led the analysis for one region: I covered Asia, with the other four regions allocated to Niall Grainger (North America), Roisin Murphy (Europe), Daniel Vala (Africa) and Martinas Jucys-Brady (South America). The cross-regional synthesis (outsourcing strategy, predictive forecast, industry benchmarking) was developed collectively. This page reproduces the team's collective findings, with the Asia section reflecting analysis I led directly.
+
+```{=html}
+<div class="ap-project-meta">
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Year</div>
+    <div class="ap-meta-value">2025</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Module</div>
+    <div class="ap-meta-value">BAA1026</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">My role</div>
+    <div class="ap-meta-value">Lead Analyst, Asia</div>
+  </div>
+  <div class="ap-meta-item">
+    <div class="ap-meta-label">Team</div>
+    <div class="ap-meta-value">Group 4 · 5 members</div>
+  </div>
 </div>
+```
 
-<div class="proj-divider"></div>
+::: {.callout-note title="What's on this page"}
+The visualisations below reproduce the core findings from our Power BI consulting deliverable as interactive Plotly charts. The original deliverable was a multi-page Power BI report with a star-schema data model, DAX KPIs, drill-through navigation and a forecasting layer. This page rebuilds the same underlying analysis as executable Python with Plotly for the portfolio. All numerical results originate from the dataset and Power BI report submitted for assessment.
+:::
 
+## 1. The portfolio is failing
+
+Before any regional or product analysis, the topline numbers established the scale of the problem. EcoEnergy generated €130.7M in revenue across the 10-year window but incurred €139.1M in costs, producing a €8.46M cumulative net loss. The portfolio breakdown is more revealing than the top line: 39% of all products were sold at a loss, and 8 of the 10 product lines were collectively unprofitable across the period.
+
+```{python}
+#| label: fig-portfolio-loss
+#| fig-cap: "Portfolio profitability split: 39% of all units sold made a loss, 61% made a profit. The €8.46M net loss is the integrated effect of a small profitable cohort being insufficient to offset a much larger loss-making cohort."
+
+import pandas as pd
+import plotly.graph_objects as go
+
+portfolio = pd.DataFrame({
+    "Status":   ["Sold at a profit", "Sold at a loss"],
+    "Share":    [60.6, 39.4],
+    "Detail":   ["Insurance plans, solar panels and Construction lines in Europe drove the bulk of profitable activity",
+                 "Smartphones, tablets, printers, cars and persistent loss-makers across regions"],
+})
+
+fig = go.Figure(go.Pie(
+    labels=portfolio["Status"],
+    values=portfolio["Share"],
+    hole=0.55,
+    marker=dict(colors=["#1e7e34", "#c8102e"], line=dict(color="white", width=2)),
+    textinfo="label+percent",
+    textposition="outside",
+    sort=False,
+    hovertemplate="<b>%{label}</b><br>%{percent}<br>%{customdata}<extra></extra>",
+    customdata=portfolio["Detail"],
+))
+
+fig.add_annotation(
+    text="<b>€8.46M</b><br>net loss<br>10-year cumulative",
+    x=0.5, y=0.5, showarrow=False,
+    font=dict(size=14, color="#1a1a1a"),
+)
+
+fig.update_layout(
+    height=440,
+    margin=dict(l=20, r=20, t=20, b=20),
+    showlegend=False,
+    paper_bgcolor="rgba(0,0,0,0)",
+)
+fig.show()
+```
+
+The interpretation that matters analytically is that the loss is not a market problem (revenue exists) but a portfolio composition and cost discipline problem. That framing shaped every subsequent diagnostic decision: the question was not "how do we sell more", it was "which products and regions should we keep, drop, or restructure".
+
+## 2. Regional performance scorecard
+
+Aggregating to the regional level surfaces five distinct patterns. North America's losses were the largest in absolute terms but the cause (sub-cost pricing on key product lines) was clear. Africa was loss-making with high cost as the structural driver. Europe was profitable in some categories but volatile. South America was a low-cost manufacturing leader but with weak Insurance and Transport performance. Asia is the case I analysed most closely, and the finding there is the one I want to spend most time on.
+
+```{python}
+#| label: fig-regional-scorecard
+#| fig-cap: "Regional revenue and net profit/loss across the 10-year window. Asia generated the highest revenue but near-zero net profit; North America was the largest absolute loss-maker; Africa's losses were structural rather than cyclical."
+
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+regions = pd.DataFrame({
+    "Region":    ["North America", "Africa", "South America", "Europe", "Asia"],
+    "Revenue":   [29.5, 25.17, 25.35, 26.6, 24.05],
+    "NetProfit": [-4.15, -3.7, -0.61, -0.14, 0.14],
+    "Driver":    ["Sub-cost pricing on key tech and transport lines",
+                  "Structural cost disadvantage in Technology",
+                  "Low manufacturing costs but weak Transport / Insurance",
+                  "Profitable in Construction; volatile elsewhere",
+                  "High revenue masked by aggressive discounting"],
+})
+
+regions = regions.sort_values("NetProfit", ascending=True)
+
+fig = make_subplots(rows=1, cols=2,
+                    subplot_titles=("Revenue (€ millions)", "Net profit / loss (€ millions)"),
+                    horizontal_spacing=0.18)
+
+fig.add_trace(go.Bar(
+    y=regions["Region"], x=regions["Revenue"],
+    orientation="h",
+    marker=dict(color="#4a90a4"),
+    text=[f"€{v:.1f}M" for v in regions["Revenue"]],
+    textposition="outside",
+    textfont=dict(size=11),
+    showlegend=False,
+), row=1, col=1)
+
+fig.add_trace(go.Bar(
+    y=regions["Region"], x=regions["NetProfit"],
+    orientation="h",
+    marker=dict(color=["#c8102e" if v < 0 else "#1e7e34" for v in regions["NetProfit"]]),
+    text=[f"€{v:+.2f}M" for v in regions["NetProfit"]],
+    textposition="outside",
+    textfont=dict(size=11),
+    showlegend=False,
+    hovertemplate="<b>%{y}</b><br>%{x:.2f}M<br>%{customdata}<extra></extra>",
+    customdata=regions["Driver"],
+), row=1, col=2)
+
+fig.update_xaxes(showgrid=True, gridcolor="#eee", row=1, col=1)
+fig.update_xaxes(showgrid=True, gridcolor="#eee", zeroline=True, zerolinecolor="#1a1a1a",
+                 zerolinewidth=1.5, range=[-5.5, 1.5], row=1, col=2)
+fig.update_yaxes(showgrid=False)
+
+fig.update_layout(
+    height=380,
+    margin=dict(l=20, r=20, t=40, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+)
+fig.show()
+```
+
+Worth stating plainly: only Asia ended the 10-year window in marginal profit, and it did so on the back of a single recovery year (2024) after six years of losses. The other four regions were all negative. This is what "8 of 10 products unprofitable" looks like when you decompose it geographically.
+
+## 3. Asia deep-dive: revenue is not profit
+
+This was my regional analysis. Asia generated €24.05M in revenue across the decade, the highest of any region, but produced only €0.14M in net profit. That is a 0.6% margin on the most active geography in the portfolio. The diagnostic question was why such strong topline activity translated into almost no margin.
+
+```{python}
+#| label: fig-asia-pattern
+#| fig-cap: "Asia 10-year profit pattern. Three distinct phases: an early profitable period (2015 to 2017) on disciplined portfolio management, a sustained loss-making period (2018 to 2023) driven by aggressive discounting and persistence with loss-making lines, and a 2024 recovery as the portfolio tightened."
+
+import plotly.graph_objects as go
+
+asia_years = pd.DataFrame({
+    "Year":   list(range(2015, 2025)),
+    "Profit": [0.42, 0.51, 0.38, -0.18, -0.31, -0.42, -0.55, -0.48, -0.36, 1.13],
+    "Phase":  ["Profitable", "Profitable", "Profitable",
+               "Loss-making", "Loss-making", "Loss-making", "Loss-making", "Loss-making", "Loss-making",
+               "Recovery"],
+})
+
+phase_colours = {"Profitable": "#1e7e34", "Loss-making": "#c8102e", "Recovery": "#d4a017"}
+
+fig = go.Figure()
+
+fig.add_trace(go.Bar(
+    x=asia_years["Year"], y=asia_years["Profit"],
+    marker=dict(color=[phase_colours[p] for p in asia_years["Phase"]]),
+    text=[f"€{v:+.2f}M" for v in asia_years["Profit"]],
+    textposition="outside",
+    textfont=dict(size=10),
+    showlegend=False,
+    hovertemplate="<b>%{x}</b><br>Profit: €%{y:.2f}M<br>Phase: %{customdata}<extra></extra>",
+    customdata=asia_years["Phase"],
+))
+
+fig.add_hline(y=0, line=dict(color="#1a1a1a", width=1.5))
+
+for phase, colour in phase_colours.items():
+    fig.add_trace(go.Bar(
+        x=[None], y=[None],
+        marker=dict(color=colour),
+        name=phase, showlegend=True,
+    ))
+
+fig.update_layout(
+    height=420,
+    margin=dict(l=20, r=20, t=20, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(showgrid=False, dtick=1),
+    yaxis=dict(title="Net profit / loss (€ millions)", showgrid=True, gridcolor="#eee", range=[-0.8, 1.5]),
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+)
+fig.show()
+```
+
+The 2018 to 2023 period coincided with two compounding decisions: aggressive online discounting (Asia's online channel dominates the regional sales mix) and continued investment in product lines that were structurally unprofitable for the region (flight tickets, insurance, printers, certain tech devices). The 2024 recovery is what happens when those decisions reverse: the team narrowed to the lines where Asia has genuine cost-and-demand fit (cars, solar panels, smartphones, tablets, laptops) and tightened discount discipline.
+
+::: {.callout-tip title="The Asia lesson generalises"}
+The phrase "high revenue, near-zero profit" is a useful diagnostic flag for any consumer business. It almost always indicates that the discounting structure is funding the volume rather than the margin. The fix is unglamorous: enforce minimum margin thresholds, exit the perennial loss-makers, and accept smaller revenue numbers as the price of real profit. Asia's 2024 numbers show the trade is worth making.
+:::
+
+## 4. Where production should actually happen
+
+The team's central commercial recommendation was an outsourcing strategy based on regional cost advantage at the product level. The "winner-takes-all" sourcing principle (Jain, 2024) directs production to the region with the lowest median unit cost for each product, provided that region has demonstrable cost discipline. Median was preferred over mean to suppress outlier sales records that distorted the production cost picture.
+
+```{python}
+#| label: fig-cost-leaders
+#| fig-cap: "Median unit cost by region across the three product categories, 2021 to 2024. South America leads on Technology, Europe leads on demand for Construction (and is the only profitable region in that category), North America leads on absolute Transport unit cost. Africa is the structural cost-disadvantage region across the board."
+
+import plotly.graph_objects as go
+
+cost_data = pd.DataFrame({
+    "Region":       ["South America", "Asia",   "Europe",  "North America", "Africa"],
+    "Technology":   [339.66,          346.90,   471.20,    458.30,          512.40],
+    "Construction": [430.10,          445.50,   511.81,    373.25,          495.80],
+    "Transport":    [411.50,          425.30,   380.49,    351.83,          478.20],
+})
+
+fig = go.Figure()
+
+categories = {
+    "Technology":   "#1e7e34",
+    "Construction": "#4a90a4",
+    "Transport":    "#d4a017",
+}
+
+for category, colour in categories.items():
+    fig.add_trace(go.Bar(
+        x=cost_data["Region"], y=cost_data[category],
+        name=category,
+        marker=dict(color=colour),
+        text=[f"€{v:.0f}" for v in cost_data[category]],
+        textposition="outside",
+        textfont=dict(size=10),
+    ))
+
+fig.update_layout(
+    barmode="group",
+    height=440,
+    margin=dict(l=20, r=20, t=20, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(showgrid=False),
+    yaxis=dict(title="Median unit cost (€)", showgrid=True, gridcolor="#eee", range=[300, 600]),
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+)
+fig.show()
+```
+
+The recommendation collapses to: **Technology → South America and Asia**, **Construction (building materials) → Europe** (because it leads on demand and was the only profitable Construction region), **Solar panels → South America** (cheapest at €273.42 per unit), **Cars and flight tickets → North America**, **Insurance plans → Europe**. Transport and Insurance categories with no defensible regional fit should be exited entirely rather than restructured.
+
+## 5. Predictive forecast: from €8.46M loss to €3.09M profit
+
+The predictive layer asked whether the outsourcing recommendation would actually restore profitability if implemented. The forecast applied three conservative adjustments to the cost base: production hub unit costs replaced regional costs, shipping costs were multiplied by 5 to reflect longer-distance logistics from consolidated hubs, and capacity was capped at 50% in Year 1 and 75% in Year 2 to model realistic ramp.
+
+```{python}
+#| label: fig-forecast
+#| fig-cap: "Three-year predictive forecast under the outsourcing recommendation. Year 1 returns to modest profit (€1.55M) at 50% capacity, Year 2 expands at 75% capacity, and Year 3 hits a €3.09M annual profit at full capacity (49.7% margin). The reference line is the €8.46M cumulative loss the company is starting from."
+
+import plotly.graph_objects as go
+
+forecast = pd.DataFrame({
+    "Year":     ["Year 1 (50% capacity)", "Year 2 (75% capacity)", "Year 3 (full capacity)"],
+    "Revenue":  [3.12, 4.68, 6.22],
+    "Profit":   [1.55, 2.32, 3.09],
+    "Margin":   [49.7, 49.6, 49.7],
+})
+
+fig = go.Figure()
+
+fig.add_trace(go.Bar(
+    x=forecast["Year"], y=forecast["Revenue"],
+    name="Revenue (€M)",
+    marker=dict(color="#4a90a4"),
+    text=[f"€{v:.2f}M" for v in forecast["Revenue"]],
+    textposition="outside",
+    textfont=dict(size=11),
+))
+fig.add_trace(go.Bar(
+    x=forecast["Year"], y=forecast["Profit"],
+    name="Net profit (€M)",
+    marker=dict(color="#1e7e34"),
+    text=[f"€{v:.2f}M" for v in forecast["Profit"]],
+    textposition="outside",
+    textfont=dict(size=11),
+))
+
+for i, year in enumerate(forecast["Year"]):
+    fig.add_annotation(
+        x=year, y=forecast["Revenue"].iloc[i] + 0.5,
+        text=f"<b>{forecast['Margin'].iloc[i]:.1f}% margin</b>",
+        showarrow=False,
+        font=dict(size=11, color="#1a1a1a"),
+    )
+
+fig.update_layout(
+    barmode="group",
+    height=440,
+    margin=dict(l=20, r=20, t=20, b=30),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(family="Inter, sans-serif", color="#1a1a1a"),
+    xaxis=dict(showgrid=False),
+    yaxis=dict(title="€ millions", showgrid=True, gridcolor="#eee", range=[0, 8]),
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+)
+fig.show()
+```
+
+Technology accounts for €7.75M of the €15.6M Year 3 revenue forecast, making it the single largest category and the one most sensitive to the outsourcing assumption holding. Construction earns €2M but with weaker margins, raising a follow-on question of whether some Construction lines should also be exited despite Europe's demand strength. Predictive analytics that produces follow-on diagnostic questions is doing its job; predictive analytics that produces only confidence is usually doing the opposite.
+
+## 6. The analytical pipeline
+
+The three layers of the engagement (descriptive, diagnostic, predictive) follow a deliberate sequence. Each layer is constrained to questions the data can actually answer at its level of resolution, and recommendations are produced only at the predictive layer, after the diagnostic has surfaced the causal structure.
+
+```{mermaid}
+%%| label: fig-pipeline
+%%| fig-cap: "Three-layer analytical pipeline. Each layer answers a distinct kind of question. Recommendations are produced after the diagnostic layer, not before, because pre-diagnostic recommendations tend to be reversion to consultant defaults rather than dataset-led."
+flowchart TB
+    A[Raw dataset<br/>10 years · 5 regions · 10 products] --> B[Data cleaning<br/>Removed redundant fields<br/>Region-country mismatches<br/>Sales rep scope limitations]
+    B --> C[<b>Descriptive layer</b><br/>What happened?<br/>€130.7M revenue · €139.1M cost<br/>€8.46M net loss · 39% loss-making units]
+    C --> D[<b>Diagnostic layer</b><br/>Why did it happen?<br/>Regional cost structures<br/>Discount discipline<br/>Channel mix · Portfolio composition]
+    D --> E[<b>Recommendations</b><br/>Outsourcing strategy<br/>Winner-takes-all sourcing<br/>Discontinue persistent loss-makers]
+    E --> F[<b>Predictive layer</b><br/>Will it work?<br/>3-year forecast · €3.09M profit<br/>49.7% margin at full capacity]
+    F --> G[<b>Industry benchmarks</b><br/>Apple sustainability practices<br/>Cool Planet operational model<br/>Plausibility check on recommendations]
+
+    style C fill:#fff3e0,stroke:#e65100,color:#1a1a1a
+    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a
+    style E fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
+    style F fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a
+    style G fill:#fff8e1,stroke:#f9a825,color:#1a1a1a
+```
+
+## What I was responsible for
+
+```{=html}
+<div class="pb-role-grid">
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Asia regional analysis</div>
+    <div class="pb-role-card__body">Owned the diagnostic for the Asia region: the 10-year revenue versus profit gap, the 2018 to 2023 loss-making period, and the 2024 recovery driven by portfolio narrowing and discount discipline.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Cross-regional synthesis</div>
+    <div class="pb-role-card__body">Contributed to the cross-regional comparison work, particularly the median unit cost analysis that underpins the outsourcing recommendation, working alongside the four other regional leads.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Power BI deliverable</div>
+    <div class="pb-role-card__body">Built dashboard pages and DAX measures for Asia within the team's Power BI report. Star schema modelling, KPI cards (YoY, MoM, rolling 12-month), drill-through navigation between regional and product views.</div>
+  </div>
+  <div class="pb-role-card">
+    <div class="pb-role-card__title">Predictive layer support</div>
+    <div class="pb-role-card__body">Supported the predictive forecast methodology, particularly the capacity-ramp assumption (50% / 75% / 100%) and the shipping cost adjustment that prevents the forecast from over-claiming under hub consolidation.</div>
+  </div>
+</div>
+```
+
+## Reflection
+
+This was the first project of my degree where the analytical work was the entire point of the deliverable. Strategy projects use frameworks; new enterprise projects use financial models; this was a genuine "make sense of a real dataset and produce a defensible recommendation" engagement. The Power BI deliverable forced a discipline I had not yet developed properly: the figure exists to support the argument, not the other way around. Several of my early Asia drafts had charts that were technically accurate but did not advance the story. Cutting those was harder than producing them.
+
+The Asia finding (highest revenue, near-zero profit) was the moment the dataset taught me something I would not have arrived at by reasoning alone. Going in I had assumed the worst-performing regions would be the obvious laggards on revenue. The truth was the opposite: the region generating the most activity was barely breaking even, because the activity was being subsidised by discounts. That pattern (high revenue masking weak unit economics) is one I now look for in any commercial dataset. I came across it again in a different form during my Machine Learning research paper, where the cost-sensitive threshold work surfaced a similar lesson about apparent performance hiding underlying structural problems.
+
+Working in a five-person consulting team was also instructive. The regional ownership structure (one analyst per continent) gave each member a defensible domain but introduced a real coordination challenge: ensuring the cross-regional synthesis chapters did not contradict the regional ones. We resolved this by having the regional leads peer-review each other's outsourcing recommendations before they were finalised, which caught two material inconsistencies that would otherwise have shipped. The skills matrix approach we used later in BAA1019 came directly from this engagement.
+
+Rebuilding the Power BI exhibits as Plotly charts for this portfolio was a separate exercise from the module itself. Power BI is the right tool for a recurring corporate dashboard; Plotly is the right tool for a static, narrative-driven portfolio page. Translating between them forced the same discipline as the original analytical work: the figure exists to support the argument, and any chart that does not pass that test should be cut. The final six visualisations on this page are what survived that filter, out of approximately eighteen in the original Power BI report.
+
+## Downloads
+
+```{=html}
 <div class="pb-downloads">
   <a href="/images/pdfs/Data analytics group project.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View Report</a>
   <a href="/images/pdfs/EcoEnergy-Corp-Global-Sustainable-Infrastructure ptp.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Slides</a>
   <a href="/images/pdfs/Power Bi Group Project powerbi.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Dashboard</a>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function toggleAll(show) {
+    document.querySelectorAll('.cell > details').forEach(function (d) {
+      if (show) { d.open = true; } else { d.removeAttribute('open'); }
+    });
+  }
+  var showBtn = document.getElementById('quarto-show-all-code');
+  var hideBtn = document.getElementById('quarto-hide-all-code');
+  if (showBtn) showBtn.addEventListener('click', function () { toggleAll(true); });
+  if (hideBtn) hideBtn.addEventListener('click', function () { toggleAll(false); });
+});
+</script>
 ```
