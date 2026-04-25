@@ -1,5 +1,6 @@
 ---
 pagetitle: "Fitness Journey — Aleksander Lupa"
+date: "2023-01-01"
 page-layout: article
 toc: false
 ---
