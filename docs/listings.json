@@ -2,9 +2,9 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/list/eportfolio.html",
       "/projects/list/data-analytics.html",
       "/projects/list/ml-python.html",
-      "/projects/list/eportfolio.html",
       "/projects/list/pricebeo.html",
       "/projects/list/superdry.html",
       "/projects/list/bathstore.html",

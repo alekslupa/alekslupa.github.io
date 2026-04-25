@@ -1,0 +1,54 @@
+---
+title: "Sligo"
+subtitle: "Hiking notes from County Sligo"
+description: "A hike in County Sligo, Ireland. Part of the Ireland map collection."
+author: "Aleksander Lupa"
+date: "2026-04-25"
+format:
+  html:
+    code-fold: false
+    code-tools: false
+    toc: false
+---
+
+[← Back to Ireland map](/ireland.html)
+
+# Sligo
+
+```{=html}
+<div class="hk-meta">
+  <div class="hk-meta__item"><span class="hk-meta__label">Route</span><span class="hk-meta__value">[name of route or mountain]</span></div>
+  <div class="hk-meta__item"><span class="hk-meta__label">Distance</span><span class="hk-meta__value">[km]</span></div>
+  <div class="hk-meta__item"><span class="hk-meta__label">Elevation gain</span><span class="hk-meta__value">[m]</span></div>
+  <div class="hk-meta__item"><span class="hk-meta__label">Date</span><span class="hk-meta__value">[when you went]</span></div>
+</div>
+```
+
+## The hike
+
+[A short paragraph about the hike: where you started, what the conditions were, what was memorable. Two or three sentences is plenty.]
+
+## Photos
+
+```{=html}
+<div class="hk-gallery">
+  <figure class="hk-gallery__item">
+    <img src="/assets/hikes/sligo/photo1.jpg" alt="Sligo hike, photo 1" />
+    <figcaption>[Caption for photo 1]</figcaption>
+  </figure>
+  <figure class="hk-gallery__item">
+    <img src="/assets/hikes/sligo/photo2.jpg" alt="Sligo hike, photo 2" />
+    <figcaption>[Caption for photo 2]</figcaption>
+  </figure>
+  <figure class="hk-gallery__item">
+    <img src="/assets/hikes/sligo/photo3.jpg" alt="Sligo hike, photo 3" />
+    <figcaption>[Caption for photo 3]</figcaption>
+  </figure>
+</div>
+```
+
+## Reflections
+
+[A short paragraph about why this hike mattered, what you took from it, anything notable about the area. Two or three sentences.]
+
+[← Back to Ireland map](/ireland.html)

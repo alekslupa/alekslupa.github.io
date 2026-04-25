@@ -3956,3 +3956,263 @@ h2#outside-the-work {
     color: #aaa;
   }
 }
+
+a.ab-beyond__item--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+    text-decoration: none;
+  }
+}
+
+// =============================================================================
+// Ireland map page additions
+// =============================================================================
+
+.ie-map-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.ie-map-stage {
+  position: relative;
+  width: 100%;
+  background: #f5f7f9;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+#ie-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ie-county {
+  fill: #d8dde2;
+  stroke: #ffffff;
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  transition: fill 0.15s ease;
+}
+
+.ie-county:hover {
+  fill: #b9c1c8;
+}
+
+.ie-county--clickable {
+  fill: #1e7e34;
+  cursor: pointer;
+}
+
+.ie-county--clickable:hover {
+  fill: #145523;
+  filter: drop-shadow(0 4px 10px rgba(30, 126, 52, 0.3));
+}
+
+.ie-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  white-space: nowrap;
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ie-legend {
+  background: var(--bs-body-bg);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.6rem;
+  padding: 1.25rem 1.4rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.ie-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--bs-body-color);
+}
+
+.ie-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.ie-swatch--clickable {
+  background: #1e7e34;
+}
+
+.ie-swatch--inactive {
+  background: #d8dde2;
+}
+
+.ie-legend__counties {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--bs-body-color);
+
+  strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+
+  a {
+    color: #1e7e34;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// -- Per-county hike page styling ---------------------------------------------
+
+.hk-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hk-meta__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: var(--bs-body-bg);
+}
+
+.hk-meta__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.3rem;
+}
+
+.hk-meta__value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bs-body-color);
+}
+
+.hk-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.hk-gallery__item {
+  margin: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.04);
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.03);
+  }
+
+  figcaption {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.82rem;
+    color: var(--bs-body-color);
+    opacity: 0.75;
+    line-height: 1.4;
+  }
+}
+
+// -- Dark mode ----------------------------------------------------------------
+
+.quarto-dark {
+  .ie-map-stage {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .ie-county {
+    fill: #3a4046;
+    stroke: #1a1a1a;
+  }
+
+  .ie-county:hover {
+    fill: #4d5560;
+  }
+
+  .ie-county--clickable {
+    fill: #2da549;
+  }
+
+  .ie-county--clickable:hover {
+    fill: #38c759;
+  }
+
+  .ie-legend {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .ie-legend__counties {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .ie-swatch--inactive {
+    background: #3a4046;
+  }
+
+  .hk-meta__item {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .hk-gallery__item {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}

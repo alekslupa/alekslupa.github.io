@@ -1,6 +1,108 @@
 ---
 pagetitle: "Ireland — Aleksander Lupa"
 title: "Ireland"
+description: "An interactive map of the counties of Ireland. Click a highlighted county to read about a hike I've done there."
+author: "Aleksander Lupa"
+date: "2026-04-25"
 page-layout: full
 toc: false
 ---
+
+An interactive map of the island, county by county. Click any of the highlighted counties to read about a hike I've done there. The non-highlighted counties are inactive: they're either places I haven't yet hiked or places where the trip is still on the to-do list.
+
+```{=html}
+<div class="ie-map-wrapper">
+  <div class="ie-map-stage">
+    <svg id="ie-map" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the counties of Ireland with highlighted hikes"></svg>
+    <div id="ie-tooltip" class="ie-tooltip" aria-hidden="true"></div>
+  </div>
+  <aside class="ie-legend" aria-label="Legend">
+    <div class="ie-legend__item"><span class="ie-swatch ie-swatch--clickable"></span><span>Counties with documented hikes (clickable)</span></div>
+    <div class="ie-legend__item"><span class="ie-swatch ie-swatch--inactive"></span><span>Other counties</span></div>
+    <div class="ie-legend__counties">
+      <strong>Documented:</strong>
+      <a href="/ireland/wicklow.html">Wicklow</a> ·
+      <a href="/ireland/donegal.html">Donegal</a> ·
+      <a href="/ireland/sligo.html">Sligo</a> ·
+      <a href="/ireland/mayo.html">Mayo</a> ·
+      <a href="/ireland/down.html">Down</a>
+    </div>
+  </aside>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script>
+(function () {
+  const HIKES = {
+    "Wicklow County": "/ireland/wicklow.html",
+    "Donegal County": "/ireland/donegal.html",
+    "Sligo County":   "/ireland/sligo.html",
+    "Mayo County":    "/ireland/mayo.html",
+  };
+
+  const svg = d3.select("#ie-map");
+  const tooltip = document.getElementById("ie-tooltip");
+
+  d3.json("/assets/ireland-counties.geojson").then(function (geojson) {
+    if (!geojson || !geojson.features) {
+      console.error("Ireland GeoJSON failed to load");
+      return;
+    }
+
+    const width = 800;
+    const height = 900;
+
+    const projection = d3.geoMercator().fitSize([width, height], geojson);
+    const path = d3.geoPath().projection(projection);
+
+    svg.selectAll("path")
+      .data(geojson.features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr("class", function (d) {
+        const name = d.properties.name;
+        return HIKES[name] ? "ie-county ie-county--clickable" : "ie-county";
+      })
+      .attr("data-name", function (d) { return d.properties.name; })
+      .on("mouseenter", function (event, d) {
+        const name = d.properties.name;
+        tooltip.textContent = HIKES[name]
+          ? name.replace(" County", "") + " — click to read"
+          : name.replace(" County", "");
+        tooltip.style.opacity = "1";
+        tooltip.setAttribute("aria-hidden", "false");
+      })
+      .on("mousemove", function (event) {
+        const stage = document.querySelector(".ie-map-stage").getBoundingClientRect();
+        tooltip.style.left = (event.clientX - stage.left + 14) + "px";
+        tooltip.style.top  = (event.clientY - stage.top + 14) + "px";
+      })
+      .on("mouseleave", function () {
+        tooltip.style.opacity = "0";
+        tooltip.setAttribute("aria-hidden", "true");
+      })
+      .on("click", function (event, d) {
+        const url = HIKES[d.properties.name];
+        if (url) {
+          window.location.href = url;
+        }
+      });
+  }).catch(function (err) {
+    console.error("Failed to load Ireland GeoJSON", err);
+    svg.append("text")
+      .attr("x", 400).attr("y", 450)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c8102e")
+      .attr("font-size", "14")
+      .text("Map data could not be loaded.");
+  });
+})();
+</script>
+```
+
+## How this map works
+
+This is the page closest to my BAA1028 Workflow & Data Management module's principles in spirit. The map is rendered by JavaScript at page load time. The county boundary data lives in `assets/ireland-counties.geojson` as a separate structured data file rather than being baked into the page. The clickable counties are defined declaratively in a JavaScript object at the top of the script, so adding a new hike is a one-line change plus a new sub-page. The same separation of structured data from presentation that the rest of the portfolio uses (project frontmatter, repo statistics CSVs, languages chart) applies here.
+
+The county boundary GeoJSON is sourced from the public-domain [click_that_hood](https://github.com/codeforgermany/click_that_hood) project by Code for Germany.

@@ -12,6 +12,7 @@ project:
     - "images/pdfs/Power Bi Group Project powerbi.pdf"
     - "images/pdfs/Big Enterprise - Applegreen innovation - SB104.pdf"
     - "images/pdfs/Semester 2 Final Assignment (25%) SB202.pdf"
+    - assets/ireland-counties.geojson
 
 website:
   title: "Aleksander Lupa"
@@ -25,6 +26,8 @@ website:
         text: Future Goals
       - href: achievements.qmd
         text: Achievements
+      - href: ireland.qmd
+        text: Ireland
       - href: about.qmd
         text: About
       - href: cv/Aleksander_Lupa_CV.pdf

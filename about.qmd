@@ -277,11 +277,11 @@ I'm interested in the problems where a clean dataset, a clear business question 
     <div class="ab-beyond__body">Training seriously since 2021. The sport teaches you that consistent inputs beat bursts of effort, that honest measurement is non-negotiable, and that meaningful change happens on horizons longer than most people will tolerate. I apply the same principles to analytical work; patience with a dataset tends to produce better answers than aggression with it.</div>
   </div>
 
-  <div class="ab-beyond__item">
+  <a href="/ireland.html" class="ab-beyond__item ab-beyond__item--link">
     <div class="ab-beyond__icon"><i class="bi bi-signpost-split-fill"></i></div>
     <div class="ab-beyond__title">Hiking and running</div>
     <div class="ab-beyond__body">Weekend trails around Wicklow and further afield when time allows. The combination of distance and elevation is a good antidote to screen time and produces the kind of quiet thinking space that problem-solving actually requires.</div>
-  </div>
+  </a>
 
   <div class="ab-beyond__item">
     <div class="ab-beyond__icon"><i class="bi bi-heart-fill"></i></div>
