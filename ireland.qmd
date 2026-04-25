@@ -2,8 +2,6 @@
 pagetitle: "Ireland — Aleksander Lupa"
 title: "Ireland"
 description: "An interactive map of the counties of Ireland. Click a highlighted county to read about a hike I've done there."
-author: "Aleksander Lupa"
-date: "2026-04-25"
 page-layout: full
 toc: false
 ---
