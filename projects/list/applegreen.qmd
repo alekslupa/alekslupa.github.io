@@ -1,0 +1,116 @@
+---
+pagetitle: "Applegreen Innovation — Aleksander Lupa"
+title: "Applegreen App Innovation"
+subtitle: "SB104 · Big Enterprise"
+description: "A group innovation project proposing a full redesign of the Applegreen Rewards app, backed by primary research including customer interviews, ethnographic observation, and a Google survey."
+author: "Aleksander Lupa"
+date: "2022-12-01"
+categories: [SB104, Academic]
+page-layout: article
+toc: false
+---
+
+```{=html}
+<style>.quarto-title h1.title{display:none}</style>
+
+<div class="proj-header">
+  <h1 class="proj-title">Applegreen App Innovation</h1>
+  <p class="proj-subtitle">A group project for the Big Enterprise module at DCU, proposing a data-backed redesign of the Applegreen Rewards app to better serve two key customer segments: pit stoppers and hectic commuters.</p>
+  <a href="../index.html" class="proj-back">← Projects</a>
+</div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Project goal</h2>
+  <p>The assignment required our group to identify a real innovation opportunity for a major Irish enterprise. We chose Applegreen, Ireland's largest fuel and convenience retailer, and focused our research on understanding how the existing customer experience could be improved through technology. Our central argument was that the Applegreen Rewards app, which held a 2-star average on the App Store at the time, was severely undersupplying its users and represented a clear gap in an otherwise strong brand.</p>
+  <p>Rather than pitching a vague product idea, we grounded the project in real research. We visited the Applegreen at Blackrock, Co. Dublin, conducted structured customer interviews across multiple days and times, ran a Google survey with 18 respondents, and observed customer behaviour in-store through ethnographic methods. The output was a concrete innovation proposal with a working prototype.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Research approach</h2>
+  <p>We identified two core customer segments to anchor our research: pit stoppers, who visit Applegreen primarily in the morning for fuel and food, and hectic commuters, who are price-sensitive, time-pressured, and travel daily from outside Dublin. These two groups accounted for the majority of in-store traffic we observed.</p>
+  <p>Our primary research included on-site interviews with customers and the store manager, a Google survey focused on app usage and fuel price transparency, and ethnographic observation by group members who were themselves regular Applegreen customers. Survey results showed that 72.2% of respondents would download or use the app more if it displayed live fuel prices — a clear signal the existing app was missing a high-value feature.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">The innovation proposal</h2>
+  <p>We proposed transforming the Applegreen Rewards app from a basic loyalty card into a full-service forecourt companion. The core features of our redesign were:</p>
+  <div class="proj-challenges">
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">01</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Live fuel price tracker</div>
+        <p>A real-time graph showing current and historical petrol and diesel prices at nearby Applegreen locations, allowing customers to plan when and where to fill up. Given the fuel price volatility in 2022, this feature directly addressed the primary concern of both customer segments.</p>
+      </div>
+    </div>
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">02</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Click and Collect ordering</div>
+        <p>An in-app pre-order system for Braeburn Coffee and deli items, allowing customers to place and pay for orders before arriving at the store. This eliminated queue time for commuters and gave staff advance notice of orders, improving efficiency on both sides.</p>
+      </div>
+    </div>
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">03</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Apple Wallet and Android Wallet integration</div>
+        <p>Adding the Applegreen rewards card to native device wallets so customers could access their card instantly without navigating through a slow app. This removed the single biggest friction point reported in app store reviews.</p>
+      </div>
+    </div>
+    <div class="proj-challenge proj-challenge--last">
+      <span class="proj-challenge__num">04</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Full UI overhaul</div>
+        <p>A visual redesign to modernise the app's interface, incorporate the Braeburn Coffee brand identity, and create a cleaner, faster experience that encouraged repeat engagement rather than one-off use.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Skills developed</h2>
+  <div class="proj-skills-grid">
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Research</span>
+      <span class="proj-skill-card__value">Primary fieldwork, customer interviews, and survey design</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Analysis</span>
+      <span class="proj-skill-card__value">Translating survey data into actionable innovation insight</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Strategy</span>
+      <span class="proj-skill-card__value">Customer segmentation and needs-based product framing</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Prototyping</span>
+      <span class="proj-skill-card__value">Designing app screen mockups to visualise the solution</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Collaboration</span>
+      <span class="proj-skill-card__value">Group project coordination across six team members</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Communication</span>
+      <span class="proj-skill-card__value">Structuring and presenting a business case to a real company</span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Reflection</h2>
+  <p>This project was one of the first times I worked on a proposal pitched directly to the management of a real company. Knowing that Applegreen's Managing Director, Fiona Matthews, delivered the plenary and would be familiar with the brief made the research feel like it had real stakes. That context pushed the group to treat the fieldwork seriously and ground every recommendation in evidence rather than assumption.</p>
+  <p>The most valuable part for me was learning how to connect qualitative insight — things people told us in interviews — with quantitative signal from the survey, and then translate both into a product decision. The 72.2% figure on the live fuel price question was the clearest moment in the project where data directly drove the recommendation, and that kind of evidence-first thinking has shaped how I approach every analysis-based task since.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<a href="/images/pdfs/Big Enterprise - Applegreen innovation - SB104.pdf" target="_blank" rel="noopener" class="proj-btn">View Full Report (PDF)</a>
+```
