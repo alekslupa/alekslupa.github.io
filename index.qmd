@@ -147,14 +147,14 @@ Graduating April 2026. Actively exploring graduate Business Analyst roles in Lon
 
 ## Recent posts
 
+```{=html}
+<hr class="hp-divider">
+```
+
 Check out the latest projects.
 
 ::: {#hp-recent}
 :::
-
-```{=html}
-<hr class="hp-divider">
-```
 
 [All projects →](/projects/index.html){.hp-recent__all}
 
