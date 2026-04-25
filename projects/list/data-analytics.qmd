@@ -70,27 +70,6 @@ EcoEnergy Corp is a global sustainable infrastructure and technology company sel
 
 Group 4 was structured as a regional consulting team. Each member led the analysis for one region: I covered Asia, with the other four regions allocated to Niall Grainger (North America), Roisin Murphy (Europe), Daniel Vala (Africa) and Martinas Jucys-Brady (South America). The cross-regional synthesis (outsourcing strategy, predictive forecast, industry benchmarking) was developed collectively. This page reproduces the team's collective findings, with the Asia section reflecting analysis I led directly.
 
-```{=html}
-<div class="ap-project-meta">
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Year</div>
-    <div class="ap-meta-value">2025</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Module</div>
-    <div class="ap-meta-value">BAA1026</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">My role</div>
-    <div class="ap-meta-value">Lead Analyst, Asia</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Team</div>
-    <div class="ap-meta-value">Group 4 · 5 members</div>
-  </div>
-</div>
-```
-
 ::: {.callout-note title="What's on this page"}
 The visualisations below reproduce the core findings from our Power BI consulting deliverable as interactive Plotly charts. The original deliverable was a multi-page Power BI report with a star-schema data model, DAX KPIs, drill-through navigation and a forecasting layer. This page rebuilds the same underlying analysis as executable Python with Plotly for the portfolio. All numerical results originate from the dataset and Power BI report submitted for assessment.
 :::
