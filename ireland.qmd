@@ -1,0 +1,6 @@
+---
+pagetitle: "Ireland — Aleksander Lupa"
+title: "Ireland"
+page-layout: full
+toc: false
+---
