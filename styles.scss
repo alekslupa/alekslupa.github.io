@@ -2732,8 +2732,12 @@ hr.hp-divider {
   opacity: 1;
 }
 
+h2:has(+ hr.hp-divider) {
+  margin-bottom: 0.1rem;
+}
+
 h2 + hr.hp-divider {
-  margin-top: 0.25rem;
+  margin-top: 0.1rem;
 }
 
 // ---------- Landing page bio ----------
