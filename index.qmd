@@ -29,6 +29,20 @@ about:
       text: CV
       href: cv/Aleksander_Lupa_CV.pdf
       target: _blank
+listing:
+  id: hp-recent
+  contents: "projects/list/*.qmd"
+  type: default
+  sort: "date desc"
+  max-items: 3
+  fields: [image, title, subtitle, date]
+  image-placeholder: "/assets/website.logo.png"
+  image-height: "180px"
+  date-format: "MMM D, YYYY"
+  feed: false
+  filter-ui: false
+  sort-ui: false
+  page-size: 3
 ---
 
 [About me](about.html){.btn .btn-dark .me-2 role="button"}
@@ -131,60 +145,14 @@ document.addEventListener('DOMContentLoaded', function () {
 Graduating April 2026. Actively exploring graduate Business Analyst roles in London, with a focus on the gaming and tech sectors.
 :::
 
-```{=html}
-<div class="hp-section">
-  <div class="hp-section__header">
-    <span class="hp-section__title">Featured project</span>
-  </div>
-  <div class="hp-featured">
-    <div class="hp-featured__banner">
-      <a href="projects/list/eportfolio.html"><img src="images/github.png" alt="ePortfolio" class="hp-featured__img"></a>
-    </div>
-    <div class="hp-featured__body">
-      <div class="hp-card__label">Academic project · BAA1027</div>
-      <div class="hp-featured__title">ePortfolio (this website)</div>
-      <p class="hp-card__desc">A professional ePortfolio designed and built from scratch using Quarto custom SCSS and GitHub Pages. My first time working directly in code, managing a project through Git and deploying to a live URL, a completely different experience from building with WordPress.</p>
-      <div class="hp-tags">
-        <span class="pp-tag">Quarto</span>
-        <span class="pp-tag">HTML</span>
-        <span class="pp-tag">SCSS</span>
-        <span class="pp-tag">Git</span>
-        <span class="pp-tag">GitHub Pages</span>
-      </div>
-      <a href="projects/list/eportfolio.html" class="hp-card__link">View project</a>
-    </div>
-  </div>
-</div>
+## Recent posts
 
-<div class="hp-section">
-  <div class="hp-section__header">
-    <span class="hp-section__title">More projects</span>
-    <div class="hp-section__links">
-      <a href="projects/index.html" class="hp-section__link">All projects</a>
-    </div>
-  </div>
-  <div class="hp-grid">
-    <div class="hp-card">
-      <div class="hp-card__label">Academic · Strategy</div>
-      <div class="hp-card__title">Superdry strategic analysis</div>
-      <p class="hp-card__desc">A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT and the Strategy Diamond.</p>
-      <a href="projects/list/superdry.html" class="hp-card__link">View project</a>
-    </div>
-    <div class="hp-card">
-      <div class="hp-card__label">Personal · Freelance</div>
-      <div class="hp-card__title">VIP Ireland</div>
-      <p class="hp-card__desc">Professional website built for an Irish aesthetic machine distributor using WordPress and Elementor Pro.</p>
-      <a href="projects/list/vip-ireland.html" class="hp-card__link">View project</a>
-    </div>
-    <div class="hp-card">
-      <div class="hp-card__label">Academic · Dragons Den</div>
-      <div class="hp-card__title">PriceBeo</div>
-      <p class="hp-card__desc">A real-time barcode-scanning grocery price comparison app for the Irish market. Pitched to a mock Dragons Den panel asking €100,000 for 20% equity.</p>
-      <a href="projects/list/pricebeo.html" class="hp-card__link">View project</a>
-    </div>
-  </div>
-</div>
-```
+Check out the latest projects.
+
+::: {#hp-recent}
+:::
+
+[All projects →](/projects/index.html){.hp-recent__all}
 
 ```{=html}
 <div class="hp-section">
