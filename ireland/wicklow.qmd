@@ -1,7 +1,5 @@
 ---
 pagetitle: "Wicklow — Aleksander Lupa"
-author: "Aleksander Lupa"
-date: "2026-04-25"
 page-layout: article
 toc: false
 format:
