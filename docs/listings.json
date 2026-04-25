@@ -1,13 +1,13 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/academic-projects/ml-python.html",
-      "/academic-projects/eportfolio.html",
-      "/academic-projects/pricebeo.html",
-      "/academic-projects/superdry.html",
-      "/personal-projects/bathstore.html",
-      "/personal-projects/vip-ireland.html"
+      "/projects/list/ml-python.html",
+      "/projects/list/eportfolio.html",
+      "/projects/list/pricebeo.html",
+      "/projects/list/superdry.html",
+      "/projects/list/bathstore.html",
+      "/projects/list/vip-ireland.html"
     ]
   }
 ]

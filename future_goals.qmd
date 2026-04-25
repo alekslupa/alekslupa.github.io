@@ -54,13 +54,13 @@ toc: false
 <p class="photo-grid-label">Places on the list</p>
 <div class="photo-grid">
 <div class="photo-slot">
-<a href="assets/travel.1.jpg" target="_blank" rel="noopener"><img src="assets/travel.1.jpg" alt="Travel destination 1" class="photo-grid-img"></a>
+<a href="images/travel.1.jpg" target="_blank" rel="noopener"><img src="images/travel.1.jpg" alt="Travel destination 1" class="photo-grid-img"></a>
 </div>
 <div class="photo-slot">
-<a href="assets/travel.2.jpg" target="_blank" rel="noopener"><img src="assets/travel.2.jpg" alt="Travel destination 2" class="photo-grid-img"></a>
+<a href="images/travel.2.jpg" target="_blank" rel="noopener"><img src="images/travel.2.jpg" alt="Travel destination 2" class="photo-grid-img"></a>
 </div>
 <div class="photo-slot">
-<a href="assets/travel.3.jpg" target="_blank" rel="noopener"><img src="assets/travel.3.jpg" alt="Travel destination 3" class="photo-grid-img"></a>
+<a href="images/travel.3.jpg" target="_blank" rel="noopener"><img src="images/travel.3.jpg" alt="Travel destination 3" class="photo-grid-img"></a>
 </div>
 </div>
 ```

@@ -1,0 +1,137 @@
+---
+pagetitle: "ePortfolio — Aleksander Lupa"
+title: "ePortfolio (this website)"
+description: "A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages, showcasing academic and personal projects as part of a BSc in Business Studies at DCU."
+author: "Aleksander Lupa"
+date: "2025-04-01"
+image: "/images/github.png"
+categories: [BAA1027, Academic]
+page-layout: article
+toc: false
+---
+
+```{=html}
+<style>.quarto-title h1.title{display:none}</style>
+
+<div class="proj-header">
+  <h1 class="proj-title">ePortfolio (this website)</h1>
+  <p class="proj-subtitle">A professional ePortfolio designed and built from scratch as part of my BSc in Business Studies at Dublin City University, using Quarto, custom SCSS, and GitHub Pages.</p>
+  <a href="../index.html" class="proj-back">← Projects</a>
+</div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Project goal</h2>
+  <p>Although I had prior experience building websites using WordPress and Elementor Pro for freelance clients, this project was a completely different challenge. WordPress abstracts most of the underlying code, whereas building with Quarto required working directly with markup, SCSS, YAML configuration, and Git from the ground up. It was my first time working in this kind of development environment.</p>
+  <p>The goal was to build a fully functional, publicly hosted professional ePortfolio that demonstrates technical ability across web development, version control, and design, while also serving as a genuine platform to showcase my academic and personal journey.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">What I built</h2>
+  <p>The site covers every area of my profile: a custom landing page with hero section and project previews, a detailed about page pulling in my real work experience and education, an achievements page listing all 30 Kubicle and 9 LinkedIn Learning certificates, individual project pages for each piece of work, a future goals page, and a fitness journey timeline with alternating photo and text entries.</p>
+  <p>Every page uses custom SCSS with no reliance on default Quarto theming. All styles are managed centrally in a single stylesheet, with consistent typography, spacing, card components, timelines, and responsive layouts throughout.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Skills developed</h2>
+  <div class="proj-skills-grid">
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Framework</span>
+      <span class="proj-skill-card__value">Quarto and YAML configuration</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Styling</span>
+      <span class="proj-skill-card__value">Custom SCSS and responsive CSS layouts</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Version control</span>
+      <span class="proj-skill-card__value">Git branching, commits, and pull requests</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Deployment</span>
+      <span class="proj-skill-card__value">GitHub Pages with docs folder setup</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Design</span>
+      <span class="proj-skill-card__value">UI layout, typography, and component design</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Content</span>
+      <span class="proj-skill-card__value">Writing professionally for a public audience</span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Challenges</h2>
+  <div class="proj-challenges">
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">01</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Learning Quarto from scratch</div>
+        <p>Unlike WordPress where the platform handles most of the structure, Quarto required me to understand how .qmd files, YAML configuration, and the rendering pipeline all connect. Coming from a visual page builder background, this was a significant shift in how I thought about building a website.</p>
+      </div>
+    </div>
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">02</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Custom SCSS without a design system</div>
+        <p>Building a consistent design language from scratch, with no existing framework to lean on, required a lot of planning. Getting components like the timeline, card grid, and skill bars to look right across both light and dark mode took several iterations.</p>
+      </div>
+    </div>
+    <div class="proj-challenge proj-challenge--last">
+      <span class="proj-challenge__num">03</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Git and GitHub Pages deployment</div>
+        <p>This was my first project using Git for version control. Managing commits, configuring the output directory, and getting GitHub Pages to serve the rendered docs folder correctly required careful debugging before the site went live successfully.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Reflection</h2>
+  <p>This project pushed me further technically than any other module assignment. I already knew how to build websites through WordPress, but this was a completely different experience. Working directly in code, managing a project through Git, and deploying to a live URL through GitHub Pages gave me a much deeper understanding of how the web actually works under the hood.</p>
+  <p>More than the technical skills, it taught me how to think about design, structure, and user experience when building something entirely from scratch. Having prior web design experience helped with layout instincts, but everything else had to be learned from the ground up.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<a href="https://github.com/alekslupa/alekslupa.github.io" target="_blank" rel="noopener" class="proj-btn">GitHub Repository</a>
+```
+
+## Technology breakdown
+
+The chart below shows an estimated breakdown of time invested across the technologies used to build this site throughout the module.
+
+```{python}
+#| label: fig-tech
+#| fig-cap: "Estimated hours invested by technology during the ePortfolio project"
+import matplotlib.pyplot as plt
+
+technologies = ["SCSS / CSS", "HTML", "Quarto & YAML", "Git & GitHub", "JavaScript", "Python"]
+hours = [40, 35, 30, 25, 15, 12]
+colors = ["#4a90d9", "#5ba0e0", "#6bb0e7", "#7bc0ee", "#a0d0f5", "#c0e0fb"]
+
+fig, ax = plt.subplots(figsize=(8, 4.5))
+bars = ax.barh(technologies, hours, color=colors, edgecolor="white", height=0.6)
+
+for bar, val in zip(bars, hours):
+    ax.text(val + 0.5, bar.get_y() + bar.get_height() / 2,
+            f"~{val}h", va="center", fontsize=10)
+
+ax.set_xlabel("Estimated hours invested")
+ax.set_title("Time invested by technology — ePortfolio project", fontweight="bold")
+ax.set_xlim(0, 50)
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
+plt.tight_layout()
+plt.show()
+```

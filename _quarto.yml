@@ -3,34 +3,28 @@ project:
   output-dir: docs
   resources:
     - .nojekyll
-    - assets/github.png
-    - "assets/pdfs/PriceBeo Business Report.pdf"
-    - "assets/pdfs/Research_Report_22420692.pdf"
-    - "assets/pdfs/online_shoppers_ml_analysis_22420692.pdf"
+    - images/github.png
+    - "images/pdfs/PriceBeo Business Report.pdf"
+    - "images/pdfs/Research_Report_22420692.pdf"
+    - "images/pdfs/online_shoppers_ml_analysis_22420692.pdf"
 
 website:
   title: "Aleksander Lupa"
-  favicon: assets/flavicon.png
+  favicon: images/flavicon.png
   navbar:
-    logo: assets/website.logo.png
+    logo: images/website.logo.png
     left:
       - href: index.qmd
         text: Home
-      - text: Projects
-        menu:
-          - href: projects.qmd
-            text: All Projects
-          - href: personal-projects/index.qmd
-            text: Personal Projects
-          - href: academic-projects/index.qmd
-            text: Academic Projects
+      - href: projects/index.qmd
+        text: Projects
       - href: future_goals.qmd
         text: Future Goals
       - href: achievements.qmd
         text: Achievements
       - href: about.qmd
         text: About
-      - href: assets/Aleksander_Lupa_CV.pdf
+      - href: cv/Aleksander_Lupa_CV.pdf
         text: CV
         target: _blank
   page-footer:
