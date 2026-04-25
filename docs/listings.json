@@ -15,14 +15,14 @@
   {
     "listing": "/index.html",
     "items": [
-      "/projects/list/fitness.html",
       "/projects/list/eportfolio.html",
       "/projects/list/ml-python.html",
       "/projects/list/data-analytics.html",
       "/projects/list/pricebeo.html",
       "/projects/list/superdry.html",
       "/projects/list/bathstore.html",
-      "/projects/list/vip-ireland.html"
+      "/projects/list/vip-ireland.html",
+      "/projects/list/fitness.html"
     ]
   }
 ]
