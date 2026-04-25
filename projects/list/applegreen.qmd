@@ -5,6 +5,7 @@ subtitle: "SB104 · Big Enterprise"
 description: "A group innovation project proposing a full redesign of the Applegreen Rewards app, backed by primary research including customer interviews, ethnographic observation, and a Google survey."
 author: "Aleksander Lupa"
 date: "2022-12-01"
+image: "/images/applegreen.png"
 categories: [SB104, Academic]
 page-layout: article
 toc: false

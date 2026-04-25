@@ -5,6 +5,7 @@ subtitle: "SB202 · Critical Thinking in Action"
 description: "A research design assignment investigating the key factors influencing employee motivation and satisfaction in remote work environments, drawing on three peer-reviewed studies and a proposed thematic interview methodology."
 author: "Aleksander Lupa"
 date: "2024-02-22"
+image: "/images/critical thinking.png"
 categories: [SB202, Academic]
 page-layout: article
 toc: false

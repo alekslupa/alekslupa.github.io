@@ -10,6 +10,7 @@
   description: "A full strategic review of Superdry using PESTEL, Porter's Five Forces, SWOT, RBV/VRIO, and the Strategy Diamond, delivered as a consulting simulation for the BAA1019 Business Strategy module."
   author: "Aleksander Lupa"
   date: "2025-03-01"
+  image: "../images/Superdry.jpg"
   categories: [BAA1019, Academic]
   path: "list/superdry.qmd"
 
@@ -17,6 +18,7 @@
   description: "Applied ML analysis using scikit-learn, pandas and Plotly — building, evaluating and interpreting predictive models on a real-world dataset as part of the DCU curriculum."
   author: "Aleksander Lupa"
   date: "2025-05-01"
+  image: "../images/machinelearningpython.jpg"
   categories: [BAA1027, Academic]
   path: "list/ml-python.qmd"
 
@@ -24,6 +26,7 @@
   description: "A real-time barcode-scanning grocery price comparison app for the Irish market. Developed across four assignments and pitched in a mock Dragons Den asking €100,000 for 20% equity."
   author: "Aleksander Lupa"
   date: "2025-04-01"
+  image: "../images/pricebeo.PNG"
   categories: [BAA1003, Academic]
   path: "list/pricebeo.qmd"
 
@@ -47,6 +50,7 @@
   description: "BAA1026 Data Analytics group project. Lead Analyst for Asia in a five-person team that built a Power BI consulting deliverable diagnosing EcoEnergy Corp's €8.46M net loss and forecasting a turnaround to €3.09M annual profit."
   author: "Aleksander Lupa"
   date: "2025-11-15"
+  image: "../images/ecoenergy.png"
   categories: [BAA1026, Academic]
   path: "list/data-analytics.qmd"
 
@@ -54,6 +58,7 @@
   description: "A critical thinking research design assignment investigating the key factors influencing employee motivation and satisfaction in remote work environments, drawing on three peer-reviewed studies and a proposed thematic interview methodology."
   author: "Aleksander Lupa"
   date: "2024-02-22"
+  image: "../images/critical thinking.png"
   categories: [SB202, Academic]
   path: "list/critical-thinking.qmd"
 
@@ -61,6 +66,7 @@
   description: "A group innovation project proposing a full redesign of the Applegreen Rewards app, backed by primary research including customer interviews, ethnographic observation, and a Google survey."
   author: "Aleksander Lupa"
   date: "2022-12-01"
+  image: "../images/applegreen.png"
   categories: [SB104, Academic]
   path: "list/applegreen.qmd"
 
