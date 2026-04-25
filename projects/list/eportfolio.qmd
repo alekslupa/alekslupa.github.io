@@ -4,7 +4,7 @@ title: "ePortfolio (this website)"
 subtitle: "BAA1027 · ePortfolio Web Development"
 description: "A professional ePortfolio built from scratch using Quarto, custom SCSS, and GitHub Pages, showcasing academic and personal projects as part of a BSc in Business Studies at DCU."
 author: "Aleksander Lupa"
-date: "2025-04-01"
+date: "2026-04-25"
 image: "/images/github.png"
 categories: [BAA1027, Academic]
 page-layout: article
