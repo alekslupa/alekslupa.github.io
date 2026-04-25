@@ -3957,6 +3957,58 @@ h2#outside-the-work {
   }
 }
 
+// Projects page card hover animations
+#listing-listing .quarto-grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-top: 3px solid transparent;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  background: var(--bs-body-bg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-top-color 0.25s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(30, 126, 52, 0.13);
+    border-top-color: #1e7e34;
+  }
+}
+
+#listing-listing .quarto-grid-item:hover .listing-title {
+  color: #1e7e34;
+}
+
+#listing-listing .listing-title {
+  transition: color 0.25s ease;
+}
+
+#listing-listing a {
+  text-decoration: none;
+}
+
+#listing-listing .thumbnail-image,
+#listing-listing .card-img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+#listing-listing .quarto-grid-item:hover .thumbnail-image,
+#listing-listing .quarto-grid-item:hover .card-img {
+  transform: scale(1.03);
+}
+
+.quarto-dark {
+  #listing-listing .quarto-grid-item {
+    border-color: rgba(255, 255, 255, 0.08);
+
+    &:hover {
+      box-shadow: 0 14px 32px rgba(30, 126, 52, 0.2);
+    }
+  }
+}
+
 a.ab-beyond__item--link {
   display: block;
   text-decoration: none;
