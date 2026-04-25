@@ -152,25 +152,3 @@ fig.show()
 
 </div>
 ```
-
-## The next twelve months
-
-```{mermaid}
-%%| fig-cap: "Twelve-month plan from graduation through the move to London. The travel block is sequenced East Asia → Southeast Asia → Americas to use the time zones in my favour for the eventual return."
-flowchart LR
-    A[<b>April 2026</b><br/>Graduate<br/>BSc Business Studies<br/>DCU]
-    B[<b>May to Jul 2026</b><br/>East Asia leg<br/>Hong Kong · Shanghai · Seoul]
-    C[<b>Jul to Aug 2026</b><br/>Southeast Asia leg<br/>Vietnam]
-    D[<b>Aug 2026</b><br/>Americas leg<br/>Miami · New York]
-    E[<b>Sep 2026</b><br/>Return to Dublin<br/>Reset · job hunt focused on London]
-    F[<b>Late 2026</b><br/>Move to London<br/>Start as business analyst]
-
-    A ==> B ==> C ==> D ==> E ==> F
-
-    style A fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
-    style B fill:#ffebee,stroke:#c8102e,color:#1a1a1a,stroke-width:2px
-    style C fill:#e8f5e9,stroke:#1e7e34,color:#1a1a1a,stroke-width:2px
-    style D fill:#e3f2fd,stroke:#0a579c,color:#1a1a1a,stroke-width:2px
-    style E fill:#f5f5f5,stroke:#666,color:#1a1a1a,stroke-width:2px
-    style F fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
-```
