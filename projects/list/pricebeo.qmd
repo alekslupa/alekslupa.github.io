@@ -6,7 +6,7 @@ description: "A real-time barcode-scanning grocery price comparison app for the 
 author:
   - name: "Aleksander Lupa"
   - name: "Redacted members"
-date: "2025-04-01"
+date: "2026-04-17"
 image: "/images/pricebeo.1.png"
 categories: [BAA1003, Academic]
 page-layout: article

@@ -6,7 +6,7 @@ description: "BAA1026 Data Analytics: Programming & Visualisation group project.
 author:
   - name: "Aleksander Lupa"
   - name: "Redacted members"
-date: "2025-11-15"
+date: "2025-11-11"
 image: "/images/ecoenergy.png"
 categories: [BAA1026, Academic]
 page-layout: article

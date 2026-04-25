@@ -6,7 +6,7 @@ description: "A full strategic review of Superdry using PESTEL, Porter's Five Fo
 author:
   - name: "Aleksander Lupa"
   - name: "Redacted members"
-date: "2025-03-01"
+date: "2025-12-04"
 image: "/images/Superdry.1.png"
 categories: [BAA1019, Academic]
 page-layout: article
