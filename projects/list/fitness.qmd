@@ -1,6 +1,5 @@
 ---
 pagetitle: "Fitness Journey — Aleksander Lupa"
-date: "2023-01-01"
 page-layout: article
 toc: false
 ---
@@ -20,8 +19,6 @@ toc: false
     <a class="fj-toc__link fj-toc__link--section" href="#looking-ahead">Looking ahead</a>
   </nav>
 </div>
-
-<a href="../index.html" class="proj-back">← Projects</a>
 
 <div class="fj-header">
   <div class="fj-title">My fitness journey</div>
