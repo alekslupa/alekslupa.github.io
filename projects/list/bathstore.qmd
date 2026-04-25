@@ -1,6 +1,7 @@
 ---
 pagetitle: "Bath Store and More — Aleksander Lupa"
 title: "Bath Store and More"
+subtitle: "Personal · WordPress Development"
 description: "A responsive, brand-aligned WordPress website for a Dublin bathroom design company, built to showcase products and drive customer enquiries."
 author: "Aleksander Lupa"
 date: "2024-09-01"

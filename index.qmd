@@ -32,7 +32,7 @@ about:
 listing:
   id: hp-recent
   contents: "projects/list/*.qmd"
-  type: default
+  type: grid
   sort: "date desc"
   max-items: 3
   fields: [image, title, subtitle, date]

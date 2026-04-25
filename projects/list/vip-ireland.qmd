@@ -1,6 +1,7 @@
 ---
 pagetitle: "VIP Ireland — Aleksander Lupa"
 title: "VIP Ireland"
+subtitle: "Personal · WordPress Development"
 description: "Professional website built for an Irish aesthetic machine distributor using WordPress and Elementor Pro, delivering a clean, conversion-focused design."
 author: "Aleksander Lupa"
 date: "2024-06-01"
