@@ -42,26 +42,70 @@ Every other page in this portfolio describes work that happened elsewhere and re
 
 The pipeline is the most important artefact of a Workflow & Data Management project. Every change to this site flows through the same six stages, in the same order, every time. There is no manual upload step, no FTP, no copy-paste of HTML into a CMS. A commit triggers a render and a deployment, and the live URL is whatever the render produced.
 
-```{mermaid}
-%%| label: fig-pipeline
-%%| fig-cap: "Build and deployment pipeline. Each commit on the main branch triggers a Quarto render, the rendered docs/ directory is what GitHub Pages serves, and the live URL updates within 30 to 60 seconds. The whole loop is reproducible from a fresh clone with two commands: quarto render, then git push."
-flowchart LR
-    A[Author<br/>edits .qmd file<br/>locally in VS Code]
-    B[<b>quarto render</b><br/>Executes Python chunks<br/>Compiles SCSS<br/>Resolves listings<br/>Writes to docs/]
-    C[<b>Local preview</b><br/>quarto preview<br/>Hot reload<br/>Visual check]
-    D[<b>git commit</b><br/>Descriptive message<br/>Pre-commit checks]
-    E[<b>git push</b><br/>main branch<br/>GitHub remote]
-    F[<b>GitHub Pages</b><br/>Serves docs/<br/>Cache invalidation]
-    G[<b>Live URL</b><br/>alekslupa.github.io<br/>Updated 30-60s]
-
-    A --> B --> C
-    C -->|approved| D
-    C -->|broken| A
-    D --> E --> F --> G
-
-    style B fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
-    style D fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
-    style G fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
+```{=html}
+<style>
+.fp-bg{fill:#f5f7f9;stroke:#d0d5dd;stroke-width:1.5}
+.fp-t{fill:#374151;font-size:11px;font-weight:600}
+.fp-s{fill:#6b7280;font-size:10px}
+.fp-g{fill:#1e7e34;stroke:#1e7e34;stroke-width:1.5}
+.fp-gt{fill:#fff;font-size:11px;font-weight:700}
+.fp-gs{fill:rgba(255,255,255,0.85);font-size:10px}
+.fp-o{fill:#fff7ed;stroke:#ea580c;stroke-width:1.5}
+.fp-ot{fill:#ea580c;font-size:11px;font-weight:700}
+.fp-os{fill:#c2440a;font-size:10px}
+.fp-b{fill:#eff6ff;stroke:#1d4ed8;stroke-width:1.5}
+.fp-bt{fill:#1d4ed8;font-size:11px;font-weight:700}
+.fp-bs{fill:#1e40af;font-size:10px}
+.fp-ln{stroke:#9ca3af;stroke-width:1.5;fill:none}
+.fp-ah{fill:#9ca3af}
+.quarto-dark .fp-bg{fill:#2d3139;stroke:#4b5563}
+.quarto-dark .fp-t{fill:#e5e7eb}
+.quarto-dark .fp-s{fill:#9ca3af}
+.quarto-dark .fp-o{fill:#431407;stroke:#ea580c}
+.quarto-dark .fp-os{fill:#fb923c}
+.quarto-dark .fp-b{fill:#0f172a;stroke:#1d4ed8}
+.quarto-dark .fp-bs{fill:#93c5fd}
+.quarto-dark .fp-ln{stroke:#6b7280}
+.quarto-dark .fp-ah{fill:#6b7280}
+</style>
+<figure class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<svg viewBox="0 0 762 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block" font-family="Inter,system-ui,sans-serif">
+<defs>
+  <marker id="fp-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,1.5 L9,5 L0,8.5 Z" class="fp-ah"/>
+  </marker>
+</defs>
+<line x1="113" y1="65" x2="129" y2="65" class="fp-ln" marker-end="url(#fp-m)"/>
+<line x1="243" y1="65" x2="259" y2="65" class="fp-ln" marker-end="url(#fp-m)"/>
+<line x1="373" y1="65" x2="389" y2="65" class="fp-ln" marker-end="url(#fp-m)"/>
+<line x1="503" y1="65" x2="519" y2="65" class="fp-ln" marker-end="url(#fp-m)"/>
+<line x1="633" y1="65" x2="649" y2="65" class="fp-ln" marker-end="url(#fp-m)"/>
+<rect x="1" y="30" width="110" height="70" rx="6" class="fp-bg"/>
+<text x="56" y="61" text-anchor="middle" class="fp-t">Author</text>
+<text x="56" y="77" text-anchor="middle" class="fp-s">edits .qmd</text>
+<rect x="131" y="30" width="110" height="70" rx="6" class="fp-g"/>
+<text x="186" y="54" text-anchor="middle" class="fp-gt">quarto render</text>
+<text x="186" y="69" text-anchor="middle" class="fp-gs">Python · SCSS</text>
+<text x="186" y="84" text-anchor="middle" class="fp-gs">→ docs/</text>
+<rect x="261" y="30" width="110" height="70" rx="6" class="fp-bg"/>
+<text x="316" y="61" text-anchor="middle" class="fp-t">Local preview</text>
+<text x="316" y="77" text-anchor="middle" class="fp-s">visual check</text>
+<rect x="391" y="30" width="110" height="70" rx="6" class="fp-o"/>
+<text x="446" y="54" text-anchor="middle" class="fp-ot">git commit</text>
+<text x="446" y="69" text-anchor="middle" class="fp-os">descriptive</text>
+<text x="446" y="84" text-anchor="middle" class="fp-os">message</text>
+<rect x="521" y="30" width="110" height="70" rx="6" class="fp-bg"/>
+<text x="576" y="61" text-anchor="middle" class="fp-t">git push</text>
+<text x="576" y="77" text-anchor="middle" class="fp-s">main</text>
+<rect x="651" y="30" width="110" height="70" rx="6" class="fp-b"/>
+<text x="706" y="54" text-anchor="middle" class="fp-bt">Live URL</text>
+<text x="706" y="69" text-anchor="middle" class="fp-bs">alekslupa.github.io</text>
+<text x="706" y="84" text-anchor="middle" class="fp-bs">30-60s</text>
+</svg>
+<figcaption class="figure-caption">Figure 1: Build and deployment pipeline.</figcaption>
+</figure>
+</figure>
 ```
 
 The decision worth flagging is the `output-dir: docs` configuration in `_quarto.yml`. GitHub Pages can serve from either the repo root or a `/docs` folder; choosing `/docs` keeps the source `.qmd` files separated from the rendered HTML. The repo therefore has a clean split between authored content (the `.qmd` files, the `data/` CSVs, the `assets/` images, the `styles.scss` file) and rendered output (the `docs/` directory). When something breaks on the live site, that split is what makes it possible to reason about cause and effect: either the source is wrong, or the render produced something different from the source.
@@ -70,36 +114,74 @@ The decision worth flagging is the `output-dir: docs` configuration in `_quarto.
 
 The site is organised around a single principle: every project is a `.qmd` file in `projects/list/` with structured frontmatter. The frontmatter is what the listing pages, the landing page Recent Posts and the individual project pages all read from. There is no duplication of titles or dates anywhere in the codebase. If a project's title changes, it changes in one file and propagates to every page that references it.
 
-```{mermaid}
-%%| label: fig-architecture
-%%| fig-cap: "Site information architecture. Project pages are the single source of truth for project metadata; listing pages query the projects/list/ directory and pull frontmatter to render. The data/ directory feeds analytical pages like this one. Static assets (images, PDFs, CV) sit in assets/."
-flowchart TB
-    subgraph SRC[Source repository]
-        A[<b>projects/list/</b><br/>One .qmd per project<br/>YAML frontmatter as data]
-        B[<b>data/</b><br/>CSV files<br/>generate_repo_stats.py output]
-        C[<b>assets/</b><br/>Images · PDFs · CV]
-        D[<b>styles.scss</b><br/>Single source of truth<br/>for visual language]
-    end
-
-    subgraph PAGES[Top-level pages]
-        E[<b>index.qmd</b><br/>Landing<br/>Reads projects via listing]
-        F[<b>projects/index.qmd</b><br/>All projects hub<br/>Filterable]
-        G[<b>about.qmd</b>]
-        H[<b>future_goals.qmd</b>]
-        I[<b>achievements.qmd</b>]
-    end
-
-    A -->|listing| E
-    A -->|listing| F
-    B -->|read at render| A
-    C -->|referenced by| A
-    C -->|referenced by| PAGES
-    D -->|theme for| PAGES
-    D -->|theme for| A
-
-    style A fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:2px
-    style B fill:#fff3e0,stroke:#e65100,color:#1a1a1a,stroke-width:2px
-    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a,stroke-width:2px
+```{=html}
+<style>
+.fa-db{fill:none;stroke:#9ca3af;stroke-width:1.5;stroke-dasharray:6,4}
+.fa-lbl{fill:#6b7280;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em}
+.fa-bg{fill:#f5f7f9;stroke:#d0d5dd;stroke-width:1.5}
+.fa-t{fill:#374151;font-size:11px;font-weight:600}
+.fa-s{fill:#6b7280;font-size:10px}
+.fa-g{fill:#1e7e34;stroke:#1e7e34;stroke-width:1.5}
+.fa-gt{fill:#fff;font-size:11px;font-weight:700}
+.fa-gs{fill:rgba(255,255,255,0.85);font-size:10px}
+.fa-o{fill:#fff7ed;stroke:#ea580c;stroke-width:1.5}
+.fa-ot{fill:#ea580c;font-size:11px;font-weight:700}
+.fa-os{fill:#c2440a;font-size:10px}
+.fa-b{fill:#eff6ff;stroke:#1d4ed8;stroke-width:1.5}
+.fa-bt{fill:#1d4ed8;font-size:11px;font-weight:700}
+.fa-bs{fill:#1e40af;font-size:10px}
+.fa-al{stroke:#1e7e34;stroke-width:1.5;fill:none;stroke-dasharray:5,3}
+.fa-ah{fill:#1e7e34}
+.fa-alt{fill:#1e7e34;font-size:10px;font-weight:600}
+.quarto-dark .fa-db{stroke:#4b5563}
+.quarto-dark .fa-lbl{fill:#9ca3af}
+.quarto-dark .fa-bg{fill:#2d3139;stroke:#4b5563}
+.quarto-dark .fa-t{fill:#e5e7eb}
+.quarto-dark .fa-s{fill:#9ca3af}
+.quarto-dark .fa-o{fill:#431407;stroke:#ea580c}
+.quarto-dark .fa-os{fill:#fb923c}
+.quarto-dark .fa-b{fill:#0f172a;stroke:#1d4ed8}
+.quarto-dark .fa-bs{fill:#93c5fd}
+</style>
+<figure class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block" font-family="Inter,system-ui,sans-serif">
+<defs>
+  <marker id="fa-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,1.5 L9,5 L0,8.5 Z" class="fa-ah"/>
+  </marker>
+</defs>
+<rect x="5" y="15" width="290" height="272" rx="8" class="fa-db"/>
+<text x="150" y="35" text-anchor="middle" class="fa-lbl">Source repository</text>
+<rect x="18" y="44" width="264" height="57" rx="6" class="fa-g"/>
+<text x="150" y="67" text-anchor="middle" class="fa-gt">projects/list/</text>
+<text x="150" y="82" text-anchor="middle" class="fa-gs">YAML frontmatter as data</text>
+<rect x="18" y="111" width="264" height="57" rx="6" class="fa-o"/>
+<text x="150" y="134" text-anchor="middle" class="fa-ot">data/</text>
+<text x="150" y="149" text-anchor="middle" class="fa-os">CSVs from generate_repo_stats.py</text>
+<rect x="18" y="178" width="264" height="50" rx="6" class="fa-bg"/>
+<text x="150" y="198" text-anchor="middle" class="fa-t">assets/</text>
+<text x="150" y="214" text-anchor="middle" class="fa-s">Images · PDFs · CV</text>
+<rect x="18" y="238" width="264" height="42" rx="6" class="fa-b"/>
+<text x="150" y="255" text-anchor="middle" class="fa-bt">styles.scss</text>
+<text x="150" y="270" text-anchor="middle" class="fa-bs">Single source of visual truth</text>
+<text x="560" y="35" text-anchor="middle" class="fa-lbl">Top-level pages</text>
+<rect x="395" y="40" width="360" height="42" rx="6" class="fa-bg"/>
+<text x="575" y="66" text-anchor="middle" class="fa-t">index.qmd · landing</text>
+<rect x="395" y="92" width="360" height="42" rx="6" class="fa-bg"/>
+<text x="575" y="118" text-anchor="middle" class="fa-t">projects/index.qmd</text>
+<rect x="395" y="144" width="360" height="42" rx="6" class="fa-bg"/>
+<text x="575" y="170" text-anchor="middle" class="fa-t">about.qmd</text>
+<rect x="395" y="196" width="360" height="42" rx="6" class="fa-bg"/>
+<text x="575" y="222" text-anchor="middle" class="fa-t">future_goals.qmd</text>
+<rect x="395" y="248" width="360" height="42" rx="6" class="fa-bg"/>
+<text x="575" y="274" text-anchor="middle" class="fa-t">achievements.qmd</text>
+<line x1="284" y1="72" x2="393" y2="62" class="fa-al" marker-end="url(#fa-m)"/>
+<text x="336" y="58" text-anchor="middle" class="fa-alt">listing</text>
+</svg>
+<figcaption class="figure-caption">Figure 2: Information architecture.</figcaption>
+</figure>
+</figure>
 ```
 
 The choice that matters most for Workflow & Data Management is treating YAML frontmatter as structured data rather than as decoration. Every project page declares its `title`, `subtitle`, `date`, `image`, `categories` and `description` in the frontmatter. Quarto's listing engine then treats `projects/list/*.qmd` as a database table. Adding a new project becomes a single-file operation: ship the `.qmd`, the listing pages update on next render. This is the inverse of the WordPress workflow I started with, where adding a new project meant clicking through five admin screens and copy-pasting the title into three places.
