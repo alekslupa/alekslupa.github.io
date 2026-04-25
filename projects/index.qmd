@@ -30,6 +30,7 @@ A selection of academic and personal projects spanning business strategy, produc
       <option value="BAA1019">BAA1019 · Business Strategy</option>
       <option value="BAA1026">BAA1026 · Data Analytics</option>
       <option value="BAA1027">BAA1027 · Digital Futures</option>
+      <option value="SB104">SB104 · Big Enterprise</option>
     </select>
   </div>
   <button class="proj-filter-reset" id="proj-filter-reset" type="button">Reset</button>

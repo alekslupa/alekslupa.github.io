@@ -50,6 +50,13 @@
   categories: [BAA1026, Academic]
   path: "list/data-analytics.qmd"
 
+- title: "Applegreen App Innovation"
+  description: "A group innovation project proposing a full redesign of the Applegreen Rewards app, backed by primary research including customer interviews, ethnographic observation, and a Google survey."
+  author: "Aleksander Lupa"
+  date: "2022-12-01"
+  categories: [SB104, Academic]
+  path: "list/applegreen.qmd"
+
 - title: "Fitness Journey"
   description: "A personal log of my bodybuilding journey from July 2023 — training phases, progress photos, and the goal of competing in a men's physique show in 2027."
   author: "Aleksander Lupa"
