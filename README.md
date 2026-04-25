@@ -8,7 +8,7 @@ Source code for my personal ePortfolio, built with [Quarto](https://quarto.org/)
 
 ## What's in here
 
-A first-year BA Business Studies portfolio at Dublin City University, combining academic project work across business strategy, data analytics, machine learning and new enterprise development with personal sections for competitive bodybuilding and hiking across Ireland.
+A final-year BA Business Studies portfolio at Dublin City University, combining academic project work across business strategy, data analytics, machine learning and new enterprise development with personal sections for competitive bodybuilding and hiking across Ireland.
 
 Most charts on the project pages are generated from live Python code that re-executes at render time via Quarto's `freeze: auto` mechanism, so the visualisations are always in sync with the underlying analysis. The Ireland section uses D3.js to render an interactive county-level map from a GeoJSON source file — the same separation-of-data-from-presentation principle that runs through the rest of the site.
 
@@ -156,7 +156,7 @@ The live site updates within 30–60 seconds. `.nojekyll` at the repo root tells
 ## Author
 
 **Aleksander Lupa**
-BA Business Studies — Dublin City University (Year 1)
+BA Business Studies — Dublin City University (Final Year)
 
 [LinkedIn](https://www.linkedin.com/in/alekslupa/) · [GitHub](https://github.com/alekslupa)
 
