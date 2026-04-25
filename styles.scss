@@ -3669,6 +3669,7 @@ h2#outside-the-work {
 }
 
 .ab-beyond__item {
+  position: relative;
   padding: 1.5rem;
   background: var(--bs-body-bg);
   border: 0.5px solid var(--about-border);
@@ -3708,19 +3709,21 @@ h2#outside-the-work {
 }
 
 .ab-beyond__cta {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 62px;
-  height: 62px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   border: 1.5px solid var(--about-border);
-  font-size: 0.62rem;
+  font-size: 0.52rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--about-muted);
-  margin-top: 1rem;
   transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 
   .ab-beyond__item:hover & {
