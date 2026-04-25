@@ -1,4 +1,5 @@
 ---
+title: "Future Goals"
 format:
   html:
     code-fold: true
@@ -10,8 +11,6 @@ execute:
   warning: false
   freeze: auto
 ---
-
-# Future Goals
 
 Graduating in April 2026 with a clear sense of where I want to go, professionally and personally. The next twelve months break into three deliberate phases: graduate, travel, then move to London and start working. Here is what I am working towards in each.
 
