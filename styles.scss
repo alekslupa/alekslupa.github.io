@@ -3602,8 +3602,27 @@ h2#outside-the-work {
   margin-bottom: 0.75rem;
 }
 
+.ab-lang__track-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ab-lang__track-wrap .ab-lang__track {
+  flex: 1;
+}
+
+.ab-lang__pct {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--about-muted);
+  flex-shrink: 0;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
 .ab-lang__track {
-  height: 4px;
+  height: 5px;
   background: var(--about-border);
   border-radius: 100px;
   overflow: hidden;
@@ -3686,6 +3705,29 @@ h2#outside-the-work {
   line-height: 1.55;
   color: var(--bs-body-color);
   opacity: 0.8;
+}
+
+.ab-beyond__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1.5px solid var(--about-border);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+  margin-top: 1rem;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+
+  .ab-beyond__item:hover & {
+    border-color: #1e7e34;
+    color: #1e7e34;
+    background: rgba(30, 126, 52, 0.06);
+  }
 }
 
 // -- Contact footer ----------------------------------------------------------

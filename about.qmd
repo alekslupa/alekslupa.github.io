@@ -200,8 +200,11 @@ I'm interested in the problems where a clean dataset, a clear business question 
         </div>
         <div class="ab-lang__name">English</div>
         <div class="ab-lang__domain">Professional · daily use</div>
-        <div class="ab-lang__track">
-          <div class="ab-lang__fill" style="width:82%"></div>
+        <div class="ab-lang__track-wrap">
+          <div class="ab-lang__track">
+            <div class="ab-lang__fill" style="width:82%"></div>
+          </div>
+          <span class="ab-lang__pct">82%</span>
         </div>
         <div class="ab-lang__foot">
           <span class="ab-lang__yrs">18 years</span>
@@ -224,8 +227,11 @@ I'm interested in the problems where a clean dataset, a clear business question 
         </div>
         <div class="ab-lang__name">Polish</div>
         <div class="ab-lang__domain">Family · native environment</div>
-        <div class="ab-lang__track">
-          <div class="ab-lang__fill" style="width:100%"></div>
+        <div class="ab-lang__track-wrap">
+          <div class="ab-lang__track">
+            <div class="ab-lang__fill" style="width:100%"></div>
+          </div>
+          <span class="ab-lang__pct">100%</span>
         </div>
         <div class="ab-lang__foot">
           <span class="ab-lang__yrs">22 years</span>
@@ -248,8 +254,11 @@ I'm interested in the problems where a clean dataset, a clear business question 
         </div>
         <div class="ab-lang__name">Spanish</div>
         <div class="ab-lang__domain">Steadily developing</div>
-        <div class="ab-lang__track">
-          <div class="ab-lang__fill ab-lang__fill--mid" style="width:18%"></div>
+        <div class="ab-lang__track-wrap">
+          <div class="ab-lang__track">
+            <div class="ab-lang__fill ab-lang__fill--mid" style="width:18%"></div>
+          </div>
+          <span class="ab-lang__pct">18%</span>
         </div>
         <div class="ab-lang__foot">
           <span class="ab-lang__yrs">4 years</span>
@@ -271,16 +280,18 @@ I'm interested in the problems where a clean dataset, a clear business question 
 ```{=html}
 <div class="ab-beyond">
 
-  <div class="ab-beyond__item">
+  <a href="/projects/list/fitness.html" class="ab-beyond__item ab-beyond__item--link">
     <div class="ab-beyond__icon"><i class="bi bi-trophy-fill"></i></div>
     <div class="ab-beyond__title">Competitive bodybuilding</div>
     <div class="ab-beyond__body">Training seriously since 2021. The sport teaches you that consistent inputs beat bursts of effort, that honest measurement is non-negotiable, and that meaningful change happens on horizons longer than most people will tolerate. I apply the same principles to analytical work; patience with a dataset tends to produce better answers than aggression with it.</div>
-  </div>
+    <span class="ab-beyond__cta">Click me</span>
+  </a>
 
   <a href="/ireland.html" class="ab-beyond__item ab-beyond__item--link">
     <div class="ab-beyond__icon"><i class="bi bi-signpost-split-fill"></i></div>
     <div class="ab-beyond__title">Hiking and running</div>
     <div class="ab-beyond__body">Weekend trails around Wicklow and further afield when time allows. The combination of distance and elevation is a good antidote to screen time and produces the kind of quiet thinking space that problem-solving actually requires.</div>
+    <span class="ab-beyond__cta">Click me</span>
   </a>
 
   <div class="ab-beyond__item">

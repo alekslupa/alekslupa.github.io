@@ -26,8 +26,6 @@ website:
         text: Future Goals
       - href: achievements.qmd
         text: Achievements
-      - href: ireland.qmd
-        text: Ireland
       - href: about.qmd
         text: About
       - href: cv/Aleksander_Lupa_CV.pdf
