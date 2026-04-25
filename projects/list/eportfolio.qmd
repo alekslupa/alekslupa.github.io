@@ -1,59 +1,31 @@
 ---
+pagetitle: "ePortfolio (this website) — Aleksander Lupa"
 title: "ePortfolio (this website)"
-subtitle: "BAA1028 Workflow & Data Management · A web project that demonstrates its own workflow"
+subtitle: "BAA1028 · Workflow & Data Management"
 description: "BAA1028 Workflow & Data Management module deliverable under Damien Dupré. A professional ePortfolio built from scratch using Quarto, custom SCSS and GitHub Pages, with the page itself functioning as a meta-analysis of the repository that produced it."
 author: "Aleksander Lupa"
 date: "2026-04-25"
-image: /assets/eportfolio-cover.png
-categories: [Workflow & Data Management, Quarto, Git, GitHub Pages, SCSS, Solo project]
-format:
-  html:
-    code-fold: true
-    code-tools: true
-    fig-cap-location: bottom
-    lightbox: true
-    toc: true
-    toc-depth: 3
+image: "/images/website.logo.png"
+categories: [BAA1028, Academic]
+page-layout: article
+toc: true
+toc-depth: 3
 execute:
   echo: true
   warning: false
   freeze: auto
+format:
+  html:
+    code-fold: true
+    code-tools:
+      toggle: true
+      source: false
+    fig-cap-location: bottom
+    lightbox: true
 ---
 
-[Projects](../index.html)
-
-Solo project · 2026
-
-# ePortfolio (this website)
-
-A professional ePortfolio designed and built from scratch as part of BAA1028 Workflow & Data Management at Dublin City University, supervised by Damien Dupré. Built with Quarto, custom SCSS and GitHub Pages.
-
-[Workflow & Data Management]{.pp-tag}
-[Quarto]{.pp-tag}
-[Git]{.pp-tag}
-[SCSS]{.pp-tag}
-[GitHub Pages]{.pp-tag}
-[Solo project]{.pp-tag}
-
 ```{=html}
-<div class="ap-project-meta">
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Year</div>
-    <div class="ap-meta-value">2026</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Module</div>
-    <div class="ap-meta-value">BAA1028</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">Supervisor</div>
-    <div class="ap-meta-value">Damien Dupré</div>
-  </div>
-  <div class="ap-meta-item">
-    <div class="ap-meta-label">My role</div>
-    <div class="ap-meta-value">Sole author</div>
-  </div>
-</div>
+<a href="../index.html" class="proj-back">← Projects</a>
 ```
 
 ## About the project
