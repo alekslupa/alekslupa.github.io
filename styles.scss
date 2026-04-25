@@ -2733,6 +2733,7 @@ hr.hp-divider {
 }
 
 h2:has(+ hr.hp-divider) {
+  margin-top: 1.75rem;
   margin-bottom: 0.1rem;
 }
 
