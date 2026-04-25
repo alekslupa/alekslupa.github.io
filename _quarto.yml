@@ -30,6 +30,7 @@ website:
       - href: cv/Aleksander_Lupa_CV.pdf
         text: CV
         target: _blank
+    right:
       - href: https://github.com/alekslupa
         icon: github
         target: _blank
