@@ -11,14 +11,10 @@ toc: false
 ---
 
 ```{=html}
-<style>.quarto-title h1.title{display:none}</style>
+<a href="../index.html" class="proj-back">← Projects</a>
+```
 
-<div class="proj-header">
-  <h1 class="proj-title">Applegreen App Innovation</h1>
-  <p class="proj-subtitle">A group project for the Big Enterprise module at DCU, proposing a data-backed redesign of the Applegreen Rewards app to better serve two key customer segments: pit stoppers and hectic commuters.</p>
-  <a href="../index.html" class="proj-back">← Projects</a>
-</div>
-
+```{=html}
 <div class="proj-section">
   <h2 class="proj-section__title">Project goal</h2>
   <p>The assignment required our group to identify a real innovation opportunity for a major Irish enterprise. We chose Applegreen, Ireland's largest fuel and convenience retailer, and focused our research on understanding how the existing customer experience could be improved through technology. Our central argument was that the Applegreen Rewards app, which held a 2-star average on the App Store at the time, was severely undersupplying its users and represented a clear gap in an otherwise strong brand.</p>
