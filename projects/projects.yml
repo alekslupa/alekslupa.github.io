@@ -50,6 +50,13 @@
   categories: [BAA1026, Academic]
   path: "list/data-analytics.qmd"
 
+- title: "Remote Work and Employee Motivation"
+  description: "A critical thinking research design assignment investigating the key factors influencing employee motivation and satisfaction in remote work environments, drawing on three peer-reviewed studies and a proposed thematic interview methodology."
+  author: "Aleksander Lupa"
+  date: "2024-02-22"
+  categories: [SB202, Academic]
+  path: "list/critical-thinking.qmd"
+
 - title: "Applegreen App Innovation"
   description: "A group innovation project proposing a full redesign of the Applegreen Rewards app, backed by primary research including customer interviews, ethnographic observation, and a Google survey."
   author: "Aleksander Lupa"

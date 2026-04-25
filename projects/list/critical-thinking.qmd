@@ -1,0 +1,122 @@
+---
+pagetitle: "Critical Thinking in Action — Aleksander Lupa"
+title: "Remote Work and Employee Motivation"
+subtitle: "SB202 · Critical Thinking in Action"
+description: "A research design assignment investigating the key factors influencing employee motivation and satisfaction in remote work environments, drawing on three peer-reviewed studies and a proposed thematic interview methodology."
+author: "Aleksander Lupa"
+date: "2024-02-22"
+categories: [SB202, Academic]
+page-layout: article
+toc: false
+---
+
+```{=html}
+<a href="../index.html" class="proj-back">← Projects</a>
+```
+
+```{=html}
+<div class="proj-section">
+  <h2 class="proj-section__title">Overview</h2>
+  <p>This assignment was the final submission for SB202 Critical Thinking in Action, worth 25% of the module grade. The brief required me to frame a research question within an established academic field, review relevant peer-reviewed literature, design a primary research methodology, plan a thematic analysis, and consider what the findings might conclude.</p>
+  <p>I chose to situate the research in organisational psychology, focusing on employee motivation and satisfaction in remote work environments. The COVID-19 pandemic had accelerated remote work adoption globally, but the long-term effects on motivation and satisfaction remained an open and actively contested area of research — making it a strong candidate for a critical thinking exercise grounded in real academic debate.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Research question</h2>
+  <p style="font-style:italic;font-size:1.05rem;border-left:3px solid #1e7e34;padding-left:1rem;margin:1rem 0;">What are the key factors influencing employee motivation and satisfaction in remote work environments, and how do these factors differ from traditional office-based work settings?</p>
+  <p>The question was designed to sit at the intersection of two well-studied phenomena — the psychology of motivation and the structural shift toward distributed work — so that the literature review could draw on empirical studies from different methodological traditions and the interview design could produce comparable, thematically analysable data.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Literature reviewed</h2>
+  <div class="proj-challenges">
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">01</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Galanti et al. (2021) — Work from home during COVID-19</div>
+        <p>This study examined the impact of family-work conflict, social isolation, distracting environments, job autonomy, and self-leadership on productivity, engagement, and stress during the pandemic. It established that remote workers face unique challenges not present in office settings, particularly around balancing family responsibilities and managing isolation, and that these factors directly affect motivation and satisfaction.</p>
+      </div>
+    </div>
+    <div class="proj-challenge">
+      <span class="proj-challenge__num">02</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Grant, Wallace and Spurgeon (2013) — Psychological factors in remote e-working</div>
+        <p>This study explored how remote work affects well-being, job effectiveness, and work-life balance. A key finding was the risk of remote workers becoming "invisible" within organisations — requiring intentional support and recognition structures that do not exist naturally in distributed environments. It highlighted communication, trust-building, and social connection as critical to sustaining motivation when face-to-face interaction is removed.</p>
+      </div>
+    </div>
+    <div class="proj-challenge proj-challenge--last">
+      <span class="proj-challenge__num">03</span>
+      <div class="proj-challenge__content">
+        <div class="proj-challenge__title">Gajendran and Harrison (2007) — Telecommuting meta-analysis</div>
+        <p>This meta-analysis of psychological mediators and individual consequences found that autonomy, schedule flexibility, and reduced commute stress are the primary satisfaction drivers in remote settings, while office environments derive satisfaction from in-person culture, physical amenities, and social interaction. The study reinforced the need for environment-specific management strategies rather than a one-size-fits-all approach.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Research design</h2>
+  <p>The assignment required me to propose a primary research methodology to test the research question empirically. I designed a qualitative interview study with the following parameters:</p>
+  <div class="proj-skills-grid">
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Participant selection</span>
+      <span class="proj-skill-card__value">Cross-industry interviewees with varying lengths of remote work experience, including those who manage remote teams</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Interview design</span>
+      <span class="proj-skill-card__value">Likert-scale anchored questions on flexibility, with follow-up probes for both positive and negative experiences</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Analysis method</span>
+      <span class="proj-skill-card__value">Thematic analysis — pre-identified themes from literature coded against transcripts, then compared across demographic groups</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Key themes</span>
+      <span class="proj-skill-card__value">Work-life balance, autonomy, flexibility, communication barriers, social isolation, and supervisor support</span>
+    </div>
+  </div>
+  <p style="margin-top:1.25rem;">The five-step analysis plan moved from pre-interview theme identification through transcript coding, cross-interviewee comparison, and final interpretation — a structure designed to ensure findings could be mapped back to both the academic literature and the original research question.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Skills developed</h2>
+  <div class="proj-skills-grid">
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Critical reading</span>
+      <span class="proj-skill-card__value">Synthesising and evaluating peer-reviewed empirical studies across different methodological approaches</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Research design</span>
+      <span class="proj-skill-card__value">Constructing a qualitative interview methodology with participant criteria, question design, and analysis plan</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Thematic analysis</span>
+      <span class="proj-skill-card__value">Applying a structured coding framework to qualitative data to surface patterns across respondents</span>
+    </div>
+    <div class="proj-skill-card">
+      <span class="proj-skill-card__label">Academic writing</span>
+      <span class="proj-skill-card__value">Communicating complex research design decisions clearly within a 1,169-word constraint</span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Reflection</h2>
+  <p>This module pushed me to engage with academic sources differently from any other assignment I had done. Rather than simply summarising what studies found, the critical thinking framework required me to interrogate why they found it, what methodological assumptions underpinned their conclusions, and what gaps they left open. Reading Gajendran and Harrison's meta-analysis alongside the Galanti et al. pandemic-era study made clear how significantly context shapes findings — the same variable, autonomy, functions very differently when remote work is chosen versus imposed.</p>
+  <p>Designing the interview methodology was the most practically useful part. Mapping the literature themes onto specific interview questions and then planning how those answers would be coded made the connection between theory and evidence feel concrete rather than abstract. That process — from question to data to analysis to conclusion — is something I have applied to every research task since.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<a href="/images/pdfs/Semester 2 Final Assignment (25%) SB202.pdf" target="_blank" rel="noopener" class="proj-btn">View Full Report (PDF)</a>
+```
