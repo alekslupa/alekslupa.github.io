@@ -15,7 +15,7 @@ format:
       <p class="ab-hero__lede">I translate business questions into data problems and back again. Final year Business Analytics student at DCU on track for 2:1 Honours, with recent experience at Allied World in underwriting operations and a portfolio of projects spanning machine learning, financial modelling and strategic analysis.</p>
       <div class="ab-hero__ctas">
         <a href="/cv/Aleksander_Lupa_CV.pdf" class="btn btn-dark" target="_blank"><i class="bi bi-file-earmark-pdf"></i>&nbsp;Download CV</a>
-        <a href="mailto:aleklupa@gmail.com" class="btn btn-outline-secondary"><i class="bi bi-envelope"></i>&nbsp;Get in touch</a>
+        <a href="mailto:aleksander.lupa2@mail.dcu.ie" class="btn btn-outline-secondary" id="ab-hero-email"><i class="bi bi-envelope"></i>&nbsp;Get in touch</a>
       </div>
       <div class="ab-hero__stats">
         <div class="ab-hero__stat"><div class="ab-hero__stat-num">4</div><div class="ab-hero__stat-lbl">Years at DCU</div></div>
@@ -280,21 +280,23 @@ I'm interested in the problems where a clean dataset, a clear business question 
 
 <script>
 (function () {
-  // Email copy toast
-  var emailLink = document.getElementById('ab-email-link');
-  if (emailLink) {
-    var toast = document.createElement('span');
-    toast.textContent = 'Copied!';
-    toast.style.cssText = [
-      'position:fixed', 'bottom:1.5rem', 'left:50%',
-      'transform:translateX(-50%)',
-      'background:rgba(30,30,30,0.9)', 'color:#fff',
-      'font-size:0.78rem', 'padding:5px 14px',
-      'border-radius:20px', 'pointer-events:none',
-      'opacity:0', 'transition:opacity 0.2s ease', 'z-index:9999'
-    ].join(';');
-    document.body.appendChild(toast);
-    emailLink.addEventListener('click', function (e) {
+  // Shared toast
+  var toast = document.createElement('span');
+  toast.textContent = 'Copied!';
+  toast.style.cssText = [
+    'position:fixed', 'bottom:1.5rem', 'left:50%',
+    'transform:translateX(-50%)',
+    'background:rgba(30,30,30,0.9)', 'color:#fff',
+    'font-size:0.78rem', 'padding:5px 14px',
+    'border-radius:20px', 'pointer-events:none',
+    'opacity:0', 'transition:opacity 0.2s ease', 'z-index:9999'
+  ].join(';');
+  document.body.appendChild(toast);
+
+  function attachCopyToast(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener('click', function (e) {
       e.preventDefault();
       var email = this.getAttribute('href').replace('mailto:', '');
       if (navigator.clipboard) { navigator.clipboard.writeText(email).catch(function () {}); }
@@ -303,6 +305,9 @@ I'm interested in the problems where a clean dataset, a clear business question 
       toast._t = setTimeout(function () { toast.style.opacity = '0'; }, 2000);
     });
   }
+
+  attachCopyToast('ab-hero-email');
+  attachCopyToast('ab-email-link');
 
   // Konami code
   const sequence = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
