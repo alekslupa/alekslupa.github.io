@@ -1,8 +1,4 @@
 ---
-title: "Future Goals"
-description: "Where I'm headed after graduation: a business analyst role in gaming, a summer travelling across Asia and the Americas, and a move to London."
-author: "Aleksander Lupa"
-date: "2026-04-24"
 format:
   html:
     code-fold: true
