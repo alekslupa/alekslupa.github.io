@@ -17,8 +17,6 @@ website:
   navbar:
     logo: images/website.logo.png
     right:
-      - href: index.qmd
-        text: Home
       - href: projects/index.qmd
         text: Projects
       - href: future_goals.qmd
