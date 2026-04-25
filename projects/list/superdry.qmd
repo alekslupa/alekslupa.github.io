@@ -7,7 +7,7 @@ author:
   - name: "Aleksander Lupa"
   - name: "Redacted members"
 date: "2025-12-04"
-image: "/images/Superdry.1.png"
+image: "/images/Superdry.jpg"
 categories: [BAA1019, Academic]
 page-layout: article
 toc: false
@@ -470,7 +470,7 @@ Strategy as a discipline is less about running more frameworks and more about ch
 
 ```{=html}
 <div class="pb-downloads">
-  <a href="/images/pdfs/superdry.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View full strategy report</a>
+  <a href="/assets/pdfs/superdry.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View full strategy report</a>
 </div>
 ```
 

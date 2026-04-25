@@ -1,2 +1,6 @@
 /.quarto/
 **/*.quarto_ipynb
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db

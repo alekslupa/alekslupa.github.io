@@ -7,7 +7,7 @@ author:
   - name: "Aleksander Lupa"
   - name: "Redacted members"
 date: "2026-04-17"
-image: "/images/pricebeo.1.png"
+image: "/images/pricebeo.PNG"
 categories: [BAA1003, Academic]
 page-layout: article
 toc: false
@@ -619,8 +619,8 @@ The Dragons Den pitch itself was a genuine test of composure under pressure. Rec
 
 ```{=html}
 <div class="pb-downloads">
-  <a href="/images/pdfs/PriceBeo Business Report.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View business report</a>
-  <a href="/images/pdfs/pricebeo-slides.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View pitch slides</a>
+  <a href="/assets/pdfs/PriceBeo Business Report.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View business report</a>
+  <a href="/assets/pdfs/pricebeo-slides.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View pitch slides</a>
 </div>
 ```
 

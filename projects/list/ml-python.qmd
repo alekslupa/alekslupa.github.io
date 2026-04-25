@@ -501,8 +501,8 @@ The broader takeaway I carried out of the module is that machine learning as a d
 
 ```{=html}
 <div class="pb-downloads">
-  <a href="/images/pdfs/Research_Report_22420692.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View research paper</a>
-  <a href="/images/pdfs/online_shoppers_ml_analysis_22420692.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Jupyter notebook</a>
+  <a href="/assets/pdfs/Research_Report_22420692.pdf" class="pb-dl-btn pb-dl-btn--filled" target="_blank">View research paper</a>
+  <a href="/assets/pdfs/online_shoppers_ml_analysis_22420692.pdf" class="pb-dl-btn pb-dl-btn--outline" target="_blank">View Jupyter notebook</a>
 </div>
 ```
 

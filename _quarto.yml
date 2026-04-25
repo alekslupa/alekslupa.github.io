@@ -4,14 +4,14 @@ project:
   resources:
     - .nojekyll
     - images/github.png
-    - "images/pdfs/PriceBeo Business Report.pdf"
-    - "images/pdfs/Research_Report_22420692.pdf"
-    - "images/pdfs/online_shoppers_ml_analysis_22420692.pdf"
-    - "images/pdfs/Data analytics group project.pdf"
-    - "images/pdfs/EcoEnergy-Corp-Global-Sustainable-Infrastructure ptp.pdf"
-    - "images/pdfs/Power Bi Group Project powerbi.pdf"
-    - "images/pdfs/Big Enterprise - Applegreen innovation - SB104.pdf"
-    - "images/pdfs/Semester 2 Final Assignment (25%) SB202.pdf"
+    - "assets/pdfs/PriceBeo Business Report.pdf"
+    - "assets/pdfs/Research_Report_22420692.pdf"
+    - "assets/pdfs/online_shoppers_ml_analysis_22420692.pdf"
+    - "assets/pdfs/Data analytics group project.pdf"
+    - "assets/pdfs/EcoEnergy-Corp-Global-Sustainable-Infrastructure ptp.pdf"
+    - "assets/pdfs/Power Bi Group Project powerbi.pdf"
+    - "assets/pdfs/Big Enterprise - Applegreen innovation - SB104.pdf"
+    - "assets/pdfs/Semester 2 Final Assignment (25%) SB202.pdf"
     - assets/ireland-counties.geojson
 
 website:

@@ -119,5 +119,5 @@ toc: false
 
 <div class="proj-divider"></div>
 
-<a href="/images/pdfs/Semester 2 Final Assignment (25%) SB202.pdf" target="_blank" rel="noopener" class="proj-btn">View Full Report (PDF)</a>
+<a href="/assets/pdfs/Semester 2 Final Assignment (25%) SB202.pdf" target="_blank" rel="noopener" class="proj-btn">View Full Report (PDF)</a>
 ```
