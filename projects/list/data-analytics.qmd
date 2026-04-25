@@ -1,0 +1,58 @@
+---
+pagetitle: "Data Analytics — Aleksander Lupa"
+title: "Data Analytics"
+description: "Data analytics project."
+author: "Aleksander Lupa"
+date: "2025-01-01"
+categories: [Academic]
+page-layout: article
+toc: false
+---
+
+```{=html}
+<style>.quarto-title h1.title{display:none}</style>
+
+<div class="proj-header">
+  <h1 class="proj-title">Data Analytics</h1>
+  <p class="proj-subtitle">Project subtitle goes here.</p>
+  <a href="../index.html" class="proj-back">← Projects</a>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">About the project</h2>
+  <p>Project description goes here.</p>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">What I built</h2>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <span class="proj-card__label">Tools used</span>
+      <span class="proj-card__value">—</span>
+    </div>
+    <div class="proj-card">
+      <span class="proj-card__label">Dataset</span>
+      <span class="proj-card__value">—</span>
+    </div>
+    <div class="proj-card">
+      <span class="proj-card__label">Focus areas</span>
+      <span class="proj-card__value">—</span>
+    </div>
+    <div class="proj-card">
+      <span class="proj-card__label">Outcome</span>
+      <span class="proj-card__value">—</span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-divider"></div>
+
+<div class="proj-section">
+  <h2 class="proj-section__title">Reflection</h2>
+  <p>Reflection goes here.</p>
+</div>
+```

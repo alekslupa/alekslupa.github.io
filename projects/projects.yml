@@ -43,6 +43,13 @@
   categories: [Personal]
   path: "list/bathstore.qmd"
 
+- title: "Data Analytics"
+  description: "Data analytics project."
+  author: "Aleksander Lupa"
+  date: "2025-01-01"
+  categories: [Academic]
+  path: "list/data-analytics.qmd"
+
 - title: "Fitness Journey"
   description: "A personal log of my bodybuilding journey from July 2023 — training phases, progress photos, and the goal of competing in a men's physique show in 2027."
   author: "Aleksander Lupa"
