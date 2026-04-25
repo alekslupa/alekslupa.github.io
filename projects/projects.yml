@@ -70,9 +70,3 @@
   categories: [SB104, Academic]
   path: "list/applegreen.qmd"
 
-- title: "Fitness Journey"
-  description: "A personal log of my bodybuilding journey from July 2023 — training phases, progress photos, and the goal of competing in a men's physique show in 2027."
-  author: "Aleksander Lupa"
-  date: "2024-01-01"
-  categories: [Personal]
-  path: "list/fitness.qmd"
