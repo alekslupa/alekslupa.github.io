@@ -32,7 +32,7 @@
   author: "Aleksander Lupa"
   date: "2024-06-01"
   image: "../images/screenshots/vip-ireland.png"
-  categories: [Freelance, Personal]
+  categories: [Personal]
   path: "list/vip-ireland.qmd"
 
 - title: "Bathstore & More"
@@ -40,5 +40,12 @@
   author: "Aleksander Lupa"
   date: "2024-09-01"
   image: "../images/screenshots/bathstore.png"
-  categories: [Freelance, Personal]
+  categories: [Personal]
   path: "list/bathstore.qmd"
+
+- title: "Fitness Journey"
+  description: "A personal log of my bodybuilding journey from July 2023 — training phases, progress photos, and the goal of competing in a men's physique show in 2027."
+  author: "Aleksander Lupa"
+  date: "2024-01-01"
+  categories: [Personal]
+  path: "list/fitness.qmd"
