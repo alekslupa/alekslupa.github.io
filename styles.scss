@@ -2733,7 +2733,8 @@ hr.hp-divider {
 }
 
 h2[data-anchor-id="recent-posts"] {
-  margin-top: 3.5rem;
+  margin-top: 0 !important;
+  padding-top: 4rem;
   margin-bottom: 0.1rem;
 }
 
