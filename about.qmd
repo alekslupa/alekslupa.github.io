@@ -192,50 +192,74 @@ I'm interested in the problems where a clean dataset, a clear business question 
 <div class="ab-langs">
 
   <div class="ab-lang">
-    <div class="ab-lang__head">
-      <span class="ab-lang__flag">🇬🇧</span>
-      <span class="ab-lang__badge">Fluent</span>
-    </div>
-    <div class="ab-lang__name">English</div>
-    <div class="ab-lang__domain">Professional · daily use</div>
-    <div class="ab-lang__track">
-      <div class="ab-lang__fill" style="width:82%"></div>
-    </div>
-    <div class="ab-lang__foot">
-      <span class="ab-lang__yrs">18 years</span>
-      <span class="ab-lang__ctx">Education · work · Ireland</span>
-    </div>
-  </div>
-
-  <div class="ab-lang">
-    <div class="ab-lang__head">
-      <span class="ab-lang__flag">🇵🇱</span>
-      <span class="ab-lang__badge">Fluent</span>
-    </div>
-    <div class="ab-lang__name">Polish</div>
-    <div class="ab-lang__domain">Family · native environment</div>
-    <div class="ab-lang__track">
-      <div class="ab-lang__fill" style="width:100%"></div>
-    </div>
-    <div class="ab-lang__foot">
-      <span class="ab-lang__yrs">22 years</span>
-      <span class="ab-lang__ctx">Home · family in Poland</span>
+    <div class="ab-lang__inner">
+      <div class="ab-lang__front">
+        <div class="ab-lang__head">
+          <span class="ab-lang__flag">🇬🇧</span>
+          <span class="ab-lang__badge">Fluent</span>
+        </div>
+        <div class="ab-lang__name">English</div>
+        <div class="ab-lang__domain">Professional · daily use</div>
+        <div class="ab-lang__track">
+          <div class="ab-lang__fill" style="width:82%"></div>
+        </div>
+        <div class="ab-lang__foot">
+          <span class="ab-lang__yrs">18 years</span>
+          <span class="ab-lang__ctx">Education · work · Ireland</span>
+        </div>
+      </div>
+      <div class="ab-lang__back">
+        <div class="ab-lang__back-label">In practice</div>
+        <div class="ab-lang__back-body">Fluent across academic, professional and everyday contexts. All coursework, reporting at Allied World, and this entire portfolio are written in English.</div>
+      </div>
     </div>
   </div>
 
   <div class="ab-lang">
-    <div class="ab-lang__head">
-      <span class="ab-lang__flag">🇪🇸</span>
-      <span class="ab-lang__badge ab-lang__badge--mid">Intermediate</span>
+    <div class="ab-lang__inner">
+      <div class="ab-lang__front">
+        <div class="ab-lang__head">
+          <span class="ab-lang__flag">🇵🇱</span>
+          <span class="ab-lang__badge">Fluent</span>
+        </div>
+        <div class="ab-lang__name">Polish</div>
+        <div class="ab-lang__domain">Family · native environment</div>
+        <div class="ab-lang__track">
+          <div class="ab-lang__fill" style="width:100%"></div>
+        </div>
+        <div class="ab-lang__foot">
+          <span class="ab-lang__yrs">22 years</span>
+          <span class="ab-lang__ctx">Home · family in Poland</span>
+        </div>
+      </div>
+      <div class="ab-lang__back">
+        <div class="ab-lang__back-label">In practice</div>
+        <div class="ab-lang__back-body">Native language spoken daily at home and with family in Poland. A direct anchor to Central European culture and a lens on markets outside the English-speaking world.</div>
+      </div>
     </div>
-    <div class="ab-lang__name">Spanish</div>
-    <div class="ab-lang__domain">Steadily developing</div>
-    <div class="ab-lang__track">
-      <div class="ab-lang__fill ab-lang__fill--mid" style="width:18%"></div>
-    </div>
-    <div class="ab-lang__foot">
-      <span class="ab-lang__yrs">4 years</span>
-      <span class="ab-lang__ctx">DCU · self-study</span>
+  </div>
+
+  <div class="ab-lang">
+    <div class="ab-lang__inner">
+      <div class="ab-lang__front">
+        <div class="ab-lang__head">
+          <span class="ab-lang__flag">🇪🇸</span>
+          <span class="ab-lang__badge ab-lang__badge--mid">Intermediate</span>
+        </div>
+        <div class="ab-lang__name">Spanish</div>
+        <div class="ab-lang__domain">Steadily developing</div>
+        <div class="ab-lang__track">
+          <div class="ab-lang__fill ab-lang__fill--mid" style="width:18%"></div>
+        </div>
+        <div class="ab-lang__foot">
+          <span class="ab-lang__yrs">4 years</span>
+          <span class="ab-lang__ctx">DCU · self-study</span>
+        </div>
+      </div>
+      <div class="ab-lang__back">
+        <div class="ab-lang__back-label">In practice</div>
+        <div class="ab-lang__back-body">Four years of DCU coursework and self-study. Planning intentional immersion in Miami during the summer 2026 trip as the most efficient way to reach upper-intermediate.</div>
+      </div>
     </div>
   </div>
 
