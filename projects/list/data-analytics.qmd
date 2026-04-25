@@ -385,22 +385,57 @@ Technology accounts for €7.75M of the €15.6M Year 3 revenue forecast, making
 
 The three layers of the engagement (descriptive, diagnostic, predictive) follow a deliberate sequence. Each layer is constrained to questions the data can actually answer at its level of resolution, and recommendations are produced only at the predictive layer, after the diagnostic has surfaced the causal structure.
 
-```{mermaid}
-%%| label: fig-pipeline
-%%| fig-cap: "Three-layer analytical pipeline. Each layer answers a distinct kind of question. Recommendations are produced after the diagnostic layer, not before, because pre-diagnostic recommendations tend to be reversion to consultant defaults rather than dataset-led."
-flowchart TB
-    A[Raw dataset<br/>10 years · 5 regions · 10 products] --> B[Data cleaning<br/>Removed redundant fields<br/>Region-country mismatches<br/>Sales rep scope limitations]
-    B --> C[<b>Descriptive layer</b><br/>What happened?<br/>€130.7M revenue · €139.1M cost<br/>€8.46M net loss · 39% loss-making units]
-    C --> D[<b>Diagnostic layer</b><br/>Why did it happen?<br/>Regional cost structures<br/>Discount discipline<br/>Channel mix · Portfolio composition]
-    D --> E[<b>Recommendations</b><br/>Outsourcing strategy<br/>Winner-takes-all sourcing<br/>Discontinue persistent loss-makers]
-    E --> F[<b>Predictive layer</b><br/>Will it work?<br/>3-year forecast · €3.09M profit<br/>49.7% margin at full capacity]
-    F --> G[<b>Industry benchmarks</b><br/>Apple sustainability practices<br/>Cool Planet operational model<br/>Plausibility check on recommendations]
-
-    style C fill:#fff3e0,stroke:#e65100,color:#1a1a1a
-    style D fill:#e3f2fd,stroke:#1976d2,color:#1a1a1a
-    style E fill:#1e7e34,stroke:#1e7e34,color:#fff,stroke-width:3px
-    style F fill:#f3e5f5,stroke:#6a1b9a,color:#1a1a1a
-    style G fill:#fff8e1,stroke:#f9a825,color:#1a1a1a
+```{=html}
+<div style="margin:1.5em 0;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 500" style="width:100%;max-width:290px;display:block;margin:0 auto;font-family:Inter,sans-serif;">
+    <defs>
+      <marker id="arr" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto">
+        <path d="M0,0 L8,3.5 L0,7 Z" fill="#555"/>
+      </marker>
+    </defs>
+    <!-- Raw dataset (orange) -->
+    <rect x="40" y="10" width="210" height="50" rx="7" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/>
+    <text x="145" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Raw dataset · 10 years · 5 regions</text>
+    <text x="145" y="48" text-anchor="middle" font-size="10" fill="#666">10 products · 5 continents</text>
+    <!-- Arrow -->
+    <line x1="145" y1="60" x2="145" y2="74" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- Data cleaning (green) -->
+    <rect x="40" y="77" width="210" height="50" rx="7" fill="#f1f8e9" stroke="#1e7e34" stroke-width="1.5"/>
+    <text x="145" y="97" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Data cleaning</text>
+    <text x="145" y="115" text-anchor="middle" font-size="10" fill="#666">Redundant fields · regional mismatches</text>
+    <!-- Arrow -->
+    <line x1="145" y1="127" x2="145" y2="141" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- Descriptive layer (orange) -->
+    <rect x="40" y="144" width="210" height="50" rx="7" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/>
+    <text x="145" y="164" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Descriptive layer</text>
+    <text x="145" y="182" text-anchor="middle" font-size="10" fill="#666">€8.46M net loss · 39% loss-making units</text>
+    <!-- Arrow -->
+    <line x1="145" y1="194" x2="145" y2="208" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- Diagnostic layer (blue) -->
+    <rect x="40" y="211" width="210" height="50" rx="7" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+    <text x="145" y="231" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Diagnostic layer</text>
+    <text x="145" y="249" text-anchor="middle" font-size="10" fill="#666">Cost structures · discount discipline</text>
+    <!-- Arrow -->
+    <line x1="145" y1="261" x2="145" y2="275" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- Recommendations (solid green) -->
+    <rect x="40" y="278" width="210" height="50" rx="7" fill="#1e7e34" stroke="#1e7e34" stroke-width="2"/>
+    <text x="145" y="298" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">★ Recommendations</text>
+    <text x="145" y="316" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.85)">Outsourcing · winner-takes-all sourcing</text>
+    <!-- Arrow -->
+    <line x1="145" y1="328" x2="145" y2="342" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- Predictive layer (purple) -->
+    <rect x="40" y="345" width="210" height="50" rx="7" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="1.5"/>
+    <text x="145" y="365" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Predictive layer</text>
+    <text x="145" y="383" text-anchor="middle" font-size="10" fill="#666">3-year forecast · €3.09M profit · 49.7%</text>
+    <!-- Arrow -->
+    <line x1="145" y1="395" x2="145" y2="409" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- Industry benchmarks (yellow) -->
+    <rect x="40" y="412" width="210" height="50" rx="7" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+    <text x="145" y="432" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Industry benchmarks</text>
+    <text x="145" y="450" text-anchor="middle" font-size="10" fill="#666">Apple · Cool Planet · plausibility check</text>
+  </svg>
+  <p style="text-align:center;font-size:0.85em;color:#6c757d;font-style:italic;margin-top:0.75em;">Figure 6: Three-layer analytical pipeline — descriptive, diagnostic and predictive.</p>
+</div>
 ```
 
 ## What I was responsible for
