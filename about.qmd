@@ -309,6 +309,21 @@ I'm interested in the problems where a clean dataset, a clear business question 
   attachCopyToast('ab-hero-email');
   attachCopyToast('ab-email-link');
 
+  // Skill scroll animation
+  var skills = document.querySelectorAll('.ab-skill');
+  skills.forEach(function(el) { el.classList.add('ab-skill--anim'); });
+  var skillObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var i = Array.from(skills).indexOf(el);
+        setTimeout(function() { el.classList.add('ab-skill--visible'); }, i * 80);
+        skillObs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.1 });
+  skills.forEach(function(el) { skillObs.observe(el); });
+
   // Konami code
   const sequence = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
                     "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight",
