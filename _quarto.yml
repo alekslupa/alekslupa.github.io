@@ -12,6 +12,8 @@ project:
     - "assets/pdfs/Power Bi Group Project powerbi.pdf"
     - "assets/pdfs/Big Enterprise - Applegreen innovation - SB104.pdf"
     - "assets/pdfs/Semester 2 Final Assignment (25%) SB202.pdf"
+    - "assets/pdfs/pricebeo-slides.pdf"
+    - "assets/pdfs/superdry.pdf"
     - assets/ireland-counties.geojson
 
 website:
