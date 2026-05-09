@@ -8,7 +8,7 @@
 
 <meta name="description" content="ePortfolio · BAA1027">
 
-<title>Projects — Aleksander Lupa</title>
+<title>Aleksander Lupa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -368,7 +368,7 @@ window.Quarto = {
   <div class="about-contents">
     <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Aleksander Lupa</h1>
 <p class="subtitle lead">Final-year Business Analytics student at DCU. I turn business questions into clear data-driven answers. Based in Dublin heading to London.</p>
 </div>
 <div>
@@ -606,72 +606,6 @@ Apr 17, 2026
   </div>
 </div>
 
-
-<p>A selection of academic and personal projects spanning business strategy, product development, and web design.</p>
-<div class="proj-filter-bar">
-  <div class="proj-filter-group">
-    <label class="proj-filter-label" for="proj-filter-type">Type</label>
-    <select class="proj-filter-select" id="proj-filter-type">
-      <option value="">All types</option>
-      <option value="Academic">Academic</option>
-      <option value="Personal">Personal</option>
-    </select>
-  </div>
-  <div class="proj-filter-group">
-    <label class="proj-filter-label" for="proj-filter-module">Module</label>
-    <select class="proj-filter-select" id="proj-filter-module">
-      <option value="">All modules</option>
-      <option value="BAA1003">BAA1003 · New Enterprise Development</option>
-      <option value="BAA1019">BAA1019 · Business Strategy</option>
-      <option value="BAA1026">BAA1026 · Data Analytics</option>
-      <option value="BAA1027">BAA1027 · Machine Learning</option>
-      <option value="BAA1028">BAA1028 · Workflow &amp; Data Management</option>
-      <option value="SB104">SB104 · Big Enterprise</option>
-      <option value="SB202">SB202 · Critical Thinking</option>
-    </select>
-  </div>
-  <button class="proj-filter-reset" id="proj-filter-reset" type="button">Reset</button>
-</div>
-<p class="proj-filter-empty" id="proj-filter-empty" style="display:none;">No projects match the selected filters.</p>
-<script>
-(function () {
-  document.addEventListener('DOMContentLoaded', function () {
-    var list    = window['quarto-listings'] && window['quarto-listings']['listing-listing'];
-    var typeEl  = document.getElementById('proj-filter-type');
-    var modEl   = document.getElementById('proj-filter-module');
-    var resetEl = document.getElementById('proj-filter-reset');
-    var emptyEl = document.getElementById('proj-filter-empty');
-    if (!list || !typeEl) return;
-    function applyFilters() {
-      var type    = typeEl.value;
-      var mod     = modEl.value;
-      var visible = 0;
-      if (!type && !mod) {
-        list.filter();
-        emptyEl.style.display = 'none';
-        return;
-      }
-      list.filter(function (item) {
-        var raw  = item.elm.getAttribute('data-categories') || '';
-        var cats = decodeURIComponent(atob(raw)).split(',');
-        var show = true;
-        if (type && !cats.includes(type)) show = false;
-        if (mod  && !cats.includes(mod))  show = false;
-        if (show) visible++;
-        return show;
-      });
-      emptyEl.style.display = visible === 0 ? '' : 'none';
-    }
-    typeEl.addEventListener('change', applyFilters);
-    modEl.addEventListener('change', applyFilters);
-    resetEl.addEventListener('click', function () {
-      typeEl.value = '';
-      modEl.value  = '';
-      applyFilters();
-    });
-  });
-})();
-</script>
 </section>
 </main> 
     <div class="about-footer"><div class="about-links">
